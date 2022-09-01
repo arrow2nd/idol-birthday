@@ -18,3 +18,8 @@ node_modules
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+
+# tailwindcss
+/api/_assets/*.css
+/app/styles/app.css
+
