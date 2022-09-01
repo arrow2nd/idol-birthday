@@ -12,7 +12,7 @@ import styles from './styles/app.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'idol-birthday | アイドルのお誕生日まで残り...？',
   viewport: 'width=device-width,initial-scale=1'
 })
 
@@ -22,7 +22,7 @@ export function links() {
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <Meta />
         <Links />
