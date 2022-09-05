@@ -9,12 +9,8 @@
   "arrowParens": "always",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
-    "^components/(.*)$",
-    "^hooks/(.*)$",
-    "^scripts/(.*)$",
-    "^data/(.*)$",
-    "^types/(.*)$",
-    "^styles/(.*)$",
+    "^~/components/(.*)$",
+    "^~/types/(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,
