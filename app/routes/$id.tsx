@@ -2,6 +2,7 @@ import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import axios from 'axios'
 import invariant from 'tiny-invariant'
+
 import { fetchIdolData } from '~/libs/fetchIdolData'
 
 import { Idol } from '~/types/idol'
@@ -12,7 +13,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   const data = await fetchIdolData(params.id).catch((err) => {
     if (!axios.isAxiosError(err)) throw err
 
-    throw new Response('', {
+    throw new Response(null, {
       status: 500,
       statusText: 'im@sparqlにアクセスできません'
     })
@@ -20,7 +21,7 @@ export const loader: LoaderFunction = async ({ params }) => {
 
   // 見つからなかった
   if (!data) {
-    throw new Response('', {
+    throw new Response(null, {
       status: 404,
       statusText: `"${params.id}" に該当するアイドルが見つかりません`
     })
