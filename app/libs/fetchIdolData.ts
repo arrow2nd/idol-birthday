@@ -5,6 +5,7 @@ import { ImasparqlResponse } from '~/types/imasparql'
 
 import { getBrandColor, isWhitishColor } from './color'
 
+/** リソースIDからアイドルを検索 */
 const query = (id: string) =>
   `
 PREFIX schema: <http://schema.org/>
@@ -17,7 +18,7 @@ WHERE {
      schema:birthDate ?birthdate;
      imas:Brand ?brand.
   OPTIONAL { ?d imas:Color ?color. }
-  FILTER(CONTAINS(LCASE(STR(?d)), "detail/${id}"))
+  FILTER(REGEX(LCASE(STR(?d)), "detail/${id}$", "i"))
 }
 `.replace(/[\n\r\s]+/g, ' ')
 
@@ -26,38 +27,39 @@ WHERE {
  * @param id リソースID
  * @returns レスポンス
  */
-export async function fetchIdolData(id: string): Promise<Idol> {
+export async function fetchIdolData(id: string): Promise<Idol | null> {
   const url = new URL('https://sparql.crssnky.xyz/spql/imas/query')
   url.searchParams.append('output', 'json')
   url.searchParams.append('query', query(id))
 
-  try {
-    // 5秒でタイムアウト
-    const res = await axios.get<ImasparqlResponse>(url.toString(), {
+  // 5秒でタイムアウト
+  const res = await axios
+    .get<ImasparqlResponse>(url.toString(), {
       timeout: 5000
     })
+    .catch((err) => {
+      throw err
+    })
 
-    if (res.data.results.bindings.length <= 0) {
-      throw new Error('データがありません')
+  // データがない
+  if (res.data.results.bindings.length <= 0) {
+    return null
+  }
+
+  const { name, brand, birthdate, color } = res.data.results.bindings[0]
+  const birth = birthdate.value.match(/--(?<month>\d+)-(?<day>\d+)/)!
+  const colorHex = color?.value ?? getBrandColor(brand.value)
+
+  return {
+    id: id,
+    name: name.value,
+    birth: {
+      month: parseInt(birth.groups!.month),
+      day: parseInt(birth.groups!.day)
+    },
+    color: {
+      hex: colorHex,
+      isWhitish: isWhitishColor(colorHex)
     }
-
-    const { name, brand, birthdate, color } = res.data.results.bindings[0]
-    const birth = birthdate.value.match(/--(?<month>\d+)-(?<day>\d+)/)!
-    const colorHex = color?.value ?? getBrandColor(brand.value)
-
-    return {
-      id: id,
-      name: name.value,
-      birth: {
-        month: parseInt(birth.groups!.month),
-        day: parseInt(birth.groups!.day)
-      },
-      color: {
-        hex: colorHex,
-        isWhitish: isWhitishColor(colorHex)
-      }
-    }
-  } catch (err) {
-    throw err
   }
 }

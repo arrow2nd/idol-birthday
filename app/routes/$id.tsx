@@ -1,5 +1,6 @@
 import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
+import axios from 'axios'
 import invariant from 'tiny-invariant'
 import { fetchIdolData } from '~/libs/fetchIdolData'
 
@@ -8,10 +9,29 @@ import { Idol } from '~/types/idol'
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.id, 'Expected params.id')
 
-  return await fetchIdolData(params.id)
+  const data = await fetchIdolData(params.id).catch((err) => {
+    if (!axios.isAxiosError(err)) throw err
+
+    throw new Response('', {
+      status: 500,
+      statusText: 'im@sparqlにアクセスできません'
+    })
+  })
+
+  // 見つからなかった
+  if (!data) {
+    throw new Response('', {
+      status: 404,
+      statusText: `"${params.id}" に該当するアイドルが見つかりません`
+    })
+  }
+
+  return data
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
+  if (!data) return {}
+
   const title = `${data.name}さんのお誕生日まで...？ | idol-birthday`
   const description = `${data.name}さんのお誕生日までの時間を秒単位でカウントダウンするサイトです`
 
