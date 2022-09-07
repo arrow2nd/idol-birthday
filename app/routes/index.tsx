@@ -28,7 +28,7 @@ export default function Index() {
     <Layout>
       <div className="flex justify-center items-center text-md text-gray-800">
         <GiPartyPopper />
-        <span className="ml-1">もうすぐお誕生日のアイドル</span>
+        <span className="ml-1">もうすぐお誕生日のアイドル + α</span>
       </div>
       <div className="mt-6 flex flex-row flex-wrap justify-center">{cards}</div>
     </Layout>
