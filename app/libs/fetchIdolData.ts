@@ -28,6 +28,9 @@ WHERE {
  * @returns レスポンス
  */
 export async function fetchIdolData(id: string): Promise<Idol | null> {
+  // 英数字 + アンダーバー 以外を含むなら不正なIDなので検索しない
+  if (!/^[a-zA-Z\d_]+$/.test(id)) return null
+
   const url = new URL('https://sparql.crssnky.xyz/spql/imas/query')
   url.searchParams.append('output', 'json')
   url.searchParams.append('query', query(id))
