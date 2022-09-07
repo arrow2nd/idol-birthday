@@ -1,10 +1,14 @@
-import { Header } from '~/components/common/header'
-import { Layout } from '~/components/common/layout'
+import { GiPartyPopper } from 'react-icons/gi'
+
+import Layout from '~/components/common/layout'
 
 export default function Index() {
   return (
     <Layout>
-      <Header />
+      <div className="flex justify-center items-center text-md text-gray-800">
+        <GiPartyPopper />
+        <span className="ml-1">もうすぐお誕生日のアイドル</span>
+      </div>
     </Layout>
   )
 }

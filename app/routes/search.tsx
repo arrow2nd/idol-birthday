@@ -1,8 +1,7 @@
 import { LoaderFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 
-import { Header } from '~/components/common/header'
-import { Layout } from '~/components/common/layout'
+import Layout from '~/components/common/layout'
 
 export const loader: LoaderFunction = ({ request }) => {
   const url = new URL(request.url)
@@ -18,7 +17,6 @@ export default function Search() {
 
   return (
     <Layout>
-      <Header />
       <p>検索クエリ : {results}</p>
     </Layout>
   )

@@ -3,7 +3,7 @@ import { RiCake2Line } from 'react-icons/ri'
 
 import { SeatchBar } from './searchbar'
 
-export function Header() {
+export default function Header() {
   return (
     <header className="py-16 flex flex-col items-center">
       <Link className="flex items-center text-3xl" to="/">
