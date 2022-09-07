@@ -1,5 +1,4 @@
 export type Idol = {
-  id: string
   name: string
   birth: {
     month: number

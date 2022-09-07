@@ -1,21 +1,29 @@
 import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
-import axios from 'axios'
 import invariant from 'tiny-invariant'
 
-import { fetchIdolData } from '~/libs/fetchIdolData'
+import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
 
 import { Idol } from '~/types/idol'
 
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.id, 'Expected params.id')
 
-  const data = await fetchIdolData(params.id).catch((err) => {
-    if (!axios.isAxiosError(err)) throw err
+  // 英数字 + アンダーバー 以外を含むなら不正なID
+  if (!/^[a-zA-Z\d_]+$/.test(params.id)) {
+    throw new Response(null, {
+      status: 400,
+      statusText: `"${params.id}" は不正なIDです`
+    })
+  }
+
+  const query = createQuery2SearchById(params.id)
+  const data = await fetchFromImasparql(query).catch((err) => {
+    console.error(err)
 
     throw new Response(null, {
       status: 500,
-      statusText: 'im@sparqlにアクセスできません'
+      statusText: '現在、im@sparqlにアクセスできません'
     })
   })
 
@@ -53,7 +61,6 @@ export default function IdolCountDownPage() {
 
   return (
     <div>
-      <p>{idol.id}</p>
       <p>{idol.name}</p>
       <p>
         {idol.birth.month}月{idol.birth.day}日

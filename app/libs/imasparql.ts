@@ -5,9 +5,12 @@ import { ImasparqlResponse } from '~/types/imasparql'
 
 import { getBrandColor, isWhitishColor } from './color'
 
-/** リソースIDからアイドルを検索 */
-const query = (id: string) =>
-  `
+/**
+ * アイドルIDから検索するクエリを作成
+ * @param id アイドルID
+ * @retuy SPARQLクエリ
+ */
+export const createQuery2SearchById = (id: string) => `
 PREFIX schema: <http://schema.org/>
 PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -20,20 +23,17 @@ WHERE {
   OPTIONAL { ?d imas:Color ?color. }
   FILTER(REGEX(LCASE(STR(?d)), "detail/${id}$", "i"))
 }
-`.replace(/[\n\r\s]+/g, ' ')
+`
 
 /**
- * im@sparqlからアイドルのデータを取得
- * @param id リソースID
+ * im@sparqlからデータを取得
+ * @param query SPARQLクエリ
  * @returns レスポンス
  */
-export async function fetchIdolData(id: string): Promise<Idol | null> {
-  // 英数字 + アンダーバー 以外を含むなら不正なIDなので検索しない
-  if (!/^[a-zA-Z\d_]+$/.test(id)) return null
-
+export async function fetchFromImasparql(query: string): Promise<Idol | null> {
   const url = new URL('https://sparql.crssnky.xyz/spql/imas/query')
   url.searchParams.append('output', 'json')
-  url.searchParams.append('query', query(id))
+  url.searchParams.append('query', query.replace(/[\n\r\s]/g, ' '))
 
   // 5秒でタイムアウト
   const res = await axios
@@ -54,7 +54,6 @@ export async function fetchIdolData(id: string): Promise<Idol | null> {
   const colorHex = color?.value ?? getBrandColor(brand.value)
 
   return {
-    id: id,
     name: name.value,
     birth: {
       month: parseInt(birth.groups!.month),
