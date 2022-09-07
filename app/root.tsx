@@ -22,18 +22,20 @@ export function links() {
 }
 
 export function CatchBoundary() {
-  const caught = useCatch()
+  const { status, statusText } = useCatch()
+
   return (
-    <html>
+    <html lang="ja">
       <head>
         <title>Oops!</title>
         <Meta />
         <Links />
       </head>
-      <body>
-        <h1>
-          {caught.status} {caught.statusText}
-        </h1>
+      <body className="p-8 flex justify-center items-center h-screen">
+        <div>
+          <h1 className="font-bold text-4xl">{status}</h1>
+          <p className="mt-2 text-gray-800">{statusText}</p>
+        </div>
         <Scripts />
       </body>
     </html>
