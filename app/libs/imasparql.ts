@@ -41,6 +41,7 @@ export async function fetchFromImasparql(query: string): Promise<Idol | null> {
       timeout: 5000
     })
     .catch((err) => {
+      console.error(err)
       throw err
     })
 

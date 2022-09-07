@@ -18,9 +18,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   }
 
   const query = createQuery2SearchById(params.id)
-  const data = await fetchFromImasparql(query).catch((err) => {
-    console.error(err)
-
+  const data = await fetchFromImasparql(query).catch(() => {
     throw new Response(null, {
       status: 500,
       statusText: '現在、im@sparqlにアクセスできません'
