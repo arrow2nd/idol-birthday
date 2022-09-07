@@ -1,12 +1,12 @@
 const brandColors = new Map([
-  ['1stVision', '#F34F6D'],
-  ['765AS', '#F34F6D'],
-  ['DearlyStars', '#FF74B8'],
-  ['MillionLive', '#FFC30B'],
-  ['SideM', '#0FBE94'],
-  ['CinderellaGirls', '#2681C8'],
-  ['ShinyColors', '#8dBBFF'],
-  ['Other', '#FF74B8']
+  ['1stVision', 'F34F6D'],
+  ['765AS', 'F34F6D'],
+  ['DearlyStars', 'FF74B8'],
+  ['MillionLive', 'FFC30B'],
+  ['SideM', '0FBE94'],
+  ['CinderellaGirls', '2681C8'],
+  ['ShinyColors', '8dBBFF'],
+  ['Other', 'FF74B8']
 ])
 
 /**
@@ -15,7 +15,7 @@ const brandColors = new Map([
  * @returns 16進数カラーコード
  */
 export function getBrandColor(brand: string): string {
-  return brandColors.get(brand) ?? '#FF74B8'
+  return brandColors.get(brand) ?? 'FF74B8'
 }
 
 /**

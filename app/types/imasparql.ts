@@ -3,6 +3,7 @@ type Value = {
 }
 
 export type Binding = {
+  d: Value
   name: Value
   birthdate: Value
   brand: Value

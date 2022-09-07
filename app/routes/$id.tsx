@@ -26,14 +26,14 @@ export const loader: LoaderFunction = async ({ params }) => {
   })
 
   // 見つからなかった
-  if (!data) {
+  if (!data || data.length <= 0) {
     throw new Response(null, {
       status: 404,
       statusText: `"${params.id}" に該当するアイドルが見つかりません`
     })
   }
 
-  return data
+  return data[0]
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
