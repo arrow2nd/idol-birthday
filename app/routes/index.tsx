@@ -1,3 +1,10 @@
+import { Header } from '~/components/common/header'
+import { Layout } from '~/components/common/layout'
+
 export default function Index() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  return (
+    <Layout>
+      <Header />
+    </Layout>
+  )
 }
