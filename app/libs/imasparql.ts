@@ -18,6 +18,8 @@ WHERE {
      schema:birthDate ?birthdate;
      imas:Brand ?brand.
   OPTIONAL { ?d imas:Color ?color. }
+  FILTER(STR(?brand) != '1stVision')
+  FILTER(!CONTAINS(STR(?d), 'Akizuki_Ryo_876'))
   ${q}
 }
 ORDER BY ?birthdate
