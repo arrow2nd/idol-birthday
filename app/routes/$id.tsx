@@ -3,6 +3,11 @@ import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
 
 import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
+import {
+  responseBadRequest,
+  responseNotFound,
+  responseServerError
+} from '~/libs/response'
 
 import { Idol } from '~/types/idol'
 
@@ -11,26 +16,17 @@ export const loader: LoaderFunction = async ({ params }) => {
 
   // 英数字 + アンダーバー 以外を含むなら不正なID
   if (!/^[a-zA-Z\d_]+$/.test(params.id)) {
-    throw new Response(null, {
-      status: 400,
-      statusText: `"${params.id}" は不正なIDです`
-    })
+    throw responseBadRequest(`"${params.id}" は不正なIDです`)
   }
 
   const query = createQuery2SearchById(params.id)
   const data = await fetchFromImasparql(query).catch(() => {
-    throw new Response(null, {
-      status: 500,
-      statusText: '現在、im@sparqlにアクセスできません'
-    })
+    throw responseServerError()
   })
 
   // 見つからなかった
   if (!data || data.length <= 0) {
-    throw new Response(null, {
-      status: 404,
-      statusText: `"${params.id}" に該当するアイドルが見つかりません`
-    })
+    throw responseNotFound(`"${params.id}" に該当するアイドルが見つかりません`)
   }
 
   return data[0]
