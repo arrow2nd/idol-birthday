@@ -15,9 +15,6 @@ import { Idol } from '~/types/idol'
 
 export const loader: LoaderFunction = async () => {
   const query = createQuery2RecentBirthday()
-
-  console.log(query)
-
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
   })
