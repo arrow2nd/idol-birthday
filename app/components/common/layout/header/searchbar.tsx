@@ -6,7 +6,10 @@ type Props = {
 
 export function SeatchBar({ className = '' }: Props) {
   return (
-    <form action="/search" className={`relative w-3/4 ${className}`}>
+    <form
+      action="/search"
+      className={`relative w-72 sm:w-full max-w-screen-md ${className}`}
+    >
       <button
         type="submit"
         className="absolute px-4 inset-y-0 right-0 hover:text-blue-500 transition-colors"

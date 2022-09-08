@@ -28,11 +28,11 @@ export default function Index() {
 
   return (
     <Layout>
-      <div className="flex justify-center items-center text-md">
+      <div className="flex justify-center items-center text-sm sm:text-base">
         <GiPartyPopper />
-        <span className="ml-1">もうすぐお誕生日のアイドル + α</span>
+        <span className="ml-2">もうすぐお誕生日のアイドル + α</span>
       </div>
-      <div className="mt-6 flex flex-row flex-wrap justify-center">
+      <div className="mt-8 flex flex-row flex-wrap justify-center">
         {cards.length > 0 ? (
           cards
         ) : (

@@ -17,8 +17,8 @@ export default function Card({ idol }: Props) {
       style={{ borderColor: '#' + color.hex }}
       to={'/' + id}
     >
-      <p className="text-xl">{name} さん</p>
-      <p className="text-sm text-gray-800">
+      <p className="text-lg sm:text-xl">{name} さん</p>
+      <p className="text-xs sm:text-sm text-gray-800">
         {birth.month}月{birth.day}日 / {brand}
       </p>
     </Link>

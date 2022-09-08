@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="py-12 text-sm text-gray-800 text-center">
+    <div className="py-16 text-sm text-gray-800 text-center">
       <p>
         {'Source on '}
         <a
