@@ -15,6 +15,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?d ?name ?birthdate ?brand ?color
 WHERE {
   ?d rdfs:label ?name;
+     imas:nameKana | imas:givenNameKana | imas:alternateNameKana ?kana;
      schema:birthDate ?birthdate;
      imas:Brand ?brand.
   OPTIONAL { ?d imas:Color ?color. }
@@ -35,6 +36,16 @@ export const createQuery2SearchById = (id: string) =>
   commonQuery(`FILTER(REGEX(LCASE(STR(?d)), "detail/${id}$", "i"))`)
 
 /**
+ * キーワードから検索するクエリを作成
+ * @param keyword キーワード
+ * @returns SPARQLクエリ
+ */
+export const createQuery2SearchByKeyword = (keyword: string) =>
+  commonQuery(
+    `FILTER(CONTAINS(?name, "${keyword}") || CONTAINS(?kana, "${keyword}"))`
+  )
+
+/**
  * 近日誕生日のアイドルを検索するクエリを作成
  * @returns SPARQLクエリ
  */
@@ -46,9 +57,7 @@ export const createQuery2RecentBirthday = () =>
  * @param query SPARQLクエリ
  * @returns レスポンス
  */
-export async function fetchFromImasparql(
-  query: string
-): Promise<Idol[] | null> {
+export async function fetchFromImasparql(query: string): Promise<Idol[]> {
   const url = new URL('https://sparql.crssnky.xyz/spql/imas/query')
   url.searchParams.append('output', 'json')
   url.searchParams.append('query', query.replace(/[\n\r\s]/g, ' '))
@@ -65,7 +74,7 @@ export async function fetchFromImasparql(
 
   // データがない
   if (data.results.bindings.length <= 0) {
-    return null
+    return []
   }
 
   return data.results.bindings.map(

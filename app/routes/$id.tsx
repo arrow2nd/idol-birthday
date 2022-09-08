@@ -25,7 +25,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   })
 
   // 見つからなかった
-  if (!data || data.length <= 0) {
+  if (data.length <= 0) {
     throw responseNotFound(`"${params.id}" に該当するアイドルが見つかりません`)
   }
 
