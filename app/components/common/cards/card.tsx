@@ -13,7 +13,7 @@ export default function Card({ idol }: Props) {
 
   return (
     <Link
-      className="block m-2 px-6 py-4 w-72 border-2 bg-white hover:bg-gray-50 rounded-lg transition-colors"
+      className="block m-2 px-6 py-4 w-72 border-2 bg-white hover:brightness-90 rounded-lg transition"
       style={{ borderColor: '#' + color.hex }}
       to={'/' + id}
     >

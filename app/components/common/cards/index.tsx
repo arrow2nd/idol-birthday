@@ -18,7 +18,7 @@ export default function Cards({ title, idols }: Props) {
         <HiOutlineEmojiHappy className="text-base sm:text-lg" />
         <span className="ml-2 text-sm sm:text-base">{title}</span>
       </div>
-      <div className="mt-8 flex flex-row flex-wrap justify-center">
+      <div className="mt-6 flex flex-row flex-wrap justify-center">
         {cards.length > 0 ? (
           cards
         ) : (

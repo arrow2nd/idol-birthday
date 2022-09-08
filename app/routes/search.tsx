@@ -21,8 +21,6 @@ export const loader: LoaderFunction = async ({ request }) => {
     return redirect('/')
   }
 
-  console.log(`<<<<"${q}">>>>`)
-
   const query = createQuery2SearchByKeyword(q)
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
