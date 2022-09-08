@@ -12,7 +12,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?d ?name ?birthdate ?brand ?color
+SELECT DISTINCT ?d ?name ?birthdate ?brand ?color
 WHERE {
   ?d rdfs:label ?name;
      imas:nameKana | imas:givenNameKana | imas:alternateNameKana ?kana;
@@ -28,22 +28,36 @@ LIMIT 10
 `
 
 /**
+ * ダブルクオートをエスケープ
+ * @param str 文字列
+ * @returns エスケープ後の文字列
+ */
+function escapeDoubleQuote(str: string): string {
+  return str.replaceAll('"', '\\"')
+}
+
+/**
  * アイドルIDから検索するクエリを作成
  * @param id アイドルID
  * @returns SPARQLクエリ
  */
 export const createQuery2SearchById = (id: string) =>
-  commonQuery(`FILTER(REGEX(LCASE(STR(?d)), "detail/${id}$", "i"))`)
+  commonQuery(
+    `FILTER(REGEX(LCASE(STR(?d)), "detail/${escapeDoubleQuote(id)}$", "i"))`
+  )
 
 /**
  * キーワードから検索するクエリを作成
  * @param keyword キーワード
  * @returns SPARQLクエリ
  */
-export const createQuery2SearchByKeyword = (keyword: string) =>
-  commonQuery(
-    `FILTER(CONTAINS(?name, "${keyword}") || CONTAINS(?kana, "${keyword}"))`
+export const createQuery2SearchByKeyword = (keyword: string) => {
+  const keywordAfterEscape = escapeDoubleQuote(keyword)
+
+  return commonQuery(
+    `FILTER(CONTAINS(?name, "${keywordAfterEscape}") || CONTAINS(?kana, "${keywordAfterEscape}"))`
   )
+}
 
 /**
  * 近日誕生日のアイドルを検索するクエリを作成
