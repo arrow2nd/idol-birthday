@@ -10,11 +10,11 @@ export default function CountDown({ idol }: Props) {
   const { name, color } = idol
 
   return (
-    <div className="space-y-10 text-center text-main text-2xl">
+    <div className="space-y-10 text-center text-main text-xl sm:text-2xl">
       <div>{`${name}さんのお誕生日まで`}</div>
       <div className="space-x-2">
         <span>残り</span>
-        <span className="text-6xl font-bold">{100000}</span>
+        <span className="text-5xl sm:text-6xl font-bold">{100000}</span>
         <span>秒</span>
       </div>
       <TweetButton color={color} />
