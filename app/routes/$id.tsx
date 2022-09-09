@@ -14,7 +14,7 @@ import { Idol } from '~/types/idol'
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.id, 'Expected params.id')
 
-  // 英字・アンダースコア3文字以上(_数字 1 ~ 3桁) 以外の形式なら不正なID
+  // 英字・アンダースコア3文字以上 + (数字 1 ~ 3桁) 以外の形式なら不正なID
   if (!/^[a-zA-Z_]{3,}(_\d{1,3})?$/.test(params.id)) {
     throw responseBadRequest(`"${params.id}" は不正なIDです`)
   }
