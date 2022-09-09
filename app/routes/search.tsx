@@ -1,4 +1,4 @@
-import { LoaderFunction, redirect } from '@remix-run/node'
+import { LoaderFunction, MetaFunction, redirect } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 
 import Cards from '~/components/common/cards'
@@ -31,6 +31,10 @@ export const loader: LoaderFunction = async ({ request }) => {
     data
   } as SeaechResult
 }
+
+export const meta: MetaFunction = ({ data }) => ({
+  title: `"${data.query}" の検索結果 | idol-birthday`
+})
 
 export default function Search() {
   const { query, data } = useLoaderData<SeaechResult>()
