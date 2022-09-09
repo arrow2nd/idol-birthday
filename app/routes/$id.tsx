@@ -2,6 +2,9 @@ import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
 
+import CountDown from '~/components/idol/countdown'
+import LinkToHome from '~/components/idol/link'
+
 import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
 import {
   responseBadRequest,
@@ -36,7 +39,7 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
   const title = `${data.name}さんのお誕生日まで...？ | idol-birthday`
-  const description = `${data.name}さんのお誕生日までの時間を秒単位でカウントダウンするサイトです`
+  const description = `${data.name}さんのお誕生日までの秒数をカウントダウンするサイトです`
 
   return {
     title,
@@ -54,11 +57,9 @@ export default function IdolCountDownPage() {
   const idol = useLoaderData<Idol>()
 
   return (
-    <div>
-      <p>{idol.name}</p>
-      <p>
-        {idol.birth.month}月{idol.birth.day}日
-      </p>
-    </div>
+    <main className="flex flex-col justify-center items-center px-8 h-screen">
+      <LinkToHome />
+      <CountDown idol={idol} />
+    </main>
   )
 }

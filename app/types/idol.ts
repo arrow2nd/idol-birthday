@@ -1,3 +1,8 @@
+export type Color = {
+  hex: string
+  isWhitish: boolean
+}
+
 export type Idol = {
   id: string
   name: string
@@ -6,8 +11,5 @@ export type Idol = {
     month: number
     day: number
   }
-  color: {
-    hex: string
-    isWhitish: boolean
-  }
+  color: Color
 }
