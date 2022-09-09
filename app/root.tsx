@@ -31,10 +31,10 @@ export function CatchBoundary() {
         <Meta />
         <Links />
       </head>
-      <body className="p-8 flex justify-center items-center h-screen">
+      <body className="p-8 flex justify-center items-center h-screen text-main">
         <div>
           <h1 className="font-bold text-4xl">{status}</h1>
-          <p className="mt-2 text-gray-800">{statusText}</p>
+          <p className="mt-2 text-sub">{statusText}</p>
         </div>
         <Scripts />
       </body>

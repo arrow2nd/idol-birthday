@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <div className="py-16 text-sm text-gray-800 text-center">
+    <div className="py-16 text-sm text-main text-center">
       <p>
         {'Source on '}
         <a
-          className="font-bold underline hover:text-blue-500 transition-colors"
+          className="font-bold underline hover:text-imas transition-colors"
           href="https://github.com/arrow2nd/idol-birthday/"
           target="_blank"
           rel="noopener noreferrer"

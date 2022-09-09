@@ -14,7 +14,7 @@ export default function Cards({ title, idols }: Props) {
 
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center text-main">
         <HiOutlineEmojiHappy className="text-base sm:text-lg" />
         <span className="ml-2 text-sm sm:text-base">{title}</span>
       </div>
@@ -22,7 +22,7 @@ export default function Cards({ title, idols }: Props) {
         {cards.length > 0 ? (
           cards
         ) : (
-          <p className="text-gray-800">該当するアイドルはいません</p>
+          <p className="text-sub">該当するアイドルはいません</p>
         )}
       </div>
     </>
