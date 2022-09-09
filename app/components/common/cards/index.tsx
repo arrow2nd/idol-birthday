@@ -22,7 +22,9 @@ export default function Cards({ title, idols }: Props) {
         {cards.length > 0 ? (
           cards
         ) : (
-          <p className="text-sub">該当するアイドルはいません</p>
+          <p className="text-sub">
+            該当するアイドルがいないか、誕生日が公表されていません
+          </p>
         )}
       </div>
     </>
