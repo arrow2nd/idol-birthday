@@ -3,13 +3,15 @@ export type Color = {
   isWhitish: boolean
 }
 
+export type Birth = {
+  month: number
+  day: number
+}
+
 export type Idol = {
   id: string
   name: string
   brand: string
-  birth: {
-    month: number
-    day: number
-  }
+  birth: Birth
   color: Color
 }

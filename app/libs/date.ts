@@ -1,6 +1,8 @@
-import dayjs from 'dayjs'
+import dayjs, { Dayjs } from 'dayjs'
 import timezone from 'dayjs/plugin/timezone'
 import utc from 'dayjs/plugin/utc'
+
+import { Birth } from '~/types/idol'
 
 dayjs.extend(timezone)
 dayjs.extend(utc)
@@ -23,4 +25,25 @@ export function createBirthDateRangeRegex() {
   const b = dateOnesPlace + 1 < 3 ? `|[${dateOnesPlace + 1}-3][0-9]` : ''
 
   return `--${month}-(${a + b})`
+}
+
+/**
+ * 現在日時から指定日時までの秒数を計算
+ * @param 日時
+ * @returns 秒数
+ */
+export function calcCountdownSecond({ month, day }: Birth): number {
+  const now = dayjs()
+  const nowMonth = now.month() + 1
+  const nowDate = now.date()
+
+  // 既にお誕生日を過ぎているなら、来年にする
+  const birthdayYear =
+    nowMonth > month || (nowMonth === month && nowDate > day + 1)
+      ? now.year() + 1
+      : now.year()
+
+  const next = dayjs(`${birthdayYear}-${month}-${day}`)
+
+  return Math.floor(next.unix() - now.unix())
 }
