@@ -1,5 +1,6 @@
 import { LoaderFunction, MetaFunction, redirect } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
+import { TbListSearch } from 'react-icons/tb'
 
 import Cards from '~/components/common/cards'
 import Layout from '~/components/common/layout'
@@ -44,7 +45,11 @@ export default function Search() {
 
   return (
     <Layout>
-      <Cards title={`"${query}" の検索結果です`} idols={data} />
+      <Cards
+        title={`"${query}" の検索結果です`}
+        icon={<TbListSearch />}
+        idols={data}
+      />
     </Layout>
   )
 }
