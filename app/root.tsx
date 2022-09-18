@@ -10,6 +10,7 @@ import {
 } from '@remix-run/react'
 
 import { site } from '~/data/site'
+
 import styles from './styles/app.css'
 
 export const meta: MetaFunction = () => ({

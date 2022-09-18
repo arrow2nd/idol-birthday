@@ -14,8 +14,8 @@ export default function Header() {
         <RiCake2Line />
         <span className="ml-2 tracking-wider">{name}</span>
       </Link>
-      <span className="mt-1 text-sub text-xs sm:text-sm">
-        {desc.replace('です', '')}
+      <span className="mt-1 px-2 text-sub text-xs sm:text-sm">
+        {desc}
       </span>
       <SeatchBar className="mt-8" />
     </header>

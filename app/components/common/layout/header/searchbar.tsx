@@ -8,7 +8,7 @@ export function SeatchBar({ className = '' }: Props) {
   return (
     <form
       action="/search"
-      className={`relative w-72 sm:w-full max-w-screen-md ${className}`}
+      className={`relative w-full max-w-screen-md ${className}`}
     >
       <button
         type="submit"
