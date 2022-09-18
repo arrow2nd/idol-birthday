@@ -22,14 +22,14 @@ export const loader: LoaderFunction = async () => {
     throw responseServerError()
   })
 
-  const date = getNowDate()
-  const month = date.month() + 1
-  const day = date.day()
+  const now = getNowDate()
+  const month = now.month() + 1
+  const date = now.date()
 
   // 今日誕生日, 近日誕生日の２つに分ける
   return data.reduce(
     ([pass, fail], e) => {
-      return e.birth.month === month && e.birth.day === day
+      return e.birth.month === month && e.birth.day === date
         ? [[...pass, e], fail]
         : [pass, [...fail, e]]
     },
