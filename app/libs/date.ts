@@ -9,6 +9,14 @@ dayjs.extend(utc)
 dayjs.tz.setDefault('Asia/Tokyo')
 
 /**
+ * 現在のDayjsのオブジェクトを取得
+ * @returns 現在の時刻
+ */
+export function getNowDate(): Dayjs {
+  return dayjs()
+}
+
+/**
  * 今月の今日以降の日付とマッチする正規表現文字列を作成
  * @returns 正規表現文字列
  */

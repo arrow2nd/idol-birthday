@@ -12,7 +12,7 @@ type Props = {
 }
 
 export default function CountDown({ idol }: Props) {
-  const { name, color, birth } = idol
+  const { name, birth } = idol
   const [count, setCount] = useState<number>(calcCountdownSecond(birth))
 
   useInterval(() => {
@@ -32,7 +32,7 @@ export default function CountDown({ idol }: Props) {
         </span>
         <span>秒</span>
       </div>
-      <TweetButton color={color} />
+      <TweetButton count={count} idol={idol} />
     </div>
   )
 }

@@ -12,6 +12,7 @@
     "^~/components/(.*)$",
     "^~/libs/(.*)$",
     "^~/types/(.*)$",
+    "^~/data/(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,

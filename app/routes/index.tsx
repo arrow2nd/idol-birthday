@@ -25,7 +25,7 @@ export default function Index() {
 
   return (
     <Layout>
-      <Cards title="もうすぐお誕生日のアイドル + α" idols={idols} />
+      <Cards title="もうすぐお誕生日のアイドル・スタッフ" idols={idols} />
     </Layout>
   )
 }

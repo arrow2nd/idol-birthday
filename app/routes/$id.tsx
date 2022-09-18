@@ -1,6 +1,7 @@
 import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
+import { site } from '~/data/site'
 
 import CountDown from '~/components/idol/countdown'
 import LinkToHome from '~/components/idol/link'
@@ -38,8 +39,8 @@ export const loader: LoaderFunction = async ({ params }) => {
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
-  const title = `${data.name}さんのお誕生日まで...？ | idol-birthday`
-  const description = `${data.name}さんのお誕生日までの秒数をカウントダウンするサイトです`
+  const title = site.title.replace('%s', `${data.name}さんのお誕生日まで…？`)
+  const description = site.descTemplate.replace('%s', `${data.name}さん`)
 
   return {
     title,
