@@ -23,7 +23,7 @@ export const loader: LoaderFunction = async () => {
   })
 
   const date = getNowDate()
-  const month = date.month() +1
+  const month = date.month() + 1
   const day = date.day()
 
   // 今日誕生日, 近日誕生日の２つに分ける
