@@ -13,7 +13,7 @@ dayjs.tz.setDefault('Asia/Tokyo')
  * @returns 現在の時刻
  */
 export function getNowDate(): Dayjs {
-  return dayjs()
+  return dayjs().tz()
 }
 
 /**
@@ -21,7 +21,7 @@ export function getNowDate(): Dayjs {
  * @returns 正規表現文字列
  */
 export function createBirthDateRangeRegex() {
-  const now = dayjs()
+  const now = dayjs().tz()
   const month = now.format('MM')
   const date = now.date()
   const dateOnesPlace = Math.floor(date * 0.1)
@@ -41,7 +41,7 @@ export function createBirthDateRangeRegex() {
  * @returns 秒数
  */
 export function calcCountdownSecond({ month, day }: Birth): number {
-  const now = dayjs()
+  const now = dayjs().tz()
   const nowMonth = now.month() + 1
   const nowDate = now.date()
 
@@ -51,7 +51,7 @@ export function calcCountdownSecond({ month, day }: Birth): number {
       ? now.year() + 1
       : now.year()
 
-  const next = dayjs(`${birthdayYear}-${month}-${day}`)
+  const next = dayjs(`${birthdayYear}-${month}-${day}`).tz()
 
   return Math.floor(next.unix() - now.unix())
 }
