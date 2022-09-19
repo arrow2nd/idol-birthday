@@ -20,7 +20,7 @@ export default function HappyBirthday({ name }: Props) {
     colors
   })
   const { reward: balloonsReward } = useReward('balloonsReward', 'balloons', {
-    lifetime: 400,
+    lifetime: 350,
     spread: 80,
     startVelocity: 5,
     elementCount: 15,
@@ -34,11 +34,9 @@ export default function HappyBirthday({ name }: Props) {
     balloonsReward()
   }, [])
 
-  console.log('[redraw] hpb')
-
   return (
-    <div className="text-left font-bold text-6xl space-y-4">
-      <div className="text-2xl">{`${name}さんは`}</div>
+    <div className="text-left font-bold text-4xl sm:text-6xl space-y-4">
+      <div className="text-xl sm:text-2xl">{`${name}さんは`}</div>
       <div>今日がお誕生日</div>
       <div>です！！！🎉🎉🎉</div>
       <span className="absolute top-1/2 left-1/2" id="confettiReward" />
