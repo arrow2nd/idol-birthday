@@ -1,4 +1,5 @@
-const brandColors = new Map([
+/** ブランドカラーのリスト */
+export const brandColors = new Map([
   ['1stVision', 'F34F6D'],
   ['765AS', 'F34F6D'],
   ['DearlyStars', 'FF74B8'],

@@ -1,24 +1,20 @@
 import { useEffect } from 'react'
 import { useReward } from 'react-rewards'
 
+import { brandColors } from '~/libs/color'
+
 type Props = {
   name: string
 }
 
 export default function HappyBirthday({ name }: Props) {
-  const colors = [
-    '#f34f6d', // アイドルマスター
-    '#2681c8', // シンデレラガールズ
-    '#faa645', // ミリオンライブ！
-    '#ffc30b', // ディアリースターズ
-    '#0fbe94', // SideM
-    '#8dbbff' // シャイニーカラーズ
-  ]
+  const colors = [...brandColors.values()].map((e) => '#' + e)
 
   const { reward: confettiReward } = useReward('confettiReward', 'confetti', {
     lifetime: 600,
     colors
   })
+
   const { reward: balloonsReward } = useReward('balloonsReward', 'balloons', {
     lifetime: 350,
     spread: 80,
