@@ -10,7 +10,9 @@ dayjs.tz.setDefault('Asia/Tokyo')
 
 /**
  * Dayjsオブジェクトを生成
- * @returns 現在の時刻
+ *
+ * 引数を省略すると、現在の時刻を元に生成します
+ * @returns Dayjsオブジェクト
  */
 export function createDayjs(date?: string | number): Dayjs {
   return dayjs(date).tz()
@@ -21,9 +23,11 @@ export function createDayjs(date?: string | number): Dayjs {
  * @returns 正規表現文字列
  */
 export function createBirthDateRangeRegex() {
-  const now = dayjs().tz()
+  const now = createDayjs()
   const month = now.format('MM')
   const date = now.date()
+
+  // 10の位の値
   const dateOnesPlace = Math.floor(date * 0.1)
 
   // 10の位の値が同じ期間にマッチ（11日 -> 11 ~ 19）
@@ -40,18 +44,18 @@ export function createBirthDateRangeRegex() {
  * @param 日時
  * @returns 秒数
  */
-export function calcCountdownSecond({ month, date: day }: Birth): number {
-  const now = dayjs().tz()
+export function calcCountdownSecond({ month, date }: Birth): number {
+  const now = createDayjs()
   const nowMonth = now.month() + 1
   const nowDate = now.date()
 
   // 既にお誕生日を過ぎているなら、来年にする
   const birthdayYear =
-    nowMonth > month || (nowMonth === month && nowDate > day + 1)
+    nowMonth > month || (nowMonth === month && nowDate > date + 1)
       ? now.year() + 1
       : now.year()
 
-  const next = dayjs(`${birthdayYear}-${month}-${day}`).tz()
+  const next = createDayjs(`${birthdayYear}-${month}-${date}`)
 
   return Math.floor(next.unix() - now.unix())
 }
