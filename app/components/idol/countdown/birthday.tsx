@@ -9,7 +9,7 @@ export default function HappyBirthday({ name }: Props) {
   const colors = [
     '#f34f6d', // アイドルマスター
     '#2681c8', // シンデレラガールズ
-    '#faa645', // mミリオンライブ！
+    '#faa645', // ミリオンライブ！
     '#ffc30b', // ディアリースターズ
     '#0fbe94', // SideM
     '#8dbbff' // シャイニーカラーズ
