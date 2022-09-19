@@ -27,12 +27,13 @@ type LoaderResult = {
 export const loader: LoaderFunction = async ({ request, params }) => {
   invariant(params.id, 'Expected params.id')
 
-  // 英字・アンダースコア3文字以上 + (数字 1 ~ 3桁) 以外の形式なら不正なID
+  // 正しい id かどうかチェック
+  // NOTE: 英字・アンダースコア3文字以上 + (数字 1 ~ 3桁) 以外なら不正
   if (!/^[a-zA-Z_]{3,}(_\d{1,3})?$/.test(params.id)) {
     throw responseBadRequest(`"${params.id}" は不正なIDです`)
   }
 
-  // idからアイドルを検索
+  // id からアイドルを検索
   const query = createQuery2SearchById(params.id)
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
