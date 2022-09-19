@@ -11,9 +11,10 @@ import TweetButton from './tweet'
 
 type Props = {
   idol: Idol
+  hash: string
 }
 
-export default function CountDown({ idol }: Props) {
+export default function CountDown({ idol, hash }: Props) {
   const { name, birth } = idol
 
   const [prevDate] = useState<number>(createDayjs().date())
@@ -38,7 +39,7 @@ export default function CountDown({ idol }: Props) {
       ) : (
         <HappyBirthday name={name} />
       )}
-      <TweetButton count={count} idol={idol} />
+      <TweetButton idol={idol} count={count} hash={hash} />
     </div>
   )
 }
