@@ -4,7 +4,7 @@ import Anchor from '~/components/common/anchor'
 
 import { getNowDate } from '~/libs/date'
 
-import { Color, Idol } from '~/types/idol'
+import { Idol } from '~/types/idol'
 
 type Props = {
   count: number
@@ -26,6 +26,7 @@ export default function TweetButton({ count, idol }: Props) {
 
   return (
     <Anchor
+      suppressHydrationWarning
       className={`inline-flex items-center px-6 py-1 text-base sm:text-lg ${
         color.isWhitish ? 'text-main border' : 'text-white'
       } rounded-full shadow-md cursor-pointer hover:brightness-75 transition`}

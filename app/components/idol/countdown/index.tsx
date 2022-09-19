@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import useInterval from '~/hooks/useInterval'
 
-import { calcCountdownSecond } from '~/libs/date'
+import { calcCountdownSecond, getNowDate } from '~/libs/date'
 
 import { Idol } from '~/types/idol'
 
+import HappyBirthday from './birthday'
+import Count from './count'
 import TweetButton from './tweet'
 
 type Props = {
@@ -13,25 +15,29 @@ type Props = {
 
 export default function CountDown({ idol }: Props) {
   const { name, birth } = idol
+
+  const [prevDate] = useState<number>(getNowDate().date())
   const [count, setCount] = useState<number>(calcCountdownSecond(birth))
 
   useInterval(() => {
-    setCount(calcCountdownSecond(birth))
+    // 日付が変わったらリロード
+    if (getNowDate().date() !== prevDate) {
+      window.location.reload()
+      return
+    }
+
+    if (count > 0) {
+      setCount(calcCountdownSecond(birth))
+    }
   })
 
   return (
     <div className="space-y-10 text-center text-main text-xl sm:text-2xl">
-      <div>{`${name}さんのお誕生日まで`}</div>
-      <div className="space-x-2">
-        <span>残り</span>
-        <span
-          suppressHydrationWarning
-          className="text-5xl sm:text-6xl font-bold"
-        >
-          {count}
-        </span>
-        <span>秒</span>
-      </div>
+      {count > 0 ? (
+        <Count name={name} count={count} />
+      ) : (
+        <HappyBirthday name={name} />
+      )}
       <TweetButton count={count} idol={idol} />
     </div>
   )
