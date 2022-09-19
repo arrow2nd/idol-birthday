@@ -1,11 +1,12 @@
 import { LoaderFunction, MetaFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
-import { site } from '~/data/site'
 
 import CountDown from '~/components/idol/countdown'
 import LinkToHome from '~/components/idol/link'
 
+import { createDayjs } from '~/libs/date'
+import { createDateHash } from '~/libs/hash'
 import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
 import {
   responseBadRequest,
@@ -15,7 +16,15 @@ import {
 
 import { Idol } from '~/types/idol'
 
-export const loader: LoaderFunction = async ({ params }) => {
+import { site } from '~/data/site'
+
+type LoaderResult = {
+  idol: Idol
+  ogpImageUrl: string
+  dateHash: string
+}
+
+export const loader: LoaderFunction = async ({ request, params }) => {
   invariant(params.id, 'Expected params.id')
 
   // 英字・アンダースコア3文字以上 + (数字 1 ~ 3桁) 以外の形式なら不正なID
@@ -23,24 +32,37 @@ export const loader: LoaderFunction = async ({ params }) => {
     throw responseBadRequest(`"${params.id}" は不正なIDです`)
   }
 
+  // idからアイドルを検索
   const query = createQuery2SearchById(params.id)
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
   })
 
-  // 見つからなかった
+  // 該当するアイドルがいない
   if (data.length <= 0) {
     throw responseNotFound(`"${params.id}" に該当するアイドルが見つかりません`)
   }
 
-  return data[0]
+  const url = new URL(request.url)
+  const timestamp = url.searchParams.get('t') ?? '0'
+  const hash = url.searchParams.get('h') ?? ''
+
+  // TODO: OGP画像URLを作成
+
+  return {
+    idol: data[0],
+    ogpImageUrl: '',
+    dateHash: createDateHash(createDayjs(), process.env.APP_SECRET!)
+  } as LoaderResult
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
-  const title = site.title.replace('%s', `${data.name}さんのお誕生日まで…？`)
-  const description = site.descTemplate.replace('%s', `${data.name}さん`)
+  const { idol } = data
+
+  const title = site.title.replace('%s', `${idol.name}さんのお誕生日まで…？`)
+  const description = site.descTemplate.replace('%s', `${idol.name}さん`)
 
   return {
     title,
@@ -55,7 +77,7 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
 }
 
 export default function IdolCountDownPage() {
-  const idol = useLoaderData<Idol>()
+  const { idol, dateHash } = useLoaderData<LoaderResult>()
 
   return (
     <main className="flex flex-col justify-center items-center px-8 h-screen">
