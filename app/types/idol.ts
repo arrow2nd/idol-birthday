@@ -5,7 +5,7 @@ export type Color = {
 
 export type Birth = {
   month: number
-  day: number
+  date: number
 }
 
 export type Idol = {

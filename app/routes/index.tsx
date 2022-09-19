@@ -29,7 +29,7 @@ export const loader: LoaderFunction = async () => {
   // 今日誕生日, 近日誕生日の２つに分ける
   return data.reduce(
     ([pass, fail], e) => {
-      return e.birth.month === month && e.birth.day === date
+      return e.birth.month === month && e.birth.date === date
         ? [[...pass, e], fail]
         : [pass, [...fail, e]]
     },

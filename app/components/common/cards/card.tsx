@@ -19,7 +19,7 @@ export default function Card({ idol }: Props) {
     >
       <p className="text-lg sm:text-xl text-main">{name} さん</p>
       <p className="text-xs sm:text-sm text-sub">
-        {birth.month}月{birth.day}日 / {brand}
+        {birth.month}月{birth.date}日 / {brand}
       </p>
     </Link>
   )

@@ -108,7 +108,7 @@ export async function fetchFromImasparql(query: string): Promise<Idol[]> {
         brand: brand.value,
         birth: {
           month: parseInt(birth.groups!.month),
-          day: parseInt(birth.groups!.day)
+          date: parseInt(birth.groups!.day)
         },
         color: {
           hex: colorHex,

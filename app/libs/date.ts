@@ -40,7 +40,7 @@ export function createBirthDateRangeRegex() {
  * @param 日時
  * @returns 秒数
  */
-export function calcCountdownSecond({ month, day }: Birth): number {
+export function calcCountdownSecond({ month, date: day }: Birth): number {
   const now = dayjs().tz()
   const nowMonth = now.month() + 1
   const nowDate = now.date()
