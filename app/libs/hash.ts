@@ -18,8 +18,6 @@ export function createDateHash(date: Dayjs, secret: string): string {
   //
   // LINK: https://github.com/remix-run/remix/issues/3120
 
-  console.log(fullDate, secret)
-
   return md5(fullDate + secret).toString()
 }
 

@@ -59,7 +59,7 @@ export const loader: LoaderFunction = async ({ request, params }) => {
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
-  const { idol } = data
+  const { idol, ogpImageUrl } = data
 
   const title = site.title.replace('%s', `${idol.name}さんのお誕生日まで…？`)
   const description = site.descTemplate.replace('%s', `${idol.name}さん`)
@@ -70,9 +70,11 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
     'og:site_name': title,
     'og:title': title,
     'og:description': description,
+    'og:image': ogpImageUrl,
     'twitter:card': 'summary',
     'twitter:title': title,
-    'twitter:description': description
+    'twitter:description': description,
+    'twitter:image': ogpImageUrl
   }
 }
 
@@ -82,7 +84,7 @@ export default function IdolCountDownPage() {
   return (
     <main className="flex flex-col justify-center items-center px-8 h-screen">
       <LinkToHome />
-      <CountDown idol={idol} />
+      <CountDown idol={idol} hash={dateHash} />
     </main>
   )
 }

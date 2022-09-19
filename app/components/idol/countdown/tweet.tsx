@@ -6,15 +6,18 @@ import { createDayjs } from '~/libs/date'
 
 import { Idol } from '~/types/idol'
 
+import { site } from '~/data/site'
+
 type Props = {
-  count: number
   idol: Idol
+  count: number
+  hash: string
 }
 
-export default function TweetButton({ count, idol }: Props) {
+export default function TweetButton({ idol, count, hash }: Props) {
   const { id, name, color } = idol
 
-  const timestamp = createDayjs().unix()
+  const timestamp = createDayjs().valueOf()
   const tweet =
     count > 0
       ? `${name}さんのお誕生日まで、残り${count}秒です！`
@@ -22,7 +25,7 @@ export default function TweetButton({ count, idol }: Props) {
 
   const url = new URL('https://twitter.com/intent/tweet')
   url.searchParams.append('text', tweet)
-  url.searchParams.append('url', `/${id}?t=${timestamp}&h=hash`)
+  url.searchParams.append('url', `${site.url}/${id}?t=${timestamp}&h=${hash}`)
 
   return (
     <Anchor
