@@ -1,19 +1,31 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useReward } from 'react-rewards'
 
 type Props = {
   name: string
 }
 
-const HappyBirthday = ({ name }: Props) => {
+export default function HappyBirthday({ name }: Props) {
+  const colors = [
+    '#f34f6d', // アイドルマスター
+    '#2681c8', // シンデレラガールズ
+    '#faa645', // mミリオンライブ！
+    '#ffc30b', // ディアリースターズ
+    '#0fbe94', // SideM
+    '#8dbbff' // シャイニーカラーズ
+  ]
+
   const { reward: confettiReward } = useReward('confettiReward', 'confetti', {
-    lifetime: 400
+    lifetime: 600,
+    colors
   })
   const { reward: balloonsReward } = useReward('balloonsReward', 'balloons', {
     lifetime: 400,
     spread: 80,
     startVelocity: 5,
-    elementSize: 40
+    elementCount: 15,
+    elementSize: 40,
+    colors
   })
 
   // 初回表示時に演出を再生
@@ -34,5 +46,3 @@ const HappyBirthday = ({ name }: Props) => {
     </div>
   )
 }
-
-export default React.memo(HappyBirthday)
