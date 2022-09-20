@@ -75,7 +75,7 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
     'og:title': title,
     'og:description': description,
     'og:image': ogpImageUrl,
-    'twitter:card': 'summary',
+    'twitter:card': 'summary_large_image',
     'twitter:title': title,
     'twitter:description': description,
     'twitter:image': ogpImageUrl
