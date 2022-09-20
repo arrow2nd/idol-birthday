@@ -45,7 +45,7 @@ export const loader: LoaderFunction = async ({ request, params }) => {
     throw responseNotFound(`"${params.id}" に該当するアイドルが見つかりません`)
   }
 
-  // クエリパラメータから認証情報を作成
+  // クエリパラメータから検証情報を作成
   const url = new URL(request.url)
   const verification: VerificationArgs = {
     hash: url.searchParams.get('h') ?? '',

@@ -29,9 +29,7 @@ export type VerificationArgs = {
 
 /**
  * 日付のハッシュ値を検証
- * @param .hash ハッシュ値
- * @param .timestamp タイムスタンプ
- * @param .secret シークレット
+ * @param 検証情報
  * @returns 結果
  */
 export function verificationHash({
