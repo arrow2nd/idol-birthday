@@ -2,7 +2,7 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 
 import Anchor from '~/components/common/anchor'
 
-import { createDayjs } from '~/libs/date'
+import { createJstDayjs } from '~/libs/date'
 
 import { Idol } from '~/types/idol'
 
@@ -17,7 +17,7 @@ type Props = {
 export default function TweetButton({ idol, count, hash }: Props) {
   const { id, name, color } = idol
 
-  const timestamp = createDayjs().valueOf()
+  const timestamp = createJstDayjs().valueOf()
   const tweet =
     count > 0
       ? `${name}さんのお誕生日まで、残り${count}秒です！`

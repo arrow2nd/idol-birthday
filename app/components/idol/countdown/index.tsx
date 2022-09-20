@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import useInterval from '~/hooks/useInterval'
 
-import { calcCountdownSecond, createDayjs } from '~/libs/date'
+import { calcSecondsToBirthday, createJstDayjs } from '~/libs/date'
 
 import { Idol } from '~/types/idol'
 
@@ -17,18 +17,20 @@ type Props = {
 export default function CountDown({ idol, hash }: Props) {
   const { name, birth } = idol
 
-  const [prevDate] = useState<number>(createDayjs().date())
-  const [count, setCount] = useState<number>(calcCountdownSecond(birth))
+  const [prevDate] = useState<number>(createJstDayjs().date())
+  const [count, setCount] = useState<number>(
+    calcSecondsToBirthday(createJstDayjs(), birth)
+  )
 
   useInterval(() => {
     // 日付が変わったらリロード
-    if (createDayjs().date() !== prevDate) {
+    if (createJstDayjs().date() !== prevDate) {
       window.location.reload()
       return
     }
 
     if (count > 0) {
-      setCount(calcCountdownSecond(birth))
+      setCount(calcSecondsToBirthday(createJstDayjs(), birth))
     }
   })
 

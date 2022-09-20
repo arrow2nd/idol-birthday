@@ -6,7 +6,7 @@ import { TbCalendarTime } from 'react-icons/tb'
 import Cards from '~/components/common/cards'
 import Layout from '~/components/common/layout'
 
-import { createDayjs } from '~/libs/date'
+import { createJstDayjs } from '~/libs/date'
 import {
   createQuery2RecentBirthday,
   fetchFromImasparql
@@ -22,7 +22,7 @@ export const loader: LoaderFunction = async () => {
     throw responseServerError()
   })
 
-  const now = createDayjs()
+  const now = createJstDayjs()
   const month = now.month() + 1
   const date = now.date()
 

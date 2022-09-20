@@ -5,9 +5,10 @@ import invariant from 'tiny-invariant'
 import CountDown from '~/components/idol/countdown'
 import LinkToHome from '~/components/idol/link'
 
-import { createDayjs } from '~/libs/date'
-import { createDateHash } from '~/libs/hash'
+import { createJstDayjs } from '~/libs/date'
+import { VerificationArgs, createDateHash } from '~/libs/hash'
 import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
+import { createOgpImageUrl } from '~/libs/ogp'
 import {
   responseBadRequest,
   responseNotFound,
@@ -44,16 +45,18 @@ export const loader: LoaderFunction = async ({ request, params }) => {
     throw responseNotFound(`"${params.id}" に該当するアイドルが見つかりません`)
   }
 
+  // クエリパラメータから認証情報を作成
   const url = new URL(request.url)
-  const timestamp = url.searchParams.get('t') ?? '0'
-  const hash = url.searchParams.get('h') ?? ''
-
-  // TODO: OGP画像URLを作成
+  const verification: VerificationArgs = {
+    hash: url.searchParams.get('h') ?? '',
+    timestamp: parseInt(url.searchParams.get('t') ?? '0'),
+    secret: process.env.APP_SECRET!
+  }
 
   return {
     idol: data[0],
-    ogpImageUrl: '',
-    dateHash: createDateHash(createDayjs(), process.env.APP_SECRET!)
+    ogpImageUrl: createOgpImageUrl(data[0], verification),
+    dateHash: createDateHash(createJstDayjs(), verification.secret!)
   } as LoaderResult
 }
 

@@ -1,7 +1,7 @@
 import md5 from 'crypto-js/md5'
 import { Dayjs } from 'dayjs'
 
-import { createDayjs } from './date'
+import { createJstDayjs } from './date'
 
 /**
  * 日付のハッシュ値を作成
@@ -21,24 +21,30 @@ export function createDateHash(date: Dayjs, secret: string): string {
   return md5(fullDate + secret).toString()
 }
 
+export type VerificationArgs = {
+  hash: string
+  timestamp: number
+  secret: string
+}
+
 /**
  * 日付のハッシュ値を検証
- * @param hash ハッシュ値
- * @param timestamp タイムスタンプ
- * @param secret シークレット
+ * @param .hash ハッシュ値
+ * @param .timestamp タイムスタンプ
+ * @param .secret シークレット
  * @returns 結果
  */
-export function verificationHash(
-  hash: string,
-  timestamp: number,
-  secret: string
-): boolean {
-  const nowTimestamp = createDayjs().unix()
+export function verificationHash({
+  hash,
+  timestamp,
+  secret
+}: VerificationArgs): boolean {
+  const nowTimestamp = createJstDayjs().valueOf()
 
   // ハッシュが無い or タイムスタンプが未来の値なら不正
   if (!hash || nowTimestamp < timestamp) {
     return false
   }
 
-  return createDateHash(createDayjs(timestamp), secret) === hash
+  return createDateHash(createJstDayjs(timestamp), secret) === hash
 }
