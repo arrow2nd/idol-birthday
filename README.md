@@ -1,34 +1,36 @@
-# Welcome to Remix!
+# idol-birthday
 
-- [Remix Docs](https://remix.run/docs)
+アイマスアイドルのお誕生日までをカウントダウンするサイト
 
-## Deployment
+[![GitHub license](https://img.shields.io/github/license/arrow2nd/idol-birthday)](https://github.com/arrow2nd/idol-birthday)
+[![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
+## できること
 
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
+- im@sparql に収録されているアイドル・スタッフのお誕生日までのカウントダウン
+- OGP 画像付きでの残り秒数の共有
 
-```sh
-npm i -g vercel
-vercel
+## 実行
+
+> **Warning**
+>
+> OGP 画像の生成には独自に定義した Cloudinary の Named Transformations を利用しています。
+>
+> 尚、定義内容についてはリポジトリに含まれていません。
+
+`.env` を以下の内容で作成し、プロジェクトルートに配置する
+
+```
+CLOUDINARY_URL=<API Environment variable>
+APP_SECRET=<任意のシークレット文字列>
 ```
 
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
+以下のコマンドで実行
 
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
-npm install
 ```
+yarn dev
 
-Afterwards, start the Remix development server like so:
+# or
 
-```sh
-npm run dev
+yarn build && yarn start
 ```
-
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
