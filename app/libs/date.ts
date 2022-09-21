@@ -4,9 +4,8 @@ import utc from 'dayjs/plugin/utc'
 
 import { Birth } from '~/types/idol'
 
-dayjs.extend(timezone)
 dayjs.extend(utc)
-dayjs.tz.setDefault('Asia/Tokyo')
+dayjs.extend(timezone)
 
 /**
  * JSTのDayjsオブジェクトを生成
@@ -14,8 +13,11 @@ dayjs.tz.setDefault('Asia/Tokyo')
  * 引数を省略すると、現在の時刻を元に生成します
  * @returns Dayjsオブジェクト
  */
-export function createJstDayjs(date?: string | number): Dayjs {
-  return dayjs(date).tz()
+export function createJstDayjs(
+  date?: string | number,
+  keepLocalTime?: boolean
+): Dayjs {
+  return dayjs(date).tz('Asia/Tokyo', keepLocalTime ?? false)
 }
 
 /**
@@ -57,7 +59,7 @@ export function calcSecondsToBirthday(start: Dayjs, birth: Birth): number {
       ? start.year() + 1
       : start.year()
 
-  const next = createJstDayjs(`${birthdayYear}-${month}-${date}`)
+  const next = createJstDayjs(`${birthdayYear}-${month}-${date} 00:00:00`, true)
 
   return Math.floor(next.unix() - start.unix())
 }
