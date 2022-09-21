@@ -1,15 +1,27 @@
 import Anchor from '~/components/common/anchor'
 
 export default function Footer() {
+  const anchorClassName =
+    'font-bold underline hover:text-imas transition-colors'
+
   return (
     <div className="py-16 text-sm text-main text-center">
       <p>
         {'Source on '}
         <Anchor
-          className="font-bold underline hover:text-imas transition-colors"
+          className={anchorClassName}
           href="https://github.com/arrow2nd/idol-birthday/"
         >
           GitHub
+        </Anchor>
+      </p>
+      <p>
+        {'Powered by '}
+        <Anchor
+          className={anchorClassName}
+          href="https://sparql.crssnky.xyz/imas/"
+        >
+          im@sparql
         </Anchor>
       </p>
       <p className="mt-1">
