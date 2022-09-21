@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flags {
+  background: url('/flags.png') repeat-x;
+  height: 32px;
+}
