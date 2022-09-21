@@ -1,7 +1,7 @@
 import { LoaderFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
-import { HiOutlineEmojiHappy } from 'react-icons/hi'
-import { TbCalendarTime } from 'react-icons/tb'
+import { AiOutlineSmile } from 'react-icons/ai'
+import { GiPartyPopper } from 'react-icons/gi'
 
 import Cards from '~/components/common/cards'
 import Layout from '~/components/common/layout'
@@ -45,14 +45,14 @@ export default function Index() {
       {today.length > 0 && (
         <Cards
           className="mb-16"
-          title="今日お誕生日のアイドル・スタッフ"
-          icon={<HiOutlineEmojiHappy />}
+          title="今日がお誕生日！"
+          icon={<GiPartyPopper />}
           idols={today}
         />
       )}
       <Cards
-        title="もうすぐお誕生日のアイドル・スタッフ"
-        icon={<TbCalendarTime />}
+        title="もうすぐお誕生日（今月のみ）"
+        icon={<AiOutlineSmile />}
         idols={soon}
       />
     </Layout>
