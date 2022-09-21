@@ -1,4 +1,4 @@
-const url = process.env.BASE_URL!
+const url = 'https://idol-birthday.vercel.app'
 const name = 'idol-birthday.vercel.app'
 const descTemplate = `%sのお誕生日までをカウントダウンするサイト`
 
