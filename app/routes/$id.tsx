@@ -63,10 +63,11 @@ export const loader: LoaderFunction = async ({ request, params }) => {
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
+  const { titleTemplate, descTemplate } = site
   const { idol, ogpImageUrl } = data
 
-  const title = site.title.replace('%s', `${idol.name}さんのお誕生日まで…？`)
-  const description = site.descTemplate.replace('%s', `${idol.name}さん`)
+  const title = titleTemplate.replace('%s', `${idol.name}さんのお誕生日まで…？`)
+  const description = descTemplate.replace('%s', `${idol.name}さん`)
 
   return {
     title,
