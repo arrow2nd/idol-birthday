@@ -53,7 +53,7 @@ export function calcSecondsToBirthday(start: Dayjs, birth: Birth): number {
 
   // 既にお誕生日を過ぎているなら、来年にする
   const birthdayYear =
-    startMonth > month || (startMonth === month && startDate > date + 1)
+    startMonth > month || (startMonth === month && startDate > date)
       ? start.year() + 1
       : start.year()
 
