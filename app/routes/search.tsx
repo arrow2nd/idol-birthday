@@ -46,6 +46,7 @@ export default function Search() {
   return (
     <Layout>
       <Cards
+        className="my-16"
         title={`"${query}" の検索結果です`}
         icon={<TbListSearch />}
         idols={data}

@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         main: '#1c1c1c',
         sub: '#707070',
-        imas: '#FF74B8'
+        imas: '#ff74b8',
+        back: '#ebf7ff'
       }
     }
   },

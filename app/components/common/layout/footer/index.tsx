@@ -5,7 +5,7 @@ export default function Footer() {
     'font-bold underline hover:text-imas transition-colors'
 
   return (
-    <div className="py-16 text-sm text-main text-center">
+    <div className="px-8 py-16 text-sm text-main text-center border-t">
       <p>
         {'Source on '}
         <Anchor

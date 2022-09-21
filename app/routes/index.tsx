@@ -42,19 +42,21 @@ export default function Index() {
 
   return (
     <Layout>
-      {today.length > 0 && (
+      <div className="my-16">
+        {today.length > 0 && (
+          <Cards
+            className="mb-16"
+            title="今日がお誕生日！"
+            icon={<GiPartyPopper />}
+            idols={today}
+          />
+        )}
         <Cards
-          className="mb-16"
-          title="今日がお誕生日！"
-          icon={<GiPartyPopper />}
-          idols={today}
+          title="もうすぐお誕生日（今月のみ）"
+          icon={<AiOutlineSmile />}
+          idols={soon}
         />
-      )}
-      <Cards
-        title="もうすぐお誕生日（今月のみ）"
-        icon={<AiOutlineSmile />}
-        idols={soon}
-      />
+      </div>
     </Layout>
   )
 }
