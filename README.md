@@ -4,6 +4,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/arrow2nd/idol-birthday)](https://github.com/arrow2nd/idol-birthday)
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
+[![Depfu](https://badges.depfu.com/badges/155628bbde089babbd09c14dd3e67d79/status.svg)](https://depfu.com)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=idol-birthday)](https://idol-birthday.vercel.app)
 
 ![demo](https://user-images.githubusercontent.com/44780846/191645391-afe32efc-db77-40d7-a4bb-2b718ecda55b.png)
 
