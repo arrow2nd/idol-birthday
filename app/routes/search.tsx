@@ -9,6 +9,7 @@ import {
   createQuery2SearchByKeyword,
   fetchFromImasparql
 } from '~/libs/imasparql'
+import createMeta from '~/libs/meta'
 import { responseServerError } from '~/libs/response'
 
 import { SeaechResult } from '~/types/search'
@@ -35,10 +36,10 @@ export const loader: LoaderFunction = async ({ request }) => {
   } as SeaechResult
 }
 
-export const meta: MetaFunction = ({ data }) => ({
-  title: site.titleTemplate.replace('%s', `"${data.query}" の検索結果`),
-  description: site.desc
-})
+export const meta: MetaFunction = ({ data }) => {
+  const title = site.titleTemplate.replace('%s', `"${data.query}" の検索結果`)
+  return createMeta(title)
+}
 
 export default function Search() {
   const { query, data } = useLoaderData<SeaechResult>()

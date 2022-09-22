@@ -8,6 +8,7 @@ import LinkToHome from '~/components/idol/link'
 import { createJstDayjs } from '~/libs/date'
 import { VerificationArgs, createDateHash } from '~/libs/hash'
 import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
+import createMeta from '~/libs/meta'
 import { createOgpImageUrl } from '~/libs/ogp'
 import {
   responseBadRequest,
@@ -67,20 +68,9 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   const { idol, ogpImageUrl } = data
 
   const title = titleTemplate.replace('%s', `${idol.name}さんのお誕生日まで…？`)
-  const description = descTemplate.replace('%s', `${idol.name}さん`)
+  const desc = descTemplate.replace('%s', `${idol.name}さん`)
 
-  return {
-    title,
-    description,
-    'og:site_name': title,
-    'og:title': title,
-    'og:description': description,
-    'og:image': ogpImageUrl,
-    'twitter:card': 'summary_large_image',
-    'twitter:title': title,
-    'twitter:description': description,
-    'twitter:image': ogpImageUrl
-  }
+  return createMeta(title, desc, ogpImageUrl)
 }
 
 export default function IdolCountDownPage() {

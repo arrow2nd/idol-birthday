@@ -9,15 +9,14 @@ import {
   useCatch
 } from '@remix-run/react'
 
-import { site } from '~/data/site'
+import createMeta from '~/libs/meta'
 
 import styles from './styles/app.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: site.title,
-  description: site.desc,
-  viewport: 'width=device-width,initial-scale=1'
+  viewport: 'width=device-width,initial-scale=1',
+  ...createMeta()
 })
 
 export function links() {
