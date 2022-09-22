@@ -1,14 +1,16 @@
 # idol-birthday
 
-アイマスアイドルのお誕生日までをカウントダウンするサイト
+🎂 アイマスアイドルのお誕生日までをカウントダウンするサイト
 
 [![GitHub license](https://img.shields.io/github/license/arrow2nd/idol-birthday)](https://github.com/arrow2nd/idol-birthday)
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 
+![demo](https://user-images.githubusercontent.com/44780846/191645391-afe32efc-db77-40d7-a4bb-2b718ecda55b.png)
+
 ## できること
 
-- im@sparql に収録されているアイドル・スタッフのお誕生日までのカウントダウン
-- OGP 画像付きでの残り秒数の共有
+- im@sparql に収録されているアイドル・スタッフのお誕生日までをカウントダウン
+- 残り秒数をツイートで共有
 
 ## 実行
 
@@ -29,8 +31,6 @@ APP_SECRET=<任意のシークレット文字列>
 
 ```
 yarn dev
-
 # or
-
 yarn build && yarn start
 ```
