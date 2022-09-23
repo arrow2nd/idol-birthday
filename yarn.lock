@@ -1998,17 +1998,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/react@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "@remix-run/react@npm:1.7.1"
+"@remix-run/react@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/react@npm:1.7.2"
   dependencies:
     history: ^5.3.0
     react-router-dom: 6.3.0
-    type-fest: ^2.17.0
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 4948b94e5a8d479c5e5c43d121a38b48bc2ce08f5465ed733468bd80b7bd6cc0a2c39ec26475c703314b07363e1dddbd01c1683a64851fbe83cd6068f4ed14b2
+  checksum: 80f6f302c925c0e93d5558fe45d4b8c5db11ea575686ff9202592626a2471e612f97fec8c53f5155f37984fb7ddaa3f585cd8e6dbda688276d7403781965a7ab
   languageName: node
   linkType: hard
 
@@ -9605,7 +9604,7 @@ __metadata:
     "@remix-run/dev": ^1.7.2
     "@remix-run/eslint-config": ^1.7.2
     "@remix-run/node": ^1.7.1
-    "@remix-run/react": ^1.7.1
+    "@remix-run/react": ^1.7.2
     "@remix-run/serve": ^1.7.1
     "@remix-run/vercel": ^1.7.1
     "@tailwindcss/forms": ^0.5.3
@@ -10616,13 +10615,6 @@ __metadata:
   version: 0.21.3
   resolution: "type-fest@npm:0.21.3"
   checksum: e6b32a3b3877f04339bae01c193b273c62ba7bfc9e325b8703c4ee1b32dc8fe4ef5dfa54bf78265e069f7667d058e360ae0f37be5af9f153b22382cd55a9afe0
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^2.17.0":
-  version: 2.19.0
-  resolution: "type-fest@npm:2.19.0"
-  checksum: a4ef07ece297c9fba78fc1bd6d85dff4472fe043ede98bd4710d2615d15776902b595abf62bd78339ed6278f021235fb28a96361f8be86ed754f778973a0d278
   languageName: node
   linkType: hard
 
