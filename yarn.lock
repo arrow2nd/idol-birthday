@@ -1884,9 +1884,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/dev@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "@remix-run/dev@npm:1.7.1"
+"@remix-run/dev@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/dev@npm:1.7.2"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/plugin-syntax-jsx": ^7.18.6
@@ -1894,7 +1894,7 @@ __metadata:
     "@babel/preset-typescript": ^7.18.6
     "@esbuild-plugins/node-modules-polyfill": ^0.1.4
     "@npmcli/package-json": ^2.0.0
-    "@remix-run/server-runtime": 1.7.1
+    "@remix-run/server-runtime": 1.7.2
     "@yarnpkg/esbuild-plugin-pnp": 3.0.0-rc.11
     arg: ^5.0.1
     cacache: ^15.0.5
@@ -1928,13 +1928,13 @@ __metadata:
     ws: ^7.4.5
     xdm: ^2.0.0
   peerDependencies:
-    "@remix-run/serve": 1.7.1
+    "@remix-run/serve": 1.7.2
   peerDependenciesMeta:
     "@remix-run/serve":
       optional: true
   bin:
     remix: dist/cli.js
-  checksum: bbdf1ddbba6b279f430eb930d627a83e3cb429614d6ba043bdf43084aed1ec83be13cb8315cabce3cff733d289ca8a878a0816d6444388afb10ac5c386eb75fc
+  checksum: 15716cec1a68948abc1113057e0d00427c079c3df9ce72735036b13622e0209b6bcd81a5694ce7e13d6938d8354dc384570fc91fdacb1b5cb466f8d430c67ffc
   languageName: node
   linkType: hard
 
@@ -2040,6 +2040,23 @@ __metadata:
     react: ">=16.8"
     react-dom: ">=16.8"
   checksum: 1c026d38f8841d203f8a364206264b73f4a3d16d46e005e3a2888468e7c0d5ddb7274c54df76c0e0155fcf39c010eb45385d90919b0748e977fcad2094949006
+  languageName: node
+  linkType: hard
+
+"@remix-run/server-runtime@npm:1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/server-runtime@npm:1.7.2"
+  dependencies:
+    "@types/cookie": ^0.4.0
+    "@web3-storage/multipart-parser": ^1.0.0
+    cookie: ^0.4.1
+    react-router-dom: 6.3.0
+    set-cookie-parser: ^2.4.8
+    source-map: ^0.7.3
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: fa5aa184dcb48d3fc5bca61798a3e065837af6835b453e8404ac52237c83d7ea8685acde8176bdac031b484492f7fdac73b93d5d5d7062bc25804b69b01d15b9
   languageName: node
   linkType: hard
 
@@ -9585,7 +9602,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@remix-run/dev": ^1.7.1
+    "@remix-run/dev": ^1.7.2
     "@remix-run/eslint-config": ^1.7.2
     "@remix-run/node": ^1.7.1
     "@remix-run/react": ^1.7.1
