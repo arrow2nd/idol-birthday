@@ -1970,14 +1970,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@remix-run/express@npm:1.7.1"
+"@remix-run/express@npm:1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/express@npm:1.7.2"
   dependencies:
-    "@remix-run/node": 1.7.1
+    "@remix-run/node": 1.7.2
   peerDependencies:
     express: ^4.17.1
-  checksum: a7d8ca14addd54414c46dbf3219bf33a95bc7f1317b06ab9a9cf3605194f2a1bb927bc0bcb4b491becafa626fbf706d5ac0d075f19ae15c8e8b97ae9631251cb
+  checksum: 999334834432a6583a9d3e298ec73b207a6361acada9e90c103ca556e07d7e0fe2a9194b6e3f54e686887d1d2d6f5404f7c2a66f043bbcc3473b86d586461b03
   languageName: node
   linkType: hard
 
@@ -1998,6 +1998,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@remix-run/node@npm:1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/node@npm:1.7.2"
+  dependencies:
+    "@remix-run/server-runtime": 1.7.2
+    "@remix-run/web-fetch": ^4.1.3
+    "@remix-run/web-file": ^3.0.2
+    "@remix-run/web-stream": ^1.0.3
+    "@web3-storage/multipart-parser": ^1.0.0
+    abort-controller: ^3.0.0
+    cookie-signature: ^1.1.0
+    source-map-support: ^0.5.21
+    stream-slice: ^0.1.2
+  checksum: c700f3398cb7ba41328a38a12fcb624efe21f74921254347b07c9404ced5ea5481cc2499d16d490f2effa2a370ffdebb4474759ac76cfb397bc7adeb8f40c99c
+  languageName: node
+  linkType: hard
+
 "@remix-run/react@npm:^1.7.2":
   version: 1.7.2
   resolution: "@remix-run/react@npm:1.7.2"
@@ -2011,17 +2028,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^1.7.1":
-  version: 1.7.1
-  resolution: "@remix-run/serve@npm:1.7.1"
+"@remix-run/serve@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/serve@npm:1.7.2"
   dependencies:
-    "@remix-run/express": 1.7.1
+    "@remix-run/express": 1.7.2
     compression: ^1.7.4
     express: ^4.17.1
     morgan: ^1.10.0
   bin:
     remix-serve: dist/cli.js
-  checksum: c2f73795f138618033ed6f435d4ed0524a632b9fa2d6ffb0a9b8bdc2e204effa15c803f6a4227ecec11c887435fa7e6bb884a8b4747031fb07277087cfe46833
+  checksum: 376ea7af6508a780cfef64d580a34755d711bd254c5e2b098c215404f1e582c1aee8f13f72449993bdfd22968e210b7b8d722443dccc4294ec1b2a24cc818770
   languageName: node
   linkType: hard
 
@@ -9605,7 +9622,7 @@ __metadata:
     "@remix-run/eslint-config": ^1.7.2
     "@remix-run/node": ^1.7.1
     "@remix-run/react": ^1.7.2
-    "@remix-run/serve": ^1.7.1
+    "@remix-run/serve": ^1.7.2
     "@remix-run/vercel": ^1.7.1
     "@tailwindcss/forms": ^0.5.3
     "@trivago/prettier-plugin-sort-imports": ^3.3.0
