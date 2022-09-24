@@ -21,7 +21,7 @@ export default function TweetButton({ idol, count, hash }: Props) {
   const tweet =
     count > 0
       ? `${name}さんのお誕生日まで、残り${count}秒です！`
-      : `${name}さんは今日は今日がお誕生日です！！！！🎉🎉🎉`
+      : `${name}さんは今日がお誕生日です！！！！🎉🎉🎉`
 
   const url = new URL('https://twitter.com/intent/tweet')
   url.searchParams.append('text', tweet)
