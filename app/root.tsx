@@ -13,6 +13,14 @@ import createMeta from '~/libs/meta'
 
 import styles from './styles/app.css'
 
+const Analytics = (): JSX.Element => (
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "e4612edb1d6e444eac97559d81bbe565"}'
+  />
+)
+
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
   viewport: 'width=device-width,initial-scale=1',
@@ -32,6 +40,7 @@ export function CatchBoundary() {
         <title>Oops!</title>
         <Meta />
         <Links />
+        <Analytics />
       </head>
       <body className="p-8 flex justify-center items-center h-screen text-main">
         <div>
@@ -50,6 +59,7 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <Analytics />
       </head>
       <body>
         <Outlet />
