@@ -2649,10 +2649,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:5.4.2":
-  version: 5.4.2
-  resolution: "@vercel/build-utils@npm:5.4.2"
-  checksum: 5d888a5417342f7062141b3305da9832b04f210b1b50e2e31f6bec90802e6b6054b2a3653ccb861d337e90abe3c203c896a9053a398b6554cd57c30c635a533b
+"@vercel/build-utils@npm:5.5.3":
+  version: 5.5.3
+  resolution: "@vercel/build-utils@npm:5.5.3"
+  checksum: 4639d87b42c3feab93e4685410ba3213384ee79762aef244274a4c158fc50355157c5e1a78dbbefdbd624eced4bce0e11e1b830a716eb63cc6bec0d3ee717dcc
   languageName: node
   linkType: hard
 
@@ -2663,13 +2663,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^2.5.14":
-  version: 2.5.14
-  resolution: "@vercel/node@npm:2.5.14"
+"@vercel/node@npm:^2.5.21":
+  version: 2.5.21
+  resolution: "@vercel/node@npm:2.5.21"
   dependencies:
     "@edge-runtime/vm": 1.1.0-beta.32
     "@types/node": "*"
-    "@vercel/build-utils": 5.4.2
+    "@vercel/build-utils": 5.5.3
     "@vercel/node-bridge": 3.0.0
     "@vercel/static-config": 2.0.3
     edge-runtime: 1.1.0-beta.32
@@ -2678,7 +2678,7 @@ __metadata:
     node-fetch: 2.6.7
     ts-node: 8.9.1
     typescript: 4.3.4
-  checksum: e7054ce11d0fe5872ce44590359d68c3701d53e517998f74133b37b5ebbd276a7e998560a35a19ead0a1bf9eac2c07b9b5f95015ce7ec101916c187b7978ba80
+  checksum: f2cc4cb7dba9f4aa177abcecc0effba5a0c62ce563e4c1087a49da8c7eb4798e3fba79894b96e5cc30ea8f6a30547d253e8c975d4dcba47b029acd114df21b70
   languageName: node
   linkType: hard
 
@@ -9629,7 +9629,7 @@ __metadata:
     "@types/crypto-js": ^4.1.1
     "@types/react": ^18.0.21
     "@types/react-dom": ^18.0.6
-    "@vercel/node": ^2.5.14
+    "@vercel/node": ^2.5.21
     autoprefixer: ^10.4.11
     axios: ^0.27.2
     cloudinary: ^1.32.0
