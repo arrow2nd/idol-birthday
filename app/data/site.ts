@@ -8,6 +8,5 @@ export const site = {
   name,
   title: `${name} | アイドルのお誕生日まで…？`,
   desc: descTemplate.replace('%s', 'アイマスアイドル'),
-  titleTemplate: `%s | ${name}`,
   descTemplate
 }
