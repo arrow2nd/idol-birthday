@@ -11,7 +11,10 @@ export default function Header() {
   return (
     <header className="px-8 pt-24 pb-16 flex flex-col items-center text-center border-b">
       <div className="absolute top-4 w-full flags" />
-      <Link className="flex items-center text-main text-2xl sm:text-3xl" to="/">
+      <Link
+        className="flex items-center text-neutral text-2xl sm:text-3xl"
+        to="/"
+      >
         <RiCake2Line />
         <span className="ml-2 tracking-wide sm:tracking-wider">{name}</span>
       </Link>

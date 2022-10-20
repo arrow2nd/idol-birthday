@@ -5,7 +5,7 @@ export default function Footer() {
     'link font-bold underline hover:text-imas transition-colors'
 
   return (
-    <footer className="footer footer-center px-8 py-16 text-sm text-main text-center border-t">
+    <footer className="footer footer-center px-8 py-16 text-sm text-neutral text-center border-t">
       <div>
         <p>
           {'Source on '}

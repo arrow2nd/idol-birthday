@@ -12,7 +12,7 @@ export function SeatchBar({ className = '' }: Props) {
     >
       <button
         type="submit"
-        className="absolute px-4 inset-y-0 right-0 text-sub hover:text-main transition-colors"
+        className="absolute px-4 inset-y-0 right-0 text-sub hover:text-neutral transition-colors"
       >
         <RiSearchLine />
       </button>

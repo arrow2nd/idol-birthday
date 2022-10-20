@@ -31,7 +31,7 @@ export default function TweetButton({ idol, count, hash }: Props) {
     <Anchor
       suppressHydrationWarning
       className={`btn rounded-full border-none text-base ${
-        color.isWhitish ? 'text-main' : 'text-white'
+        color.isWhitish ? 'text-neutral' : 'text-white'
       }`}
       style={{ backgroundColor: '#' + color.hex }}
       href={url.href}
