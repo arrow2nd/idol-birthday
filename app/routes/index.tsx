@@ -52,7 +52,7 @@ export default function Index() {
       )}
       <Cards
         className="my-16"
-        title="もうすぐお誕生日（今月）"
+        title="もうすぐお誕生日のアイドル"
         icon={<AiOutlineSmile />}
         idols={soon}
       />

@@ -14,8 +14,6 @@ import { responseServerError } from '~/libs/response'
 
 import { SeaechResult } from '~/types/search'
 
-import { site } from '~/data/site'
-
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url)
   const q = url.searchParams.get('q')?.trim()
@@ -37,7 +35,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 }
 
 export const meta: MetaFunction = ({ data }) => {
-  const title = site.titleTemplate.replace('%s', `"${data.query}" の検索結果`)
+  const title = `"${data.query}" の検索結果`
   return createMeta(title)
 }
 

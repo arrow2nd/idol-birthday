@@ -17,7 +17,7 @@ export function SeatchBar({ className = '' }: Props) {
         <RiSearchLine />
       </button>
       <input
-        className="form-input w-full pr-12 border-2 border-sub focus:border-main focus:ring-0 rounded-lg transition-colors"
+        className="input input-bordered w-full pr-12 border-2"
         type="text"
         name="q"
         placeholder="アイドルのお名前で検索"

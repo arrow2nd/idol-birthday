@@ -64,10 +64,10 @@ export const loader: LoaderFunction = async ({ request, params }) => {
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) return {}
 
-  const { titleTemplate, descTemplate } = site
+  const { descTemplate } = site
   const { idol, ogpImageUrl } = data
 
-  const title = titleTemplate.replace('%s', `${idol.name}さんのお誕生日まで…？`)
+  const title = `${idol.name}さんのお誕生日まで…？`
   const desc = descTemplate.replace('%s', `${idol.name}さん`)
 
   return createMeta(title, desc, ogpImageUrl)
