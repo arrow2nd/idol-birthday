@@ -15,8 +15,8 @@ export default function Cards({ className = '', title, icon, idols }: Props) {
   return (
     <div className={className}>
       <div className="flex justify-center items-center text-main">
-        <span className="text-2xl">{icon}</span>
-        <div className="ml-3 text-xl">{title}</div>
+        <span className="text-xl sm:text-2xl">{icon}</span>
+        <div className="ml-3 text-md sm:text-xl">{title}</div>
       </div>
       <div className="mt-8 flex flex-row flex-wrap justify-center">
         {cards.length > 0 ? (
