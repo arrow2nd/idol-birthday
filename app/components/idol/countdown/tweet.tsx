@@ -30,9 +30,9 @@ export default function TweetButton({ idol, count, hash }: Props) {
   return (
     <Anchor
       suppressHydrationWarning
-      className={`inline-flex items-center px-6 py-1 text-base sm:text-lg ${
-        color.isWhitish ? 'text-main border' : 'text-white'
-      } rounded-full shadow-md cursor-pointer hover:brightness-75 transition`}
+      className={`btn rounded-full border-none text-base ${
+        color.isWhitish ? 'text-main' : 'text-white'
+      }`}
       style={{ backgroundColor: '#' + color.hex }}
       href={url.href}
     >
