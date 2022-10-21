@@ -13,20 +13,19 @@ export default function Seatch() {
           <p className="mt-1 text-xs sm:text-sm">{site.desc}</p>
           <form
             action="/search"
-            className="mt-6 relative w-full max-w-screen-md"
+            className="form-control mt-6 w-full max-w-screen-md"
           >
-            <button
-              type="submit"
-              className="absolute px-4 inset-y-0 right-0 text-sub hover:text-neutral transition-colors"
-            >
-              <RiSearchLine />
-            </button>
-            <input
-              className="input w-full pr-12 bg-base-300"
-              type="text"
-              name="q"
-              placeholder="アイドルのお名前で検索"
-            />
+            <div className="input-group">
+              <input
+                className="input input-bordered w-full bg-base-300"
+                type="text"
+                name="q"
+                placeholder="アイドルのお名前で検索"
+              />
+              <button type="submit" className="btn btn-square">
+                <RiSearchLine />
+              </button>
+            </div>
           </form>
         </div>
       </div>
