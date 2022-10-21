@@ -6,7 +6,7 @@
 [![Depfu](https://badges.depfu.com/badges/155628bbde089babbd09c14dd3e67d79/status.svg)](https://depfu.com)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=idol-birthday)](https://idol-birthday.vercel.app)
 
-![demo](https://user-images.githubusercontent.com/44780846/196964847-29e5742c-da60-46de-a25a-f9121523aa40.png)
+![demo](https://user-images.githubusercontent.com/44780846/197101495-8acef9d9-fbfa-477b-912d-9dac2654bbf4.png)
 
 ## できること
 
