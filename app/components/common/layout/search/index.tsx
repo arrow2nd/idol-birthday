@@ -8,7 +8,7 @@ export default function Seatch() {
       <div className="hero-content text-center">
         <div className="py-16 max-w-md">
           <h1 className="text-4xl font-bold tracking-wider">{site.name}</h1>
-          <p className="mt-1 text-sm text-gray-500">{site.desc}</p>
+          <p className="mt-1 text-sm">{site.desc}</p>
           <form
             action="/search"
             className="mt-6 relative w-full max-w-screen-md"
@@ -20,7 +20,7 @@ export default function Seatch() {
               <RiSearchLine />
             </button>
             <input
-              className="input input-bordered w-full pr-12 border-2"
+              className="input w-full pr-12 bg-base-300"
               type="text"
               name="q"
               placeholder="アイドルのお名前で検索"

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer footer-center border-t">
+    <footer className="footer footer-center border-t border-base-300">
       <div className="p-12">
         <p>Developed by arrow2nd</p>
         <p>
