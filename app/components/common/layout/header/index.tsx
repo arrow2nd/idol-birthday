@@ -23,11 +23,8 @@ export default function Header({ className = '' }: Props) {
           </label>
           <ul
             tabIndex={0}
-            className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-300 rounded-box w-52"
+            className="w-52 mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-300 rounded-box"
           >
-            <li>
-              <Link to="/about">このページについて</Link>
-            </li>
             <li>
               <Anchor href="https://github.com/arrow2nd/idol-birthday/">
                 GitHubでソースをみる
