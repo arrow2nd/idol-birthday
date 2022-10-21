@@ -21,6 +21,7 @@ export default function Seatch() {
                 type="text"
                 name="q"
                 placeholder="アイドルのお名前で検索"
+                required
               />
               <button
                 type="submit"
