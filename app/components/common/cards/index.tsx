@@ -14,16 +14,12 @@ export default function Cards({ className = '', title, icon, idols }: Props) {
 
   return (
     <div className={className}>
-      <div className="flex justify-center items-center text-neutral tracking-widest">
+      <div className="flex justify-center items-center tracking-widest">
         <span className="text-xl sm:text-2xl">{icon}</span>
         <div className="ml-3 text-md sm:text-xl">{title}</div>
       </div>
       <div className="mt-8 flex flex-row flex-wrap justify-center">
-        {cards.length > 0 ? (
-          cards
-        ) : (
-          <p className="text-sub">該当するアイドルがいません</p>
-        )}
+        {cards.length > 0 ? cards : <p>該当するアイドルがいません</p>}
       </div>
     </div>
   )

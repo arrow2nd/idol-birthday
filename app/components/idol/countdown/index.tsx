@@ -35,7 +35,7 @@ export default function CountDown({ idol, hash }: Props) {
   })
 
   return (
-    <div className="space-y-10 text-center text-neutral text-xl sm:text-2xl">
+    <div className="space-y-10 text-center text-xl sm:text-2xl">
       {count > 0 ? (
         <Count name={name} count={count} />
       ) : (

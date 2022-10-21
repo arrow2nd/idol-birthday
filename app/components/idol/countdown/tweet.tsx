@@ -30,14 +30,14 @@ export default function TweetButton({ idol, count, hash }: Props) {
   return (
     <Anchor
       suppressHydrationWarning
-      className={`btn rounded-full border-none text-base ${
+      className={`btn rounded-full border-none hover:brightness-90 transition ${
         color.isWhitish ? 'text-neutral' : 'text-white'
       }`}
       style={{ backgroundColor: '#' + color.hex }}
       href={url.href}
     >
       <AiOutlineTwitter className="text-xl" />
-      <span className="ml-2">ツイートする</span>
+      <span className="ml-2 text-base">ツイートする</span>
     </Anchor>
   )
 }
