@@ -1973,14 +1973,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:1.7.2":
-  version: 1.7.2
-  resolution: "@remix-run/express@npm:1.7.2"
+"@remix-run/express@npm:1.7.3":
+  version: 1.7.3
+  resolution: "@remix-run/express@npm:1.7.3"
   dependencies:
-    "@remix-run/node": 1.7.2
+    "@remix-run/node": 1.7.3
   peerDependencies:
     express: ^4.17.1
-  checksum: 999334834432a6583a9d3e298ec73b207a6361acada9e90c103ca556e07d7e0fe2a9194b6e3f54e686887d1d2d6f5404f7c2a66f043bbcc3473b86d586461b03
+  checksum: 5b138cc2a501c49d9c1b07edff7e3ebc00df436d2f242440a60b8fca83e8abfccf09a9b715ce00af1cde4485166c0c050c60cbad5e924785f197028d4380a993
   languageName: node
   linkType: hard
 
@@ -2001,7 +2001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:^1.7.3":
+"@remix-run/node@npm:1.7.3, @remix-run/node@npm:^1.7.3":
   version: 1.7.3
   resolution: "@remix-run/node@npm:1.7.3"
   dependencies:
@@ -2031,17 +2031,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^1.7.2":
-  version: 1.7.2
-  resolution: "@remix-run/serve@npm:1.7.2"
+"@remix-run/serve@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "@remix-run/serve@npm:1.7.3"
   dependencies:
-    "@remix-run/express": 1.7.2
+    "@remix-run/express": 1.7.3
     compression: ^1.7.4
     express: ^4.17.1
     morgan: ^1.10.0
   bin:
     remix-serve: dist/cli.js
-  checksum: 376ea7af6508a780cfef64d580a34755d711bd254c5e2b098c215404f1e582c1aee8f13f72449993bdfd22968e210b7b8d722443dccc4294ec1b2a24cc818770
+  checksum: 8c18ec752c23377b1f939a7d7d4606aa31d6565ad712f5ec135793e10d2ee4aad76c10fa3aaf94f6e9358b56cac41bf9bdfe6012c4ac9a9e14895c1f483419c9
   languageName: node
   linkType: hard
 
@@ -9805,7 +9805,7 @@ __metadata:
     "@remix-run/eslint-config": ^1.7.2
     "@remix-run/node": ^1.7.3
     "@remix-run/react": ^1.7.3
-    "@remix-run/serve": ^1.7.2
+    "@remix-run/serve": ^1.7.3
     "@remix-run/vercel": ^1.7.2
     "@trivago/prettier-plugin-sort-imports": ^3.4.0
     "@types/crypto-js": ^4.1.1
