@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         sub: '#707070',
         imas: '#ff74b8',
-        back: '#f1f5f8'
+        back: '#fff0db'
       }
     }
   },
