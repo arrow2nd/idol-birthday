@@ -1,27 +1,46 @@
 import { Link } from '@remix-run/react'
+import { BsThreeDots } from 'react-icons/bs'
 import { RiCake2Line } from 'react-icons/ri'
 
-import { site } from '~/data/site'
+import Anchor from '~/components/common/anchor'
 
-import { SeatchBar } from './searchbar'
+type Props = {
+  className?: string
+}
 
-export default function Header() {
-  const { name, desc } = site
-
+export default function Header({ className = '' }: Props) {
   return (
-    <header className="px-8 pt-24 pb-16 flex flex-col items-center text-center border-b">
-      <div className="absolute top-4 w-full flags" />
-      <Link
-        className="flex items-center text-neutral text-2xl sm:text-3xl"
-        to="/"
-      >
-        <RiCake2Line />
-        <span className="ml-2 tracking-wide sm:tracking-wider">{name}</span>
-      </Link>
-      <span className="mt-1 px-2 text-sub text-xs sm:text-sm">
-        {desc.replace('するサイト', '')}
-      </span>
-      <SeatchBar className="mt-8" />
+    <header className={`navbar ${className}`}>
+      <div className="navbar-start">
+        <Link className="btn btn-ghost normal-case text-2xl" to="/">
+          <RiCake2Line />
+        </Link>
+      </div>
+      <div className="navbar-end">
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="btn btn-ghost text-xl">
+            <BsThreeDots />
+          </label>
+          <ul
+            tabIndex={0}
+            className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <Link to="/about">このページについて</Link>
+            </li>
+            <li>
+              <Anchor href="https://github.com/arrow2nd/idol-birthday/">
+                GitHubでソースをみる
+              </Anchor>
+            </li>
+            <li>
+              <Anchor href="https://sparql.crssnky.xyz/imas/">
+                im@sparqlでDBをみる
+              </Anchor>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   )
 }

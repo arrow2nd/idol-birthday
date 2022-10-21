@@ -45,14 +45,14 @@ export default function Index() {
       {today.length > 0 && (
         <Cards
           className="mt-16"
-          title="今日がお誕生日！"
+          title="今日がお誕生日"
           icon={<GiPartyPopper />}
           idols={today}
         />
       )}
       <Cards
         className="my-16"
-        title="もうすぐお誕生日のアイドル"
+        title="もうすぐお誕生日"
         icon={<AiOutlineSmile />}
         idols={soon}
       />
