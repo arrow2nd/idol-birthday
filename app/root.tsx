@@ -45,7 +45,7 @@ export function CatchBoundary() {
       <body className="p-8 flex justify-center items-center h-screen text-neutral">
         <div>
           <h1 className="font-bold text-4xl">{status}</h1>
-          <p className="mt-2 text-sub">{statusText}</p>
+          <p className="mt-2">{statusText}</p>
         </div>
         <Scripts />
       </body>

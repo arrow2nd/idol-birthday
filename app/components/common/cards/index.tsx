@@ -19,11 +19,7 @@ export default function Cards({ className = '', title, icon, idols }: Props) {
         <div className="ml-3 text-md sm:text-xl">{title}</div>
       </div>
       <div className="mt-8 flex flex-row flex-wrap justify-center">
-        {cards.length > 0 ? (
-          cards
-        ) : (
-          <p className="text-sub">該当するアイドルがいません</p>
-        )}
+        {cards.length > 0 ? cards : <p>該当するアイドルがいません</p>}
       </div>
     </div>
   )
