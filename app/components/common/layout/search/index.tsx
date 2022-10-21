@@ -22,7 +22,10 @@ export default function Seatch() {
                 name="q"
                 placeholder="アイドルのお名前で検索"
               />
-              <button type="submit" className="btn btn-square">
+              <button
+                type="submit"
+                className="btn btn-accent btn-square text-base"
+              >
                 <RiSearchLine />
               </button>
             </div>
