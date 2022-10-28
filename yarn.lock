@@ -1941,9 +1941,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/eslint-config@npm:^1.7.2":
-  version: 1.7.2
-  resolution: "@remix-run/eslint-config@npm:1.7.2"
+"@remix-run/eslint-config@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "@remix-run/eslint-config@npm:1.7.3"
   dependencies:
     "@babel/core": ^7.19.1
     "@babel/eslint-parser": ^7.19.1
@@ -1969,7 +1969,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 1c07474fecd2f37af0bf2a3a497e0fef7256d9854346abbe13d721e48db95d8b4c221ed92a398c22250591080e5f999f63c8c80c5948d703249ba8fa6afc5e63
+  checksum: 84a5eca6eee98cfa07329a6ea5b60131966a2ef75aedba07805031f6117bc7d69004c3085f07be7c117fbdc06a8e1b71bdc8887bbf56b3d46630612abe1076ab
   languageName: node
   linkType: hard
 
@@ -4079,9 +4079,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.31.0":
-  version: 2.31.0
-  resolution: "daisyui@npm:2.31.0"
+"daisyui@npm:^2.33.0":
+  version: 2.33.0
+  resolution: "daisyui@npm:2.33.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -4090,7 +4090,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: ad802f0f03ab0c0cdae745dda567f0415e475f66d933801a974ff5ba369fb9f302693dd14e306956d5b7653763badc738fed8eea201b182ecb13a3142c6b47e7
+  checksum: 29c1b1ee674eae216d8a846fcb8f05a87ae186da34b6f8d921307d10a4fb73d6c9c6395f5eafe02a270bdf1c0925e032bbc787bb829bda74b2f020ecd4cca9a3
   languageName: node
   linkType: hard
 
@@ -4115,10 +4115,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.5":
-  version: 1.11.5
-  resolution: "dayjs@npm:1.11.5"
-  checksum: e3bbaa7b4883b31be4bf75a181f1447fbb19800c29b332852125aab96baeff3ac232dcba8b88c4ea17d3b636c99dac5fb9d1af4bb6ae26615698bbc4a852dffb
+"dayjs@npm:^1.11.6":
+  version: 1.11.6
+  resolution: "dayjs@npm:1.11.6"
+  checksum: 18bdfd927009b68eab08dca578e421d4a581cefcbe9337f54c5d9e0d941ffb6b221c4b2c1cab15cdd9d419940e768ac4c984531461a90bbe1c158b75fe160580
   languageName: node
   linkType: hard
 
@@ -9020,7 +9020,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.4.17":
+"postcss@npm:^8.1.10, postcss@npm:^8.4.17, postcss@npm:^8.4.18":
   version: 8.4.18
   resolution: "postcss@npm:8.4.18"
   dependencies:
@@ -9028,17 +9028,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 9349fd99849b2e3d2e134ff949b7770ecb12375f352723ce2bcc06167eba3850ea7844c1b191a85cd915d6a396b4e8ee9a5267e6cc5d8d003d0cbc7a97555d39
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.16":
-  version: 8.4.16
-  resolution: "postcss@npm:8.4.16"
-  dependencies:
-    nanoid: ^3.3.4
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: 10eee25efd77868036403858577da0cefaf2e0905feeaba5770d5438ccdddba3d01cba8063e96b8aac4c6daa0ed413dd5ae0554a433a3c4db38df1d134cffc1f
   languageName: node
   linkType: hard
 
@@ -9743,7 +9732,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@remix-run/dev": ^1.7.3
-    "@remix-run/eslint-config": ^1.7.2
+    "@remix-run/eslint-config": ^1.7.3
     "@remix-run/node": ^1.7.3
     "@remix-run/react": ^1.7.3
     "@remix-run/serve": ^1.7.3
@@ -9758,10 +9747,10 @@ __metadata:
     cloudinary: ^1.32.0
     concurrently: ^7.4.0
     crypto-js: ^4.1.1
-    daisyui: ^2.31.0
-    dayjs: ^1.11.5
+    daisyui: ^2.33.0
+    dayjs: ^1.11.6
     eslint: ^8.25.0
-    postcss: ^8.4.16
+    postcss: ^8.4.18
     prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
