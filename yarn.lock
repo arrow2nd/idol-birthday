@@ -3122,12 +3122,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.12":
-  version: 10.4.12
-  resolution: "autoprefixer@npm:10.4.12"
+"autoprefixer@npm:^10.4.13":
+  version: 10.4.13
+  resolution: "autoprefixer@npm:10.4.13"
   dependencies:
     browserslist: ^4.21.4
-    caniuse-lite: ^1.0.30001407
+    caniuse-lite: ^1.0.30001426
     fraction.js: ^4.2.0
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
@@ -3136,7 +3136,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 6ae79cbacd31fb3d464ec64eb6ad2600f4f689c3080bbe62c5536d539b41b472083a2e941ef99d14aa11142370d6c16e8b05a62f077374933ed991aceb5943d2
+  checksum: dcb1cb7ae96a3363d65d82e52f9a0a7d8c982256f6fd032d7e1ec311f099c23acfebfd517ff8e96bf93f716a66c4ea2b80c60aa19efd2f474ce434bd75ef7b79
   languageName: node
   linkType: hard
 
@@ -3560,10 +3560,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001407":
+"caniuse-lite@npm:^1.0.30001400":
   version: 1.0.30001418
   resolution: "caniuse-lite@npm:1.0.30001418"
   checksum: 03380a9ba50b1abd0081e76bfdf331bfb2c28f2277ce5eead5b83960c4db9f1fbbd84a536efa6f8f1fe2c038bc01129d6c42d17f8323fe99a016a5da3829c4bc
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001426":
+  version: 1.0.30001430
+  resolution: "caniuse-lite@npm:1.0.30001430"
+  checksum: 15200fe2658871807341a451b01e3d6ae2bf5e0e30b60af86e1e8d9e1655a5f5011bb23fdc3d6b696019d63d3e60ad6864b15c40c80c538c4500ac5098b9701b
   languageName: node
   linkType: hard
 
@@ -9742,7 +9749,7 @@ __metadata:
     "@types/react": ^18.0.24
     "@types/react-dom": ^18.0.8
     "@vercel/node": ^2.5.26
-    autoprefixer: ^10.4.12
+    autoprefixer: ^10.4.13
     axios: ^0.27.2
     cloudinary: ^1.32.0
     concurrently: ^7.5.0
