@@ -1984,7 +1984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.7.5":
+"@remix-run/node@npm:1.7.5, @remix-run/node@npm:^1.7.5":
   version: 1.7.5
   resolution: "@remix-run/node@npm:1.7.5"
   dependencies:
@@ -1998,23 +1998,6 @@ __metadata:
     source-map-support: ^0.5.21
     stream-slice: ^0.1.2
   checksum: d0de728e5ba53e16581403dd2cbaee784a28bb4bce382de7469202f9fc7c7413b90eb962cd1741abf837caa9d5e99549573ccc18acd256a2b7cdb83ad61534b8
-  languageName: node
-  linkType: hard
-
-"@remix-run/node@npm:^1.7.4":
-  version: 1.7.4
-  resolution: "@remix-run/node@npm:1.7.4"
-  dependencies:
-    "@remix-run/server-runtime": 1.7.4
-    "@remix-run/web-fetch": ^4.3.1
-    "@remix-run/web-file": ^3.0.2
-    "@remix-run/web-stream": ^1.0.3
-    "@web3-storage/multipart-parser": ^1.0.0
-    abort-controller: ^3.0.0
-    cookie-signature: ^1.1.0
-    source-map-support: ^0.5.21
-    stream-slice: ^0.1.2
-  checksum: 759c420f7d3ee2bd35e4f4081a66c881258035c57636984a9102adb55cc12659b86e813e7a7fcbfceaba368770031536aa1470bbf291b5b81ddc02c65c96cb49
   languageName: node
   linkType: hard
 
@@ -2042,23 +2025,6 @@ __metadata:
   bin:
     remix-serve: dist/cli.js
   checksum: 7d0c6cb9a115c1983de09bdbaac0fc327b3a8e3076cbce0af6eef02775ff1671894f733689ac76ff152ccf5971bfa961100149607c8802a9061ee7a5ad1c54c2
-  languageName: node
-  linkType: hard
-
-"@remix-run/server-runtime@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@remix-run/server-runtime@npm:1.7.4"
-  dependencies:
-    "@types/cookie": ^0.4.0
-    "@web3-storage/multipart-parser": ^1.0.0
-    cookie: ^0.4.1
-    react-router-dom: 6.3.0
-    set-cookie-parser: ^2.4.8
-    source-map: ^0.7.3
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 3574395a593f81f1105271480be0c86b2c76a122c6898d35ad36c24d8def44885160f735804badb461d5abf6da3ac1e22d2b2da1e1fc463c6aaf8d15cf13ac32
   languageName: node
   linkType: hard
 
@@ -9782,7 +9748,7 @@ __metadata:
   dependencies:
     "@remix-run/dev": ^1.7.5
     "@remix-run/eslint-config": ^1.7.3
-    "@remix-run/node": ^1.7.4
+    "@remix-run/node": ^1.7.5
     "@remix-run/react": ^1.7.5
     "@remix-run/serve": ^1.7.5
     "@remix-run/vercel": ^1.7.5
