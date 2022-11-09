@@ -9,18 +9,18 @@ type Props = {
 export default function Card({ idol }: Props) {
   const { id, name, brand, birth, color } = idol
 
-  // TODO: 白すぎる色の場合ボーダーが見えなくなるのをどうにかする
-
   return (
     <Link
-      className="block m-2 px-6 py-4 w-72 border-2 bg-white hover:brightness-90 rounded-lg transition"
+      className="card w-72 m-2 bg-base-200 border-2 hover:brightness-90 transition"
       style={{ borderColor: '#' + color.hex }}
       to={'/' + id}
     >
-      <p className="text-lg sm:text-xl text-main">{name} さん</p>
-      <p className="text-xs sm:text-sm text-sub">
-        {birth.month}月{birth.date}日 / {brand}
-      </p>
+      <div className="card-body">
+        <p className="card-title">{name} さん</p>
+        <p className="text-sm">
+          {birth.month}月{birth.date}日 / {brand}
+        </p>
+      </div>
     </Link>
   )
 }
