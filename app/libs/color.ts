@@ -6,7 +6,7 @@ export const brandColors = new Map([
   ['MillionLive', 'FFC30B'],
   ['SideM', '0FBE94'],
   ['CinderellaGirls', '2681C8'],
-  ['ShinyColors', '8dBBFF'],
+  ['ShinyColors', '8DBBFF'],
   ['Other', 'FF74B8']
 ])
 
