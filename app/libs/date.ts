@@ -36,7 +36,7 @@ export function createBirthDateRangeRegex() {
   const a = date < 10 ? `0[${date}-9]` : `${dateOnesPlace}[${date % 10}-9]`
 
   // ↑を除く月末までの期間にマッチ（11日 -> 20 ~ 39）
-  const b = dateOnesPlace + 1 < 3 ? `|[${dateOnesPlace + 1}-3][0-9]` : ''
+  const b = dateOnesPlace + 1 <= 3 ? `|[${dateOnesPlace + 1}-3][0-9]` : ''
 
   return `--${month}-(${a + b})`
 }
