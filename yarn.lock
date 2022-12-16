@@ -1943,9 +1943,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/dev@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/dev@npm:1.8.1"
+"@remix-run/dev@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "@remix-run/dev@npm:1.8.2"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/plugin-syntax-jsx": ^7.18.6
@@ -1955,7 +1955,7 @@ __metadata:
     "@babel/types": ^7.20.2
     "@esbuild-plugins/node-modules-polyfill": ^0.1.4
     "@npmcli/package-json": ^2.0.0
-    "@remix-run/server-runtime": 1.8.1
+    "@remix-run/server-runtime": 1.8.2
     arg: ^5.0.1
     cacache: ^15.0.5
     chalk: ^4.1.2
@@ -1991,13 +1991,13 @@ __metadata:
     ws: ^7.4.5
     xdm: ^2.0.0
   peerDependencies:
-    "@remix-run/serve": 1.8.1
+    "@remix-run/serve": 1.8.2
   peerDependenciesMeta:
     "@remix-run/serve":
       optional: true
   bin:
     remix: dist/cli.js
-  checksum: 2a41f1ef00d9eb056f6feb4d64834f010cfe975ef57535537778bd3ab3b7f2776fecdcfbacfbeac3a0dbce6be691567845c9c500adaac2088cc73bf5a6b7c498
+  checksum: 0912b49114a1df5894e75fd6c82f84c6302d7ef03b2b3ed5ae2754f37f83565ce77b454f314cd93774c06a87751d27d0d6ae5b34d20b16070ed29b8c12f35f87
   languageName: node
   linkType: hard
 
@@ -2032,35 +2032,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/express@npm:1.8.1"
+"@remix-run/express@npm:1.8.2":
+  version: 1.8.2
+  resolution: "@remix-run/express@npm:1.8.2"
   dependencies:
-    "@remix-run/node": 1.8.1
+    "@remix-run/node": 1.8.2
   peerDependencies:
     express: ^4.17.1
-  checksum: 90cde53a0f7316574b616d977fb01c868ccf8bb54a6623a40eb02029dfc924b44c65b34c85e5674ac65ff8f4cc38e347428a7e9bb7e46600ad28bae10c9205a8
+  checksum: 605217a1f4c424e4b41825bf202b3d79c1a93fdb1a56af0e617d9f486bd93f6205cd591c9296f26218d34b9c6855f6b0df6ed286690a14f2f4709aeb627cb7d2
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/node@npm:1.8.1"
-  dependencies:
-    "@remix-run/server-runtime": 1.8.1
-    "@remix-run/web-fetch": ^4.3.2
-    "@remix-run/web-file": ^3.0.2
-    "@remix-run/web-stream": ^1.0.3
-    "@web3-storage/multipart-parser": ^1.0.0
-    abort-controller: ^3.0.0
-    cookie-signature: ^1.1.0
-    source-map-support: ^0.5.21
-    stream-slice: ^0.1.2
-  checksum: 2142dc5e4dd55e7410e331fb12d7f24af27f84f0138286b2ac33307e9e97f2d6e8f0b47e5ab4042611e3a6257378870024bc4978ea8518b8d99d98290549a23a
-  languageName: node
-  linkType: hard
-
-"@remix-run/node@npm:^1.8.1":
+"@remix-run/node@npm:1.8.2, @remix-run/node@npm:^1.8.1":
   version: 1.8.2
   resolution: "@remix-run/node@npm:1.8.2"
   dependencies:
@@ -2077,23 +2060,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/react@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/react@npm:1.8.1"
+"@remix-run/react@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "@remix-run/react@npm:1.8.2"
   dependencies:
     history: ^5.3.0
     react-router-dom: 6.3.0
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 86c0337c69d5855ef1ad0f2f0616b53c0d83c4b058683e7440392ad270f332a1a823cdbe30a5d43c67f65be85ad862111f18a80d754f164c415641106132e27a
-  languageName: node
-  linkType: hard
-
-"@remix-run/router@npm:1.0.4":
-  version: 1.0.4
-  resolution: "@remix-run/router@npm:1.0.4"
-  checksum: db6b1e111fb6e7e22c3d274bd6cef3054a0a989245894fde5735efd9cb46d18511e528e813ff50bcbdd7eda1c559f4e76e9d0c54396624e33396168d80b09c42
+  checksum: 0af68de41ffa6c9860669a2c977d47c169ec8a45aed50acddaabac259dc23c818e90eaa91645d82c9ead91bddfb3e0d37f1df1bfc6e51fadf808bc9d992d5e2e
   languageName: node
   linkType: hard
 
@@ -2104,35 +2080,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/serve@npm:1.8.1"
+"@remix-run/serve@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "@remix-run/serve@npm:1.8.2"
   dependencies:
-    "@remix-run/express": 1.8.1
+    "@remix-run/express": 1.8.2
     compression: ^1.7.4
     express: ^4.17.1
     morgan: ^1.10.0
   bin:
     remix-serve: dist/cli.js
-  checksum: 7b20d2f6535a16bd61aca39049811fb0627f5d4d32274fc9e7515a0cbb8fff9277d39bd3a1a9e9b7c37e09cdcaa936a3af62184dc25358cc6203930ee5a0234b
-  languageName: node
-  linkType: hard
-
-"@remix-run/server-runtime@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/server-runtime@npm:1.8.1"
-  dependencies:
-    "@remix-run/router": 1.0.4
-    "@types/cookie": ^0.4.0
-    "@web3-storage/multipart-parser": ^1.0.0
-    cookie: ^0.4.1
-    react-router-dom: 6.3.0
-    set-cookie-parser: ^2.4.8
-    source-map: ^0.7.3
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 67aa0e7938405c0734f6c3718239c99e3ea741ca47e5c05f9292fdafca0a66546e07edecbae317e56b4596cf29903bc18c9c9ec0bc8574dfda105d211c19d4b3
+  checksum: f50a068ac074ff0420872b8a0a2a884f53d3b2450dd49236fe8da0d214712eed78cc036cf8f2b37cd584518df56bd5421482d10a4ee17e13fe3026a010516387
   languageName: node
   linkType: hard
 
@@ -2154,14 +2112,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/vercel@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/vercel@npm:1.8.1"
+"@remix-run/vercel@npm:^1.8.2":
+  version: 1.8.2
+  resolution: "@remix-run/vercel@npm:1.8.2"
   dependencies:
-    "@remix-run/node": 1.8.1
+    "@remix-run/node": 1.8.2
   peerDependencies:
     "@vercel/node": ^1.8.3 || ^2.4.0
-  checksum: 629f540e233ac2b344bb6dc1bc233c6fb1cf629c405a89c907dc3f458fde8ca8a7060eb119593934013b054c45a355889d97649e9b19c3ec5999ebf18ff33937
+  checksum: 62a002fbc65166f5a9dbfca5a0b119c2dc3fdef1750ba5e6bc67684d3226ef95cfca828a2fae2453d24611b380bb6b52fc9fa047b06b89531cfa71ef8dbdb01f
   languageName: node
   linkType: hard
 
@@ -9932,12 +9890,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@remix-run/dev": ^1.8.1
+    "@remix-run/dev": ^1.8.2
     "@remix-run/eslint-config": ^1.8.1
     "@remix-run/node": ^1.8.1
-    "@remix-run/react": ^1.8.1
-    "@remix-run/serve": ^1.8.1
-    "@remix-run/vercel": ^1.8.1
+    "@remix-run/react": ^1.8.2
+    "@remix-run/serve": ^1.8.2
+    "@remix-run/vercel": ^1.8.2
     "@trivago/prettier-plugin-sort-imports": ^3.4.0
     "@types/crypto-js": ^4.1.1
     "@types/react": ^18.0.26
