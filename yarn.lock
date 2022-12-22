@@ -3963,9 +3963,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cloudinary@npm:^1.32.0":
-  version: 1.32.0
-  resolution: "cloudinary@npm:1.32.0"
+"cloudinary@npm:^1.33.0":
+  version: 1.33.0
+  resolution: "cloudinary@npm:1.33.0"
   dependencies:
     cloudinary-core: ^2.10.2
     core-js: ^3.6.5
@@ -3975,7 +3975,7 @@ __metadata:
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: a61d473fefd9e2ba92a73d00fed6cca0396ccd2595c39abe1308e18b403bab85e723c3063732d64f45490672e2ac6d066aa72479c8bf9f822f50fd87018f12e9
+  checksum: 8afbc668e11336240b97246892355d6c29271db2012e2968181215dd982f228b7a7330db9835a69b6f03055ebc4b1dada77e870062fe305f87a70c13d386052b
   languageName: node
   linkType: hard
 
@@ -4297,9 +4297,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.41.0":
-  version: 2.41.0
-  resolution: "daisyui@npm:2.41.0"
+"daisyui@npm:^2.46.0":
+  version: 2.46.0
+  resolution: "daisyui@npm:2.46.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -4308,7 +4308,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 3b702493d2a172d3a195da30a10fe7eaec78534ae58c7cf2a1af59ce6701430130b498dcc29c8058e0657848e1609317a6a9a4ab9c672cc79b325b22012e7791
+  checksum: 9fedcec550fd4aa33dfd424ba8e772f318f6367486cd2aaebc2eff83541c4b82d7f514ab123880b2b1b0b3f4b8ced2aab4bbd43dd1cd951c67253931411f2450
   languageName: node
   linkType: hard
 
@@ -9893,10 +9893,10 @@ __metadata:
     "@vercel/node": ^2.7.1
     autoprefixer: ^10.4.13
     axios: ^0.27.2
-    cloudinary: ^1.32.0
+    cloudinary: ^1.33.0
     concurrently: ^7.6.0
     crypto-js: ^4.1.1
-    daisyui: ^2.41.0
+    daisyui: ^2.46.0
     dayjs: ^1.11.7
     eslint: ^8.29.0
     postcss: ^8.4.18
