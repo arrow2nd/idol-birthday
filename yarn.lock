@@ -2141,9 +2141,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/eslint-config@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@remix-run/eslint-config@npm:1.8.1"
+"@remix-run/eslint-config@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@remix-run/eslint-config@npm:1.9.0"
   dependencies:
     "@babel/core": ^7.19.1
     "@babel/eslint-parser": ^7.19.1
@@ -2168,7 +2168,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 68471c9525a61836e7860477dfd01d08bfecf52e61e18a10aaa67fb49210865a82f7ab82d2c2501d8d23c6ce2cfb942e5cbf8aacc06233c9114cdbd35091b331
+  checksum: fd4472cbaaefcfff8685a00bbe600812ca0f2eb86dfad2350d2db2e596a5103ea33e23d07f2f906d41bf9ae601c5b67e742554d5cd2b3c36cd793c49253aee6d
   languageName: node
   linkType: hard
 
@@ -9881,7 +9881,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@remix-run/dev": ^1.9.0
-    "@remix-run/eslint-config": ^1.8.1
+    "@remix-run/eslint-config": ^1.9.0
     "@remix-run/node": ^1.9.0
     "@remix-run/react": ^1.9.0
     "@remix-run/serve": ^1.9.0
