@@ -2193,7 +2193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.10.1":
+"@remix-run/node@npm:1.10.1, @remix-run/node@npm:^1.10.1":
   version: 1.10.1
   resolution: "@remix-run/node@npm:1.10.1"
   dependencies:
@@ -2207,23 +2207,6 @@ __metadata:
     source-map-support: ^0.5.21
     stream-slice: ^0.1.2
   checksum: 01374a9c993cdd429ae00c2515ccd36fb5bfbabe4102e5493a1f40aca43cff341abf9bf5c7ecf1b1d7ba63ed8cb537a9371bfd4edff54c5f228980541ed290a7
-  languageName: node
-  linkType: hard
-
-"@remix-run/node@npm:^1.10.0":
-  version: 1.10.0
-  resolution: "@remix-run/node@npm:1.10.0"
-  dependencies:
-    "@remix-run/server-runtime": 1.10.0
-    "@remix-run/web-fetch": ^4.3.2
-    "@remix-run/web-file": ^3.0.2
-    "@remix-run/web-stream": ^1.0.3
-    "@web3-storage/multipart-parser": ^1.0.0
-    abort-controller: ^3.0.0
-    cookie-signature: ^1.1.0
-    source-map-support: ^0.5.21
-    stream-slice: ^0.1.2
-  checksum: f75bd22caf4d9c534eb7d908821f1c59e023c5a0887602007eaa85b4ff263f20f36f977f6eecda8f7619a86afd9a48347568f72d7935dbea703fb9e416f62466
   languageName: node
   linkType: hard
 
@@ -2259,23 +2242,6 @@ __metadata:
   bin:
     remix-serve: dist/cli.js
   checksum: 28c6b2213c5317439338eee5b31ce17f13dccd2c9643563f512fdec3e5bb67a6b5f46a663efbfae963dbee7fea8fd645e0750c6f364f88ea00b6b602bdd64109
-  languageName: node
-  linkType: hard
-
-"@remix-run/server-runtime@npm:1.10.0":
-  version: 1.10.0
-  resolution: "@remix-run/server-runtime@npm:1.10.0"
-  dependencies:
-    "@remix-run/router": 1.2.1
-    "@types/cookie": ^0.4.0
-    "@web3-storage/multipart-parser": ^1.0.0
-    cookie: ^0.4.1
-    set-cookie-parser: ^2.4.8
-    source-map: ^0.7.3
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 6ce8a0947c6b64265a3b431cd5a1e90ed29f5335083becea199a96e5b2368ce51ebe6ffd4919990738cdcbc836c25fe301a215ce5ab9ca15ec1353caf7decd19
   languageName: node
   linkType: hard
 
@@ -4317,9 +4283,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.46.1":
-  version: 2.46.1
-  resolution: "daisyui@npm:2.46.1"
+"daisyui@npm:^2.47.0":
+  version: 2.47.0
+  resolution: "daisyui@npm:2.47.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -4328,7 +4294,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 6385e1d322e893568739c29908e592d9a95deee3599aac6fac2ebdc84c871d97d0c97d24e779587f86fb4c66e83213b721b72de9df5b76bbf206757318a2e382
+  checksum: a901337f5ef8abfe02062bdd0571a1352fd384569605d535f4e930bfcfff09c0b7594f7d89c1cc94deb79dc47049b5c89555cabc07a9d26ab493efa84fa76342
   languageName: node
   linkType: hard
 
@@ -9922,7 +9888,7 @@ __metadata:
   dependencies:
     "@remix-run/dev": ^1.10.1
     "@remix-run/eslint-config": ^1.10.1
-    "@remix-run/node": ^1.10.0
+    "@remix-run/node": ^1.10.1
     "@remix-run/react": ^1.10.1
     "@remix-run/serve": ^1.10.1
     "@remix-run/vercel": ^1.10.1
@@ -9936,7 +9902,7 @@ __metadata:
     cloudinary: ^1.33.0
     concurrently: ^7.6.0
     crypto-js: ^4.1.1
-    daisyui: ^2.46.1
+    daisyui: ^2.47.0
     dayjs: ^1.11.7
     eslint: ^8.30.0
     postcss: ^8.4.18
