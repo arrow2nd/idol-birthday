@@ -2296,9 +2296,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/eslint-config@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "@remix-run/eslint-config@npm:1.11.0"
+"@remix-run/eslint-config@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "@remix-run/eslint-config@npm:1.11.1"
   dependencies:
     "@babel/core": ^7.19.1
     "@babel/eslint-parser": ^7.19.1
@@ -2323,7 +2323,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 13bac2e56310ea6a65d8cc35e9f4b07a463486b06efe5b2d3b45130b645beca4db79136b1ff22ac931764b212d530e44ee0de7b16c3fc348aac77ecada6e4eeb
+  checksum: 9720c2f3f956b70faac10d29596f0682ce96e3aff077746b239150a6ad5e1cd0dafb458508cdb270dca3132ab705b86fb0a957055b828b0be0507c9b307a995f
   languageName: node
   linkType: hard
 
@@ -2355,11 +2355,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:^1.10.1":
-  version: 1.10.1
-  resolution: "@remix-run/node@npm:1.10.1"
+"@remix-run/node@npm:^1.11.0":
+  version: 1.11.1
+  resolution: "@remix-run/node@npm:1.11.1"
   dependencies:
-    "@remix-run/server-runtime": 1.10.1
+    "@remix-run/server-runtime": 1.11.1
     "@remix-run/web-fetch": ^4.3.2
     "@remix-run/web-file": ^3.0.2
     "@remix-run/web-stream": ^1.0.3
@@ -2368,7 +2368,7 @@ __metadata:
     cookie-signature: ^1.1.0
     source-map-support: ^0.5.21
     stream-slice: ^0.1.2
-  checksum: 01374a9c993cdd429ae00c2515ccd36fb5bfbabe4102e5493a1f40aca43cff341abf9bf5c7ecf1b1d7ba63ed8cb537a9371bfd4edff54c5f228980541ed290a7
+  checksum: 31a006f6c77d5018b2acef21c882388c648b26d15005166af001ec610780e4bac526132f63ec3785bb1a5575b17080dcd92fdc43706bf1a14001fb9cc14f2e68
   languageName: node
   linkType: hard
 
@@ -2383,13 +2383,6 @@ __metadata:
     react: ">=16.8"
     react-dom: ">=16.8"
   checksum: 9cb2837bd13fc5abe1c4a14d3cb76c7d8c2bf4d1f7324636207cee60ac9c90d4c7f9642753a141e2d7ba2ffa7d3ca5de96946d564c5c5e7badce647423a44acf
-  languageName: node
-  linkType: hard
-
-"@remix-run/router@npm:1.2.1":
-  version: 1.2.1
-  resolution: "@remix-run/router@npm:1.2.1"
-  checksum: 71c947f83e130bf006226332aca395f626ad599b6d35dfe936f6a8f139cf37278bc1b36bce38c30f6062724402358296329f31c385b11ae59b13b76a2716d701
   languageName: node
   linkType: hard
 
@@ -2414,23 +2407,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:1.10.1":
-  version: 1.10.1
-  resolution: "@remix-run/server-runtime@npm:1.10.1"
-  dependencies:
-    "@remix-run/router": 1.2.1
-    "@types/cookie": ^0.4.0
-    "@web3-storage/multipart-parser": ^1.0.0
-    cookie: ^0.4.1
-    set-cookie-parser: ^2.4.8
-    source-map: ^0.7.3
-  peerDependencies:
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  checksum: 4d1633773f16b00843ec8d37524940f51ad84355100eb1199c6477d414596dfd4ec26fa30cd3ccf2d235fb1e285dfeb8867cd8012f6386a13ad102368e6487a7
-  languageName: node
-  linkType: hard
-
 "@remix-run/server-runtime@npm:1.11.0":
   version: 1.11.0
   resolution: "@remix-run/server-runtime@npm:1.11.0"
@@ -2445,6 +2421,23 @@ __metadata:
     react: ">=16.8"
     react-dom: ">=16.8"
   checksum: 8f7e2737f3b99dd40ed1f903446fabd675996a91c450a1b3c241289470b90c57f3cf16a76f5b55f8e3b0f3175ec5977fc6f99eb27c47d2f92570b8e7115d34b3
+  languageName: node
+  linkType: hard
+
+"@remix-run/server-runtime@npm:1.11.1":
+  version: 1.11.1
+  resolution: "@remix-run/server-runtime@npm:1.11.1"
+  dependencies:
+    "@remix-run/router": 1.3.0
+    "@types/cookie": ^0.4.0
+    "@web3-storage/multipart-parser": ^1.0.0
+    cookie: ^0.4.1
+    set-cookie-parser: ^2.4.8
+    source-map: ^0.7.3
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 8dae87ac87e0a9db062e0321769812b896ada5dfdf02dca313c0bdb47fc6a6b3e1727684b8b2e31abd8fcfa76ad372b2ea7ee3267eb1cb6f6bc2107519786733
   languageName: node
   linkType: hard
 
@@ -3114,9 +3107,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:^2.8.14":
-  version: 2.8.14
-  resolution: "@vercel/node@npm:2.8.14"
+"@vercel/node@npm:^2.8.15":
+  version: 2.8.15
+  resolution: "@vercel/node@npm:2.8.15"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
@@ -3129,7 +3122,7 @@ __metadata:
     node-fetch: 2.6.7
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: 2c64f9d7cdadf2f75df1e452dd218aa8eb28c1b264aff36146e28c61a92b6c6f73c205c381561fed3b65241cd4618333135342cae9890652d02861bddd50c987
+  checksum: 8aa79efa401a786c36e974658d016309c2b06a2316a6d5e07ca27898a5ee1a4650fe1768a18a09440c96f1bcf190f0791ac26e7f1b4d361b159dcbb02e8c698d
   languageName: node
   linkType: hard
 
@@ -10329,8 +10322,8 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@remix-run/dev": ^1.11.0
-    "@remix-run/eslint-config": ^1.11.0
-    "@remix-run/node": ^1.10.1
+    "@remix-run/eslint-config": ^1.11.1
+    "@remix-run/node": ^1.11.0
     "@remix-run/react": ^1.11.0
     "@remix-run/serve": ^1.11.0
     "@remix-run/vercel": ^1.11.0
@@ -10338,7 +10331,7 @@ __metadata:
     "@types/crypto-js": ^4.1.1
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.10
-    "@vercel/node": ^2.8.14
+    "@vercel/node": ^2.8.15
     autoprefixer: ^10.4.13
     axios: ^1.2.2
     cloudinary: ^1.33.0
