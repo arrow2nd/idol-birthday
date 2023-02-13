@@ -4436,9 +4436,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.47.0":
-  version: 2.47.0
-  resolution: "daisyui@npm:2.47.0"
+"daisyui@npm:^2.50.0":
+  version: 2.50.0
+  resolution: "daisyui@npm:2.50.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -4447,7 +4447,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: a901337f5ef8abfe02062bdd0571a1352fd384569605d535f4e930bfcfff09c0b7594f7d89c1cc94deb79dc47049b5c89555cabc07a9d26ab493efa84fa76342
+  checksum: 402b6fd711f8fff7f4b7a609052d8bd4310039c5e4161793b3b68d909fee50aa013ceacda691355d83e4e49b590369a4707aebbad62f3417a6727f44faed94d7
   languageName: node
   linkType: hard
 
@@ -9673,7 +9673,7 @@ __metadata:
     cloudinary: ^1.33.0
     concurrently: ^7.6.0
     crypto-js: ^4.1.1
-    daisyui: ^2.47.0
+    daisyui: ^2.50.0
     dayjs: ^1.11.7
     eslint: ^8.32.0
     postcss: ^8.4.18
