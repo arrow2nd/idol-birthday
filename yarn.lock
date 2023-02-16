@@ -2333,9 +2333,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/dev@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@remix-run/dev@npm:1.12.0"
+"@remix-run/dev@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/dev@npm:1.13.0"
   dependencies:
     "@babel/core": ^7.18.6
     "@babel/generator": ^7.18.6
@@ -2348,7 +2348,7 @@ __metadata:
     "@babel/types": ^7.20.2
     "@esbuild-plugins/node-modules-polyfill": ^0.1.4
     "@npmcli/package-json": ^2.0.0
-    "@remix-run/server-runtime": 1.12.0
+    "@remix-run/server-runtime": 1.13.0
     "@vanilla-extract/integration": ^6.0.2
     arg: ^5.0.1
     cacache: ^15.0.5
@@ -2374,6 +2374,7 @@ __metadata:
     ora: ^5.4.1
     postcss: ^8.4.19
     postcss-discard-duplicates: ^5.1.0
+    postcss-load-config: ^4.0.1
     postcss-modules: ^6.0.0
     prettier: 2.7.1
     pretty-ms: ^7.0.1
@@ -2388,13 +2389,13 @@ __metadata:
     ws: ^7.4.5
     xdm: ^2.0.0
   peerDependencies:
-    "@remix-run/serve": ^1.12.0
+    "@remix-run/serve": ^1.13.0
   peerDependenciesMeta:
     "@remix-run/serve":
       optional: true
   bin:
     remix: dist/cli.js
-  checksum: 318a9aa0f6074500fd049133008da171e6b2dd7be0c38d4590dcedf6d58d3abc7d9eaf38d6acbc88d402d5d2a1fb3c396e3f0c36ebd1fe46652122e9cb81de2c
+  checksum: 37a0574605bcf2a8a0f683ba378368604b2deb4217d6f4e08ad113633d74aad41573dfb9b0f1f4bedf7435b83d43865d11a4cebf49fa9eabc7e2f39da67a2985
   languageName: node
   linkType: hard
 
@@ -2429,18 +2430,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:1.12.0":
-  version: 1.12.0
-  resolution: "@remix-run/express@npm:1.12.0"
+"@remix-run/express@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/express@npm:1.13.0"
   dependencies:
-    "@remix-run/node": 1.12.0
+    "@remix-run/node": 1.13.0
   peerDependencies:
     express: ^4.17.1
-  checksum: 73cc6c7f48d76a5ff5120e1b38e5915f0a905153ae95d629e0a0410460486f76105964b867d06044c3329be68a8df778cef343f4236d5e265edf0cd1d5e31643
+  checksum: dab94a1e791553ce18a28a6af704ccf056b047d7ef7e1df8625259759a4c7935eacd0aaf219445dd31215896342dd496cb20a0c2ed4eafcaf5ceebebfeda9744
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.12.0, @remix-run/node@npm:^1.12.0":
+"@remix-run/node@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/node@npm:1.13.0"
+  dependencies:
+    "@remix-run/server-runtime": 1.13.0
+    "@remix-run/web-fetch": ^4.3.2
+    "@remix-run/web-file": ^3.0.2
+    "@remix-run/web-stream": ^1.0.3
+    "@web3-storage/multipart-parser": ^1.0.0
+    abort-controller: ^3.0.0
+    cookie-signature: ^1.1.0
+    source-map-support: ^0.5.21
+    stream-slice: ^0.1.2
+  checksum: 6075a943145185ec0bb27443b1313d80a7729b6051c8f3f0ee4d1b2ba3ab812ee4c2f89556702adb3015ee51e5f3a4204d4a67fc7641532b37fd2bca20179d81
+  languageName: node
+  linkType: hard
+
+"@remix-run/node@npm:^1.12.0":
   version: 1.12.0
   resolution: "@remix-run/node@npm:1.12.0"
   dependencies:
@@ -2457,17 +2475,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/react@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@remix-run/react@npm:1.12.0"
+"@remix-run/react@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/react@npm:1.13.0"
   dependencies:
-    "@remix-run/router": 1.3.1
-    react-router-dom: 6.8.0
+    "@remix-run/router": 1.3.2
+    react-router-dom: 6.8.1
     use-sync-external-store: 1.2.0
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 4927ef36f9a3c8ea637894b6a9f76cc65cfe526d884bec835685e523d3cbc37da34ef4020a1b98a1362de95b7e6ddbf165f1c6eaa83cd7a6e3082dbd64137552
+  checksum: 90971570ce0977c77ff0328083b9e89013d7a236654a4e63af354d3e00becb61dde5e847fc06b3270e6cfe1ce67fe13ac582da77275f75b696d95a834025f2ac
   languageName: node
   linkType: hard
 
@@ -2478,17 +2496,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@remix-run/serve@npm:1.12.0"
+"@remix-run/router@npm:1.3.2":
+  version: 1.3.2
+  resolution: "@remix-run/router@npm:1.3.2"
+  checksum: ee2108b87d4a1241cdea137dd7e1741ee679228bd33fd81e22a6bb2940f81186cefe9a85e26d60cc49bbcc1bdbc57d1954b7d4d62f8a51ef69feddfc899f55fa
+  languageName: node
+  linkType: hard
+
+"@remix-run/serve@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/serve@npm:1.13.0"
   dependencies:
-    "@remix-run/express": 1.12.0
+    "@remix-run/express": 1.13.0
     compression: ^1.7.4
     express: ^4.17.1
     morgan: ^1.10.0
   bin:
     remix-serve: dist/cli.js
-  checksum: ba81340664550cfd763a37df0ead946d8cc3da2d5a66297083ec27acea22c190f380b6a9c3e9a405afb367fba2419352e29f577dfdf5be7d7f2ac6ed867c3057
+  checksum: 063f8958b5c52e48b18831c11247cdc5a3a446b30830902af36eb59e30129af3462418d07e8124b1cbdd170f27f374971a3329394d425de403e7f8f4c1b72f6d
   languageName: node
   linkType: hard
 
@@ -2507,14 +2532,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/vercel@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@remix-run/vercel@npm:1.12.0"
+"@remix-run/server-runtime@npm:1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/server-runtime@npm:1.13.0"
   dependencies:
-    "@remix-run/node": 1.12.0
+    "@remix-run/router": 1.3.2
+    "@types/cookie": ^0.4.0
+    "@types/react": ^18.0.15
+    "@web3-storage/multipart-parser": ^1.0.0
+    cookie: ^0.4.1
+    set-cookie-parser: ^2.4.8
+    source-map: ^0.7.3
+  checksum: 4e055d79ed6572da8ecda81b679a254d73e750fac0d0d08c86b7c2e987550d3b21c6569a4775c41bc3cf545223c0d52348510298876a40719c716f7cbd1ff621
+  languageName: node
+  linkType: hard
+
+"@remix-run/vercel@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "@remix-run/vercel@npm:1.13.0"
+  dependencies:
+    "@remix-run/node": 1.13.0
   peerDependencies:
     "@vercel/node": ^1.8.3 || ^2.4.0
-  checksum: d3dec4510c59d5dd3d654f1e01e8492a755eb9ac8b57e750bb18266b436e707015afa8bc7c07da7c6c8305ecc12cb54f612b39f0652763000f4063b11c2b99c4
+  checksum: 52d0f1e09bffea73cd358069e5e01c7992522e54641e37cadff1710852c73b454a7634ab0ac730649f440fd81a8ba410cea317b27e2e0d4c6246eff744535e3c
   languageName: node
   linkType: hard
 
@@ -8868,6 +8908,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-load-config@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "postcss-load-config@npm:4.0.1"
+  dependencies:
+    lilconfig: ^2.0.5
+    yaml: ^2.1.1
+  peerDependencies:
+    postcss: ">=8.0.9"
+    ts-node: ">=9.0.0"
+  peerDependenciesMeta:
+    postcss:
+      optional: true
+    ts-node:
+      optional: true
+  checksum: b61f890499ed7dcda1e36c20a9582b17d745bad5e2b2c7bc96942465e406bc43ae03f270c08e60d1e29dab1ee50cb26970b5eb20c9aae30e066e20bd607ae4e4
+  languageName: node
+  linkType: hard
+
 "postcss-modules-extract-imports@npm:^3.0.0":
   version: 3.0.0
   resolution: "postcss-modules-extract-imports@npm:3.0.0"
@@ -8951,7 +9009,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4":
+"postcss-selector-parser@npm:^6.0.11, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4":
   version: 6.0.11
   resolution: "postcss-selector-parser@npm:6.0.11"
   dependencies:
@@ -8968,6 +9026,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.0.9, postcss@npm:^8.4.18, postcss@npm:^8.4.19":
+  version: 8.4.21
+  resolution: "postcss@npm:8.4.21"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: e39ac60ccd1542d4f9d93d894048aac0d686b3bb38e927d8386005718e6793dbbb46930f0a523fe382f1bbd843c6d980aaea791252bf5e176180e5a4336d9679
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.17":
   version: 8.4.18
   resolution: "postcss@npm:8.4.18"
@@ -8976,17 +9045,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 9349fd99849b2e3d2e134ff949b7770ecb12375f352723ce2bcc06167eba3850ea7844c1b191a85cd915d6a396b4e8ee9a5267e6cc5d8d003d0cbc7a97555d39
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.18, postcss@npm:^8.4.19":
-  version: 8.4.21
-  resolution: "postcss@npm:8.4.21"
-  dependencies:
-    nanoid: ^3.3.4
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: e39ac60ccd1542d4f9d93d894048aac0d686b3bb38e927d8386005718e6793dbbb46930f0a523fe382f1bbd843c6d980aaea791252bf5e176180e5a4336d9679
   languageName: node
   linkType: hard
 
@@ -9256,27 +9314,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:6.8.0":
-  version: 6.8.0
-  resolution: "react-router-dom@npm:6.8.0"
+"react-router-dom@npm:6.8.1":
+  version: 6.8.1
+  resolution: "react-router-dom@npm:6.8.1"
   dependencies:
-    "@remix-run/router": 1.3.1
-    react-router: 6.8.0
+    "@remix-run/router": 1.3.2
+    react-router: 6.8.1
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: a10419023267014bdad20f50b5be04dffda49ebeb06c52ce9567795769dc0dc9b4e2fa61b52b5d70b61df4d17f85bae8f9c7e94c73d25d16974e46fd47765ced
+  checksum: fb1a9f5c7e4c83536ee7e6493f3c13f6abda66da69f9191fb8b087ab188ecc18a3a32575813a280cbeca67bcb8b0dcb6dbcef7ed599e03f38a44d694f4abcf14
   languageName: node
   linkType: hard
 
-"react-router@npm:6.8.0":
-  version: 6.8.0
-  resolution: "react-router@npm:6.8.0"
+"react-router@npm:6.8.1":
+  version: 6.8.1
+  resolution: "react-router@npm:6.8.1"
   dependencies:
-    "@remix-run/router": 1.3.1
+    "@remix-run/router": 1.3.2
   peerDependencies:
     react: ">=16.8"
-  checksum: 6e258c47f6cbbd0b0c7c9fd7bbaf7cd5cd60472935512fbe97c91e4bbd9b1717f0dee231f5d7206bedfbccdbc21ab77eaf336ba971ea5d8c6b1277045a7b958a
+  checksum: 8e7cc7a516adeb6060911861af99d9b512893c15ec732cbf8574872919be4f3fe439ffa8c0876d1bcbced880d081bfeda3c01cb505b5a243565d10500ee0ac36
   languageName: node
   linkType: hard
 
@@ -9657,12 +9715,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@remix-run/dev": ^1.12.0
+    "@remix-run/dev": ^1.13.0
     "@remix-run/eslint-config": ^1.11.1
     "@remix-run/node": ^1.12.0
-    "@remix-run/react": ^1.12.0
-    "@remix-run/serve": ^1.12.0
-    "@remix-run/vercel": ^1.12.0
+    "@remix-run/react": ^1.13.0
+    "@remix-run/serve": ^1.13.0
+    "@remix-run/vercel": ^1.13.0
     "@trivago/prettier-plugin-sort-imports": ^4.0.0
     "@types/crypto-js": ^4.1.1
     "@types/react": ^18.0.27
@@ -9682,7 +9740,7 @@ __metadata:
     react-dom: ^18.2.0
     react-icons: ^4.7.1
     react-rewards: ^2.0.4
-    tailwindcss: ^3.2.4
+    tailwindcss: ^3.2.6
     tiny-invariant: ^1.3.1
     typescript: ^4.9.5
   languageName: unknown
@@ -10268,9 +10326,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.2.4":
-  version: 3.2.4
-  resolution: "tailwindcss@npm:3.2.4"
+"tailwindcss@npm:^3.2.6":
+  version: 3.2.6
+  resolution: "tailwindcss@npm:3.2.6"
   dependencies:
     arg: ^5.0.2
     chokidar: ^3.5.3
@@ -10286,12 +10344,12 @@ __metadata:
     normalize-path: ^3.0.0
     object-hash: ^3.0.0
     picocolors: ^1.0.0
-    postcss: ^8.4.18
+    postcss: ^8.0.9
     postcss-import: ^14.1.0
     postcss-js: ^4.0.0
     postcss-load-config: ^3.1.4
     postcss-nested: 6.0.0
-    postcss-selector-parser: ^6.0.10
+    postcss-selector-parser: ^6.0.11
     postcss-value-parser: ^4.2.0
     quick-lru: ^5.1.1
     resolve: ^1.22.1
@@ -10300,7 +10358,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: ec187d180c722ec4f57537f2216c7b21269b525f12aaf353cea464d939c3e6286a1221eb3e1206e45d1f015f296171309ad4d9952899b0245cd07d9500a9401f
+  checksum: 908451ff7b334b2aec2a0ba5bf426a786a3f190b440a1f8ede206d889448ffda3b77349829f06dc297336fd0b5edc696ae5f23b808d6444bb5c689f218e95323
   languageName: node
   linkType: hard
 
@@ -11194,6 +11252,13 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.1.1":
+  version: 2.2.1
+  resolution: "yaml@npm:2.2.1"
+  checksum: 84f68cbe462d5da4e7ded4a8bded949ffa912bc264472e5a684c3d45b22d8f73a3019963a32164023bdf3d83cfb6f5b58ff7b2b10ef5b717c630f40bd6369a23
   languageName: node
   linkType: hard
 
