@@ -13,7 +13,7 @@
     "@remix-run/vercel": "^1.13.0",
     "@vercel/node": "^2.8.16",
     "axios": "^1.3.2",
-    "cloudinary": "^1.33.0",
+    "cloudinary": "^1.34.0",
     "crypto-js": "^4.1.1",
     "daisyui": "^2.50.0",
     "dayjs": "^1.11.7",
