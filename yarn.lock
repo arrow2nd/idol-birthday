@@ -4093,9 +4093,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cloudinary@npm:^1.34.0":
-  version: 1.34.0
-  resolution: "cloudinary@npm:1.34.0"
+"cloudinary@npm:^1.35.0":
+  version: 1.35.0
+  resolution: "cloudinary@npm:1.35.0"
   dependencies:
     cloudinary-core: ^2.10.2
     core-js: ^3.6.5
@@ -4105,7 +4105,7 @@ __metadata:
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: c55e888f9dc14c35b2066a9de41916635df55c687747cbd6fe9e91a0101c39deb8a8fcbdccac6904901c2f129f2ab3a17383e680847341fc78079844b9973012
+  checksum: e5b09bba5672c390ebc924cf25776d16466e9ee0db95be589f1c17e4e46bad5732c1327e7a68ecd8b1dd51066f7eae2a68ddf28939a7fe681e7cf7e40973d4c0
   languageName: node
   linkType: hard
 
@@ -9222,12 +9222,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.7.1":
-  version: 4.7.1
-  resolution: "react-icons@npm:4.7.1"
+"react-icons@npm:^4.8.0":
+  version: 4.8.0
+  resolution: "react-icons@npm:4.8.0"
   peerDependencies:
     react: "*"
-  checksum: ed3cbdc5fc0c4d7d2debf78fdc8c4c80aeacf85a506a9a3c11b1d5922de393ac0a6542012b7fb81761e9280c54d0f26827d50a92b54ec8f0c8e52364d89970b5
+  checksum: 4dbba7ad989c295b410e19b2a702722dae44368cb04b6515f9471353552f31ac80bd350f121d5bff79f81504b84039ede44d09e9f035f48bb1032e6eace126c4
   languageName: node
   linkType: hard
 
@@ -9676,7 +9676,7 @@ __metadata:
     "@vercel/node": ^2.9.10
     autoprefixer: ^10.4.13
     axios: ^1.3.4
-    cloudinary: ^1.34.0
+    cloudinary: ^1.35.0
     concurrently: ^7.6.0
     crypto-js: ^4.1.1
     daisyui: ^2.51.3
@@ -9686,7 +9686,7 @@ __metadata:
     prettier: ^2.8.4
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-icons: ^4.7.1
+    react-icons: ^4.8.0
     react-rewards: ^2.0.4
     tailwindcss: ^3.2.7
     tiny-invariant: ^1.3.1
