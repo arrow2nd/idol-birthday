@@ -2426,7 +2426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.14.1":
+"@remix-run/node@npm:1.14.1, @remix-run/node@npm:^1.14.1":
   version: 1.14.1
   resolution: "@remix-run/node@npm:1.14.1"
   dependencies:
@@ -2440,23 +2440,6 @@ __metadata:
     source-map-support: ^0.5.21
     stream-slice: ^0.1.2
   checksum: e0d6dee90efcdee1a12ae180a32d698559ec55c0fc169d5ad10b69835a611e231606c2e535ab67e3a0171d941323bf6c097d12953be14764fcdfec52012710c3
-  languageName: node
-  linkType: hard
-
-"@remix-run/node@npm:^1.14.0":
-  version: 1.14.0
-  resolution: "@remix-run/node@npm:1.14.0"
-  dependencies:
-    "@remix-run/server-runtime": 1.14.0
-    "@remix-run/web-fetch": ^4.3.2
-    "@remix-run/web-file": ^3.0.2
-    "@remix-run/web-stream": ^1.0.3
-    "@web3-storage/multipart-parser": ^1.0.0
-    abort-controller: ^3.0.0
-    cookie-signature: ^1.1.0
-    source-map-support: ^0.5.21
-    stream-slice: ^0.1.2
-  checksum: 1ba33de5fa5c3e8fa9b22a76f59f09dae55d753136bd0b9f431344fca4ae36a245f84ab8aa158604e2acbc46a94fae1791cb0f8ef701747ed89a4ec211565247
   languageName: node
   linkType: hard
 
@@ -2492,21 +2475,6 @@ __metadata:
   bin:
     remix-serve: dist/cli.js
   checksum: 88313b90b92d67c4ab4a558b5937f5154c2a224f4859804303cdfd5b7d5c91a5b04646f443252e16bd8d49ea0dc615ec3e738cbb7cf4b809166ded262d7d69fe
-  languageName: node
-  linkType: hard
-
-"@remix-run/server-runtime@npm:1.14.0":
-  version: 1.14.0
-  resolution: "@remix-run/server-runtime@npm:1.14.0"
-  dependencies:
-    "@remix-run/router": 1.3.3
-    "@types/cookie": ^0.4.0
-    "@types/react": ^18.0.15
-    "@web3-storage/multipart-parser": ^1.0.0
-    cookie: ^0.4.1
-    set-cookie-parser: ^2.4.8
-    source-map: ^0.7.3
-  checksum: 9c227723750275c71c750fbcfe66493359065818934f01e8d88b69e85d2b4fe61a4a1c4a931e20b1a298d6338e18d994d5c627581bbeaa8e8856fa9245fb284a
   languageName: node
   linkType: hard
 
@@ -9716,7 +9684,7 @@ __metadata:
   dependencies:
     "@remix-run/dev": ^1.14.1
     "@remix-run/eslint-config": ^1.13.0
-    "@remix-run/node": ^1.14.0
+    "@remix-run/node": ^1.14.1
     "@remix-run/react": ^1.14.1
     "@remix-run/serve": ^1.14.1
     "@remix-run/vercel": ^1.14.1
