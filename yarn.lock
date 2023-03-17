@@ -3176,10 +3176,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:6.3.2":
-  version: 6.3.2
-  resolution: "@vercel/build-utils@npm:6.3.2"
-  checksum: 8b9b7e157e5af2b7dfef9a49588e3bbcb091515268268f3163cd1219ab6223d363c0bd5725c7d9659c199a90bddc7c702db089be4e8f108931ddcbe373c3c8de
+"@vercel/build-utils@npm:6.4.0":
+  version: 6.4.0
+  resolution: "@vercel/build-utils@npm:6.4.0"
+  checksum: ab6af1d08cb946ba82e4ed7021e92a89963ec71cf3956fa47d6fe2e8876844db0b46fe6674ab5f8a6a3afc02a5ae1245ebebc80bbfad27b038d21fa5eacd8457
   languageName: node
   linkType: hard
 
@@ -3191,32 +3191,32 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.9.10
-  resolution: "@vercel/node@npm:2.9.10"
+  version: 2.9.13
+  resolution: "@vercel/node@npm:2.9.13"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
-    "@vercel/build-utils": 6.3.2
+    "@vercel/build-utils": 6.4.0
     "@vercel/node-bridge": 3.1.14
-    "@vercel/static-config": 2.0.13
+    "@vercel/static-config": 2.0.14
     edge-runtime: 2.0.0
     esbuild: 0.14.47
     exit-hook: 2.2.1
     node-fetch: 2.6.7
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: d337f4b692f03deec4f52a5ca67397ba99f1735ac40c832e0ad1b57eeaaa4277dd09d908f89fde67baced67dfdf1c7f8d2ebf670b669eff13520a678206d688a
+  checksum: 7f25562ea3efaf9f6b95414fa7d5f8d1d87fc0c6d2d2461343dd08a35463616ef0398f3d1aa1942b62095b262ef5c1ffebb9148cfdfd644a17e70b4a8b994fd2
   languageName: node
   linkType: hard
 
-"@vercel/static-config@npm:2.0.13":
-  version: 2.0.13
-  resolution: "@vercel/static-config@npm:2.0.13"
+"@vercel/static-config@npm:2.0.14":
+  version: 2.0.14
+  resolution: "@vercel/static-config@npm:2.0.14"
   dependencies:
     ajv: 8.6.3
     json-schema-to-ts: 1.6.4
     ts-morph: 12.0.0
-  checksum: 7db84a0fbf47153498e357fa0c07a589c0ee2db490e67b4e2fa0a32962d60883b33691f16a032f4478cf1ffcd95fb30102b01808ad1fdb88c69e82c3ad653df5
+  checksum: 1cc6e233b110f734b40f499e314ab079b3681b4d93d291fc344c26094e37f006dfea502d24eb053bacd21a77a9f8c63ca89cb96a930c570f8cc200289a5374f3
   languageName: node
   linkType: hard
 
