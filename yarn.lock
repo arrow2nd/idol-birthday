@@ -3191,8 +3191,8 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.9.14
-  resolution: "@vercel/node@npm:2.9.14"
+  version: 2.10.0
+  resolution: "@vercel/node@npm:2.10.0"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
@@ -3205,7 +3205,7 @@ __metadata:
     node-fetch: 2.6.7
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: 3a6b25b9f1ef791a0783ac270f557db46df9717e2f157d5edd57cbfd2bd5da0ad16d459be395ef030affaf89d6299b2553fb4e2fd877672c324a4dc42ae673b5
+  checksum: 696867bf23e25d22bcc5e532b7fe96a29619834707e60c9885d51135bcd71c42d3654cb548f49d32cb4845b3a36756659423dc08e4e2ad65ea426f7064bed5e7
   languageName: node
   linkType: hard
 
