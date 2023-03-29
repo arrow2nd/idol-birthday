@@ -3176,10 +3176,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:6.6.0":
-  version: 6.6.0
-  resolution: "@vercel/build-utils@npm:6.6.0"
-  checksum: 4bdc600b0516cf86fc01bda2b8faa7d8faf6e257ac308c4b9521df7c7e66a8cf2e6965266a2657428ac01829b046e609e0fb7005a8108bf33f5c8f4bc71f9d4c
+"@vercel/build-utils@npm:6.7.0":
+  version: 6.7.0
+  resolution: "@vercel/build-utils@npm:6.7.0"
+  checksum: 66eb28bc1675f108bc59754588c5104f5b095fbc842d991ddae91eb22f6c0f08ed1e4a0c399003f55f8f53363c87af33ef0e0e55dfa2f3c932e22c92b9fb61ce
   languageName: node
   linkType: hard
 
@@ -3191,12 +3191,12 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.10.1
-  resolution: "@vercel/node@npm:2.10.1"
+  version: 2.10.2
+  resolution: "@vercel/node@npm:2.10.2"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
-    "@vercel/build-utils": 6.6.0
+    "@vercel/build-utils": 6.7.0
     "@vercel/node-bridge": 4.0.0
     "@vercel/static-config": 2.0.14
     edge-runtime: 2.0.0
@@ -3205,7 +3205,7 @@ __metadata:
     node-fetch: 2.6.7
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: 9932896e61ccf766bd896a142be4a60834d2cea9357055dc11dd4c0644bac808ae53b66e6f53bd81519e8b65860a97f42d91130d0038f1e7f4ffa959ec625ff5
+  checksum: 6ed63ff6407be59d0b53ab11bdb64dfa71998ae7c84d02786178c3daca48e2d7c5da9a09f5c9c91713ca58b1563f367eed2a79021d59f9633c3dedfd1dfec02b
   languageName: node
   linkType: hard
 
