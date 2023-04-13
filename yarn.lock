@@ -4282,8 +4282,8 @@ __metadata:
   linkType: hard
 
 "cloudinary@npm:^1.35.0":
-  version: 1.35.0
-  resolution: "cloudinary@npm:1.35.0"
+  version: 1.36.1
+  resolution: "cloudinary@npm:1.36.1"
   dependencies:
     cloudinary-core: ^2.10.2
     core-js: ^3.6.5
@@ -4293,7 +4293,7 @@ __metadata:
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: e5b09bba5672c390ebc924cf25776d16466e9ee0db95be589f1c17e4e46bad5732c1327e7a68ecd8b1dd51066f7eae2a68ddf28939a7fe681e7cf7e40973d4c0
+  checksum: f25f5b15437973098c55d472b8003ebce6fec3386533074f20ae655d80579d5dfa6a1b603959be61875fed98e6a54d83c4f082fd6f12e4e16002cec3a3098b88
   languageName: node
   linkType: hard
 
