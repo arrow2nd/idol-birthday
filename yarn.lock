@@ -1750,10 +1750,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@edge-runtime/format@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@edge-runtime/format@npm:1.1.0"
-  checksum: b017896197776eed3490bcb92ce6265d9cd1c46ab66a8eb65f1895093a163fbef281bf44acd2129d0d92882437876281a71e160f174ec0b43ef34893a3fe96fd
+"@edge-runtime/format@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@edge-runtime/format@npm:2.0.1"
+  checksum: 785423504eb48e5dca8a7d679229decfa15b1db1b7ed29d4ed1c9b9cd8bbebbaccd5996987e3860cb74757d5179b8a76241efa8f713a8823e97285baea996034
   languageName: node
   linkType: hard
 
@@ -1764,12 +1764,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@edge-runtime/primitives@npm:2.1.2":
+  version: 2.1.2
+  resolution: "@edge-runtime/primitives@npm:2.1.2"
+  checksum: 23863c517ef9dd9a8ff8fbaa739833ab417b80f2e4e8b3cb1723fd6b52e038ad22209a9744e53d066c1ad7ebeea5a00c7c6cee03c6f248bc351d0e4bde4bc96f
+  languageName: node
+  linkType: hard
+
 "@edge-runtime/vm@npm:2.0.0":
   version: 2.0.0
   resolution: "@edge-runtime/vm@npm:2.0.0"
   dependencies:
     "@edge-runtime/primitives": 2.0.0
   checksum: fee554b8fbc6887a4a23a4c65b947fc7a5c7901c2b12d5b211d80cd210e3885168985513ea278488afd0e107c470a6e8f535e010e3fc7903bc5f306a3c8094f7
+  languageName: node
+  linkType: hard
+
+"@edge-runtime/vm@npm:2.1.2":
+  version: 2.1.2
+  resolution: "@edge-runtime/vm@npm:2.1.2"
+  dependencies:
+    "@edge-runtime/primitives": 2.1.2
+  checksum: f0f8a7488db4ccf562d6d80500c6aa19f704314f811047b224afd9d37338e63744b17f2334d8aa5f302a5d15cd1c708a2fc9aee318b8320500aaaf4a0a39b1e7
   languageName: node
   linkType: hard
 
@@ -3319,6 +3335,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/error-utils@npm:1.0.8":
+  version: 1.0.8
+  resolution: "@vercel/error-utils@npm:1.0.8"
+  checksum: b338e27b4fee0b5416475343cb0fbb20f0cf448561b2a1cd5a8df2bdb6a84b1fa01df15ae011257ba8028a4e6ed7355277a610ea1db6866209c42429a964ac94
+  languageName: node
+  linkType: hard
+
 "@vercel/node-bridge@npm:4.0.1":
   version: 4.0.1
   resolution: "@vercel/node-bridge@npm:4.0.1"
@@ -3327,32 +3350,36 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.10.3
-  resolution: "@vercel/node@npm:2.10.3"
+  version: 2.12.0
+  resolution: "@vercel/node@npm:2.12.0"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
     "@vercel/build-utils": 6.7.1
+    "@vercel/error-utils": 1.0.8
     "@vercel/node-bridge": 4.0.1
-    "@vercel/static-config": 2.0.15
-    edge-runtime: 2.0.0
+    "@vercel/static-config": 2.0.16
+    async-listen: 1.2.0
+    edge-runtime: 2.1.4
     esbuild: 0.14.47
     exit-hook: 2.2.1
     node-fetch: 2.6.7
+    path-to-regexp: 6.2.1
+    ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: 74950ca2c15cfd2113cd12f44a4a943a331bf6b219fed7f889f55a13baf55f76749dbc945e7060dcceb6d74f3d95000d3264bb3054d15cc718019cd0b0f96eb8
+  checksum: ea49159ae744a162d6d9462c2b3f260525e29ac25151fc3f2ffab37a2cb6a6f7fef3335d19b693ca8d0b55bfbbc2d5284d12195c18f7e65784ba93f689929cdf
   languageName: node
   linkType: hard
 
-"@vercel/static-config@npm:2.0.15":
-  version: 2.0.15
-  resolution: "@vercel/static-config@npm:2.0.15"
+"@vercel/static-config@npm:2.0.16":
+  version: 2.0.16
+  resolution: "@vercel/static-config@npm:2.0.16"
   dependencies:
     ajv: 8.6.3
     json-schema-to-ts: 1.6.4
     ts-morph: 12.0.0
-  checksum: 79d19a489813ea04e65c8136b42f425f4cb9c3f954edff60920f99a8c684e5a3743806543b11eda855f657e3a1d950c62db4d982d944cac3401ea7962daeb8a0
+  checksum: e4255b2c0466abf99110d7a22ccc0224b05becde367d1e40b52dc9832a389a6bdd77de33b9ce36f15179802c40c4c87c87a430fdf8ff437ce3822c9eb608cdc5
   languageName: node
   linkType: hard
 
@@ -3722,6 +3749,20 @@ __metadata:
   bin:
     astring: bin/astring
   checksum: 72fc85de7420ca6edeee15157fd65c5253a8cb1ced979ba66ecc439fa569f1c1cc242e4c0a9fc5a6380bf73fb5ec894dc65cf1dc0f3d1cab8c707b31df7daa1c
+  languageName: node
+  linkType: hard
+
+"async-listen@npm:1.2.0":
+  version: 1.2.0
+  resolution: "async-listen@npm:1.2.0"
+  checksum: 259f0406fccf1ecc80a707b0808d7607e0d1c7f5212ae1537b4f597202713e2d6cbd48026ed3bf9bc6bd8f85077c308797ac38831e93eb920e3ce2907efa816c
+  languageName: node
+  linkType: hard
+
+"async-listen@npm:2.0.3":
+  version: 2.0.3
+  resolution: "async-listen@npm:2.0.3"
+  checksum: 6d40e4d19b8bb20a16296c43a80bc57cd969f485611cf727ffc4e89db17ba2d338074a29d8a60223fee6c96379d97cf3d7056bac9498058cc3699a223c91d4e4
   languageName: node
   linkType: hard
 
@@ -4936,14 +4977,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"edge-runtime@npm:2.0.0":
-  version: 2.0.0
-  resolution: "edge-runtime@npm:2.0.0"
+"edge-runtime@npm:2.1.4":
+  version: 2.1.4
+  resolution: "edge-runtime@npm:2.1.4"
   dependencies:
-    "@edge-runtime/format": 1.1.0
-    "@edge-runtime/vm": 2.0.0
+    "@edge-runtime/format": 2.0.1
+    "@edge-runtime/vm": 2.1.2
+    async-listen: 2.0.3
     exit-hook: 2.2.1
-    http-status: 1.5.3
     mri: 1.2.0
     picocolors: 1.0.0
     pretty-bytes: 5.6.0
@@ -4951,7 +4992,7 @@ __metadata:
     time-span: 4.0.0
   bin:
     edge-runtime: dist/cli/index.js
-  checksum: 406dd2a6ffdc19e54e14dcac1d9433f12069c1f867ca9a6264108f1a38397e5910f48c0e5999a7eb1bfd705747f056e1f0eb479f88003663a817819f61212149
+  checksum: 726901aec8d1b023938400a8fe3e2616dea27332f9ac9a31ecdf0c5f0bf0a046a2b96d15299a5eb2ea0eb3457a0729a459aa55d771416b4f080b7350ddaf264f
   languageName: node
   linkType: hard
 
@@ -6873,13 +6914,6 @@ __metadata:
     agent-base: 6
     debug: 4
   checksum: e2ee1ff1656a131953839b2a19cd1f3a52d97c25ba87bd2559af6ae87114abf60971e498021f9b73f9fd78aea8876d1fb0d4656aac8a03c6caa9fc175f22b786
-  languageName: node
-  linkType: hard
-
-"http-status@npm:1.5.3":
-  version: 1.5.3
-  resolution: "http-status@npm:1.5.3"
-  checksum: bcb07045f790dcf184c3940b1399113381d1b895bfb7f4d7d8eacf6bd1aef5461064b8fbc4e23c7276bfe4a275a3ebedc50d80e5216b3909478fb3dc58dbbb04
   languageName: node
   linkType: hard
 
@@ -9100,6 +9134,13 @@ __metadata:
   version: 0.1.7
   resolution: "path-to-regexp@npm:0.1.7"
   checksum: 69a14ea24db543e8b0f4353305c5eac6907917031340e5a8b37df688e52accd09e3cebfe1660b70d76b6bd89152f52183f28c74813dbf454ba1a01c82a38abce
+  languageName: node
+  linkType: hard
+
+"path-to-regexp@npm:6.2.1":
+  version: 6.2.1
+  resolution: "path-to-regexp@npm:6.2.1"
+  checksum: f0227af8284ea13300f4293ba111e3635142f976d4197f14d5ad1f124aebd9118783dd2e5f1fe16f7273743cc3dbeddfb7493f237bb27c10fdae07020cc9b698
   languageName: node
   linkType: hard
 
