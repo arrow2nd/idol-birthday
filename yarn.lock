@@ -4313,7 +4313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cloudinary-core@npm:^2.10.2":
+"cloudinary-core@npm:2.13.0":
   version: 2.13.0
   resolution: "cloudinary-core@npm:2.13.0"
   peerDependencies:
@@ -4323,18 +4323,18 @@ __metadata:
   linkType: hard
 
 "cloudinary@npm:^1.35.0":
-  version: 1.36.1
-  resolution: "cloudinary@npm:1.36.1"
+  version: 1.36.2
+  resolution: "cloudinary@npm:1.36.2"
   dependencies:
-    cloudinary-core: ^2.10.2
-    core-js: ^3.6.5
-    lodash: ^4.17.21
+    cloudinary-core: 2.13.0
+    core-js: 3.30.1
+    lodash: 4.17.21
     proxy-agent: ^5.0.0
-    q: ^1.5.1
+    q: 1.5.1
   dependenciesMeta:
     proxy-agent:
       optional: true
-  checksum: f25f5b15437973098c55d472b8003ebce6fec3386533074f20ae655d80579d5dfa6a1b603959be61875fed98e6a54d83c4f082fd6f12e4e16002cec3a3098b88
+  checksum: 8ef986e12911ce8cf21deb94b35b0bd0db8a5f842528d6cb0218775d5c4b6f54c35169ff2d8e96855675e5b7a197a9a5defdedc640ced71d6e2941b493e23c52
   languageName: node
   linkType: hard
 
@@ -4574,10 +4574,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.6.5":
-  version: 3.25.2
-  resolution: "core-js@npm:3.25.2"
-  checksum: e93c6c645d44d98973efb07750975552ad405f080f5a563a99972ff6b2c5c6ee25705f55accd363f5dccd51e9e5f56be25e2be6c14a7294da65763e0e5659c02
+"core-js@npm:3.30.1":
+  version: 3.30.1
+  resolution: "core-js@npm:3.30.1"
+  checksum: 6d4a00b488694d4c715c424e15dfef31433ac7aa395c39c518a0cfacec918ada1c716fed74682033197e0164e23bbf38bfd598ee9a239c4aaa590ab1ba862ac8
   languageName: node
   linkType: hard
 
@@ -7741,7 +7741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21":
+"lodash@npm:4.17.21, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -9570,7 +9570,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"q@npm:^1.5.1":
+"q@npm:1.5.1":
   version: 1.5.1
   resolution: "q@npm:1.5.1"
   checksum: 147baa93c805bc1200ed698bdf9c72e9e42c05f96d007e33a558b5fdfd63e5ea130e99313f28efc1783e90e6bdb4e48b67a36fcc026b7b09202437ae88a1fb12
