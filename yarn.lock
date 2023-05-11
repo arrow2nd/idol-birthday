@@ -3303,8 +3303,8 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.14.1
-  resolution: "@vercel/node@npm:2.14.1"
+  version: 2.14.2
+  resolution: "@vercel/node@npm:2.14.2"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
@@ -3312,7 +3312,7 @@ __metadata:
     "@vercel/build-utils": 6.7.2
     "@vercel/error-utils": 1.0.8
     "@vercel/static-config": 2.0.17
-    async-listen: 1.2.0
+    async-listen: 3.0.0
     edge-runtime: 2.1.4
     esbuild: 0.14.47
     exit-hook: 2.2.1
@@ -3322,7 +3322,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     ws: 8.13.0
-  checksum: 2d41aae609c26fd1a2a8c0cb459f4818ec68b1bebdce7983c160f50735a55a6c12b87758f69add66e147591fe6bf35b0ab984579ff17ae1d992b661e713b0fa6
+  checksum: a2ac70446f043f58adefaf4ffeebe2eb67d6dad6e87ba101a0b0e41bd79037e6d08fa4a24025bd1cf4aa7d254eec76e1fefd4374cc9f796c039c5ac238efe6cc
   languageName: node
   linkType: hard
 
@@ -3714,17 +3714,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async-listen@npm:1.2.0":
-  version: 1.2.0
-  resolution: "async-listen@npm:1.2.0"
-  checksum: 259f0406fccf1ecc80a707b0808d7607e0d1c7f5212ae1537b4f597202713e2d6cbd48026ed3bf9bc6bd8f85077c308797ac38831e93eb920e3ce2907efa816c
-  languageName: node
-  linkType: hard
-
 "async-listen@npm:2.0.3":
   version: 2.0.3
   resolution: "async-listen@npm:2.0.3"
   checksum: 6d40e4d19b8bb20a16296c43a80bc57cd969f485611cf727ffc4e89db17ba2d338074a29d8a60223fee6c96379d97cf3d7056bac9498058cc3699a223c91d4e4
+  languageName: node
+  linkType: hard
+
+"async-listen@npm:3.0.0":
+  version: 3.0.0
+  resolution: "async-listen@npm:3.0.0"
+  checksum: 3c238e213219ca71bd1239398a852d7c40b9fe212066616d5ab80861c2a014c100acebe48cd57b5ac2d8d66096ee0ea760b25d574f99a0236977921ff7149582
   languageName: node
   linkType: hard
 
