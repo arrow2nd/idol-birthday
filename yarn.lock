@@ -3357,29 +3357,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:6.7.3":
-  version: 6.7.3
-  resolution: "@vercel/build-utils@npm:6.7.3"
-  checksum: 3dfc095fd4ff70b2e91f9687556f3bbc1b1e5ce42d0ad08e90b4d0321d76d30b721cbb2f22d060ffa6a9fbe250cf0a9dce8e099372fa87c14fae7cbd5b18faee
+"@vercel/build-utils@npm:6.7.5":
+  version: 6.7.5
+  resolution: "@vercel/build-utils@npm:6.7.5"
+  checksum: a814de18015c450447efabafffffbbbf8d313ce966d2449d1903b5cc95f6acfc4de6ebd5b07fc02d9ed1b9b79af89466c7851beda7ee9339e05ebd883742c143
   languageName: node
   linkType: hard
 
-"@vercel/error-utils@npm:1.0.8":
-  version: 1.0.8
-  resolution: "@vercel/error-utils@npm:1.0.8"
-  checksum: b338e27b4fee0b5416475343cb0fbb20f0cf448561b2a1cd5a8df2bdb6a84b1fa01df15ae011257ba8028a4e6ed7355277a610ea1db6866209c42429a964ac94
+"@vercel/error-utils@npm:1.0.10":
+  version: 1.0.10
+  resolution: "@vercel/error-utils@npm:1.0.10"
+  checksum: 84d8233b1912b1fc5e83ba27230c70df10c41f558c70f5b8509e19b0fab72c396e7eea03886c9fa1e81dcc19acad30a07730c4c30fa366d9827bdaccfd0383a5
   languageName: node
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.14.3
-  resolution: "@vercel/node@npm:2.14.3"
+  version: 2.14.5
+  resolution: "@vercel/node@npm:2.14.5"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
     "@types/node-fetch": 2.6.3
-    "@vercel/build-utils": 6.7.3
-    "@vercel/error-utils": 1.0.8
+    "@vercel/build-utils": 6.7.5
+    "@vercel/error-utils": 1.0.10
     "@vercel/static-config": 2.0.17
     async-listen: 3.0.0
     edge-runtime: 2.1.4
@@ -3391,7 +3391,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     ws: 8.13.0
-  checksum: 51be90cea907979b188506bb6be654c07b3414c19a142a53c00e2a583e6bd87eaabc26a02c79927f19522bb73a783e073fc2f40aa53ad69f97697520230b87c5
+  checksum: fceff0fc4f4de9b38f3f3b958be929711cefa7eacf0495e3bb68f368216f9c0562b5f19da51bb8c2ba6bb80eee186ec30e9e750e5aabe8ce2677cea44a138346
   languageName: node
   linkType: hard
 
