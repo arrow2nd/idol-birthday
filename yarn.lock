@@ -1913,6 +1913,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@edge-runtime/node-utils@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@edge-runtime/node-utils@npm:2.0.3"
+  checksum: dd409eb4fc3305b29082c3678f412aaf6d2cca2aef9bef4986e5d135dce032195f73a347c64723fd16e18cfcccdcea104378390f56b9104b5cc4bbc1280aa406
+  languageName: node
+  linkType: hard
+
 "@edge-runtime/primitives@npm:2.0.0":
   version: 2.0.0
   resolution: "@edge-runtime/primitives@npm:2.0.0"
@@ -3373,9 +3380,11 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.14.5
-  resolution: "@vercel/node@npm:2.14.5"
+  version: 2.15.1
+  resolution: "@vercel/node@npm:2.15.1"
   dependencies:
+    "@edge-runtime/node-utils": 2.0.3
+    "@edge-runtime/primitives": 2.1.2
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
     "@types/node-fetch": 2.6.3
@@ -3392,7 +3401,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     ws: 8.13.0
-  checksum: fceff0fc4f4de9b38f3f3b958be929711cefa7eacf0495e3bb68f368216f9c0562b5f19da51bb8c2ba6bb80eee186ec30e9e750e5aabe8ce2677cea44a138346
+  checksum: 53b667cfb523e684058b10eae0ea4189c3a3156b9fd269432cdd844d55653f0494e85812e025af510e2a99204e8559f979af47f7162d3de9c3aec36a021767fc
   languageName: node
   linkType: hard
 
