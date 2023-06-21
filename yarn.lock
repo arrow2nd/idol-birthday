@@ -4692,8 +4692,8 @@ __metadata:
   linkType: hard
 
 "daisyui@npm:^3.0.0":
-  version: 3.1.1
-  resolution: "daisyui@npm:3.1.1"
+  version: 3.1.5
+  resolution: "daisyui@npm:3.1.5"
   dependencies:
     colord: ^2.9
     css-selector-tokenizer: ^0.8
@@ -4701,7 +4701,7 @@ __metadata:
     tailwindcss: ^3
   peerDependencies:
     postcss: ^8
-  checksum: b1f6475024b4e4f4f61848ee37472c31e4fe6241d29ec52c1191adf6d6496b7e4bbb535079fb4054a37d3b8ca9be2fcc0bc1cff1a2458f3000084b9023e05183
+  checksum: 02b560e1340584488e227353d8d610d56e1b45ad9eab8ddaa4ea7926abe5821d531d2cf90bc9f51635ba97c0056495c3cd70873414a9226692e0b4cf698f8cac
   languageName: node
   linkType: hard
 
