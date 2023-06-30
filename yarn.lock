@@ -2547,8 +2547,8 @@ __metadata:
   linkType: hard
 
 "@remix-run/dev@npm:^1.14.1":
-  version: 1.18.0
-  resolution: "@remix-run/dev@npm:1.18.0"
+  version: 1.18.1
+  resolution: "@remix-run/dev@npm:1.18.1"
   dependencies:
     "@babel/core": ^7.21.8
     "@babel/generator": ^7.21.5
@@ -2560,7 +2560,7 @@ __metadata:
     "@babel/traverse": ^7.21.5
     "@babel/types": ^7.21.5
     "@npmcli/package-json": ^2.0.0
-    "@remix-run/server-runtime": 1.18.0
+    "@remix-run/server-runtime": 1.18.1
     "@vanilla-extract/integration": ^6.2.0
     arg: ^5.0.1
     cacache: ^15.0.5
@@ -2605,19 +2605,19 @@ __metadata:
     ws: ^7.4.5
     xdm: ^2.0.0
   peerDependencies:
-    "@remix-run/serve": ^1.18.0
+    "@remix-run/serve": ^1.18.1
   peerDependenciesMeta:
     "@remix-run/serve":
       optional: true
   bin:
     remix: dist/cli.js
-  checksum: 05cdc6094cccdbbee5fbfb7451f69d5082998e4dfc730276d8f8fd4af50918bddad5996d03d17f0807e18f394215b2223ed9559adf5fb4a4213d76c42b47f56d
+  checksum: 6f556320c084f24453e9e4864da887261966c0d8cb89e8b4b7ba81297fcf93036bd23f834e64e693768b015a7679b058ebf40f8d2518203c191740cd3693e7a1
   languageName: node
   linkType: hard
 
 "@remix-run/eslint-config@npm:^1.13.0":
-  version: 1.18.0
-  resolution: "@remix-run/eslint-config@npm:1.18.0"
+  version: 1.18.1
+  resolution: "@remix-run/eslint-config@npm:1.18.1"
   dependencies:
     "@babel/core": ^7.21.8
     "@babel/eslint-parser": ^7.21.8
@@ -2642,26 +2642,26 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 41b0a4cb76548d7f309713c9d9611d3706a66d8e07c9014933c9816d64d57a6977caf0f4bea85f7bf9218298ad581337a95cdb8f71b2e8d38826af2a07d0d48b
+  checksum: eb70abc4dbe5126f6106934766365d65ab2db98ab1b4f8f656fde9920aab802c21da920b9f7732f8c0f7f3a12a7493be53bb398f7b434f07b09f9b75c5312d84
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:1.18.0":
-  version: 1.18.0
-  resolution: "@remix-run/express@npm:1.18.0"
+"@remix-run/express@npm:1.18.1":
+  version: 1.18.1
+  resolution: "@remix-run/express@npm:1.18.1"
   dependencies:
-    "@remix-run/node": 1.18.0
+    "@remix-run/node": 1.18.1
   peerDependencies:
     express: ^4.17.1
-  checksum: d3cbf1cd7b75d363855e95b2ddc8fdd3d2c5b6297617ff2cdff45933fae917559494cfceee25213c232561338270c60e1326c5a58f73d743242a9f41135dfdc4
+  checksum: 3f31c872d84542f09ab0cec8a8ba8d5e87e471a6f4e030931a3f922175135a7b776c2c757de191ae5e3a385646c895e43556b3fcde617aee9b732f5d540c3812
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:1.18.0, @remix-run/node@npm:^1.14.1":
-  version: 1.18.0
-  resolution: "@remix-run/node@npm:1.18.0"
+"@remix-run/node@npm:1.18.1, @remix-run/node@npm:^1.14.1":
+  version: 1.18.1
+  resolution: "@remix-run/node@npm:1.18.1"
   dependencies:
-    "@remix-run/server-runtime": 1.18.0
+    "@remix-run/server-runtime": 1.18.1
     "@remix-run/web-fetch": ^4.3.4
     "@remix-run/web-file": ^3.0.2
     "@remix-run/web-stream": ^1.0.3
@@ -2670,67 +2670,67 @@ __metadata:
     cookie-signature: ^1.1.0
     source-map-support: ^0.5.21
     stream-slice: ^0.1.2
-  checksum: 857ecb827c95244a8c807e19e64d8c172e52eefd0d9bbaf9b6a58cefe5264c76c4eb527413f0257f11f400366f5abc7be08c73a0e20c815c821d8ed56cc1b69d
+  checksum: 94ff392e1e81e8a4f01c1d37a56c283a9cb3f97a3d2e1b999a5818e274d91f012f059ebead8b97bef9ae93f3f006ae739e53756b790e1c7497fa515387ca6055
   languageName: node
   linkType: hard
 
 "@remix-run/react@npm:^1.14.1":
-  version: 1.18.0
-  resolution: "@remix-run/react@npm:1.18.0"
+  version: 1.18.1
+  resolution: "@remix-run/react@npm:1.18.1"
   dependencies:
-    "@remix-run/router": 1.7.0
-    react-router-dom: 6.14.0
+    "@remix-run/router": 1.7.1
+    react-router-dom: 6.14.1
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 823343b2eec2c59e54b83cde050dc6557b796b5ff1ee3a38655a6ffe5f22a37c36774ec00e3bd503204b7e4654e545c0f70958c1adab31f88b850bbe2fdad2b7
+  checksum: 028ddc207bf175c9f1ac9202e42e922a1d2cd3938cf4e6f5a88f264988c44bd282b81257fe788fec06b83919c830f3873ee3ea295fbb48e98581dab02a3524a9
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.7.0":
-  version: 1.7.0
-  resolution: "@remix-run/router@npm:1.7.0"
-  checksum: 80cab2fda9e4b9047c991e9b05b8bda8afa2adf7b85c785d7e6f593a399eb264d6a74302438babc81833b5d304eae0b22832f27552b1601e2ca9001d94b8e174
+"@remix-run/router@npm:1.7.1":
+  version: 1.7.1
+  resolution: "@remix-run/router@npm:1.7.1"
+  checksum: d13ad7e0b3b35379f8fdec1eec4f515325b618e431915e12fb9f1cd812ee959add0e7045edcb229ba17888ecfc787869b64e6cb4153ae3be148887e234b6ffac
   languageName: node
   linkType: hard
 
 "@remix-run/serve@npm:^1.14.1":
-  version: 1.18.0
-  resolution: "@remix-run/serve@npm:1.18.0"
+  version: 1.18.1
+  resolution: "@remix-run/serve@npm:1.18.1"
   dependencies:
-    "@remix-run/express": 1.18.0
-    "@remix-run/node": 1.18.0
+    "@remix-run/express": 1.18.1
+    "@remix-run/node": 1.18.1
     compression: ^1.7.4
     express: ^4.17.1
     morgan: ^1.10.0
   bin:
     remix-serve: dist/cli.js
-  checksum: 8948e3fc3535ceaf9b70e9aa5e33175452196c66c645a78f33633fdfeb77cee9bf94e8493e7c56f7171359a7ee17a976e43c087de40b8a0d610a1da836e335b6
+  checksum: 2f318bb6fc9017d5688edce5f5d20911775364d0942abf523d34db4a532e1afdd1a01af43992e5ba7f88cbf52eaff0e275680eec94814feb813abae84ca3f0d8
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:1.18.0":
-  version: 1.18.0
-  resolution: "@remix-run/server-runtime@npm:1.18.0"
+"@remix-run/server-runtime@npm:1.18.1":
+  version: 1.18.1
+  resolution: "@remix-run/server-runtime@npm:1.18.1"
   dependencies:
-    "@remix-run/router": 1.7.0
+    "@remix-run/router": 1.7.1
     "@types/cookie": ^0.4.1
     "@web3-storage/multipart-parser": ^1.0.0
     cookie: ^0.4.1
     set-cookie-parser: ^2.4.8
     source-map: ^0.7.3
-  checksum: 28ad5f41eacf93a02a57fe147dfa4cfa110cddffcd6aad06e49f73bf44016824e362bd97b78cf7d668dfcef3968819ac989e95f75478cb36a96e8719c5deff32
+  checksum: 275eefbf30b69e92d0955ddfcfb7843ca9576f3c199f927898006ae830b86b6f663141bdcee4f96a1f319095db8341dfb8074679b9030ec92d113665e955febf
   languageName: node
   linkType: hard
 
 "@remix-run/vercel@npm:^1.14.1":
-  version: 1.18.0
-  resolution: "@remix-run/vercel@npm:1.18.0"
+  version: 1.18.1
+  resolution: "@remix-run/vercel@npm:1.18.1"
   dependencies:
-    "@remix-run/node": 1.18.0
+    "@remix-run/node": 1.18.1
   peerDependencies:
     "@vercel/node": ^1.8.3 || ^2.4.0
-  checksum: 720241ed47962a39fe99ccd272b96b3333d73863e3411992017f7bebc95009da577b089c69224d7ec599a82dfb5cd6c97d287b84dba9be97526d9d5595a0c5ec
+  checksum: 01a82e13dc59f19949b30b1fcd4860d7c215e78a9fde88869cfab090cf31f73de4e88421575055f1f6cc93213fa5e5ee0a80f95698e27f04929052aded54721d
   languageName: node
   linkType: hard
 
@@ -9845,27 +9845,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:6.14.0":
-  version: 6.14.0
-  resolution: "react-router-dom@npm:6.14.0"
+"react-router-dom@npm:6.14.1":
+  version: 6.14.1
+  resolution: "react-router-dom@npm:6.14.1"
   dependencies:
-    "@remix-run/router": 1.7.0
-    react-router: 6.14.0
+    "@remix-run/router": 1.7.1
+    react-router: 6.14.1
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 66800b8779f5ae9f8b8e1f41e25599519a40c532e020a8c1450e1645d2c8cc8351e51ed0f2516584681e9a509c6c40f629f2d80663123e132c68022c0edced03
+  checksum: 6ddda481edb2c614671bcaf24b0ca07ca00215f1d0350ede43a03ba24c3401a537dfe4a9f5e108a512c2703e4a8ce99a3301c15caf16012b67b248b1a055d69a
   languageName: node
   linkType: hard
 
-"react-router@npm:6.14.0":
-  version: 6.14.0
-  resolution: "react-router@npm:6.14.0"
+"react-router@npm:6.14.1":
+  version: 6.14.1
+  resolution: "react-router@npm:6.14.1"
   dependencies:
-    "@remix-run/router": 1.7.0
+    "@remix-run/router": 1.7.1
   peerDependencies:
     react: ">=16.8"
-  checksum: 50a941746d12e81cea5495505c1afbcd099cc7d497624b013454cfd5a360d9403578f8fb3df17973bf775fbff91cb76477448023d537215e6aa71a8b85ae95bd
+  checksum: 16f3d108e0f833bfee447192e3f40bd6731b8b11d42ca6925443ec8aeb157a889fe8ece67baf690f75f0d146d0a212656f9216fcc2df6fd3a2bd263108ed0abb
   languageName: node
   linkType: hard
 
