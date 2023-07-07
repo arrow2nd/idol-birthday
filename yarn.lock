@@ -4696,16 +4696,15 @@ __metadata:
   linkType: hard
 
 "daisyui@npm:^3.0.0":
-  version: 3.1.7
-  resolution: "daisyui@npm:3.1.7"
+  version: 3.2.1
+  resolution: "daisyui@npm:3.2.1"
   dependencies:
     colord: ^2.9
     css-selector-tokenizer: ^0.8
+    postcss: ^8
     postcss-js: ^4
     tailwindcss: ^3
-  peerDependencies:
-    postcss: ^8
-  checksum: 6783684d1c5efb1bb580db828397bf1a86de7bf190533f55d0b1dde428db8a6502cde6c7ff2664f1db1cbba2c57c0ba1795b44f69bcc73825c88501f3530319b
+  checksum: 916d80b46b8576f41008f05aa9c0dd80bfdd4b95b2ac864386ed218ff91fabaaf5469b183a5bcd087a8666e55a84f9f1f7ca835d0f15b39623fb77c3b974f7fa
   languageName: node
   linkType: hard
 
@@ -9583,6 +9582,17 @@ __metadata:
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8":
+  version: 8.4.25
+  resolution: "postcss@npm:8.4.25"
+  dependencies:
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 9ed3ab8af43ad5210c28f56f916fd9b8c9f94fbeaebbf645dcf579bc28bdd8056c2a7ecc934668d399b81fedb6128f0c4b299f931e50454964bc911c25a3a0a2
   languageName: node
   linkType: hard
 
