@@ -4,29 +4,34 @@ import { site } from '~/data/site'
 
 import { createJstDayjs } from './date'
 
+type shareData = {
+  params: string
+  url: string
+}
+
 /**
- * ツイート文を作成
+ * シェア用のデータを作成
  * @param idol アイドル情報
  * @param count 秒数
  * @param hash URL検証用ハッシュ
- * @returns ツイートURL, カウントダウンページURL
+ * @returns シェア用のデータ
  */
-export function createTweetUrl(
+export function createShareData(
   { id, name }: Idol,
   count: number,
   hash: string
-): string[] {
+): shareData {
   const timestamp = createJstDayjs().valueOf()
-  const pageUrl = `${site.url}/${id}?t=${timestamp}&h=${hash}`
+  const url = `${site.url}/${id}?t=${timestamp}&h=${hash}`
 
-  const tweetText =
+  const text =
     count > 0
       ? `${name}さんのお誕生日まで、残り${count}秒です！`
       : `${name}さんは今日がお誕生日です！！！！🎉🎉🎉`
 
-  const tweetUrl = new URL('https://twitter.com/intent/tweet')
-  tweetUrl.searchParams.append('text', tweetText)
-  tweetUrl.searchParams.append('url', pageUrl)
+  const params = `?text=${encodeURIComponent(text)}&url=${encodeURIComponent(
+    url
+  )}`
 
-  return [tweetUrl.href, pageUrl]
+  return { params, url }
 }
