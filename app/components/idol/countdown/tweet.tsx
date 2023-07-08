@@ -29,7 +29,7 @@ export default function TweetButton({ idol, count, hash }: Props) {
     setTimeout(() => toggleCopied(), 1500)
   }
 
-  const buttonClassName = `btn rounded-full border-none hover:brightness-90 transition ${
+  const buttonClassName = `btn border-none hover:brightness-90 transition ${
     color.isWhitish ? 'text-neutral' : 'text-white'
   }`
 
