@@ -1,11 +1,13 @@
 import { CSSProperties, useReducer } from 'react'
 import { AiOutlineTwitter } from 'react-icons/ai'
+import { BsMastodon } from 'react-icons/bs'
 import { HiCheck } from 'react-icons/hi'
 import { RiFileCopyFill } from 'react-icons/ri'
+import { SiMisskey } from 'react-icons/si'
 
 import Anchor from '~/components/common/anchor'
 
-import { createTweetUrl } from '~/libs/tweet'
+import { createShareData } from '~/libs/tweet'
 
 import { Idol } from '~/types/idol'
 
@@ -15,21 +17,41 @@ type Props = {
   hash: string
 }
 
+type Service = {
+  baseUrl: string
+  icon: JSX.Element
+}
+
+const shareServices: Service[] = [
+  {
+    baseUrl: 'https://twitter.com/intent/tweet',
+    icon: <AiOutlineTwitter />
+  },
+  {
+    baseUrl: 'https://donshare.net/share.html',
+    icon: <BsMastodon />
+  },
+  {
+    baseUrl: 'https://misskeyshare.link/share.html',
+    icon: <SiMisskey />
+  }
+]
+
 export default function TweetButton({ idol, count, hash }: Props) {
   const { color } = idol
   const [isCopied, toggleCopied] = useReducer((prev) => !prev, false)
-  const [tweetUrl, pageUrl] = createTweetUrl(idol, count, hash)
+  const shareData = createShareData(idol, count, hash)
 
   const handleClick = async () => {
     if (isCopied) return
 
-    await navigator.clipboard.writeText(pageUrl)
+    await navigator.clipboard.writeText(shareData.url)
 
     toggleCopied()
     setTimeout(() => toggleCopied(), 1500)
   }
 
-  const buttonClassName = `btn rounded-full border-none hover:brightness-90 transition ${
+  const buttonClassName = `btn border-none hover:brightness-90 transition text-xl ${
     color.isWhitish ? 'text-neutral' : 'text-white'
   }`
 
@@ -39,17 +61,18 @@ export default function TweetButton({ idol, count, hash }: Props) {
 
   return (
     <div className="space-x-2">
-      <Anchor
-        suppressHydrationWarning
-        className={buttonClassName}
-        style={buttonStyle}
-        href={tweetUrl}
-      >
-        <AiOutlineTwitter className="text-xl" />
-        <span className="ml-2 text-base">ツイートする</span>
-      </Anchor>
+      {shareServices.map(({ baseUrl, icon }) => (
+        <Anchor
+          suppressHydrationWarning
+          className={buttonClassName}
+          style={buttonStyle}
+          href={baseUrl + shareData.params}
+        >
+          {icon}
+        </Anchor>
+      ))}
       <button
-        className={`${buttonClassName} text-xl`}
+        className={buttonClassName}
         style={buttonStyle}
         onClick={() => handleClick()}
       >

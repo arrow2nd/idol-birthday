@@ -11,7 +11,7 @@ export default function Card({ idol }: Props) {
 
   return (
     <Link
-      className="card w-72 m-2 bg-base-200 border-2 hover:brightness-90 transition"
+      className="card w-72 m-2 bg-base-100 border-2 hover:brightness-90 transition"
       style={{ borderColor: '#' + color.hex }}
       to={'/' + id}
     >
