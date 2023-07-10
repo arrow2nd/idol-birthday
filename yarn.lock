@@ -3397,10 +3397,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:6.8.0":
-  version: 6.8.0
-  resolution: "@vercel/build-utils@npm:6.8.0"
-  checksum: c7509bba492daf6de7fc96d246b378066b798dba2dab25b5d32f034a4f78d1cf21facc7ccd0497bce4f4ca9295b4297d94cccdbe32ede7d8de2a9198ec452ad3
+"@vercel/build-utils@npm:6.8.1":
+  version: 6.8.1
+  resolution: "@vercel/build-utils@npm:6.8.1"
+  checksum: d585d2eadd89ccfd521ddd4f49461b6f27ba10703cb050934b39525fa1e4a139b017440061c923eba6c87534dd334c8be8943e074e5ae630470640a7d8fa8d54
   languageName: node
   linkType: hard
 
@@ -3412,15 +3412,15 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.9.10":
-  version: 2.15.3
-  resolution: "@vercel/node@npm:2.15.3"
+  version: 2.15.4
+  resolution: "@vercel/node@npm:2.15.4"
   dependencies:
     "@edge-runtime/node-utils": 2.0.3
     "@edge-runtime/primitives": 2.1.2
     "@edge-runtime/vm": 3.0.1
     "@types/node": 14.18.33
     "@types/node-fetch": 2.6.3
-    "@vercel/build-utils": 6.8.0
+    "@vercel/build-utils": 6.8.1
     "@vercel/error-utils": 1.0.10
     "@vercel/static-config": 2.0.17
     async-listen: 3.0.0
@@ -3432,7 +3432,7 @@ __metadata:
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
-  checksum: 8463997281cd97901ceb0addf22521793b5b36223efb97d8bc69ba61d45b64d45a7c06fc9fba04fb558f904f049c87d7296e148b1ec5df1f39bb81488d6cb5fe
+  checksum: 12e1190d2d7e8e3c22eee354c2c9d510df247010d6ebfc50e32c2deee06ba7fd64ec3fe8803123d2937660f06f742957d15f90631356976ddc504d665a521e31
   languageName: node
   linkType: hard
 
