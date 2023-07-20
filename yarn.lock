@@ -3788,14 +3788,14 @@ __metadata:
   linkType: hard
 
 "cloudinary@npm:^1.37.3":
-  version: 1.37.3
-  resolution: "cloudinary@npm:1.37.3"
+  version: 1.38.0
+  resolution: "cloudinary@npm:1.38.0"
   dependencies:
     cloudinary-core: ^2.13.0
     core-js: ^3.30.1
     lodash: ^4.17.21
     q: ^1.5.1
-  checksum: bb3d9d22517fe67d34ec5f65ebdcee0a949ea16c95f4d22a27bfc8906954342d031bf15cff9a75e685c31f192aa794816dbbda33a3201daf9ac7f4f6ab07ae7d
+  checksum: 5cb85a6ba2f0571ed4823ccdd2238a930e7d3bfd12a468204ff405c0ae38031477e4f618fe857b722fcb8ba116392f25205dd11a7d750af2757e3d8448c228cd
   languageName: node
   linkType: hard
 
