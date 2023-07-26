@@ -4087,15 +4087,15 @@ __metadata:
   linkType: hard
 
 "daisyui@npm:^3.2.1":
-  version: 3.4.0
-  resolution: "daisyui@npm:3.4.0"
+  version: 3.5.0
+  resolution: "daisyui@npm:3.5.0"
   dependencies:
     colord: ^2.9
     css-selector-tokenizer: ^0.8
     postcss: ^8
     postcss-js: ^4
     tailwindcss: ^3
-  checksum: aadc9af2ef7ec750ee57ff2f01ffc72776e2525a73048a28026cb4218858dd1d174d9d539ced7706e2291d181278cd00ce359a2045d80c5280de64f5d058be87
+  checksum: c50c466990b3e258d952c78deb70959c0ac9775a41e775d419a9a1fc4dd9aaea8bb174c2b0812b7bf392ee68c847bc4a616d04cec7f57e096d2f1fb239cbaa16
   languageName: node
   linkType: hard
 
