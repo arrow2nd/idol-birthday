@@ -2467,6 +2467,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/content-type@npm:1.1.3":
+  version: 1.1.3
+  resolution: "@types/content-type@npm:1.1.3"
+  checksum: ebb25f0f7ef775ba62c9719711e10a01280dd4e83ab4e6b477b5cec210f8e1ff58f461ad207ead05e4a9f2ff3e9699c9404440370a84ee0daf5ab6a248053311
+  languageName: node
+  linkType: hard
+
 "@types/cookie@npm:^0.4.1":
   version: 0.4.1
   resolution: "@types/cookie@npm:0.4.1"
@@ -2874,18 +2881,20 @@ __metadata:
   linkType: hard
 
 "@vercel/node@npm:^2.15.5":
-  version: 2.15.6
-  resolution: "@vercel/node@npm:2.15.6"
+  version: 2.15.7
+  resolution: "@vercel/node@npm:2.15.7"
   dependencies:
     "@edge-runtime/node-utils": 2.0.3
     "@edge-runtime/primitives": 2.1.2
     "@edge-runtime/vm": 3.0.1
+    "@types/content-type": 1.1.3
     "@types/node": 14.18.33
     "@types/node-fetch": 2.6.3
     "@vercel/build-utils": 6.8.2
     "@vercel/error-utils": 1.0.10
     "@vercel/static-config": 2.0.17
     async-listen: 3.0.0
+    content-type: 1.0.4
     edge-runtime: 2.4.3
     esbuild: 0.14.47
     exit-hook: 2.2.1
@@ -2894,7 +2903,7 @@ __metadata:
     ts-morph: 12.0.0
     ts-node: 10.9.1
     typescript: 4.9.5
-  checksum: 88b764529240c52e73f7e7f3f1dffcb2ffd73bc0b59ddfa11ba4caf64d2e809df2077b04386b6bd91dea6696b851ab90aff1020b8049256f75a6ef15abf0d518
+  checksum: e2870619759fe7dd01a4b10a2f2abd842cb45358a9b426b9a5fbd4b1c776972589ea2a5c1b372e9d02b9bf4f1d351c75ab93b7b1b1cf03ee9701d2318cf19ab0
   languageName: node
   linkType: hard
 
@@ -3950,7 +3959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"content-type@npm:~1.0.4":
+"content-type@npm:1.0.4, content-type@npm:~1.0.4":
   version: 1.0.4
   resolution: "content-type@npm:1.0.4"
   checksum: 3d93585fda985d1554eca5ebd251994327608d2e200978fdbfba21c0c679914d5faf266d17027de44b34a72c7b0745b18584ecccaa7e1fdfb6a68ac7114f12e0
