@@ -6,7 +6,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useCatch
+  isRouteErrorResponse,
+  useRouteError
 } from '@remix-run/react'
 
 import createMeta from '~/libs/meta'
@@ -31,25 +32,24 @@ export function links() {
   return [{ rel: 'stylesheet', href: styles }]
 }
 
-export function CatchBoundary() {
-  const { status, statusText } = useCatch()
+export function ErrorBoundary() {
+  const error = useRouteError()
+
+  if (isRouteErrorResponse(error)) {
+    const { status, statusText } = error
+
+    return (
+      <div className="p-8 flex justify-center items-center h-screen text-neutral">
+        <h1 className="font-bold text-4xl">{status}</h1>
+        <p className="mt-2">{statusText}</p>
+      </div>
+    )
+  }
 
   return (
-    <html lang="ja">
-      <head>
-        <title>Oops!</title>
-        <Meta />
-        <Links />
-        <Analytics />
-      </head>
-      <body className="p-8 flex justify-center items-center h-screen text-neutral">
-        <div>
-          <h1 className="font-bold text-4xl">{status}</h1>
-          <p className="mt-2">{statusText}</p>
-        </div>
-        <Scripts />
-      </body>
-    </html>
+    <div className="p-8 flex justify-center items-center h-screen text-neutral">
+      <h1 className="font-bold text-4xl">未知のエラーが発生しました</h1>
+    </div>
   )
 }
 
