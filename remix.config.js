@@ -13,7 +13,7 @@ module.exports = {
   // so we default back to the standard build output.
   server: process.env.NODE_ENV === "development" ? undefined : "./server.js",
   ignoredRouteFiles: ["**/.*"],
-  serverDependenciesToBundle: ["axios"],
+  serverDependenciesToBundle: ["axios", "form-data"],
 
   future: {
     v2_dev: true,
