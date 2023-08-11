@@ -1,4 +1,4 @@
-import { LoaderFunction, MetaFunction, redirect } from "@remix-run/node"
+import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import { TbListSearch } from "react-icons/tb"
 
@@ -34,7 +34,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   } as SeaechResult
 }
 
-export const meta: MetaFunction = ({ data }) => {
+export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
   const title = `"${data.query}" の検索結果`
   return createMeta(title)
 }

@@ -1,4 +1,9 @@
-import { LoaderFunction, MetaFunction } from "@remix-run/node"
+import {
+  LoaderArgs,
+  LoaderFunction,
+  V2_MetaFunction,
+  json
+} from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
@@ -26,7 +31,7 @@ type LoaderResult = {
   dateHash: string
 }
 
-export const loader: LoaderFunction = async ({ request, params }) => {
+export async function loader({ request, params }: LoaderArgs) {
   invariant(params.id, "Expected params.id")
 
   // 正しい id かどうかチェック
@@ -54,15 +59,17 @@ export const loader: LoaderFunction = async ({ request, params }) => {
     secret: process.env.APP_SECRET!
   }
 
-  return {
+  return json({
     idol: data[0],
     ogpImageUrl: createOgpImageUrl(data[0], verification),
     dateHash: createDateHash(createJstDayjs(), verification.secret!)
-  } as LoaderResult
+  })
 }
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
-  if (!data) return {}
+export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
+  if (!data) {
+    return []
+  }
 
   const { descTemplate } = site
   const { idol, ogpImageUrl } = data
