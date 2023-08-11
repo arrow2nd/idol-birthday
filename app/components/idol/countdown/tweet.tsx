@@ -1,15 +1,15 @@
-import { CSSProperties, useReducer } from 'react'
-import { AiOutlineTwitter } from 'react-icons/ai'
-import { BsMastodon } from 'react-icons/bs'
-import { HiCheck } from 'react-icons/hi'
-import { RiFileCopyFill } from 'react-icons/ri'
-import { SiMisskey } from 'react-icons/si'
+import { CSSProperties, useReducer } from "react"
+import { AiOutlineTwitter } from "react-icons/ai"
+import { BsMastodon } from "react-icons/bs"
+import { HiCheck } from "react-icons/hi"
+import { RiFileCopyFill } from "react-icons/ri"
+import { SiMisskey } from "react-icons/si"
 
-import Anchor from '~/components/common/anchor'
+import Anchor from "~/components/common/anchor"
 
-import { createShareData } from '~/libs/tweet'
+import { createShareData } from "~/libs/tweet"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
 type Props = {
   idol: Idol
@@ -24,15 +24,15 @@ type Service = {
 
 const shareServices: Service[] = [
   {
-    baseUrl: 'https://twitter.com/intent/tweet',
+    baseUrl: "https://twitter.com/intent/tweet",
     icon: <AiOutlineTwitter />
   },
   {
-    baseUrl: 'https://donshare.net/share.html',
+    baseUrl: "https://donshare.net/share.html",
     icon: <BsMastodon />
   },
   {
-    baseUrl: 'https://misskeyshare.link/share.html',
+    baseUrl: "https://misskeyshare.link/share.html",
     icon: <SiMisskey />
   }
 ]
@@ -52,11 +52,11 @@ export default function TweetButton({ idol, count, hash }: Props) {
   }
 
   const buttonClassName = `btn border-none hover:brightness-90 transition text-xl ${
-    color.isWhitish ? 'text-neutral' : 'text-white'
+    color.isWhitish ? "text-neutral" : "text-white"
   }`
 
   const buttonStyle: CSSProperties = {
-    backgroundColor: '#' + color.hex
+    backgroundColor: "#" + color.hex
   }
 
   return (
@@ -64,6 +64,7 @@ export default function TweetButton({ idol, count, hash }: Props) {
       {shareServices.map(({ baseUrl, icon }) => (
         <Anchor
           suppressHydrationWarning
+          key={baseUrl}
           className={buttonClassName}
           style={buttonStyle}
           href={baseUrl + shareData.params}

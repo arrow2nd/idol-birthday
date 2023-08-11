@@ -1,11 +1,11 @@
-import cloudinary from 'cloudinary'
+import cloudinary from "cloudinary"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
-import { site } from '~/data/site'
+import { site } from "~/data/site"
 
-import { calcSecondsToBirthday, createJstDayjs } from './date'
-import { VerificationArgs, verificationHash } from './hash'
+import { calcSecondsToBirthday, createJstDayjs } from "./date"
+import { VerificationArgs, verificationHash } from "./hash"
 
 /**
  * Cloudinary用に文字列をエンコード
@@ -14,7 +14,7 @@ import { VerificationArgs, verificationHash } from './hash'
  */
 const encode4Cloudinary = (text: string) => {
   return encodeURIComponent(
-    text.replace(/\,/g, '%2C').replace(/\//g, '%2F').replace(/!/g, '%21')
+    text.replace(/\,/g, "%2C").replace(/\//g, "%2F").replace(/!/g, "%21")
   )
 }
 
@@ -30,19 +30,19 @@ function createCountdownOgpImageUrl(
   colorHex: string,
   seconds: number
 ): string {
-  return cloudinary.v2.url('idol-birthday-countdown/countdown.png', {
+  return cloudinary.v2.url("idol-birthday-countdown/countdown.png", {
     secure: true,
     sign_url: true,
     transformation: [
       {
         variables: [
-          ['$idol', `!${encode4Cloudinary(name)}!`],
-          ['$seconds', `!${seconds}!`],
-          ['$color', `!rgb:${colorHex.replace('#', '')}!`]
+          ["$idol", `!${encode4Cloudinary(name)}!`],
+          ["$seconds", `!${seconds}!`],
+          ["$color", `!rgb:${colorHex.replace("#", "")}!`]
         ]
       },
       {
-        transformation: ['idol-countdown']
+        transformation: ["idol-countdown"]
       }
     ]
   })
@@ -55,18 +55,18 @@ function createCountdownOgpImageUrl(
  * @returns OGP画像URL
  */
 function createHpbOgpImageUrl(name: string, colorHex: string): string {
-  return cloudinary.v2.url('idol-birthday-countdown/hpb.png', {
+  return cloudinary.v2.url("idol-birthday-countdown/hpb.png", {
     secure: true,
     sign_url: true,
     transformation: [
       {
         variables: [
-          ['$idol', `!${encode4Cloudinary(name)}!`],
-          ['$color', `!rgb:${colorHex.replace('#', '')}!`]
+          ["$idol", `!${encode4Cloudinary(name)}!`],
+          ["$color", `!rgb:${colorHex.replace("#", "")}!`]
         ]
       },
       {
-        transformation: ['idol-hpb']
+        transformation: ["idol-hpb"]
       }
     ]
   })

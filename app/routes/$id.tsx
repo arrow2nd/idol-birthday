@@ -1,24 +1,29 @@
-import { LoaderFunction, MetaFunction } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
-import invariant from 'tiny-invariant'
+import {
+  LoaderArgs,
+  LoaderFunction,
+  V2_MetaFunction,
+  json
+} from "@remix-run/node"
+import { useLoaderData } from "@remix-run/react"
+import invariant from "tiny-invariant"
 
-import Header from '~/components/common/layout/header'
-import CountDown from '~/components/idol/countdown'
+import Header from "~/components/common/layout/header"
+import CountDown from "~/components/idol/countdown"
 
-import { createJstDayjs } from '~/libs/date'
-import { VerificationArgs, createDateHash } from '~/libs/hash'
-import { createQuery2SearchById, fetchFromImasparql } from '~/libs/imasparql'
-import createMeta from '~/libs/meta'
-import { createOgpImageUrl } from '~/libs/ogp'
+import { createJstDayjs } from "~/libs/date"
+import { VerificationArgs, createDateHash } from "~/libs/hash"
+import { createQuery2SearchById, fetchFromImasparql } from "~/libs/imasparql"
+import createMeta from "~/libs/meta"
+import { createOgpImageUrl } from "~/libs/ogp"
 import {
   responseBadRequest,
   responseNotFound,
   responseServerError
-} from '~/libs/response'
+} from "~/libs/response"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
-import { site } from '~/data/site'
+import { site } from "~/data/site"
 
 type LoaderResult = {
   idol: Idol
@@ -26,8 +31,8 @@ type LoaderResult = {
   dateHash: string
 }
 
-export const loader: LoaderFunction = async ({ request, params }) => {
-  invariant(params.id, 'Expected params.id')
+export async function loader({ request, params }: LoaderArgs) {
+  invariant(params.id, "Expected params.id")
 
   // 正しい id かどうかチェック
   // NOTE: 英字・アンダースコア3文字以上 + (数字 1 ~ 3桁) 以外なら不正
@@ -49,26 +54,28 @@ export const loader: LoaderFunction = async ({ request, params }) => {
   // クエリパラメータから検証情報を作成
   const url = new URL(request.url)
   const verification: VerificationArgs = {
-    hash: url.searchParams.get('h') ?? '',
-    timestamp: parseInt(url.searchParams.get('t') ?? '0'),
+    hash: url.searchParams.get("h") ?? "",
+    timestamp: parseInt(url.searchParams.get("t") ?? "0"),
     secret: process.env.APP_SECRET!
   }
 
-  return {
+  return json({
     idol: data[0],
     ogpImageUrl: createOgpImageUrl(data[0], verification),
     dateHash: createDateHash(createJstDayjs(), verification.secret!)
-  } as LoaderResult
+  })
 }
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
-  if (!data) return {}
+export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
+  if (!data) {
+    return []
+  }
 
   const { descTemplate } = site
   const { idol, ogpImageUrl } = data
 
   const title = `${idol.name}さんのお誕生日まで…？`
-  const desc = descTemplate.replace('%s', `${idol.name}さん`)
+  const desc = descTemplate.replace("%s", `${idol.name}さん`)
 
   return createMeta(title, desc, ogpImageUrl)
 }

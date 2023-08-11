@@ -1,14 +1,14 @@
-import { Link } from '@remix-run/react'
-import { BsThreeDots } from 'react-icons/bs'
-import { RiCake2Line } from 'react-icons/ri'
+import { Link } from "@remix-run/react"
+import { BsThreeDots } from "react-icons/bs"
+import { RiCake2Line } from "react-icons/ri"
 
-import Anchor from '~/components/common/anchor'
+import Anchor from "~/components/common/anchor"
 
 type Props = {
   className?: string
 }
 
-export default function Header({ className = '' }: Props) {
+export default function Header({ className = "" }: Props) {
   return (
     <header className={`navbar ${className}`}>
       <div className="navbar-start">

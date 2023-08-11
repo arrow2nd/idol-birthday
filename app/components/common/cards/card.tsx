@@ -1,6 +1,6 @@
-import { Link } from '@remix-run/react'
+import { Link } from "@remix-run/react"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
 type Props = {
   idol: Idol
@@ -12,8 +12,8 @@ export default function Card({ idol }: Props) {
   return (
     <Link
       className="card w-72 m-2 bg-base-100 border-2 hover:brightness-90 transition"
-      style={{ borderColor: '#' + color.hex }}
-      to={'/' + id}
+      style={{ borderColor: "#" + color.hex }}
+      to={"/" + id}
     >
       <div className="card-body">
         <p className="card-title">{name} さん</p>

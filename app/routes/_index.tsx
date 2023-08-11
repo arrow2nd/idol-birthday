@@ -1,19 +1,24 @@
-import { LoaderFunction } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
-import { AiOutlineSmile } from 'react-icons/ai'
-import { GiPartyPopper } from 'react-icons/gi'
+import { LoaderFunction } from "@remix-run/node"
+import {
+  isRouteErrorResponse,
+  useLoaderData,
+  useRouteError
+} from "@remix-run/react"
+import { HttpStatusCode } from "axios"
+import { AiOutlineSmile } from "react-icons/ai"
+import { GiPartyPopper } from "react-icons/gi"
 
-import Cards from '~/components/common/cards'
-import Layout from '~/components/common/layout'
+import Cards from "~/components/common/cards"
+import Layout from "~/components/common/layout"
 
-import { createJstDayjs } from '~/libs/date'
+import { createJstDayjs } from "~/libs/date"
 import {
   createQuery2RecentBirthday,
   fetchFromImasparql
-} from '~/libs/imasparql'
-import { responseServerError } from '~/libs/response'
+} from "~/libs/imasparql"
+import { responseServerError } from "~/libs/response"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
 export const loader: LoaderFunction = async () => {
   // 直近誕生日のアイドルを取得
@@ -56,6 +61,27 @@ export default function Index() {
         icon={<AiOutlineSmile />}
         idols={soon}
       />
+    </Layout>
+  )
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError()
+
+  const status = isRouteErrorResponse(error)
+    ? error.status
+    : HttpStatusCode.InternalServerError
+
+  const message = isRouteErrorResponse(error)
+    ? error.statusText
+    : "Unknown error"
+
+  return (
+    <Layout>
+      <div className="p-8 flex justify-center items-center h-screen text-neutral">
+        <h1 className="font-bold text-4xl">{status}</h1>
+        <p className="mt-2">{message}</p>
+      </div>
     </Layout>
   )
 }

@@ -29,6 +29,6 @@ export function responseBadRequest(statusText: string): Response {
 export function responseServerError(): Response {
   return new Response(null, {
     status: 500,
-    statusText: '現在、im@sparqlにアクセスできません'
+    statusText: "現在、im@sparqlにアクセスできません"
   })
 }

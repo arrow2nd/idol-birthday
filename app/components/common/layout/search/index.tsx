@@ -1,6 +1,6 @@
-import { RiSearchLine } from 'react-icons/ri'
+import { RiSearchLine } from "react-icons/ri"
 
-import { site } from '~/data/site'
+import { site } from "~/data/site"
 
 export default function Seatch() {
   return (
