@@ -20,11 +20,7 @@ const Analytics = (): JSX.Element => (
 )
 
 export function meta() {
-  return [
-    { charset: "utf-8" },
-    { viewport: "width=device-width,initial-scale=1" },
-    ...createMeta()
-  ]
+  return createMeta()
 }
 
 export function links() {
