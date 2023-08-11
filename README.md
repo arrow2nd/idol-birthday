@@ -3,15 +3,14 @@
 🎂 アイマスアイドルのお誕生日までをカウントダウンするサイト
 
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
-[![Depfu](https://badges.depfu.com/badges/155628bbde089babbd09c14dd3e67d79/status.svg)](https://depfu.com)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=idol-birthday)](https://idol-birthday.vercel.app)
 
-![demo](https://user-images.githubusercontent.com/44780846/197101495-8acef9d9-fbfa-477b-912d-9dac2654bbf4.png)
+![idol-birthday](https://github.com/arrow2nd/idol-birthday/assets/44780846/ab0ed70b-636a-4097-b1ca-469832ab0bfb)
 
 ## できること
 
-- im@sparql に収録されているアイドル・スタッフのお誕生日までをカウントダウン
-- 残り秒数をツイートで共有
+- im@sparql に収録されているアイドル・スタッフのお誕生日までの秒数をカウントダウン
+- 残り秒数を SNS で共有
 
 ## 実行
 
