@@ -1,6 +1,6 @@
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
-import Card from './card'
+import Card from "./card"
 
 type Props = {
   className?: string
@@ -9,7 +9,7 @@ type Props = {
   idols: Idol[]
 }
 
-export default function Cards({ className = '', title, icon, idols }: Props) {
+export default function Cards({ className = "", title, icon, idols }: Props) {
   const cards = idols.map((e) => <Card key={e.id} idol={e} />)
 
   return (

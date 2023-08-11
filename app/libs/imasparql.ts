@@ -1,10 +1,10 @@
-import axios from 'axios'
+import axios from "axios"
 
-import { Idol } from '~/types/idol'
-import { ImasparqlResponse } from '~/types/imasparql'
+import { Idol } from "~/types/idol"
+import { ImasparqlResponse } from "~/types/imasparql"
 
-import { getBrandColor, isWhitishColor } from './color'
-import { createBirthDateRangeRegex } from './date'
+import { getBrandColor, isWhitishColor } from "./color"
+import { createBirthDateRangeRegex } from "./date"
 
 /** 共通部分 */
 const commonQuery = (q: string) => `
@@ -72,9 +72,9 @@ export const createQuery2RecentBirthday = () =>
  * @returns レスポンス
  */
 export async function fetchFromImasparql(query: string): Promise<Idol[]> {
-  const url = new URL('https://sparql.crssnky.xyz/spql/imas/query')
-  url.searchParams.append('output', 'json')
-  url.searchParams.append('query', query.replace(/[\n\r\s]/g, ' '))
+  const url = new URL("https://sparql.crssnky.xyz/spql/imas/query")
+  url.searchParams.append("output", "json")
+  url.searchParams.append("query", query.replace(/[\n\r\s]/g, " "))
 
   // 5秒でタイムアウト
   const { data } = await axios

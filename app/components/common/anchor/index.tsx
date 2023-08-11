@@ -1,6 +1,6 @@
-import { ComponentPropsWithRef } from 'react'
+import { ComponentPropsWithRef } from "react"
 
-export default function Anchor(props: ComponentPropsWithRef<'a'>) {
+export default function Anchor(props: ComponentPropsWithRef<"a">) {
   return (
     <a {...props} target="_blank" rel="noopener noreferrer">
       {props.children}

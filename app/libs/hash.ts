@@ -1,7 +1,7 @@
-import md5 from 'crypto-js/md5'
-import { Dayjs } from 'dayjs'
+import md5 from "crypto-js/md5"
+import { Dayjs } from "dayjs"
 
-import { createJstDayjs } from './date'
+import { createJstDayjs } from "./date"
 
 /**
  * 日付のハッシュ値を作成
@@ -10,7 +10,7 @@ import { createJstDayjs } from './date'
  * @returns ハッシュ値（MD5）
  */
 export function createDateHash(date: Dayjs, secret: string): string {
-  const fullDate = date.format('YYYYMD')
+  const fullDate = date.format("YYYYMD")
 
   // NOTE: `node:crypto` を import しようとすると
   // No matching export in "node-modules-polyfills:crypto" for import "createHash"

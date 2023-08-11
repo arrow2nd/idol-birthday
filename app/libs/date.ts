@@ -1,8 +1,8 @@
-import dayjs, { Dayjs } from 'dayjs'
-import timezone from 'dayjs/plugin/timezone'
-import utc from 'dayjs/plugin/utc'
+import dayjs, { Dayjs } from "dayjs"
+import timezone from "dayjs/plugin/timezone"
+import utc from "dayjs/plugin/utc"
 
-import { Birth } from '~/types/idol'
+import { Birth } from "~/types/idol"
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -17,7 +17,7 @@ export function createJstDayjs(
   date?: string | number,
   keepLocalTime?: boolean
 ): Dayjs {
-  return dayjs(date).tz('Asia/Tokyo', keepLocalTime ?? false)
+  return dayjs(date).tz("Asia/Tokyo", keepLocalTime ?? false)
 }
 
 /**
@@ -26,7 +26,7 @@ export function createJstDayjs(
  */
 export function createBirthDateRangeRegex() {
   const now = createJstDayjs()
-  const month = now.format('MM')
+  const month = now.format("MM")
   const date = now.date()
 
   // 10の位の値
@@ -36,7 +36,7 @@ export function createBirthDateRangeRegex() {
   const a = date < 10 ? `0[${date}-9]` : `${dateOnesPlace}[${date % 10}-9]`
 
   // ↑を除く月末までの期間にマッチ（11日 -> 20 ~ 39）
-  const b = dateOnesPlace + 1 < 3 ? `|[${dateOnesPlace + 1}-3][0-9]` : ''
+  const b = dateOnesPlace + 1 < 3 ? `|[${dateOnesPlace + 1}-3][0-9]` : ""
 
   return `--${month}-(${a + b})`
 }

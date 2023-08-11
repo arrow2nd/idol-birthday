@@ -1,26 +1,26 @@
-import { LoaderFunction, MetaFunction, redirect } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
-import { TbListSearch } from 'react-icons/tb'
+import { LoaderFunction, MetaFunction, redirect } from "@remix-run/node"
+import { useLoaderData } from "@remix-run/react"
+import { TbListSearch } from "react-icons/tb"
 
-import Cards from '~/components/common/cards'
-import Layout from '~/components/common/layout'
+import Cards from "~/components/common/cards"
+import Layout from "~/components/common/layout"
 
 import {
   createQuery2SearchByKeyword,
   fetchFromImasparql
-} from '~/libs/imasparql'
-import createMeta from '~/libs/meta'
-import { responseServerError } from '~/libs/response'
+} from "~/libs/imasparql"
+import createMeta from "~/libs/meta"
+import { responseServerError } from "~/libs/response"
 
-import { SeaechResult } from '~/types/search'
+import { SeaechResult } from "~/types/search"
 
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url)
-  const q = url.searchParams.get('q')?.trim()
+  const q = url.searchParams.get("q")?.trim()
 
   // クエリがない場合トップへリダイレクトする
   if (!q) {
-    return redirect('/')
+    return redirect("/")
   }
 
   const query = createQuery2SearchByKeyword(q)

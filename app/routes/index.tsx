@@ -1,19 +1,19 @@
-import { LoaderFunction } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
-import { AiOutlineSmile } from 'react-icons/ai'
-import { GiPartyPopper } from 'react-icons/gi'
+import { LoaderFunction } from "@remix-run/node"
+import { useLoaderData } from "@remix-run/react"
+import { AiOutlineSmile } from "react-icons/ai"
+import { GiPartyPopper } from "react-icons/gi"
 
-import Cards from '~/components/common/cards'
-import Layout from '~/components/common/layout'
+import Cards from "~/components/common/cards"
+import Layout from "~/components/common/layout"
 
-import { createJstDayjs } from '~/libs/date'
+import { createJstDayjs } from "~/libs/date"
 import {
   createQuery2RecentBirthday,
   fetchFromImasparql
-} from '~/libs/imasparql'
-import { responseServerError } from '~/libs/response'
+} from "~/libs/imasparql"
+import { responseServerError } from "~/libs/response"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
 export const loader: LoaderFunction = async () => {
   // 直近誕生日のアイドルを取得

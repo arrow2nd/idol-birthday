@@ -1,4 +1,4 @@
-import { site } from '~/data/site'
+import { site } from "~/data/site"
 
 /**
  * メタ情報を作成
@@ -15,13 +15,13 @@ export default function createMeta(
   return {
     title,
     description: desc,
-    'og:site_name': title,
-    'og:title': title,
-    'og:description': desc,
-    'og:image': ogpUrl,
-    'twitter:card': 'summary_large_image',
-    'twitter:title': title,
-    'twitter:description': desc,
-    'twitter:image': ogpUrl
+    "og:site_name": title,
+    "og:title": title,
+    "og:description": desc,
+    "og:image": ogpUrl,
+    "twitter:card": "summary_large_image",
+    "twitter:title": title,
+    "twitter:description": desc,
+    "twitter:image": ogpUrl
   }
 }

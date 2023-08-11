@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node'
+import type { MetaFunction } from "@remix-run/node"
 import {
   Links,
   LiveReload,
@@ -7,11 +7,11 @@ import {
   Scripts,
   ScrollRestoration,
   useCatch
-} from '@remix-run/react'
+} from "@remix-run/react"
 
-import createMeta from '~/libs/meta'
+import createMeta from "~/libs/meta"
 
-import styles from './styles/app.css'
+import styles from "./styles/app.css"
 
 const Analytics = (): JSX.Element => (
   <script
@@ -22,13 +22,13 @@ const Analytics = (): JSX.Element => (
 )
 
 export const meta: MetaFunction = () => ({
-  charset: 'utf-8',
-  viewport: 'width=device-width,initial-scale=1',
+  charset: "utf-8",
+  viewport: "width=device-width,initial-scale=1",
   ...createMeta()
 })
 
 export function links() {
-  return [{ rel: 'stylesheet', href: styles }]
+  return [{ rel: "stylesheet", href: styles }]
 }
 
 export function CatchBoundary() {

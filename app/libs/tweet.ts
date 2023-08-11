@@ -1,8 +1,8 @@
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
-import { site } from '~/data/site'
+import { site } from "~/data/site"
 
-import { createJstDayjs } from './date'
+import { createJstDayjs } from "./date"
 
 type shareData = {
   params: string

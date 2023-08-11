@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import useInterval from '~/hooks/useInterval'
+import { useState } from "react"
+import useInterval from "~/hooks/useInterval"
 
-import { calcSecondsToBirthday, createJstDayjs } from '~/libs/date'
+import { calcSecondsToBirthday, createJstDayjs } from "~/libs/date"
 
-import { Idol } from '~/types/idol'
+import { Idol } from "~/types/idol"
 
-import HappyBirthday from './birthday'
-import Count from './count'
-import TweetButton from './tweet'
+import HappyBirthday from "./birthday"
+import Count from "./count"
+import TweetButton from "./tweet"
 
 type Props = {
   idol: Idol
