@@ -31,7 +31,7 @@ APP_SECRET=<任意のシークレット文字列>
 以下のコマンドで実行
 
 ```
-yarn dev
+pnpm dev
 # or
-yarn build && yarn start
+pnpm build && pnpm start
 ```

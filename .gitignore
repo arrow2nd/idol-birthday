@@ -7,17 +7,8 @@ node_modules
 
 /build/
 /public/build
-/api/index.js
-/api/index.js.map
-
-# yarn (not using Zero-Installs)
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
+/api/index.js*
+/api/metafile.*.json
 
 # tailwindcss
 /api/_assets/*.css
