@@ -5,8 +5,7 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
-  useCatch
+  ScrollRestoration
 } from "@remix-run/react"
 
 import createMeta from "~/libs/meta"
@@ -29,28 +28,6 @@ export const meta: MetaFunction = () => ({
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }]
-}
-
-export function CatchBoundary() {
-  const { status, statusText } = useCatch()
-
-  return (
-    <html lang="ja">
-      <head>
-        <title>Oops!</title>
-        <Meta />
-        <Links />
-        <Analytics />
-      </head>
-      <body className="p-8 flex justify-center items-center h-screen text-neutral">
-        <div>
-          <h1 className="font-bold text-4xl">{status}</h1>
-          <p className="mt-2">{statusText}</p>
-        </div>
-        <Scripts />
-      </body>
-    </html>
-  )
 }
 
 export default function App() {
