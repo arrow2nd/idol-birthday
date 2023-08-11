@@ -10,15 +10,6 @@ node_modules
 /api/index.js*
 /api/metafile.*.json
 
-# yarn (not using Zero-Installs)
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-
 # tailwindcss
 /api/_assets/*.css
 /app/styles/app.css
