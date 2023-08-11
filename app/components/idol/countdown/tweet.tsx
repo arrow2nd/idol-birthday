@@ -64,6 +64,7 @@ export default function TweetButton({ idol, count, hash }: Props) {
       {shareServices.map(({ baseUrl, icon }) => (
         <Anchor
           suppressHydrationWarning
+          key={baseUrl}
           className={buttonClassName}
           style={buttonStyle}
           href={baseUrl + shareData.params}
