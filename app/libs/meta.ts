@@ -14,7 +14,7 @@ export default function createMeta(
 ) {
   return [
     { charset: "utf-8" },
-    { viewport: "width=device-width,initial-scale=1" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
     { title },
     { name: "description", content: desc },
     { property: "og:site_name", content: title },
