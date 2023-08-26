@@ -3,7 +3,5 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {},
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["lofi"]
-  }
+  daisyui: {}
 }
