@@ -13,5 +13,6 @@ export type Idol = {
   name: string
   brand: string
   birth: Birth
+  birthday: string
   color: Color
 }
