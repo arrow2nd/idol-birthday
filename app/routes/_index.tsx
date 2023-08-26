@@ -5,11 +5,11 @@ import {
   useRouteError
 } from "@remix-run/react"
 import { HttpStatusCode } from "axios"
-import { AiOutlineSmile } from "react-icons/ai"
-import { GiPartyPopper } from "react-icons/gi"
 
-import Cards from "~/components/common/cards"
+import IdolCard from "~/components/common/idol-card"
 import Layout from "~/components/common/layout"
+import GroupTitle from "~/components/top/group-title"
+import Search from "~/components/top/search"
 
 import { createJstDayjs } from "~/libs/date"
 import {
@@ -23,6 +23,7 @@ import { Idol } from "~/types/idol"
 export const loader: LoaderFunction = async () => {
   // 直近誕生日のアイドルを取得
   const query = createQuery2RecentBirthday()
+  console.log(query)
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
   })
@@ -46,22 +47,23 @@ export default function Index() {
   const [today, soon] = useLoaderData<Idol[][]>()
 
   return (
-    <Layout>
-      {today.length > 0 && (
-        <Cards
-          className="mt-16"
-          title="今日がお誕生日"
-          icon={<GiPartyPopper />}
-          idols={today}
-        />
-      )}
-      <Cards
-        className="my-16"
-        title="もうすぐお誕生日"
-        icon={<AiOutlineSmile />}
-        idols={soon}
+    <div className="min-h-screen p-16 flex flex-wrap gap-4">
+      <GroupTitle
+        className="bg-gradient-to-r from-purple-500 to-pink-500"
+        title="Happy Birthday!"
       />
-    </Layout>
+      {today.map((idol) => (
+        <IdolCard idol={idol} />
+      ))}
+      <Search />
+      <GroupTitle
+        className="bg-gradient-to-r from-orange-500 to-yellow-500"
+        title="Coming Soon…"
+      />
+      {soon.map((idol) => (
+        <IdolCard idol={idol} />
+      ))}
+    </div>
   )
 }
 
