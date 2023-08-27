@@ -1,10 +1,11 @@
 import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 
-import IdolCard from "~/components/common/idol-card"
-import Layout from "~/components/common/layout"
-import GroupTitle from "~/components/top/group-title"
-import Search from "~/components/top/search"
+import CardGroupTitle from "~/components/card/group-title"
+import CardIdol from "~/components/card/idol"
+import CardNotFound from "~/components/card/notfound"
+import Layout from "~/components/layout"
+import Navi from "~/components/search"
 
 import {
   createQuery2SearchByKeyword,
@@ -45,15 +46,17 @@ export default function SearchResults() {
 
   return (
     <Layout>
-      <Search />
-      <GroupTitle
+      <Navi showBackToTop />
+      <CardGroupTitle
         className="bg-gradient-to-r from-purple-500 to-pink-500"
         title="Results"
         text={query}
       />
-      {data.map((idol) => (
-        <IdolCard key={idol.id} idol={idol} />
-      ))}
+      {data.length > 0 ? (
+        data.map((idol) => <CardIdol key={idol.id} idol={idol} />)
+      ) : (
+        <CardNotFound />
+      )}
     </Layout>
   )
 }
