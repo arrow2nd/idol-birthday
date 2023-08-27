@@ -2,6 +2,7 @@ import { LoaderArgs, V2_MetaFunction, json } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
+import ButtonBackToTop from "~/components/button/back"
 import CountDown from "~/components/idol/countdown"
 
 import { createJstDayjs } from "~/libs/date"

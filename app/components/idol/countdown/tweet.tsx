@@ -5,7 +5,7 @@ import { HiCheck } from "react-icons/hi"
 import { RiFileCopyFill } from "react-icons/ri"
 import { SiMisskey } from "react-icons/si"
 
-import Anchor from "~/components/common/anchor"
+import Anchor from "~/components/anchor"
 
 import { createShareData } from "~/libs/tweet"
 
