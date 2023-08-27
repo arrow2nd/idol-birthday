@@ -1,5 +1,5 @@
 const url = "https://idol-birthday.vercel.app"
-const name = "idol-birthday.vercel.app"
+const name = "idol-birthday"
 const descTemplate = `%sのお誕生日までをカウントダウンするサイト`
 
 export const site = {

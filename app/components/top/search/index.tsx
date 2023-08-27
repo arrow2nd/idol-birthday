@@ -1,24 +1,17 @@
-import { LuCake } from "react-icons/lu"
 import { RiSearchLine } from "react-icons/ri"
 
-import { site } from "~/data/site"
+import Logo from "./logo"
 
 export default function Search(): JSX.Element {
   return (
     <div className="card basis-full text-base-content bg-base-200">
-      <div className="card-body flex-row justify-center items-center">
-        <div className="mr-20 text-center">
-          <div className="flex flex-row items-center text-2xl">
-            <LuCake className="mr-3" />
-            <span className="tracking-wider">{site.name}</span>
-          </div>
-          <span className="text-xs">{site.desc}</span>
-        </div>
+      <div className="card-body flex-col lg:flex-row justify-center items-center">
+        <Logo className="mr-0 lg:mr-16 mb-4 lg:mb-0" />
 
         <form action="/search" className="form-control">
-          <div className="join">
+          <div className="lg:join">
             <input
-              className="input join-item w-64"
+              className="input join-item w-full lg:w-64 mb-2 lg:mb-0"
               type="text"
               name="q"
               placeholder="アイドルの名前から検索"
@@ -26,7 +19,7 @@ export default function Search(): JSX.Element {
             />
             <button
               type="submit"
-              className="btn btn-neutral join-item text-base"
+              className="btn btn-neutral join-item w-full lg:w-auto text-base"
             >
               <RiSearchLine />
             </button>

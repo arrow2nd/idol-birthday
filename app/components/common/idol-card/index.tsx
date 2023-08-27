@@ -7,7 +7,7 @@ export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {
 
   return (
     <Link
-      className="card flex-1 h-40 image-full text-white transition-transform duration-300 hover:scale-95 active:scale-100"
+      className="card flex-1 h-32 lg:h-40 image-full text-white transition-transform duration-300 hover:scale-95 active:scale-100"
       style={{ backgroundColor: `#${color.hex}` }}
       to={`/${id}`}
     >
@@ -17,13 +17,16 @@ export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {
             className="w-full object-top"
             src={`/api/og-image/${encodeURIComponent(name)}`}
             alt={name}
+            loading="lazy"
           />
         </figure>
       )}
       <div className="card-body p-4 justify-end">
         <div className="w-max">
-          <p className="font-bold text-3xl tracking-wider">{birthday}</p>
-          <p>{name}さん</p>
+          <p className="font-bold text-2xl lg:text-3xl tracking-wider">
+            {birthday}
+          </p>
+          <p className="text-sm lg:text-base">{name}さん</p>
         </div>
       </div>
     </Link>

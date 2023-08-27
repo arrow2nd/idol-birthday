@@ -46,7 +46,7 @@ export default function Index() {
   const [today, soon] = useLoaderData<Idol[][]>()
 
   return (
-    <div className="min-h-screen p-16 flex flex-wrap gap-4">
+    <Layout>
       <GroupTitle
         className="bg-gradient-to-r from-purple-500 to-pink-500"
         title="Happy Birthday!"
@@ -64,7 +64,7 @@ export default function Index() {
       {soon.map((idol) => (
         <IdolCard key={idol.id} idol={idol} />
       ))}
-    </div>
+    </Layout>
   )
 }
 
