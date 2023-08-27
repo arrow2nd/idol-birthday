@@ -3,11 +3,12 @@ import { Link } from "@remix-run/react"
 import { Idol } from "~/types/idol"
 
 export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {
-  const { id, name, birthday, idolListUrl } = idol
+  const { id, name, birthday, color, idolListUrl } = idol
 
   return (
     <Link
-      className="card flex-1 h-40 image-full text-white transition-transform duration-300 hover:scale-105 active:scale-95"
+      className="card flex-1 h-40 image-full text-white transition-transform duration-300 hover:scale-95 active:scale-100"
+      style={{ backgroundColor: `#${color.hex}` }}
       to={`/${id}`}
     >
       {idolListUrl && (
