@@ -15,4 +15,5 @@ export type Idol = {
   birth: Birth
   birthday: string
   color: Color
+  idolListUrl?: string
 }

@@ -13,13 +13,14 @@ PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT DISTINCT ?d ?name ?birthdate ?brand ?color
+SELECT DISTINCT ?d ?name ?birthdate ?brand ?color ?url
 WHERE {
   ?d rdfs:label ?name;
      imas:nameKana | imas:givenNameKana | imas:alternateNameKana ?kana;
      schema:birthDate ?birthdate;
      imas:Brand ?brand.
   OPTIONAL { ?d imas:Color ?color. }
+  OPTIONAL { ?d imas:IdolListURL ?url. }
   FILTER(STR(?brand) != '1stVision')
   FILTER(!CONTAINS(STR(?d), 'Akizuki_Ryo_876'))
   ${q}
@@ -102,7 +103,7 @@ export async function fetchFromImasparql(query: string): Promise<Idol[]> {
   }
 
   return data.results.bindings.map(
-    ({ d, name, birthdate, brand, color }): Idol => {
+    ({ d, name, birthdate, brand, color, url }): Idol => {
       const id = d.value.match(/detail\/(.+)$/)?.[1]
 
       if (!id) {
@@ -125,7 +126,8 @@ export async function fetchFromImasparql(query: string): Promise<Idol[]> {
         color: {
           hex: colorHex,
           isWhitish: isWhitishColor(colorHex)
-        }
+        },
+        idolListUrl: url?.value
       }
     }
   )

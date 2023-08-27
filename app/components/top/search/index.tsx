@@ -5,7 +5,7 @@ import { site } from "~/data/site"
 
 export default function Search(): JSX.Element {
   return (
-    <div className="card basis-full text-primary-content bg-base-200">
+    <div className="card basis-full text-base-content bg-base-200">
       <div className="card-body flex-row justify-center items-center">
         <div className="mr-20 text-center">
           <div className="flex flex-row items-center text-2xl">

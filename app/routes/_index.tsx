@@ -23,7 +23,6 @@ import { Idol } from "~/types/idol"
 export const loader: LoaderFunction = async () => {
   // 直近誕生日のアイドルを取得
   const query = createQuery2RecentBirthday()
-  console.log(query)
   const data = await fetchFromImasparql(query).catch(() => {
     throw responseServerError()
   })
@@ -53,15 +52,17 @@ export default function Index() {
         title="Happy Birthday!"
       />
       {today.map((idol) => (
-        <IdolCard idol={idol} />
+        <IdolCard key={idol.id} idol={idol} />
       ))}
+
       <Search />
+
       <GroupTitle
         className="bg-gradient-to-r from-orange-500 to-yellow-500"
         title="Coming Soon…"
       />
       {soon.map((idol) => (
-        <IdolCard idol={idol} />
+        <IdolCard key={idol.id} idol={idol} />
       ))}
     </div>
   )

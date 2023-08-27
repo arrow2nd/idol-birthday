@@ -8,6 +8,7 @@ export type Binding = {
   birthdate: Value
   brand: Value
   color?: Value
+  url?: Value
 }
 
 export type ImasparqlResponse = {
