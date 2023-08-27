@@ -78,7 +78,7 @@ export default function IdolCountDownPage() {
   const { idol, dateHash } = useLoaderData<LoaderResult>()
 
   return (
-    <div className="flex flex-col justify-center items-center px-8 h-screen">
+    <div className="flex h-screen flex-col items-center justify-center px-8">
       <CountDown idol={idol} hash={dateHash} />
     </div>
   )

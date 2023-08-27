@@ -1292,4 +1292,3 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/makoto_kikuchi_01.jpg"
   ]
 ])
-

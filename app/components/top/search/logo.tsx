@@ -6,7 +6,7 @@ import { site } from "~/data/site"
 export default function Logo(props: ComponentPropsWithRef<"div">): JSX.Element {
   return (
     <div {...props} className={`text-center ${props.className}`}>
-      <div className="flex justify-center items-center text-2xl">
+      <div className="flex items-center justify-center text-2xl">
         <LuCake className="mr-2" />
         <span className="font-bold md:tracking-wider">{site.name}</span>
       </div>

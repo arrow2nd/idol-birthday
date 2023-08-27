@@ -81,8 +81,8 @@ export function ErrorBoundary() {
 
   return (
     <Layout>
-      <div className="p-8 flex justify-center items-center h-screen text-neutral">
-        <h1 className="font-bold text-4xl">{status}</h1>
+      <div className="flex h-screen items-center justify-center p-8 text-neutral">
+        <h1 className="text-4xl font-bold">{status}</h1>
         <p className="mt-2">{message}</p>
       </div>
     </Layout>

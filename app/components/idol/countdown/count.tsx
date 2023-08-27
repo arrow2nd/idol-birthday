@@ -11,7 +11,7 @@ export default function Count({ name, count }: Props) {
         <span>残り</span>
         <span
           suppressHydrationWarning
-          className="text-5xl sm:text-6xl font-bold"
+          className="text-5xl font-bold sm:text-6xl"
         >
           {count}
         </span>
