@@ -8,7 +8,7 @@ export default function Logo(props: ComponentPropsWithRef<"div">): JSX.Element {
     <div {...props} className={`text-center ${props.className}`}>
       <div className="flex justify-center items-center text-2xl">
         <LuCake className="mr-2" />
-        <span className="lg:tracking-wider">{site.name}</span>
+        <span className="md:tracking-wider">{site.name}</span>
       </div>
       <span className="text-xs">{site.desc}</span>
     </div>
