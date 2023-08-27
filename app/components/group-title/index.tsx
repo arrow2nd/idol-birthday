@@ -1,12 +1,10 @@
+import { ComponentPropsWithRef } from "react"
 import { FiChevronRight } from "react-icons/fi"
 
 type Props = {
   title: string
   text?: string
-} & React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->
+} & ComponentPropsWithRef<"div">
 
 export default function GroupTitle(props: Props): JSX.Element {
   return (
