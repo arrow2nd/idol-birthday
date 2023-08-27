@@ -6,27 +6,35 @@ import { ImasparqlResponse } from "~/types/imasparql"
 import { getBrandColor, isWhitishColor } from "./color"
 import { createJstDayjs } from "./date"
 
-/** 共通部分 */
-const commonQuery = (q: string) => `
-PREFIX schema: <http://schema.org/>
-PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+/**
+ * クエリを作成
+ * @param q 埋め込むクエリ
+ * @param limit 取得件数を制限するか
+ * @returns クエリ
+ */
+function createQuery(q: string, limit: boolean = false): string {
+  return `
+  PREFIX schema: <http://schema.org/>
+  PREFIX imas: <https://sparql.crssnky.xyz/imasrdf/URIs/imas-schema.ttl#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-SELECT DISTINCT ?d ?name ?birthdate ?brand ?color ?url
-WHERE {
-  ?d rdfs:label ?name;
-     imas:nameKana | imas:givenNameKana | imas:alternateNameKana ?kana;
-     schema:birthDate ?birthdate;
-     imas:Brand ?brand.
-  OPTIONAL { ?d imas:Color ?color. }
-  OPTIONAL { ?d imas:IdolListURL ?url. }
-  FILTER(STR(?brand) != '1stVision')
-  FILTER(!CONTAINS(STR(?d), 'Akizuki_Ryo_876'))
-  ${q}
+  SELECT DISTINCT ?d ?name ?birthdate ?brand ?color ?url
+  WHERE {
+    ?d rdfs:label ?name;
+       imas:nameKana | imas:givenNameKana | imas:alternateNameKana ?kana;
+       schema:birthDate ?birthdate;
+       imas:Brand ?brand.
+    OPTIONAL { ?d imas:Color ?color. }
+    OPTIONAL { ?d imas:IdolListURL ?url. }
+    FILTER(STR(?brand) != '1stVision')
+    FILTER(!CONTAINS(STR(?d), 'Akizuki_Ryo_876'))
+    ${q}
+  }
+  ORDER BY ?birthdate
+  ${limit ? "LIMIT 10" : ""}
+  `
 }
-ORDER BY ?birthdate
-`
 
 /**
  * ダブルクオートをエスケープ
@@ -42,39 +50,41 @@ function escapeDoubleQuote(str: string): string {
  * @param id アイドルID
  * @returns SPARQLクエリ
  */
-export const createQuery2SearchById = (id: string) =>
-  commonQuery(
+export function createQuery2SearchById(id: string): string {
+  return createQuery(
     `FILTER(REGEX(LCASE(STR(?d)), "detail/${escapeDoubleQuote(id)}$", "i"))`
   )
+}
 
 /**
  * キーワードから検索するクエリを作成
  * @param keyword キーワード
  * @returns SPARQLクエリ
  */
-export const createQuery2SearchByKeyword = (keyword: string) => {
+export function createQuery2SearchByKeyword(keyword: string): string {
   const keywordAfterEscape = escapeDoubleQuote(keyword)
 
-  return commonQuery(
-    `FILTER(CONTAINS(?name, "${keywordAfterEscape}") || CONTAINS(?kana, "${keywordAfterEscape}"))`
+  return createQuery(
+    `FILTER(CONTAINS(?name, "${keywordAfterEscape}") || CONTAINS(?kana, "${keywordAfterEscape}"))`,
+    true
   )
 }
 
 /**
- * 近日誕生日のアイドルを検索するクエリを作成
+ * 直近14日以内が誕生日のアイドルを検索するクエリを作成
  * @returns SPARQLクエリ
  */
-export const createQuery2RecentBirthday = () => {
+export function createQuery2RecentBirthday(): string {
   const dateFormat = "--MM-DD"
   const now = createJstDayjs()
   const nowDate = now.format(dateFormat)
   const oneMonthLaterDate = now.add(14, "day").format(dateFormat)
 
-  return commonQuery(
-    `bind("${nowDate}"^^xsd:gMonthDay as ?start)
+  return createQuery(`
+    bind("${nowDate}"^^xsd:gMonthDay as ?start)
     bind("${oneMonthLaterDate}"^^xsd:gMonthDay as ?end)
-    FILTER(?birthdate >= ?start && ?birthdate <= ?end).`
-  )
+    FILTER(?birthdate >= ?start && ?birthdate <= ?end).
+  `)
 }
 
 /**

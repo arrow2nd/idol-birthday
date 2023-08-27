@@ -1,9 +1,10 @@
 import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
-import { TbListSearch } from "react-icons/tb"
 
-import Cards from "~/components/common/cards"
+import IdolCard from "~/components/common/idol-card"
 import Layout from "~/components/common/layout"
+import GroupTitle from "~/components/top/group-title"
+import Search from "~/components/top/search"
 
 import {
   createQuery2SearchByKeyword,
@@ -35,21 +36,24 @@ export const loader: LoaderFunction = async ({ request }) => {
 }
 
 export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
-  const title = `"${data.query}" の検索結果`
+  const title = `「${data.query}」の検索結果`
   return createMeta(title)
 }
 
-export default function Search() {
+export default function SearchResults() {
   const { query, data } = useLoaderData<SeaechResult>()
 
   return (
     <Layout>
-      <Cards
-        className="my-16"
-        title={`"${query}" の検索結果です`}
-        icon={<TbListSearch />}
-        idols={data}
+      <Search />
+      <GroupTitle
+        className="bg-gradient-to-r from-purple-500 to-pink-500"
+        title="Results"
+        text={query}
       />
+      {data.map((idol) => (
+        <IdolCard key={idol.id} idol={idol} />
+      ))}
     </Layout>
   )
 }
