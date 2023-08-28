@@ -21,7 +21,7 @@ export async function loader({ params }: LoaderArgs) {
 
   // 半分にリサイズ
   const resized = await image
-    .resize(image.getWidth() * 0.5, image.getHeight() * 0.5)
+    .resize(640, Jimp.AUTO)
     .getBufferAsync(Jimp.MIME_JPEG)
 
   return new Response(resized, {
