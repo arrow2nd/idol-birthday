@@ -6,10 +6,13 @@ type Props = {
 }
 
 export default function Count({ name, count }: Props): JSX.Element {
-  const numbers = count
-    .toString()
-    .match(/\d{1,2}/g)!
-    .map(Number)
+  // カウントダウンを偶数桁の数字列に
+  const countLength = count.toString().length
+  const paddingLength = countLength % 2 === 0 ? countLength : countLength + 1
+  const paddingNumber = count.toString().padStart(paddingLength, "0")
+
+  // 2桁ずつ分割
+  const numbers = paddingNumber.match(/\d{2}/g)!.map(Number)
 
   return (
     <>
