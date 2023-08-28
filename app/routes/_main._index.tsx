@@ -64,24 +64,3 @@ export default function Index() {
     </>
   )
 }
-
-export function ErrorBoundary() {
-  const error = useRouteError()
-
-  const status = isRouteErrorResponse(error)
-    ? error.status
-    : HttpStatusCode.InternalServerError
-
-  const message = isRouteErrorResponse(error)
-    ? error.statusText
-    : "Unknown error"
-
-  return (
-    <Layout>
-      <div className="flex h-screen items-center justify-center p-8 text-neutral">
-        <h1 className="text-4xl font-bold">{status}</h1>
-        <p className="mt-2">{message}</p>
-      </div>
-    </Layout>
-  )
-}
