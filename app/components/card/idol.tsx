@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react"
 
 import { Idol } from "~/types/idol"
 
-export default function CardIdol({ idol }: { idol: Idol }): JSX.Element {
+export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {
   const { id, name, birthday, color, idolListUrl } = idol
 
   return (

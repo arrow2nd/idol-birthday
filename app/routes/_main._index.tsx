@@ -6,8 +6,8 @@ import {
 } from "@remix-run/react"
 import { HttpStatusCode } from "axios"
 
-import CardGroupTitle from "~/components/card/group-title"
-import CardIdol from "~/components/card/idol"
+import GroupTitleCard from "~/components/card/group-title"
+import IdolCard from "~/components/card/idol"
 import Navi from "~/components/navi"
 
 import { createJstDayjs } from "~/libs/date"
@@ -46,20 +46,20 @@ export default function Index() {
 
   return (
     <>
-      <CardGroupTitle
+      <GroupTitleCard
         className="bg-gradient-to-r from-purple-500 to-pink-500"
         title="Happy Birthday!"
       />
       {today.map((idol) => (
-        <CardIdol key={idol.id} idol={idol} />
+        <IdolCard key={idol.id} idol={idol} />
       ))}
       <Navi />
-      <CardGroupTitle
+      <GroupTitleCard
         className="bg-gradient-to-r from-orange-500 to-yellow-500"
         title="Coming Soon…"
       />
       {soon.map((idol) => (
-        <CardIdol key={idol.id} idol={idol} />
+        <IdolCard key={idol.id} idol={idol} />
       ))}
     </>
   )

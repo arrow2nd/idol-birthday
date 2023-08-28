@@ -6,7 +6,7 @@ type Props = {
   text?: string
 } & ComponentPropsWithRef<"div">
 
-export default function CardGroupTitle(props: Props): JSX.Element {
+export default function GroupTitleCard(props: Props): JSX.Element {
   return (
     <div
       {...props}

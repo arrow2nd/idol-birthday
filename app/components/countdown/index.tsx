@@ -7,14 +7,14 @@ import { Idol } from "~/types/idol"
 
 import HappyBirthday from "./birthday"
 import Count from "./count"
-import TweetButton from "./tweet"
+import Share from "./share"
 
 type Props = {
   idol: Idol
   hash: string
 }
 
-export default function CountDown({ idol, hash }: Props) {
+export default function CountDown({ idol, hash }: Props): JSX.Element {
   const { name, birth } = idol
 
   const [prevDate] = useState<number>(createJstDayjs().date())
@@ -41,7 +41,7 @@ export default function CountDown({ idol, hash }: Props) {
       ) : (
         <HappyBirthday name={name} />
       )}
-      <TweetButton idol={idol} count={count} hash={hash} />
+      <Share idol={idol} count={count} hash={hash} />
     </div>
   )
 }

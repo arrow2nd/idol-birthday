@@ -7,7 +7,7 @@ type Props = {
   name: string
 }
 
-export default function HappyBirthday({ name }: Props) {
+export default function HappyBirthday({ name }: Props): JSX.Element {
   const colors = [...brandColors.values()].map((e) => "#" + e)
 
   const { reward: confettiReward } = useReward("confettiReward", "confetti", {

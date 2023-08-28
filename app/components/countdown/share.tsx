@@ -37,7 +37,7 @@ const shareServices: Service[] = [
   }
 ]
 
-export default function TweetButton({ idol, count, hash }: Props) {
+export default function Share({ idol, count, hash }: Props): JSX.Element {
   const { color } = idol
   const [isCopied, toggleCopied] = useReducer((prev) => !prev, false)
   const shareData = createShareData(idol, count, hash)
