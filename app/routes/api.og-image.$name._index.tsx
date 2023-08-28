@@ -1,4 +1,5 @@
 import { LoaderArgs } from "@remix-run/node"
+import Jimp from "jimp"
 
 import { idolImages } from "~/data/images"
 import { site } from "~/data/site"
@@ -10,14 +11,23 @@ export async function loader({ params }: LoaderArgs) {
     return new Response(null, { status: 404 })
   }
 
-  const res = await fetch(imageUrl, {
+  // NOTE:
+  // Basic usage にオブジェクト(URLOptions)を渡す使い方があるものの、なぜか該当するオーバーロードがないので any にしています
+  // https://github.com/jimp-dev/jimp/tree/main/packages/jimp#basic-usage
+  const image = await Jimp.read({
+    url: imageUrl,
     headers: { "User-Agent": `getOgImageBot (${site.url})` }
-  })
+  } as any)
 
-  return new Response(res.body, {
+  // 半分にリサイズ
+  const resized = await image
+    .resize(image.getWidth() * 0.5, image.getHeight() * 0.5)
+    .getBufferAsync(Jimp.MIME_JPEG)
+
+  return new Response(resized, {
     status: 200,
     headers: {
-      "Content-Type": "image/jpg",
+      "Content-Type": Jimp.MIME_JPEG,
       "Cache-Control": "public, max-age=7884000, s-maxage=15768000"
     }
   })
