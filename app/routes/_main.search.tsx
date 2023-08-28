@@ -4,7 +4,6 @@ import { useLoaderData } from "@remix-run/react"
 import CardGroupTitle from "~/components/card/group-title"
 import CardIdol from "~/components/card/idol"
 import CardNotFound from "~/components/card/notfound"
-import Layout from "~/components/layout"
 import Navi from "~/components/navi"
 import TopButton from "~/components/top-button"
 
@@ -46,7 +45,7 @@ export default function SearchResults() {
   const { query, data } = useLoaderData<SeaechResult>()
 
   return (
-    <Layout>
+    <>
       <Navi />
       <CardGroupTitle
         className="bg-gradient-to-r from-purple-500 to-pink-500"
@@ -59,6 +58,6 @@ export default function SearchResults() {
         <CardNotFound />
       )}
       <TopButton />
-    </Layout>
+    </>
   )
 }

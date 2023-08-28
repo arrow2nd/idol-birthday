@@ -8,7 +8,6 @@ import { HttpStatusCode } from "axios"
 
 import CardGroupTitle from "~/components/card/group-title"
 import CardIdol from "~/components/card/idol"
-import Layout from "~/components/layout"
 import Navi from "~/components/navi"
 
 import { createJstDayjs } from "~/libs/date"
@@ -46,7 +45,7 @@ export default function Index() {
   const [today, soon] = useLoaderData<Idol[][]>()
 
   return (
-    <Layout>
+    <>
       <CardGroupTitle
         className="bg-gradient-to-r from-purple-500 to-pink-500"
         title="Happy Birthday!"
@@ -62,7 +61,7 @@ export default function Index() {
       {soon.map((idol) => (
         <CardIdol key={idol.id} idol={idol} />
       ))}
-    </Layout>
+    </>
   )
 }
 
