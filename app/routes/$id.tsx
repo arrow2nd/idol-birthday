@@ -2,8 +2,8 @@ import { LoaderArgs, V2_MetaFunction, json } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
-import ButtonBackToTop from "~/components/button/back"
 import CountDown from "~/components/idol/countdown"
+import TopButton from "~/components/top-button"
 
 import { createJstDayjs } from "~/libs/date"
 import { VerificationArgs, createDateHash } from "~/libs/hash"
@@ -81,6 +81,7 @@ export default function IdolCountDownPage() {
   return (
     <div className="flex h-screen flex-col items-center justify-center px-8">
       <CountDown idol={idol} hash={dateHash} />
+      <TopButton />
     </div>
   )
 }
