@@ -9,7 +9,7 @@ import { HttpStatusCode } from "axios"
 import CardGroupTitle from "~/components/card/group-title"
 import CardIdol from "~/components/card/idol"
 import Layout from "~/components/layout"
-import Navi from "~/components/search"
+import Navi from "~/components/navi"
 
 import { createJstDayjs } from "~/libs/date"
 import {
@@ -54,9 +54,7 @@ export default function Index() {
       {today.map((idol) => (
         <CardIdol key={idol.id} idol={idol} />
       ))}
-
       <Navi />
-
       <CardGroupTitle
         className="bg-gradient-to-r from-orange-500 to-yellow-500"
         title="Coming Soon…"
