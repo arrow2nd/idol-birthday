@@ -1,6 +1,6 @@
 # idol-birthday
 
-🎂 アイマスアイドルのお誕生日までをカウントダウンするサイト
+🎂 アイマスアイドルのお誕生日をカウントダウンするサイト
 
 [![Powered by im@sparql](https://img.shields.io/badge/powered%20by-im%40sparql-F34F6D)](https://sparql.crssnky.xyz/imas/)
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=idol-birthday)](https://idol-birthday.vercel.app)
