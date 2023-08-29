@@ -4,20 +4,17 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
+  isRouteErrorResponse,
+  useRouteError
 } from "@remix-run/react"
+import { HttpStatusCode } from "axios"
+import { BiSolidError } from "react-icons/bi"
 
 import createMeta from "~/libs/meta"
 
+import TopButton from "./components/top-button"
 import styles from "./styles/app.css"
-
-const Analytics = (): JSX.Element => (
-  <script
-    defer
-    src="https://static.cloudflareinsights.com/beacon.min.js"
-    data-cf-beacon='{"token": "e4612edb1d6e444eac97559d81bbe565"}'
-  />
-)
 
 export function meta() {
   return createMeta()
@@ -33,13 +30,44 @@ export default function App() {
       <head>
         <Meta />
         <Links />
-        <Analytics />
       </head>
       <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+      </body>
+    </html>
+  )
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError()
+
+  const status = isRouteErrorResponse(error)
+    ? error.status
+    : HttpStatusCode.InternalServerError
+
+  const message = isRouteErrorResponse(error)
+    ? error.statusText
+    : "Unknown error"
+
+  return (
+    <html>
+      <head>
+        <title>ERROR!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body className="flex min-h-screen w-screen items-center justify-center">
+        <BiSolidError className="mr-6 text-6xl" />
+        <div className="stat w-fit border-l-2">
+          <div className="stat-title">ERROR</div>
+          <div className="stat-value">{status}</div>
+          <div className="stat-desc">{message}</div>
+        </div>
+        <TopButton />
+        <Scripts />
       </body>
     </html>
   )

@@ -7,7 +7,7 @@ type Props = {
   name: string
 }
 
-export default function HappyBirthday({ name }: Props) {
+export default function HappyBirthday({ name }: Props): JSX.Element {
   const colors = [...brandColors.values()].map((e) => "#" + e)
 
   const { reward: confettiReward } = useReward("confettiReward", "confetti", {
@@ -31,11 +31,11 @@ export default function HappyBirthday({ name }: Props) {
   }, [])
 
   return (
-    <div className="text-left font-bold text-4xl sm:text-6xl space-y-4">
+    <div className="space-y-4 text-left text-4xl font-bold sm:text-6xl">
       <div className="text-xl sm:text-2xl">{`${name}さんは`}</div>
       <div>今日がお誕生日</div>
       <div>です！！！🎉🎉🎉</div>
-      <span className="absolute top-1/2 left-1/2" id="confettiReward" />
+      <span className="absolute left-1/2 top-1/2" id="confettiReward" />
       <span className="absolute bottom-0 left-1/2" id="balloonsReward" />
     </div>
   )

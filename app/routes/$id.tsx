@@ -2,8 +2,8 @@ import { LoaderArgs, V2_MetaFunction, json } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
-import Header from "~/components/common/layout/header"
-import CountDown from "~/components/idol/countdown"
+import CountDown from "~/components/countdown"
+import TopButton from "~/components/top-button"
 
 import { createJstDayjs } from "~/libs/date"
 import { VerificationArgs, createDateHash } from "~/libs/hash"
@@ -79,11 +79,9 @@ export default function IdolCountDownPage() {
   const { idol, dateHash } = useLoaderData<LoaderResult>()
 
   return (
-    <div className="flex flex-col justify-center items-center px-8 h-screen">
-      <div className="absolute top-0 left-0 w-full">
-        <Header />
-      </div>
+    <div className="flex h-screen flex-col items-center justify-center px-8">
       <CountDown idol={idol} hash={dateHash} />
+      <TopButton />
     </div>
   )
 }

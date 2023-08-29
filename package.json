@@ -19,6 +19,7 @@
     "crypto-js": "^4.1.1",
     "daisyui": "^3.5.1",
     "dayjs": "^1.11.9",
+    "jimp": "^0.22.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
@@ -38,6 +39,7 @@
     "eslint": "^8.47.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   },
