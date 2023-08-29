@@ -17,7 +17,6 @@ export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {
             className="w-full object-top"
             src={`/api/og-image/${encodeURIComponent(name)}`}
             alt={name}
-            loading="lazy"
           />
         </figure>
       )}
