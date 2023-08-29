@@ -1,13 +1,7 @@
 import { LoaderFunction } from "@remix-run/node"
-import {
-  isRouteErrorResponse,
-  useLoaderData,
-  useRouteError
-} from "@remix-run/react"
-import { HttpStatusCode } from "axios"
+import { useLoaderData } from "@remix-run/react"
 
-import GroupTitleCard from "~/components/card/group-title"
-import IdolCard from "~/components/card/idol"
+import Idols from "~/components/idols"
 import Navi from "~/components/navi"
 
 import { createJstDayjs } from "~/libs/date"
@@ -46,21 +40,17 @@ export default function Index() {
 
   return (
     <>
-      <GroupTitleCard
-        className="bg-gradient-to-r from-purple-500 to-pink-500"
-        title="Happy Birthday!"
+      <Idols
+        groupCardClassName="bg-gradient-to-r from-purple-500 to-pink-500"
+        groupCardTitle="Happy Birthday!"
+        idols={today}
       />
-      {today.map((idol) => (
-        <IdolCard key={idol.id} idol={idol} />
-      ))}
       <Navi />
-      <GroupTitleCard
-        className="bg-gradient-to-r from-orange-500 to-yellow-500"
-        title="Coming Soon…"
+      <Idols
+        groupCardClassName="bg-gradient-to-r from-orange-500 to-yellow-500"
+        groupCardTitle="Coming Soon…"
+        idols={soon}
       />
-      {soon.map((idol) => (
-        <IdolCard key={idol.id} idol={idol} />
-      ))}
     </>
   )
 }

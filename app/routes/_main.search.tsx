@@ -1,9 +1,7 @@
 import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 
-import GroupTitleCard from "~/components/card/group-title"
-import IdolCard from "~/components/card/idol"
-import NotFoundCard from "~/components/card/notfound"
+import Idols from "~/components/idols"
 import Navi from "~/components/navi"
 import TopButton from "~/components/top-button"
 
@@ -47,16 +45,12 @@ export default function SearchResults() {
   return (
     <>
       <Navi />
-      <GroupTitleCard
-        className="bg-gradient-to-r from-purple-500 to-pink-500"
-        title="Results"
-        text={query}
+      <Idols
+        groupCardClassName="bg-gradient-to-r from-purple-500 to-pink-500"
+        groupCardTitle="Results"
+        groupCardText={query}
+        idols={data}
       />
-      {data.length > 0 ? (
-        data.map((idol) => <IdolCard key={idol.id} idol={idol} />)
-      ) : (
-        <NotFoundCard />
-      )}
       <TopButton />
     </>
   )
