@@ -76,7 +76,7 @@ export function createQuery2SearchByKeyword(keyword: string): string {
  */
 export function createQuery2RecentBirthday(): string {
   const dateFormat = "--MM-DD"
-  const now = createJstDayjs("2023/12/20")
+  const now = createJstDayjs()
   const oneMonthLater = now.add(14, "day")
 
   // 年を跨ぐなら条件を OR にする
