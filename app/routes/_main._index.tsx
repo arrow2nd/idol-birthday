@@ -25,7 +25,7 @@ export const loader: LoaderFunction = async () => {
   const date = now.date()
 
   // 今日誕生日, 近日誕生日の２つに分ける
-  return data.reduce(
+  const [today, soon] = data.reduce(
     ([pass, fail], e) => {
       return e.birth.month === month && e.birth.date === date
         ? [[...pass, e], fail]
@@ -33,6 +33,22 @@ export const loader: LoaderFunction = async () => {
     },
     [[], []] as Idol[][]
   )
+
+  soon.sort((a, b) => {
+    const dateA = a.birth.month
+    const dateB = b.birth.month
+
+    // 12月が先、1月が後になるようにソート
+    if (dateA === 12 && dateB === 1) {
+      return -1
+    } else if (dateA === 1 && dateB === 12) {
+      return 1
+    }
+
+    return dateA - dateB // 昇順
+  })
+
+  return [today, soon]
 }
 
 export default function Index() {

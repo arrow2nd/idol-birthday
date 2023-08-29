@@ -76,14 +76,17 @@ export function createQuery2SearchByKeyword(keyword: string): string {
  */
 export function createQuery2RecentBirthday(): string {
   const dateFormat = "--MM-DD"
-  const now = createJstDayjs()
-  const nowDate = now.format(dateFormat)
-  const oneMonthLaterDate = now.add(14, "day").format(dateFormat)
+  const now = createJstDayjs("2023/12/20")
+  const oneMonthLater = now.add(14, "day")
+
+  // 年を跨ぐなら条件を OR にする
+  const operator =
+    now.month() === 11 && oneMonthLater.month() === 0 ? "||" : "&&"
 
   return createQuery(`
-    bind("${nowDate}"^^xsd:gMonthDay as ?start)
-    bind("${oneMonthLaterDate}"^^xsd:gMonthDay as ?end)
-    FILTER(?birthdate >= ?start && ?birthdate <= ?end).
+    bind("${now.format(dateFormat)}"^^xsd:gMonthDay as ?start)
+    bind("${oneMonthLater.format(dateFormat)}"^^xsd:gMonthDay as ?end)
+    FILTER(?birthdate >= ?start ${operator} ?birthdate <= ?end).
   `)
 }
 
