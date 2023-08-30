@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
 import CountDown from "~/components/countdown"
-import TopButton from "~/components/top-button"
+import HomeButton from "~/components/home-button"
 
 import { createJstDayjs } from "~/libs/date"
 import { VerificationArgs, createDateHash } from "~/libs/hash"
@@ -81,7 +81,7 @@ export default function IdolCountDownPage() {
   return (
     <div className="flex h-screen flex-col items-center justify-center px-8">
       <CountDown idol={idol} hash={dateHash} />
-      <TopButton />
+      <HomeButton />
     </div>
   )
 }

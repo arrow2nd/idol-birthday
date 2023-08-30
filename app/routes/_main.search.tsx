@@ -1,9 +1,9 @@
 import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 
+import HomeButton from "~/components/home-button"
 import Idols from "~/components/idols"
 import Navi from "~/components/navi"
-import TopButton from "~/components/top-button"
 
 import {
   createQuery2SearchByKeyword,
@@ -51,7 +51,7 @@ export default function SearchResults() {
         groupCardText={query}
         idols={data}
       />
-      <TopButton />
+      <HomeButton />
     </>
   )
 }
