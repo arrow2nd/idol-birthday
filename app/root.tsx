@@ -13,7 +13,7 @@ import { BiSolidError } from "react-icons/bi"
 
 import createMeta from "~/libs/meta"
 
-import TopButton from "./components/top-button"
+import HomeButton from "./components/home-button"
 import styles from "./styles/app.css"
 
 export function meta() {
@@ -66,7 +66,7 @@ export function ErrorBoundary() {
           <div className="stat-value">{status}</div>
           <div className="stat-desc">{message}</div>
         </div>
-        <TopButton />
+        <HomeButton />
         <Scripts />
       </body>
     </html>
