@@ -1,9 +1,14 @@
 import { Outlet } from "@remix-run/react"
 
+import Footer from "~/components/footer"
+
 export default function LayoutMain(): JSX.Element {
   return (
-    <div className="m-auto flex max-w-screen-xl flex-wrap gap-4 p-8 md:p-16">
-      <Outlet />
-    </div>
+    <main className="m-auto max-w-screen-xl p-8 md:p-16">
+      <div className="flex flex-wrap gap-4">
+        <Outlet />
+      </div>
+      <Footer />
+    </main>
   )
 }
