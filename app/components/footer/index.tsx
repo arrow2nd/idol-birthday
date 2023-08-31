@@ -1,6 +1,6 @@
 export default function Footer(): JSX.Element {
   return (
-    <footer className="w-full text-center text-xs text-neutral-content sm:text-right">
+    <footer className="w-full text-center text-xs text-base-content sm:text-right">
       <div className="divider"></div>
       <p>
         {"Developed by arrow2nd | "}
