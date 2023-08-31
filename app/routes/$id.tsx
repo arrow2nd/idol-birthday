@@ -69,7 +69,7 @@ export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
   const { descTemplate } = site
   const { idol, ogpImageUrl } = data
 
-  const title = `${idol.name}さんのお誕生日まで…？`
+  const title = `${idol.name}さんのお誕生日まで…`
   const desc = descTemplate.replace("%s", `${idol.name}さん`)
 
   return createMeta(title, desc, ogpImageUrl)
