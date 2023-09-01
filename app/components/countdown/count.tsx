@@ -19,7 +19,7 @@ export default function Count({ name, count }: Props): JSX.Element {
       <div>{`${name}さんのお誕生日まで`}</div>
       <div className="space-x-2">
         <span>残り</span>
-        <span className="-space-x-1 text-5xl font-bold sm:text-6xl">
+        <span className="text-5xl font-bold sm:text-6xl">
           {numbers.map((n, i) => (
             <span className="countdown" key={i}>
               <span
