@@ -7,6 +7,7 @@
     "dev": "concurrently \"pnpm dev:css\" \"remix dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "preinstall": "npx only-allow pnpm",
+    "update:data": "ts-node ./tools/gen-images.ts && prettier --write ./app/data/images.ts",
     "fmt": "prettier --write ."
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "@remix-run/serve": "^1.19.3",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/crypto-js": "^4.1.1",
+    "@types/node": "^20.5.9",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.15",
@@ -41,6 +43,7 @@
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.3",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
   "engines": {
