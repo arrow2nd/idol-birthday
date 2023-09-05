@@ -1,3 +1,4 @@
+import fontStyles from "@fontsource/azeret-mono/400.css"
 import {
   Links,
   LiveReload,
@@ -21,7 +22,16 @@ export function meta() {
 }
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+    {
+      rel: "stylesheet",
+      href: styles
+    },
+    {
+      rel: "stylesheet",
+      href: fontStyles
+    }
+  ]
 }
 
 export default function App() {
