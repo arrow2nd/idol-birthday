@@ -19,14 +19,13 @@ export default function Count({ name, count }: Props): JSX.Element {
       <div>{`${name}さんのお誕生日まで`}</div>
       <div className="space-x-2">
         <span>残り</span>
-        <span className="text-5xl font-bold sm:text-6xl">
+        <span className="countdown font-mono text-5xl font-normal sm:text-6xl">
           {numbers.map((n, i) => (
-            <span className="countdown" key={i}>
-              <span
-                suppressHydrationWarning
-                style={{ "--value": n } as CSSProperties}
-              ></span>
-            </span>
+            <span
+              suppressHydrationWarning
+              style={{ "--value": n } as CSSProperties}
+              key={i}
+            ></span>
           ))}
         </span>
         <span>秒</span>
