@@ -28,7 +28,7 @@ export async function loader({ params }: LoaderArgs) {
     status: 200,
     headers: {
       "Content-Type": Jimp.MIME_JPEG,
-      "Cache-Control": "public, max-age=7884000, s-maxage=15768000"
+      "Cache-Control": "public, max-age=31536000"
     }
   })
 }
