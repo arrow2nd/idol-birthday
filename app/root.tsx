@@ -9,7 +9,7 @@ import {
   isRouteErrorResponse,
   useRouteError
 } from "@remix-run/react"
-import { HttpStatusCode } from "axios"
+import { Analytics } from "@vercel/analytics/react"
 import { BiSolidError } from "react-icons/bi"
 
 import createMeta from "~/libs/meta"
@@ -45,6 +45,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
         <LiveReload />
       </body>
     </html>
@@ -53,11 +54,7 @@ export default function App() {
 
 export function ErrorBoundary() {
   const error = useRouteError()
-
-  const status = isRouteErrorResponse(error)
-    ? error.status
-    : HttpStatusCode.InternalServerError
-
+  const status = isRouteErrorResponse(error) ? error.status : 500
   const message = isRouteErrorResponse(error)
     ? error.statusText
     : "Unknown error"
