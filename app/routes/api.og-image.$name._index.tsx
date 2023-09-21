@@ -19,9 +19,9 @@ export async function loader({ params }: LoaderArgs) {
     headers: { "User-Agent": `getOgImageBot (${site.url})` }
   } as any)
 
-  // 半分にリサイズ
+  // 小さめにリサイズ
   const resized = await image
-    .resize(640, Jimp.AUTO)
+    .resize(448, Jimp.AUTO)
     .getBufferAsync(Jimp.MIME_JPEG)
 
   return new Response(resized, {
