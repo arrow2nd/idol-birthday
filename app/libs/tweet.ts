@@ -29,9 +29,7 @@ export function createShareData(
       ? `${name}さんのお誕生日まで、残り${count}秒です！`
       : `${name}さんは今日がお誕生日です！！！！🎉🎉🎉`
 
-  const params = `?text=${encodeURIComponent(text)}&url=${encodeURIComponent(
-    url
-  )}`
+  const params = `?text=${encodeURIComponent(text + "\n" + url)}`
 
   return { params, url }
 }

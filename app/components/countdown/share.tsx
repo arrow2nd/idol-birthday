@@ -2,7 +2,7 @@ import { CSSProperties, useReducer } from "react"
 import { AiOutlineTwitter } from "react-icons/ai"
 import { BsMastodon } from "react-icons/bs"
 import { HiCheck } from "react-icons/hi"
-import { RiFileCopyFill } from "react-icons/ri"
+import { RiFileCopyFill, RiShareFill } from "react-icons/ri"
 import { SiMisskey } from "react-icons/si"
 
 import Anchor from "~/components/anchor"
@@ -24,16 +24,8 @@ type Service = {
 
 const shareServices: Service[] = [
   {
-    baseUrl: "https://twitter.com/intent/tweet",
-    icon: <AiOutlineTwitter />
-  },
-  {
-    baseUrl: "https://donshare.net/share.html",
-    icon: <BsMastodon />
-  },
-  {
-    baseUrl: "https://misskeyshare.link/share.html",
-    icon: <SiMisskey />
+    baseUrl: "https://しぇあ.com/",
+    icon: <RiShareFill />
   }
 ]
 
