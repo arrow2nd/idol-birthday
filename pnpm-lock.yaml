@@ -28,7 +28,7 @@ dependencies:
     version: 1.6.7
   cloudinary:
     specifier: ^2.0.0
-    version: 2.0.1
+    version: 2.0.2
   crypto-js:
     specifier: ^4.2.0
     version: 4.2.0
@@ -2947,8 +2947,8 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /cloudinary@2.0.1:
-    resolution: {integrity: sha512-+j5GswtCwjAmLhjs/K26id4Zvh53zL/YWzgyenxgbdXdXmdFM8d5H1FV1sJCkpS77AqylJKBzyztySdILM+F+A==}
+  /cloudinary@2.0.2:
+    resolution: {integrity: sha512-PQOaoM5W0jSrI1EIcnKAHenT3IMCCTbLkSWlXkXzQlkLBxsJIerinZVWebQqqpwz4etdhvlkfaXmsE9yhYc0Qw==}
     engines: {node: '>=9'}
     dependencies:
       lodash: 4.17.21
@@ -6509,7 +6509,7 @@ packages:
     dependencies:
       lilconfig: 3.1.1
       postcss: 8.4.35
-      ts-node: 10.9.2(@types/node@20.9.0)(typescript@5.2.2)
+      ts-node: 10.9.2(@types/node@20.11.20)(typescript@5.3.3)
       yaml: 2.4.0
     dev: true
 
