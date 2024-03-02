@@ -1,5 +1,5 @@
-import md5 from "crypto-js/md5"
 import { Dayjs } from "dayjs"
+import crypto from "node:crypto"
 
 import { createJstDayjs } from "./date"
 
@@ -12,13 +12,10 @@ import { createJstDayjs } from "./date"
 export function createDateHash(date: Dayjs, secret: string): string {
   const fullDate = date.format("YYYYMD")
 
-  // NOTE: `node:crypto` を import しようとすると
-  // No matching export in "node-modules-polyfills:crypto" for import "createHash"
-  // になるので、これが修正されるまで crypto-js で代替してる
-  //
-  // LINK: https://github.com/remix-run/remix/issues/3120
-
-  return md5(fullDate + secret).toString()
+  return crypto
+    .createHash("md5")
+    .update(fullDate + secret)
+    .digest("hex")
 }
 
 export type VerificationArgs = {
