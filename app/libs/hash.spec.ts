@@ -12,7 +12,7 @@ describe("verificationHash", () => {
     vi.useRealTimers()
   })
 
-  test("タイムスタンプが過去の場合", () => {
+  test("タイムスタンプが過去の場合検証が成功する", () => {
     const date = createJstDayjs("2024/05/01")
     const secret = "test"
     const hash = createDateHash(date, secret)
@@ -28,7 +28,7 @@ describe("verificationHash", () => {
     expect(ok).toBeTruthy()
   })
 
-  test("タイムスタンプの日付が一致する場合", () => {
+  test("タイムスタンプの日付が一致する場合検証が成功する", () => {
     const date = createJstDayjs("2024/04/19")
     const secret = "test"
     const hash = createDateHash(date, secret)
@@ -44,7 +44,7 @@ describe("verificationHash", () => {
     expect(ok).toBeTruthy()
   })
 
-  test("タイムスタンプが未来の場合", () => {
+  test("タイムスタンプが未来の場合検証が失敗する", () => {
     const date = createJstDayjs("2024/05/01")
     const secret = "test"
     const hash = createDateHash(date, secret)
