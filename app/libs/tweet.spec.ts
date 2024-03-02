@@ -6,7 +6,7 @@ import { site } from "~/data/site"
 
 import { createShareData } from "./tweet"
 
-describe("", () => {
+describe("createShareData", () => {
   beforeEach(() => {
     vi.useFakeTimers()
   })
