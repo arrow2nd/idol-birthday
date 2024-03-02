@@ -4,7 +4,7 @@ import { calcSecondsToBirthday, createJstDayjs } from "./date"
 
 describe("calcSecondsToBirthday", () => {
   test("正しい秒数が計算できる", () => {
-    const startDate = createJstDayjs("2024/04/01 00:00:00")
+    const startDate = createJstDayjs("2024/04/01 00:00:00", true)
     const seconds = calcSecondsToBirthday(startDate, {
       month: 4,
       date: 19
@@ -14,7 +14,7 @@ describe("calcSecondsToBirthday", () => {
   })
 
   test("過ぎている場合来年までの秒数が返る", () => {
-    const startDate = createJstDayjs("2024/04/20 00:00:00")
+    const startDate = createJstDayjs("2024/04/20 00:00:00", true)
     const seconds = calcSecondsToBirthday(startDate, {
       month: 4,
       date: 19
