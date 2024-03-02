@@ -75,20 +75,20 @@ function createHpbOgpImageUrl(name: string, colorHex: string): string {
 /**
  * OGP画像のURLを作成
  * @param idol アイドル情報
- * @param verfication 検証情報
+ * @param verification 検証情報
  * @returns URL
  */
 export function createOgpImageUrl(
   idol: Idol,
-  verfication: VerificationArgs
+  verification: VerificationArgs
 ): string {
   // ハッシュ値を検証
-  if (!verificationHash(verfication)) {
+  if (!verificationHash(verification)) {
     return site.defaultOgpImageUrl
   }
 
   // タイムスタンプから残り秒数を計算
-  const dateWithTimestamp = createJstDayjs(verfication.timestamp)
+  const dateWithTimestamp = createJstDayjs(verification.timestamp)
   const seconds = calcSecondsToBirthday(dateWithTimestamp, idol.birth)
 
   return seconds > 0
