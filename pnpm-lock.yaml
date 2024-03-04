@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@fontsource/azeret-mono':
     specifier: ^5.0.18
-    version: 5.0.18
+    version: 5.0.19
   '@remix-run/node':
     specifier: ^2.8.0
     version: 2.8.0(typescript@5.3.3)
@@ -1053,8 +1053,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@fontsource/azeret-mono@5.0.18:
-    resolution: {integrity: sha512-gTgOP1Kq0ZIXy0nkPOk2/35yyvx+XBlhfUWCfzPCo6z/RfM9dJQmvnVGm/Ds8Fa7c2lbL3DLB+RfsYQ1XIMVOQ==}
+  /@fontsource/azeret-mono@5.0.19:
+    resolution: {integrity: sha512-zHzR/U6Sk3Yt40nRJiBDblWQ/vfhuSob6X1FlyTKTce7pq10SBo/aLW7p3Kzj4dsQRUqF5QceaRkrNRQuZ9/JQ==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
