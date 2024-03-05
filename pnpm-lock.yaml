@@ -28,7 +28,7 @@ dependencies:
     version: 1.6.7
   cloudinary:
     specifier: ^2.0.2
-    version: 2.0.2
+    version: 2.0.3
   daisyui:
     specifier: ^4.7.2
     version: 4.7.2(postcss@8.4.35)
@@ -3119,8 +3119,8 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /cloudinary@2.0.2:
-    resolution: {integrity: sha512-PQOaoM5W0jSrI1EIcnKAHenT3IMCCTbLkSWlXkXzQlkLBxsJIerinZVWebQqqpwz4etdhvlkfaXmsE9yhYc0Qw==}
+  /cloudinary@2.0.3:
+    resolution: {integrity: sha512-2JPxAUuV4iHwiW4ATSOZvii6+BhhKI9+9KscgUkxJPKa6V6wOnZJHlYyovBGrrIbIgEdmGSZgqEsLfD0wWBhBg==}
     engines: {node: '>=9'}
     dependencies:
       lodash: 4.17.21
