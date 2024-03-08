@@ -104,6 +104,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/imura_setsuna_01.jpg"
   ],
   [
+    "郁田はるき",
+    "https://idollist.idolmaster-official.jp/images/character_main/haruki_ikuta_01.jpg"
+  ],
+  [
     "一ノ瀬志希",
     "https://idollist.idolmaster-official.jp/images/character_main/ichinose_shiki_01.jpg"
   ],
@@ -1270,6 +1274,10 @@ export const idolImages = new Map([
   [
     "玲音",
     "https://idollist.idolmaster-official.jp/images/character_main/leon_01.jpg"
+  ],
+  [
+    "鈴木羽那",
+    "https://idollist.idolmaster-official.jp/images/character_main/hana_suzuki_01.jpg"
   ],
   [
     "和久井留美",
