@@ -16,13 +16,13 @@ dependencies:
     version: 2.8.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.2)
   '@remix-run/vercel':
     specifier: ^1.19.3
-    version: 1.19.3(@vercel/node@3.0.23)
+    version: 1.19.3(@vercel/node@3.0.24)
   '@vercel/analytics':
     specifier: ^1.2.2
     version: 1.2.2(react@18.2.0)
   '@vercel/node':
     specifier: ^3.0.20
-    version: 3.0.23
+    version: 3.0.24
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -1853,14 +1853,14 @@ packages:
       source-map: 0.7.4
       typescript: 5.4.2
 
-  /@remix-run/vercel@1.19.3(@vercel/node@3.0.23):
+  /@remix-run/vercel@1.19.3(@vercel/node@3.0.24):
     resolution: {integrity: sha512-LoWffUns8u9oqOHSvZtH0LMXWm4NuZ2hUldLx7TAw19lfif1liwa8WrqxRyMItuUp1xEo6shTDCNEUNdQtsEGg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@vercel/node': ^1.8.3 || ^2.4.0
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 3.0.23
+      '@vercel/node': 3.0.24
     dev: false
 
   /@remix-run/web-blob@3.1.0:
@@ -2492,8 +2492,8 @@ packages:
       server-only: 0.0.1
     dev: false
 
-  /@vercel/build-utils@7.9.0:
-    resolution: {integrity: sha512-gYUUq4nUDGlxSddJamFosmTlazD4+z0vgv/sHn8z4fLE/pgbr1csVndp8hfuzTTFzTqR1rNkUs/gYL/Q7mw9wA==}
+  /@vercel/build-utils@7.9.1:
+    resolution: {integrity: sha512-yqbP7d8oLAGkh5iy9/Vu1c0+s5jLFK56QHEZlkj1lY3t3OQ+7dsAi0oUP/gv8YxtUYwMDfeYSqZr/4cNhnSBsg==}
     dev: false
 
   /@vercel/error-utils@2.0.2:
@@ -2522,14 +2522,14 @@ packages:
       - supports-color
     dev: false
 
-  /@vercel/node@3.0.23:
-    resolution: {integrity: sha512-3zx3TwvBIMcB11vDD+2dFi7giRf8DrjItPc4sRMXFJy4V+x2ZQt02W3k/a2kPNh6Cj99qRsGkIFJa8XeO0Id0g==}
+  /@vercel/node@3.0.24:
+    resolution: {integrity: sha512-2EbC6zsoaj2HH97BZYdkqHNeQ3gpcsETHXySSslkylU1uTAZU5i4c+Ze+RIinVkk7P+DVv4XzDK6xaSHvkXkGA==}
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 7.9.0
+      '@vercel/build-utils': 7.9.1
       '@vercel/error-utils': 2.0.2
       '@vercel/nft': 0.26.4
       '@vercel/static-config': 3.0.0
