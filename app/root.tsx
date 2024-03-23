@@ -9,7 +9,6 @@ import {
   isRouteErrorResponse,
   useRouteError
 } from "@remix-run/react"
-import { Analytics } from "@vercel/analytics/react"
 import { BiSolidError } from "react-icons/bi"
 
 import createMeta from "~/libs/meta"
@@ -45,8 +44,12 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <Analytics />
         <LiveReload />
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "e4612edb1d6e444eac97559d81bbe565"}'
+        ></script>
       </body>
     </html>
   )
