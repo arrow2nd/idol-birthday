@@ -16,7 +16,6 @@
     "@remix-run/node": "^2.8.0",
     "@remix-run/react": "^2.8.0",
     "@remix-run/vercel": "^1.19.3",
-    "@vercel/analytics": "^1.2.2",
     "@vercel/node": "^3.0.20",
     "axios": "^1.6.7",
     "cloudinary": "^2.0.2",
