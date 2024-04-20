@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@fontsource/azeret-mono':
         specifier: ^5.0.18
-        version: 5.0.19
+        version: 5.0.20
       '@remix-run/node':
         specifier: ^2.8.0
         version: 2.8.1(typescript@5.4.5)
@@ -650,8 +650,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fontsource/azeret-mono@5.0.19':
-    resolution: {integrity: sha512-zHzR/U6Sk3Yt40nRJiBDblWQ/vfhuSob6X1FlyTKTce7pq10SBo/aLW7p3Kzj4dsQRUqF5QceaRkrNRQuZ9/JQ==}
+  '@fontsource/azeret-mono@5.0.20':
+    resolution: {integrity: sha512-cYCpqtaJuyjbLRcL4D8I+QIwaymJnNnTaPK4MJWhEIk4nZuE04DSQfR21uxcsZDagOu9YnlOLDVHTpqLMjpANA==}
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -5170,7 +5170,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fontsource/azeret-mono@5.0.19': {}
+  '@fontsource/azeret-mono@5.0.20': {}
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
