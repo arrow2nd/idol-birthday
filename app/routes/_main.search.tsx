@@ -1,4 +1,4 @@
-import { LoaderFunction, V2_MetaFunction, redirect } from "@remix-run/node"
+import { LoaderFunction, MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 
 import HomeButton from "~/components/home-button"
@@ -34,7 +34,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   } as SeaechResult
 }
 
-export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
   const title = `「${data.query}」の検索結果`
   return createMeta(title)
 }

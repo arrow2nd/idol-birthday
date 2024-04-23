@@ -1,4 +1,4 @@
-import { LoaderArgs, V2_MetaFunction, json } from "@remix-run/node"
+import { LoaderFunctionArgs, MetaFunction, json } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
 
@@ -26,7 +26,7 @@ type LoaderResult = {
   dateHash: string
 }
 
-export async function loader({ request, params }: LoaderArgs) {
+export async function loader({ request, params }: LoaderFunctionArgs) {
   invariant(params.id, "Expected params.id")
 
   // 正しい id かどうかチェック
@@ -61,7 +61,7 @@ export async function loader({ request, params }: LoaderArgs) {
   })
 }
 
-export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
+export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) {
     return []
   }
