@@ -1,10 +1,10 @@
-import { LoaderArgs } from "@remix-run/node"
+import { LoaderFunctionArgs } from "@remix-run/node"
 import Jimp from "jimp"
 
 import { idolImages } from "~/data/images"
 import { site } from "~/data/site"
 
-export async function loader({ params }: LoaderArgs) {
+export async function loader({ params }: LoaderFunctionArgs) {
   const imageUrl = idolImages.get(params.name ?? "")
 
   if (!imageUrl) {
