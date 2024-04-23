@@ -28,7 +28,7 @@ importers:
         version: 1.6.8
       cloudinary:
         specifier: ^1.41.0
-        version: 1.41.0
+        version: 1.41.3
       daisyui:
         specifier: ^4.7.2
         version: 4.10.2(postcss@8.4.38)
@@ -1665,8 +1665,8 @@ packages:
     peerDependencies:
       lodash: '>=4.0'
 
-  cloudinary@1.41.0:
-    resolution: {integrity: sha512-qFf2McjvILJITePf4VF1PrY/8c2zy+/q5FVV6V3VWrP/gpIZsusPqXL4QZ6ZKXibPRukzMYqsQEhaSQgJHKKow==}
+  cloudinary@1.41.3:
+    resolution: {integrity: sha512-4o84y+E7dbif3lMns+p3UW6w6hLHEifbX/7zBJvaih1E9QNMZITENQ14GPYJC4JmhygYXsuuBb9bRA3xWEoOfg==}
     engines: {node: '>=0.6'}
 
   code-block-writer@10.1.1:
@@ -6529,7 +6529,7 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
-  cloudinary@1.41.0:
+  cloudinary@1.41.3:
     dependencies:
       cloudinary-core: 2.13.1(lodash@4.17.21)
       core-js: 3.37.0
