@@ -35,17 +35,22 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   const OgImageComponent = isHpd ? OgImageHpb : OgImageCountdown
 
-  return new ImageResponse(<OgImageComponent color={color} text={text} />, {
-    width: 1280,
-    height: 630,
-    fonts: [
-      {
-        name: "Kosugi Maru",
-        data: kosugiMaru
-      }
-    ],
-    emoji: "noto"
-  })
+  const res = new ImageResponse(
+    <OgImageComponent color={color} text={text} />,
+    {
+      width: 1280,
+      height: 630,
+      fonts: [
+        {
+          name: "Kosugi Maru",
+          data: kosugiMaru
+        }
+      ],
+      emoji: "noto"
+    }
+  )
+
+  return new Response(res.body, res)
 
   // const svg = await satori(<OgImageComponent color={color} text={text} />, {
   //   debug: true,
