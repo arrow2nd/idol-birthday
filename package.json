@@ -1,6 +1,7 @@
 {
   "private": true,
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "build": "pnpm build:css && remix vite:build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
