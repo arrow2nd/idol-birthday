@@ -14,16 +14,9 @@
 
 ## 実行
 
-> **Warning**
->
-> OGP 画像の生成には独自に定義した Cloudinary の Named Transformations を利用しています。
->
-> 定義内容についてはリポジトリに含まれていません。
-
 `.env` を以下の内容で作成し、プロジェクトルートに配置する
 
 ```
-CLOUDINARY_URL=<API Environment variable>
 APP_SECRET=<任意のシークレット文字列>
 ```
 
