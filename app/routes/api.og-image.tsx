@@ -11,11 +11,16 @@ export const config = { runtime: "edge" }
 export async function loader({ request }: LoaderFunctionArgs) {
   const searchParams = new URL(request.url).searchParams
   const idol = decodeURIComponent(searchParams.get("idol") ?? "")
-  const seconds = searchParams.get("seconds")
+  const seconds = searchParams.get("seconds") ?? "0"
   const color = searchParams.get("color")
   const isHpd = searchParams.get("hpb") === "true"
 
-  if (!idol || !color || seconds === null) {
+  if (
+    !idol ||
+    !color ||
+    (isHpd && seconds !== "0") ||
+    (!isHpd && seconds === "0")
+  ) {
     return new Response(null, {
       status: 400
     })
@@ -23,7 +28,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   const text = isHpd
     ? [`${idol}さんは`, "今日がお誕生日", "です！！！🎉🎉🎉"]
-    : [`${idol}さんのお誕生日まで`, "残り", seconds.toString(), "秒"]
+    : [`${idol}さんのお誕生日まで`, "残り", seconds, "秒"]
 
   // 必要な分のフォントデータを取得
   const kosugiMaru = await fetchFont(text.join(""), "Kosugi Maru")
