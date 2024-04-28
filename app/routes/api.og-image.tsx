@@ -1,11 +1,12 @@
 import { LoaderFunctionArgs } from "@remix-run/node"
 import { ImageResponse } from "@vercel/og"
-// import { Resvg } from "@resvg/resvg-js"
-// import satori from "satori"
 import OgImageCountdown from "~/components/og-image/countdown"
 import OgImageHpb from "~/components/og-image/hpb"
 
 export const config = { runtime: "edge" }
+
+// TODO:
+// 同じサーバー作られたリクエストか検証したい
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const searchParams = new URL(request.url).searchParams
@@ -50,32 +51,10 @@ export async function loader({ request }: LoaderFunctionArgs) {
     }
   )
 
+  // NOTE:
+  // ImageResponse をそのまま返すと TypeError: nodeResponse.headers.raw is not a function になるので
+  // キャストしてなんとかしています
   return new Response(res.body, res)
-
-  // const svg = await satori(<OgImageComponent color={color} text={text} />, {
-  //   debug: true,
-  //   width: 1280,
-  //   height: 630,
-  //   fonts: [
-  //     {
-  //       name: "Kosugi Maru",
-  //       data: kosugiMaru
-  //     }
-  //   ],
-  //   embedFont: true,
-  //   graphemeImages: {
-  //     "🎉": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f389.svg"
-  //   }
-  // })
-
-  // const resvg = new Resvg(svg)
-  // const buffer = resvg.render().asPng()
-
-  // return new Response(buffer, {
-  //   headers: {
-  //     "Content-type": "image/png"
-  //   }
-  // })
 }
 
 /**
