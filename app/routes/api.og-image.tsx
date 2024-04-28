@@ -1,6 +1,5 @@
 import { LoaderFunctionArgs } from "@remix-run/node"
-import satori from "satori"
-import sharp from "sharp"
+import { ImageResponse } from "@vercel/og"
 import OgImageCountdown from "~/components/og-image/countdown"
 import OgImageHpb from "~/components/og-image/hpb"
 
@@ -33,7 +32,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   const OgImageComponent = isHpd ? OgImageHpb : OgImageCountdown
 
-  const svg = await satori(<OgImageComponent color={color} text={text} />, {
+  return new ImageResponse(<OgImageComponent color={color} text={text} />, {
     debug: true,
     width: 1280,
     height: 630,
@@ -43,19 +42,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
         data: kosugiMaru
       }
     ],
-    graphemeImages: {
-      "🎉": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f389.svg"
-    }
-  })
-
-  const buffer = await sharp(Buffer.from(svg)).toBuffer({
-    resolveWithObject: true
-  })
-
-  return new Response(buffer.data, {
-    headers: {
-      "Content-Type": "image/png"
-    }
+    emoji: "noto"
   })
 }
 
