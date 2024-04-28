@@ -1,9 +1,6 @@
 import cloudinary from "cloudinary"
-
 import { Idol } from "~/types/idol"
-
 import { site } from "~/data/site"
-
 import { calcSecondsToBirthday, createJstDayjs } from "./date"
 import { VerificationArgs, verificationHash } from "./hash"
 

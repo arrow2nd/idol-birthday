@@ -5,7 +5,7 @@ export default function Footer(): JSX.Element {
       <p>
         {"Developed by arrow2nd | "}
         <a
-          className="link-accent link"
+          className="link link-accent"
           href="https://github.com/arrow2nd/idol-birthday"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { useReward } from "react-rewards"
-
 import { brandColors } from "~/libs/color"
 
 type Props = {

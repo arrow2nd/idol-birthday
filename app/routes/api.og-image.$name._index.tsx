@@ -1,6 +1,5 @@
 import { LoaderFunctionArgs } from "@remix-run/node"
 import Jimp from "jimp"
-
 import { idolImages } from "~/data/images"
 import { site } from "~/data/site"
 

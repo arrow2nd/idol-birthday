@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react"
-
 import { Idol } from "~/types/idol"
 
 export default function IdolCard({ idol }: { idol: Idol }): JSX.Element {

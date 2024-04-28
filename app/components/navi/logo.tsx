@@ -1,6 +1,5 @@
 import { ComponentPropsWithRef } from "react"
 import { LuCake } from "react-icons/lu"
-
 import { site } from "~/data/site"
 
 export default function Logo(props: ComponentPropsWithRef<"div">): JSX.Element {

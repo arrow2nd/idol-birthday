@@ -1,7 +1,5 @@
 import { describe, expect, test } from "vitest"
-
 import { site } from "~/data/site"
-
 import createMeta from "./meta"
 
 describe("createMeta", () => {

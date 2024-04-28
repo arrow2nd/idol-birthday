@@ -1,9 +1,6 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest"
-
 import { Idol } from "~/types/idol"
-
 import { site } from "~/data/site"
-
 import { createShareData } from "./tweet"
 
 describe("createShareData", () => {

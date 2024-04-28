@@ -10,9 +10,7 @@ import {
   useRouteError
 } from "@remix-run/react"
 import { BiSolidError } from "react-icons/bi"
-
 import createMeta from "~/libs/meta"
-
 import HomeButton from "./components/home-button"
 import styles from "./styles/app.css"
 
