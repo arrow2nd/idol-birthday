@@ -1,12 +1,11 @@
 import { LoaderFunctionArgs } from "@remix-run/node"
 import { Resvg } from "@resvg/resvg-js"
-import satori from "satori/wasm"
+import satori from "satori"
 import OgImageCountdown from "~/components/og-image/countdown"
 import OgImageHpb from "~/components/og-image/hpb"
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const searchParams = new URL(request.url).searchParams
-
   const idol = decodeURIComponent(searchParams.get("idol") ?? "")
   const seconds = searchParams.get("seconds")
   const color = searchParams.get("color")
@@ -43,12 +42,13 @@ export async function loader({ request }: LoaderFunctionArgs) {
         data: kosugiMaru
       }
     ],
+    embedFont: true,
     graphemeImages: {
       "🎉": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f389.svg"
     }
   })
 
-  const resvg = new Resvg(svg, { background: "white" })
+  const resvg = new Resvg(svg)
   const buffer = resvg.render().asPng()
 
   return new Response(buffer, {
