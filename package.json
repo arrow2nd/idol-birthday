@@ -20,6 +20,7 @@
     "@remix-run/vercel": "^1.19.3",
     "@resvg/resvg-js": "^2.6.2",
     "@vercel/node": "^3.0.20",
+    "@vercel/og": "^0.6.2",
     "axios": "^1.6.7",
     "cloudinary": "^1.41.0",
     "daisyui": "^4.7.2",

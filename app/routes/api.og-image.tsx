@@ -1,6 +1,7 @@
 import { LoaderFunctionArgs } from "@remix-run/node"
-import { Resvg } from "@resvg/resvg-js"
-import satori from "satori"
+import { ImageResponse } from "@vercel/og"
+// import { Resvg } from "@resvg/resvg-js"
+// import satori from "satori"
 import OgImageCountdown from "~/components/og-image/countdown"
 import OgImageHpb from "~/components/og-image/hpb"
 
@@ -32,8 +33,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   const OgImageComponent = isHpd ? OgImageHpb : OgImageCountdown
 
-  const svg = await satori(<OgImageComponent color={color} text={text} />, {
-    debug: true,
+  return new ImageResponse(<OgImageComponent color={color} text={text} />, {
     width: 1280,
     height: 630,
     fonts: [
@@ -42,20 +42,33 @@ export async function loader({ request }: LoaderFunctionArgs) {
         data: kosugiMaru
       }
     ],
-    embedFont: true,
-    graphemeImages: {
-      "🎉": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f389.svg"
-    }
+    emoji: "noto"
   })
 
-  const resvg = new Resvg(svg)
-  const buffer = resvg.render().asPng()
+  // const svg = await satori(<OgImageComponent color={color} text={text} />, {
+  //   debug: true,
+  //   width: 1280,
+  //   height: 630,
+  //   fonts: [
+  //     {
+  //       name: "Kosugi Maru",
+  //       data: kosugiMaru
+  //     }
+  //   ],
+  //   embedFont: true,
+  //   graphemeImages: {
+  //     "🎉": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f389.svg"
+  //   }
+  // })
 
-  return new Response(buffer, {
-    headers: {
-      "Content-type": "image/png"
-    }
-  })
+  // const resvg = new Resvg(svg)
+  // const buffer = resvg.render().asPng()
+
+  // return new Response(buffer, {
+  //   headers: {
+  //     "Content-type": "image/png"
+  //   }
+  // })
 }
 
 /**
