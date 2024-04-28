@@ -5,6 +5,8 @@ import { ImageResponse } from "@vercel/og"
 import OgImageCountdown from "~/components/og-image/countdown"
 import OgImageHpb from "~/components/og-image/hpb"
 
+export const config = { runtime: "edge" }
+
 export async function loader({ request }: LoaderFunctionArgs) {
   const searchParams = new URL(request.url).searchParams
   const idol = decodeURIComponent(searchParams.get("idol") ?? "")
