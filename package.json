@@ -52,5 +52,18 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": [
+        "linux",
+        "darwin",
+        "current"
+      ],
+      "cpu": [
+        "x64",
+        "arm64"
+      ]
+    }
   }
 }
