@@ -1,5 +1,4 @@
 import { Idol } from "~/types/idol"
-
 import GroupTitleCard from "./group-title-card"
 import IdolCard from "./idol-card"
 import NotFoundCard from "./notfound-card"

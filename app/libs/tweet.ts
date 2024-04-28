@@ -1,7 +1,5 @@
 import { Idol } from "~/types/idol"
-
 import { site } from "~/data/site"
-
 import { createJstDayjs } from "./date"
 
 type shareData = {

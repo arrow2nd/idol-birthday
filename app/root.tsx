@@ -1,4 +1,4 @@
-import fontStyles from "@fontsource/azeret-mono/400.css"
+import "@fontsource/azeret-mono/400.css"
 import {
   Links,
   LiveReload,
@@ -10,27 +10,12 @@ import {
   useRouteError
 } from "@remix-run/react"
 import { BiSolidError } from "react-icons/bi"
-
 import createMeta from "~/libs/meta"
-
 import HomeButton from "./components/home-button"
-import styles from "./styles/app.css"
+import "./styles/app.css"
 
 export function meta() {
   return createMeta()
-}
-
-export function links() {
-  return [
-    {
-      rel: "stylesheet",
-      href: styles
-    },
-    {
-      rel: "stylesheet",
-      href: fontStyles
-    }
-  ]
 }
 
 export default function App() {

@@ -1,22 +1,7 @@
-import cloudinary from "cloudinary"
-
 import { Idol } from "~/types/idol"
-
 import { site } from "~/data/site"
-
 import { calcSecondsToBirthday, createJstDayjs } from "./date"
 import { VerificationArgs, verificationHash } from "./hash"
-
-/**
- * Cloudinary用に文字列をエンコード
- * @param text 文字列
- * @returns エンコードされた文字列
- */
-const encode4Cloudinary = (text: string) => {
-  return encodeURIComponent(
-    text.replace(/\,/g, "%2C").replace(/\//g, "%2F").replace(/!/g, "%21")
-  )
-}
 
 /**
  * カウントダウンのOGP画像URLを作成
@@ -30,22 +15,13 @@ function createCountdownOgpImageUrl(
   colorHex: string,
   seconds: number
 ): string {
-  return cloudinary.v2.url("idol-birthday-countdown/countdown.png", {
-    secure: true,
-    sign_url: true,
-    transformation: [
-      {
-        variables: [
-          ["$idol", `!${encode4Cloudinary(name)}!`],
-          ["$seconds", `!${seconds}!`],
-          ["$color", `!rgb:${colorHex.replace("#", "")}!`]
-        ]
-      },
-      {
-        transformation: ["idol-countdown"]
-      }
-    ]
-  })
+  const url = new URL("api/og-image", site.url)
+
+  url.searchParams.append("idol", encodeURIComponent(name))
+  url.searchParams.append("seconds", seconds.toString())
+  url.searchParams.append("color", colorHex.replace("#", ""))
+
+  return url.toString()
 }
 
 /**
@@ -55,21 +31,13 @@ function createCountdownOgpImageUrl(
  * @returns OGP画像URL
  */
 function createHpbOgpImageUrl(name: string, colorHex: string): string {
-  return cloudinary.v2.url("idol-birthday-countdown/hpb.png", {
-    secure: true,
-    sign_url: true,
-    transformation: [
-      {
-        variables: [
-          ["$idol", `!${encode4Cloudinary(name)}!`],
-          ["$color", `!rgb:${colorHex.replace("#", "")}!`]
-        ]
-      },
-      {
-        transformation: ["idol-hpb"]
-      }
-    ]
-  })
+  const url = new URL("api/og-image", site.url)
+
+  url.searchParams.append("idol", encodeURIComponent(name))
+  url.searchParams.append("color", colorHex.replace("#", ""))
+  url.searchParams.append("hpd", "true")
+
+  return url.toString()
 }
 
 /**

@@ -1,8 +1,6 @@
 import axios from "axios"
-
 import { Idol } from "~/types/idol"
 import { ImasparqlResponse } from "~/types/imasparql"
-
 import { getBrandColor, isWhitishColor } from "./color"
 import { createJstDayjs } from "./date"
 

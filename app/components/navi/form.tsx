@@ -13,7 +13,7 @@ export default function Form(): JSX.Element {
         />
         <button
           type="submit"
-          className="btn btn-neutral join-item w-full text-base md:w-auto"
+          className="btn join-item btn-neutral w-full text-base md:w-auto"
         >
           <RiSearchLine />
         </button>

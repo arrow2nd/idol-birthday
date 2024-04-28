@@ -4,11 +4,8 @@ import { BsMastodon } from "react-icons/bs"
 import { HiCheck } from "react-icons/hi"
 import { RiFileCopyFill, RiShareFill } from "react-icons/ri"
 import { SiMisskey } from "react-icons/si"
-
 import Anchor from "~/components/anchor"
-
 import { createShareData } from "~/libs/tweet"
-
 import { Idol } from "~/types/idol"
 
 type Props = {

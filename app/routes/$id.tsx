@@ -1,10 +1,8 @@
 import { LoaderFunctionArgs, MetaFunction, json } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
 import invariant from "tiny-invariant"
-
 import CountDown from "~/components/countdown"
 import HomeButton from "~/components/home-button"
-
 import { createJstDayjs } from "~/libs/date"
 import { VerificationArgs, createDateHash } from "~/libs/hash"
 import { createQuery2SearchById, fetchFromImasparql } from "~/libs/imasparql"
@@ -15,9 +13,7 @@ import {
   responseNotFound,
   responseServerError
 } from "~/libs/response"
-
 import { Idol } from "~/types/idol"
-
 import { site } from "~/data/site"
 
 type LoaderResult = {

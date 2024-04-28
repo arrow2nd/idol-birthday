@@ -1,17 +1,14 @@
 import { LoaderFunction, MetaFunction, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react"
-
 import HomeButton from "~/components/home-button"
 import Idols from "~/components/idols"
 import Navi from "~/components/navi"
-
 import {
   createQuery2SearchByKeyword,
   fetchFromImasparql
 } from "~/libs/imasparql"
 import createMeta from "~/libs/meta"
 import { responseServerError } from "~/libs/response"
-
 import { SeaechResult } from "~/types/search"
 
 export const loader: LoaderFunction = async ({ request }) => {
