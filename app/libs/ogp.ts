@@ -35,7 +35,7 @@ function createHpbOgpImageUrl(name: string, colorHex: string): string {
 
   url.searchParams.append("idol", encodeURIComponent(name))
   url.searchParams.append("color", colorHex.replace("#", ""))
-  url.searchParams.append("hpd", "true")
+  url.searchParams.append("hpb", "true")
 
   return url.toString()
 }
