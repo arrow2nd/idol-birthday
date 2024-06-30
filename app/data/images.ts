@@ -168,6 +168,14 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/momohito_hanazono_01.jpg"
   ],
   [
+    "花海咲季",
+    "https://idollist.idolmaster-official.jp/images/character_main/saki_hanami_01.jpg"
+  ],
+  [
+    "花海佑芽",
+    "https://idollist.idolmaster-official.jp/images/character_main/ume_hanami_01.jpg"
+  ],
+  [
     "華村翔真",
     "https://idollist.idolmaster-official.jp/images/character_main/shoma_hanamura_01.jpg"
   ],
@@ -182,6 +190,10 @@ export const idolImages = new Map([
   [
     "海老原菜帆",
     "https://idollist.idolmaster-official.jp/images/character_main/ebihara_naho_01.jpg"
+  ],
+  [
+    "葛城リーリヤ",
+    "https://idollist.idolmaster-official.jp/images/character_main/lilja_katsuragi_01.jpg"
   ],
   [
     "葛之葉雨彦",
@@ -282,6 +294,10 @@ export const idolImages = new Map([
   [
     "月宮雅",
     "https://idollist.idolmaster-official.jp/images/character_main/tsukimiya_miyabi_01.jpg"
+  ],
+  [
+    "月村手毬",
+    "https://idollist.idolmaster-official.jp/images/character_main/temari_tsukimura_01.jpg"
   ],
   [
     "原田美世",
@@ -468,6 +484,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/ujiie_mutsumi_01.jpg"
   ],
   [
+    "紫雲清夏",
+    "https://idollist.idolmaster-official.jp/images/character_main/sumika_shiun_01.jpg"
+  ],
+  [
     "詩花",
     "https://idollist.idolmaster-official.jp/images/character_main/shika_01.jpg"
   ],
@@ -490,6 +510,10 @@ export const idolImages = new Map([
   [
     "篠原礼",
     "https://idollist.idolmaster-official.jp/images/character_main/shinohara_rei_01.jpg"
+  ],
+  [
+    "篠澤広",
+    "https://idollist.idolmaster-official.jp/images/character_main/hiro_shinosawa_01.jpg"
   ],
   [
     "若里春名",
@@ -756,6 +780,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/futaba_anzu_01.jpg"
   ],
   [
+    "倉本千奈",
+    "https://idollist.idolmaster-official.jp/images/character_main/china_kuramoto_01.jpg"
+  ],
+  [
     "早坂美玲",
     "https://idollist.idolmaster-official.jp/images/character_main/hayasaka_mirei_01.jpg"
   ],
@@ -972,6 +1000,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/fujiwara_hajime_01.jpg"
   ],
   [
+    "藤田ことね",
+    "https://idollist.idolmaster-official.jp/images/character_main/kotone_fujita_01.jpg"
+  ],
+  [
     "藤本里奈",
     "https://idollist.idolmaster-official.jp/images/character_main/fujimoto_rina_01.jpg"
   ],
@@ -1090,6 +1122,10 @@ export const idolImages = new Map([
   [
     "柊志乃",
     "https://idollist.idolmaster-official.jp/images/character_main/hiiragi_shino_01.jpg"
+  ],
+  [
+    "姫崎莉波",
+    "https://idollist.idolmaster-official.jp/images/character_main/rinami_himesaki_01.jpg"
   ],
   [
     "姫川友紀",
@@ -1250,6 +1286,10 @@ export const idolImages = new Map([
   [
     "有栖川夏葉",
     "https://idollist.idolmaster-official.jp/images/character_main/natsuha_arisugawa_01.jpg"
+  ],
+  [
+    "有村麻央",
+    "https://idollist.idolmaster-official.jp/images/character_main/mao_arimura_01.jpg"
   ],
   [
     "遊佐こずえ",
