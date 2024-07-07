@@ -52,6 +52,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/layla_01.jpg"
   ],
   [
+    "レトラ",
+    "https://idollist.idolmaster-official.jp/images/character_main/letora_01.jpg"
+  ],
+  [
     "ロコ",
     "https://idollist.idolmaster-official.jp/images/character_main/roco_handa_01.jpg"
   ],
@@ -620,6 +624,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/kamijo_haruna_01.jpg"
   ],
   [
+    "上水流宇宙",
+    "https://idollist.idolmaster-official.jp/images/character_main/cosmo_kamizuru_01.jpg"
+  ],
+  [
     "上田鈴帆",
     "https://idollist.idolmaster-official.jp/images/character_main/ueda_suzuho_01.jpg"
   ],
@@ -990,6 +998,10 @@ export const idolImages = new Map([
   [
     "棟方愛海",
     "https://idollist.idolmaster-official.jp/images/character_main/munakata_atsumi_01.jpg"
+  ],
+  [
+    "灯里愛夏",
+    "https://idollist.idolmaster-official.jp/images/character_main/manaka_tomori_01.jpg"
   ],
   [
     "藤居朋",
