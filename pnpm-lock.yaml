@@ -22,10 +22,10 @@ importers:
         version: 2.10.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@3.2.2)
+        version: 1.19.3(@vercel/node@3.2.3)
       '@vercel/node':
         specifier: ^3.0.27
-        version: 3.2.2
+        version: 3.2.3
       '@vercel/og':
         specifier: ^0.6.2
         version: 0.6.2
@@ -1297,8 +1297,8 @@ packages:
   '@vanilla-extract/private@1.0.5':
     resolution: {integrity: sha512-6YXeOEKYTA3UV+RC8DeAjFk+/okoNz/h88R+McnzA2zpaVqTR/Ep+vszkWYlGBcMNO7vEkqbq5nT/JMMvhi+tw==}
 
-  '@vercel/build-utils@8.3.1':
-    resolution: {integrity: sha512-HB9vyViwLHQp8w90JafKm+meq7NqKxcjPFVEc6I032cQdU4u2BYpCKHrGFWyHcyQSq9E0xj4SQdF1tDrqtmuVA==}
+  '@vercel/build-utils@8.3.2':
+    resolution: {integrity: sha512-/pacEU/vFFOayrZAWk0uEObo28mwqL8rIi7dTowYl0lRFcw3frej32uYMJSPdjskSRo50IR0m8WBqBiFu6zJGA==}
 
   '@vercel/error-utils@2.0.2':
     resolution: {integrity: sha512-Sj0LFafGpYr6pfCqrQ82X6ukRl5qpmVrHM/191kNYFqkkB9YkjlMAj6QcEsvCG259x4QZ7Tya++0AB85NDPbKQ==}
@@ -1308,8 +1308,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@vercel/node@3.2.2':
-    resolution: {integrity: sha512-7fk84h7rPsqw31rc/Eu1Rfo0VVmA9N+cK3UWFS1kyNS0ULJudyk+srcIf5Q3mhJMuUA3nIpYviU0nerO0F/qCQ==}
+  '@vercel/node@3.2.3':
+    resolution: {integrity: sha512-M/trB1Cs5/aaZVpJJpylntoektXeShFkl8uSCehbh4wy/gGMXFsTRmQfGfUbcJq8K/rhPHrRv1lmJEU5S5zerg==}
 
   '@vercel/og@0.6.2':
     resolution: {integrity: sha512-OTe0KE37F5Y2eTys6eMnfopC+P4qr2ooXUTFyFPTplYSPwowmFk/HLD1FXtbKLjqsIH0SgekcJWad+C5uX4nkg==}
@@ -5839,10 +5839,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@3.2.2)':
+  '@remix-run/vercel@1.19.3(@vercel/node@3.2.3)':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 3.2.2
+      '@vercel/node': 3.2.3
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6169,7 +6169,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.5': {}
 
-  '@vercel/build-utils@8.3.1': {}
+  '@vercel/build-utils@8.3.2': {}
 
   '@vercel/error-utils@2.0.2': {}
 
@@ -6191,13 +6191,13 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vercel/node@3.2.2':
+  '@vercel/node@3.2.3':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 8.3.1
+      '@vercel/build-utils': 8.3.2
       '@vercel/error-utils': 2.0.2
       '@vercel/nft': 0.27.2
       '@vercel/static-config': 3.0.0
