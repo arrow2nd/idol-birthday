@@ -34,7 +34,7 @@ jobs:
         run: pnpm update:data
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: 🍱 データを更新
           branch: ${{ env.NEW_BRANCH_NAME }}
