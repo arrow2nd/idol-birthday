@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@fontsource/azeret-mono':
         specifier: ^5.0.20
-        version: 5.0.22
+        version: 5.1.0
       '@img/sharp-linux-x64':
         specifier: ^0.33.3
         version: 0.33.5
@@ -811,8 +811,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fontsource/azeret-mono@5.0.22':
-    resolution: {integrity: sha512-XaorxpX2rMqamb2hY8wkleEPr+6rCHzNQH+IasIQXxupUhNUgYLtmHvrwIxIrkYXnijIGpOd1IsYOdhLrMseXw==}
+  '@fontsource/azeret-mono@5.1.0':
+    resolution: {integrity: sha512-GCZ1EwBTHoVxfKvdo6HFHKUPMIISoSgyq/9SGC3x4lOuhPvtS9EhL6SqhycyrtjHxDmYdKFUX6kzhJ6M3JV/xQ==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -5542,7 +5542,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fontsource/azeret-mono@5.0.22': {}
+  '@fontsource/azeret-mono@5.1.0': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
