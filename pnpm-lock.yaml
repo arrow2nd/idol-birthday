@@ -16,10 +16,10 @@ importers:
         version: 0.33.5
       '@remix-run/node':
         specifier: ^2.9.1
-        version: 2.12.0(typescript@5.6.2)
+        version: 2.12.1(typescript@5.6.2)
       '@remix-run/react':
         specifier: ^2.9.1
-        version: 2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
+        version: 2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
       '@remix-run/vercel':
         specifier: ^1.19.3
         version: 1.19.3(@vercel/node@3.2.14)
@@ -59,13 +59,13 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.9.1
-        version: 2.12.0(@remix-run/react@2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.0(typescript@5.6.2))(@types/node@20.16.5)(ts-node@10.9.1(@types/node@20.16.5)(typescript@5.6.2))(typescript@5.6.2)(vite@5.4.6(@types/node@20.16.5))
+        version: 2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@20.16.5)(ts-node@10.9.1(@types/node@20.16.5)(typescript@5.6.2))(typescript@5.6.2)(vite@5.4.6(@types/node@20.16.5))
       '@remix-run/eslint-config':
         specifier: ^2.9.1
-        version: 2.12.0(eslint@9.10.0(jiti@1.21.6))(react@18.3.1)(typescript@5.6.2)
+        version: 2.12.1(eslint@9.10.0(jiti@1.21.6))(react@18.3.1)(typescript@5.6.2)
       '@remix-run/serve':
         specifier: ^2.9.1
-        version: 2.12.0(typescript@5.6.2)
+        version: 2.12.1(typescript@5.6.2)
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^4.3.0
         version: 4.3.0(prettier@3.3.3)
@@ -1019,13 +1019,13 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@remix-run/dev@2.12.0':
-    resolution: {integrity: sha512-/87YQORdlJg5YChd7nVBM/hRXHZA4GfUjhKbZyNrh03bazCQBF+6EsXbzpJ6cCFOpZgecsN0Xv648Qw0VuJjwg==}
+  '@remix-run/dev@2.12.1':
+    resolution: {integrity: sha512-XjvpQZDvPL5L2NPUL9suwn0eo/WCHSewivpEEm2G1Ke06xL7LenIc8HzwkgsJqDrfvxePAFPj+RCcrygQvtMzA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
-      '@remix-run/react': ^2.12.0
-      '@remix-run/serve': ^2.12.0
+      '@remix-run/react': ^2.12.1
+      '@remix-run/serve': ^2.12.1
       typescript: ^5.1.0
       vite: ^5.1.0
       wrangler: ^3.28.2
@@ -1039,8 +1039,8 @@ packages:
       wrangler:
         optional: true
 
-  '@remix-run/eslint-config@2.12.0':
-    resolution: {integrity: sha512-9MfVRuto/8EOYFf4zdg765x5TQ1l03CG7ZsLBLI22fn/OoJtOp5gGXeHaWMiFo+nLHlP27wEH2y9j7NshxdcMA==}
+  '@remix-run/eslint-config@2.12.1':
+    resolution: {integrity: sha512-R/1zoLdI7ld8J2+LmFbb0BQAkcdjPYHX8wO7b3zEmoLDBdv2B6nHPBDigIHHzP8XROIlUaZJ5/cpqX8Y9U2O+Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: ^8.0.0
@@ -1050,8 +1050,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/express@2.12.0':
-    resolution: {integrity: sha512-8RmF0TITWxEW20HU5YPreuN0H8rPeShPCQUoMKN1b5zfcQ3E/tD5VWwwXicguQS8ffloc+ejhtQjnWA3drlsgw==}
+  '@remix-run/express@2.12.1':
+    resolution: {integrity: sha512-CW5coZXxk8251Tr0Fh9jmhda5Xt/BWfnUyD7jxth30irpWAEQcsaBu4pSDKuRvnJ8j2o7087EBnUn7oCB4ofNg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       express: ^4.19.2
@@ -1064,8 +1064,8 @@ packages:
     resolution: {integrity: sha512-z5qrVL65xLXIUpU4mkR4MKlMeKARLepgHAk4W5YY3IBXOreRqOGUC70POViYmY7x38c2Ia1NwqL80H+0h7jbMw==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/node@2.12.0':
-    resolution: {integrity: sha512-83Jaoc6gpSuD4e6rCk7N5ZHAXNmDw4fJC+kPeDCsd6+wLtTLSi7u9Zo9/Q7moLZ3oyH+aR+LGdkxLULYv+Q6Og==}
+  '@remix-run/node@2.12.1':
+    resolution: {integrity: sha512-d+IHvEEU3qziporgpEyKFvKdmNaDu+a/9pIxBkNKVWdKx2JR0VRFIaUxxpxISWtkJcoNuERhW2xYa6YvtFp4ig==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1073,8 +1073,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/react@2.12.0':
-    resolution: {integrity: sha512-Y109tI37Icr0BSU8sWSo8jDPkXaErJ/e1h0fkPvq6LZ0DrlcmHWBxzWJKID431I/KJvhVvBgVCuDamZTRVOZ5Q==}
+  '@remix-run/react@2.12.1':
+    resolution: {integrity: sha512-+AFR6oCcAndlUZvr42dNrY2zprhf5Yo5Wl7TBocO3YPmwLkdrzJz+e8Sezk25qgHBB9cCTigt+yyliXmsZ1mpg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.0.0
@@ -1092,8 +1092,8 @@ packages:
     resolution: {integrity: sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A==}
     engines: {node: '>=14'}
 
-  '@remix-run/serve@2.12.0':
-    resolution: {integrity: sha512-QRWn2prUQXrygiXPl93QCk/xxmnSPMJ/vRZtI6FDYjznyWnroNmyF9MBbg7q/6NbgPfuKBc5QoQzvm1IP1W2pw==}
+  '@remix-run/serve@2.12.1':
+    resolution: {integrity: sha512-J9BL5t2Alz45G/17vjD7YRuiRM+V4rJi63Kj+bmewuKWNXDEyij2LqgZJpkoHpkNsQFGiaBMNGc8bPd8RRmrxA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1101,8 +1101,8 @@ packages:
     resolution: {integrity: sha512-KzQ+htUsKqpBgKE2tWo7kIIGy3MyHP58Io/itUPvV+weDjApwr9tQr9PZDPA3yAY6rAzLax7BU0NMSYCXWFY5A==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/server-runtime@2.12.0':
-    resolution: {integrity: sha512-o9ukOr3XKmyY8UufTrDdkgD3fiy+z+f4qEzvCQnvC0+EasCyN9hb1Vbui6Koo/5HKvahC4Ga8RcWyvhykKrG3g==}
+  '@remix-run/server-runtime@2.12.1':
+    resolution: {integrity: sha512-iuj9ju34f0LztPpd5dVuTXgt4x/MJeRsBiLuEx02nDSMGoNCAIx2LdeNYvE+XXdsf1Ht2NMlpRU+HBPCz3QLZg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1285,6 +1285,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/estree@1.0.6':
+    resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
   '@types/hast@2.3.10':
     resolution: {integrity: sha512-McWspRw8xx8J9HurkVBfYj0xKoE25tOFlHGdx4MJ5xORQrMGZNqJhVQWaIbm6Oyla5kYOXtDiopzKRJzEOkwJw==}
@@ -5758,7 +5761,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@remix-run/dev@2.12.0(@remix-run/react@2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.0(typescript@5.6.2))(@types/node@20.16.5)(ts-node@10.9.1(@types/node@20.16.5)(typescript@5.6.2))(typescript@5.6.2)(vite@5.4.6(@types/node@20.16.5))':
+  '@remix-run/dev@2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@20.16.5)(ts-node@10.9.1(@types/node@20.16.5)(typescript@5.6.2))(typescript@5.6.2)(vite@5.4.6(@types/node@20.16.5))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/generator': 7.25.6
@@ -5770,10 +5773,10 @@ snapshots:
       '@babel/types': 7.25.6
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
-      '@remix-run/node': 2.12.0(typescript@5.6.2)
-      '@remix-run/react': 2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
+      '@remix-run/node': 2.12.1(typescript@5.6.2)
+      '@remix-run/react': 2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)
       '@remix-run/router': 1.19.2
-      '@remix-run/server-runtime': 2.12.0(typescript@5.6.2)
+      '@remix-run/server-runtime': 2.12.1(typescript@5.6.2)
       '@types/mdx': 2.0.13
       '@vanilla-extract/integration': 6.5.0(@types/node@20.16.5)
       arg: 5.0.2
@@ -5815,7 +5818,7 @@ snapshots:
       tsconfig-paths: 4.2.0
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.12.0(typescript@5.6.2)
+      '@remix-run/serve': 2.12.1(typescript@5.6.2)
       typescript: 5.6.2
       vite: 5.4.6(@types/node@20.16.5)
     transitivePeerDependencies:
@@ -5834,7 +5837,7 @@ snapshots:
       - ts-node
       - utf-8-validate
 
-  '@remix-run/eslint-config@2.12.0(eslint@9.10.0(jiti@1.21.6))(react@18.3.1)(typescript@5.6.2)':
+  '@remix-run/eslint-config@2.12.1(eslint@9.10.0(jiti@1.21.6))(react@18.3.1)(typescript@5.6.2)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/eslint-parser': 7.25.1(@babel/core@7.25.2)(eslint@9.10.0(jiti@1.21.6))
@@ -5862,9 +5865,9 @@ snapshots:
       - jest
       - supports-color
 
-  '@remix-run/express@2.12.0(express@4.21.0)(typescript@5.6.2)':
+  '@remix-run/express@2.12.1(express@4.21.0)(typescript@5.6.2)':
     dependencies:
-      '@remix-run/node': 2.12.0(typescript@5.6.2)
+      '@remix-run/node': 2.12.1(typescript@5.6.2)
       express: 4.21.0
     optionalDependencies:
       typescript: 5.6.2
@@ -5881,9 +5884,9 @@ snapshots:
       source-map-support: 0.5.21
       stream-slice: 0.1.2
 
-  '@remix-run/node@2.12.0(typescript@5.6.2)':
+  '@remix-run/node@2.12.1(typescript@5.6.2)':
     dependencies:
-      '@remix-run/server-runtime': 2.12.0(typescript@5.6.2)
+      '@remix-run/server-runtime': 2.12.1(typescript@5.6.2)
       '@remix-run/web-fetch': 4.4.2
       '@web3-storage/multipart-parser': 1.0.0
       cookie-signature: 1.2.1
@@ -5893,10 +5896,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.2
 
-  '@remix-run/react@2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)':
+  '@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2)':
     dependencies:
       '@remix-run/router': 1.19.2
-      '@remix-run/server-runtime': 2.12.0(typescript@5.6.2)
+      '@remix-run/server-runtime': 2.12.1(typescript@5.6.2)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-router: 6.26.2(react@18.3.1)
@@ -5909,10 +5912,10 @@ snapshots:
 
   '@remix-run/router@1.7.2': {}
 
-  '@remix-run/serve@2.12.0(typescript@5.6.2)':
+  '@remix-run/serve@2.12.1(typescript@5.6.2)':
     dependencies:
-      '@remix-run/express': 2.12.0(express@4.21.0)(typescript@5.6.2)
-      '@remix-run/node': 2.12.0(typescript@5.6.2)
+      '@remix-run/express': 2.12.1(express@4.21.0)(typescript@5.6.2)
+      '@remix-run/node': 2.12.1(typescript@5.6.2)
       chokidar: 3.6.0
       compression: 1.7.4
       express: 4.21.0
@@ -5932,7 +5935,7 @@ snapshots:
       set-cookie-parser: 2.7.0
       source-map: 0.7.4
 
-  '@remix-run/server-runtime@2.12.0(typescript@5.6.2)':
+  '@remix-run/server-runtime@2.12.1(typescript@5.6.2)':
     dependencies:
       '@remix-run/router': 1.19.2
       '@types/cookie': 0.6.0
@@ -6083,7 +6086,7 @@ snapshots:
 
   '@types/acorn@4.0.6':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   '@types/aria-query@5.0.4': {}
 
@@ -6099,9 +6102,11 @@ snapshots:
 
   '@types/estree-jsx@1.0.5':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   '@types/estree@1.0.5': {}
+
+  '@types/estree@1.0.6': {}
 
   '@types/hast@2.3.10':
     dependencies:
@@ -7586,7 +7591,7 @@ snapshots:
 
   estree-util-attach-comments@2.1.1:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   estree-util-build-jsx@2.2.2:
     dependencies:
@@ -7617,7 +7622,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   esutils@2.0.3: {}
 
@@ -7945,7 +7950,7 @@ snapshots:
 
   hast-util-to-estree@2.3.3:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.5
       '@types/hast': 2.3.10
       '@types/unist': 2.0.11
@@ -8128,7 +8133,7 @@ snapshots:
 
   is-reference@3.0.2:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   is-regex@1.1.4:
     dependencies:
@@ -8503,7 +8508,7 @@ snapshots:
 
   micromark-extension-mdx-expression@1.0.8:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       micromark-factory-mdx-expression: 1.0.9
       micromark-factory-space: 1.1.0
       micromark-util-character: 1.2.0
@@ -8515,7 +8520,7 @@ snapshots:
   micromark-extension-mdx-jsx@1.0.5:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-util-is-identifier-name: 2.1.0
       micromark-factory-mdx-expression: 1.0.9
       micromark-factory-space: 1.1.0
@@ -8531,7 +8536,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@1.0.5:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       micromark-core-commonmark: 1.1.0
       micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
@@ -8567,7 +8572,7 @@ snapshots:
 
   micromark-factory-mdx-expression@1.0.9:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
       micromark-util-symbol: 1.1.0
@@ -8631,7 +8636,7 @@ snapshots:
   micromark-util-events-to-acorn@1.2.3:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/unist': 2.0.11
       estree-util-visit: 1.2.1
       micromark-util-symbol: 1.1.0
@@ -9015,7 +9020,7 @@ snapshots:
 
   periscopic@3.1.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-walker: 3.0.3
       is-reference: 3.0.2
 
