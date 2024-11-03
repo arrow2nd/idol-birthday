@@ -13,46 +13,52 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@fontsource/azeret-mono": "^5.0.20",
-    "@img/sharp-linux-x64": "^0.33.3",
-    "@remix-run/node": "^2.12.1",
-    "@remix-run/react": "^2.12.1",
+    "@fontsource/azeret-mono": "^5.1.0",
+    "@img/sharp-linux-x64": "^0.33.5",
+    "@remix-run/node": "^2.13.1",
+    "@remix-run/react": "^2.13.1",
     "@remix-run/vercel": "^1.19.3",
-    "@vercel/node": "^3.2.22",
+    "@vercel/node": "^3.2.24",
     "@vercel/og": "^0.6.3",
-    "axios": "^1.6.8",
-    "daisyui": "^4.12.13",
-    "dayjs": "^1.11.11",
-    "jimp": "^1.0.0",
+    "axios": "^1.7.7",
+    "daisyui": "^4.12.14",
+    "dayjs": "^1.11.13",
+    "jimp": "^1.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.1.0",
+    "react-icons": "^5.3.0",
     "react-rewards": "^2.0.4",
     "tiny-invariant": "^1.3.3"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.12.1",
-    "@remix-run/eslint-config": "^2.12.1",
-    "@remix-run/serve": "^2.12.1",
+    "@remix-run/dev": "^2.13.1",
+    "@remix-run/eslint-config": "^2.13.1",
+    "@remix-run/serve": "^2.13.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/crypto-js": "^4.2.2",
-    "@types/node": "^22.0.0",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.19",
-    "concurrently": "^9.0.0",
-    "eslint": "^9.12.0",
-    "postcss": "^8.4.38",
-    "prettier": "^3.2.5",
+    "@types/node": "^22.8.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
+    "eslint": "^9.14.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwindcss": "^3.4.13",
-    "tsx": "^4.7.3",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vite": "^5.4.8",
-    "vite-tsconfig-paths": "^5.0.0",
-    "vitest": "^2.1.2"
+    "vite": "^5.4.10",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.4"
   },
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "overrides": {
+      "path-to-regexp@>=4.0.0 <6.3.0": ">=6.3.0",
+      "cookie@<0.7.0": ">=0.7.0"
+    }
   }
 }
