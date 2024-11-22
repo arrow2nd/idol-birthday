@@ -26,10 +26,10 @@ importers:
         version: 2.14.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@3.2.25)
+        version: 1.19.3(@vercel/node@3.2.26)
       '@vercel/node':
         specifier: ^3.2.24
-        version: 3.2.25
+        version: 3.2.26
       '@vercel/og':
         specifier: ^0.6.3
         version: 0.6.4
@@ -1425,8 +1425,8 @@ packages:
   '@vanilla-extract/private@1.0.6':
     resolution: {integrity: sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==}
 
-  '@vercel/build-utils@8.4.12':
-    resolution: {integrity: sha512-pIH0b965wJhd1otROVPndfZenPKFVoYSaRjtSKVOT/oNBT13ifq86UVjb5ZjoVfqUI2TtSTP+68kBqLPeoq30g==}
+  '@vercel/build-utils@8.5.0':
+    resolution: {integrity: sha512-zyqeauvze7/XRFj8XRm0ot3Ec7l+Px5k1zzzVnARiXwC3x594dLen8Cjm0dpoy7blfWYXUuCMsbBWT2O2OHXxA==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1436,8 +1436,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@vercel/node@3.2.25':
-    resolution: {integrity: sha512-Htc7I/nHpxfMtmzoii8Fnm01iFiFeTW99OYw67S8UAJuY+Fc18RnZVPjtw1fTgf4EcRxsFGP6+nG1IkSqty6uA==}
+  '@vercel/node@3.2.26':
+    resolution: {integrity: sha512-nN6S3srh4u/5TNFf7k9efw2RHhy135ETAnrQxgOpdnshqhe/n5Q/CcJy1eB6ZewAs6VJsHJU5TOZ+SO72+pg/w==}
 
   '@vercel/og@0.6.4':
     resolution: {integrity: sha512-+IB8fYbVHEAtLfhCXSRS61Q/OfBJTaPCXhvGvXTBIUfs9lqZMDesZ2UnvKYbnEYHSMgCzBaj5BOq66iePl8mjw==}
@@ -3481,8 +3481,8 @@ packages:
       encoding:
         optional: true
 
-  node-gyp-build@4.8.3:
-    resolution: {integrity: sha512-EMS95CMJzdoSKoIiXo8pxKoL8DYxwIZXYlLmgPb8KUv794abpnLK6ynsCAWNliOjREKruYKdzbh76HHYUHX7nw==}
+  node-gyp-build@4.8.4:
+    resolution: {integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==}
     hasBin: true
 
   node-releases@2.0.18:
@@ -5967,10 +5967,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@3.2.25)':
+  '@remix-run/vercel@1.19.3(@vercel/node@3.2.26)':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 3.2.25
+      '@vercel/node': 3.2.26
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6307,7 +6307,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vercel/build-utils@8.4.12': {}
+  '@vercel/build-utils@8.5.0': {}
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -6323,19 +6323,19 @@ snapshots:
       glob: 7.2.3
       graceful-fs: 4.2.11
       micromatch: 4.0.8
-      node-gyp-build: 4.8.3
+      node-gyp-build: 4.8.4
       resolve-from: 5.0.0
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@vercel/node@3.2.25':
+  '@vercel/node@3.2.26':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 8.4.12
+      '@vercel/build-utils': 8.5.0
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.27.3
       '@vercel/static-config': 3.0.0
@@ -8801,7 +8801,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  node-gyp-build@4.8.3: {}
+  node-gyp-build@4.8.4: {}
 
   node-releases@2.0.18: {}
 
