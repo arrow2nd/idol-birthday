@@ -72,7 +72,7 @@ importers:
         version: 2.15.0(typescript@5.7.2)
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.0.0
-        version: 5.1.0(prettier@3.4.2)
+        version: 5.2.0(prettier@3.4.2)
       '@types/crypto-js':
         specifier: ^4.2.2
         version: 4.2.2
@@ -102,7 +102,7 @@ importers:
         version: 3.4.2
       prettier-plugin-tailwindcss:
         specifier: ^0.6.8
-        version: 0.6.9(@trivago/prettier-plugin-sort-imports@5.1.0(prettier@3.4.2))(prettier@3.4.2)
+        version: 0.6.9(@trivago/prettier-plugin-sort-imports@5.2.0(prettier@3.4.2))(prettier@3.4.2)
       tailwindcss:
         specifier: ^3.4.14
         version: 3.4.16(ts-node@10.9.1(@types/node@22.10.1)(typescript@5.7.2))
@@ -1381,8 +1381,8 @@ packages:
   '@tokenizer/token@0.3.0':
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
 
-  '@trivago/prettier-plugin-sort-imports@5.1.0':
-    resolution: {integrity: sha512-IlzY6Qxd+T5lLS3JLgaXUMIedFJY2/RB4QlFV3K47l08Z2xIeEIRCMMlvuI/n/4Kjw6ofvq+g3YoBYKidnpJOg==}
+  '@trivago/prettier-plugin-sort-imports@5.2.0':
+    resolution: {integrity: sha512-yEIJ7xMKYQwyNRjxSdi4Gs37iszikAjxfky+3hu9bn24u8eHLJNDMAoOTyowp8p6EpSl8IQMdkfBx+WnJTttsw==}
     engines: {node: '>18.12'}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -6276,7 +6276,7 @@ snapshots:
 
   '@tokenizer/token@0.3.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@5.1.0(prettier@3.4.2)':
+  '@trivago/prettier-plugin-sort-imports@5.2.0(prettier@3.4.2)':
     dependencies:
       '@babel/generator': 7.26.3
       '@babel/parser': 7.26.3
@@ -9358,11 +9358,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.9(@trivago/prettier-plugin-sort-imports@5.1.0(prettier@3.4.2))(prettier@3.4.2):
+  prettier-plugin-tailwindcss@0.6.9(@trivago/prettier-plugin-sort-imports@5.2.0(prettier@3.4.2))(prettier@3.4.2):
     dependencies:
       prettier: 3.4.2
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 5.1.0(prettier@3.4.2)
+      '@trivago/prettier-plugin-sort-imports': 5.2.0(prettier@3.4.2)
 
   prettier@2.8.8: {}
 
