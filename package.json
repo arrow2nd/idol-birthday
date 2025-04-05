@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@fontsource/azeret-mono": "^5.1.1",
-    "@img/sharp-linux-x64": "^0.33.5",
+    "@img/sharp-linux-x64": "^0.34.0",
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/vercel": "^1.19.3",
