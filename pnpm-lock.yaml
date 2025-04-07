@@ -17,7 +17,7 @@ importers:
         version: 5.2.6
       '@img/sharp-linux-x64':
         specifier: ^0.34.0
-        version: 0.34.0
+        version: 0.34.1
       '@remix-run/node':
         specifier: ^2.15.2
         version: 2.16.4(typescript@5.8.3)
@@ -834,8 +834,8 @@ packages:
     cpu: [x64]
     os: [linux]
 
-  '@img/sharp-linux-x64@0.34.0':
-    resolution: {integrity: sha512-Y98V1d5vh8RIpf+pUb7U9a0SGzfPa7x7KPXsqtvb7i52L7HXAMv5U0aaOdnnf/CAqVUVaTJajINJ3KyrLcwByQ==}
+  '@img/sharp-linux-x64@0.34.1':
+    resolution: {integrity: sha512-wExv7SH9nmoBW3Wr2gvQopX1k8q2g5V5Iag8Zk6AVENsjwd+3adjwxtp3Dcu2QhOXr8W9NusBU6XcQUohBZ5MA==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [linux]
@@ -5655,7 +5655,7 @@ snapshots:
   '@img/sharp-libvips-linux-x64@1.1.0':
     optional: true
 
-  '@img/sharp-linux-x64@0.34.0':
+  '@img/sharp-linux-x64@0.34.1':
     optionalDependencies:
       '@img/sharp-libvips-linux-x64': 1.1.0
 
