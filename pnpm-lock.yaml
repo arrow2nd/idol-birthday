@@ -26,10 +26,10 @@ importers:
         version: 2.16.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.1.14(rollup@4.40.0))
+        version: 1.19.3(@vercel/node@5.1.15(rollup@4.40.0))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.1.14(rollup@4.40.0)
+        version: 5.1.15(rollup@4.40.0)
       '@vercel/og':
         specifier: ^0.6.5
         version: 0.6.8
@@ -38,7 +38,7 @@ importers:
         version: 1.9.0
       daisyui:
         specifier: ^5.0.0
-        version: 5.0.28
+        version: 5.0.29
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -1539,8 +1539,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@vercel/node@5.1.14':
-    resolution: {integrity: sha512-kLXAR4ZtNSXJw5ffIzKPDAVHD4/Dwxw/287ZCnQlqtOQzY3IH1E5QM3nxn0LGfTkYxXpQFFOOcXL7fZW7MjC6A==}
+  '@vercel/node@5.1.15':
+    resolution: {integrity: sha512-r/DIdg2J/Ez59eK6sw5ez36rDI3GkcyzYjxLY41gItqKZb9lndAwwEgCCVMAP+l1YkeHiUcL9ie1BMZpsCoD2w==}
 
   '@vercel/og@0.6.8':
     resolution: {integrity: sha512-e4kQK9mP8ntpo3dACWirGod/hHv4qO5JMj9a/0a2AZto7b4persj5YP7t1Er372gTtYFTYxNhMx34jRvHooglw==}
@@ -2053,8 +2053,8 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
-  daisyui@5.0.28:
-    resolution: {integrity: sha512-H082p8Lg3c7Se9wTbjfSOOhfUbp3BnOM2+cdr3OeY5G1Ll7GYLXB9NWLHgitkTsB1pQKwHRYYchqN2YG0VVShg==}
+  daisyui@5.0.29:
+    resolution: {integrity: sha512-/iO8+wHDgsLrxO8qP7kJPTdOqxB/WA0z1BBC4hWpmRLtcL91FfXg6qkXvZAS2ZKVpvK6Z3HXLkkQs9AglBPuIA==}
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -6169,10 +6169,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.1.14(rollup@4.40.0))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.1.15(rollup@4.40.0))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.1.14(rollup@4.40.0)
+      '@vercel/node': 5.1.15(rollup@4.40.0)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6596,7 +6596,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.1.14(rollup@4.40.0)':
+  '@vercel/node@5.1.15(rollup@4.40.0)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
@@ -7159,7 +7159,7 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  daisyui@5.0.28: {}
+  daisyui@5.0.29: {}
 
   damerau-levenshtein@1.0.8: {}
 
