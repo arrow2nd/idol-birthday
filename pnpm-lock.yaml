@@ -26,10 +26,10 @@ importers:
         version: 2.16.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.3.0(rollup@4.44.1))
+        version: 1.19.3(@vercel/node@5.3.1(rollup@4.44.1))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.3.0(rollup@4.44.1)
+        version: 5.3.1(rollup@4.44.1)
       '@vercel/og':
         specifier: ^0.6.5
         version: 0.6.8
@@ -970,6 +970,9 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.1':
     resolution: {integrity: sha512-mBLKRHc7Ffw/hObYb9+cunuGNjshQk+vZdwZBJoqiysK/mW3Jq0UXosq8aIhMnLevANhR9yoYfdUEOHg6M9y0g==}
 
+  '@jridgewell/sourcemap-codec@1.5.4':
+    resolution: {integrity: sha512-VT2+G1VQs/9oz078bLrYbecdZKs912zQlkelYpuf+SXF+QvZDYJlbx/LSx+meSAwdDFnF8FVXW92AVjjkVmgFw==}
+
   '@jridgewell/trace-mapping@0.3.26':
     resolution: {integrity: sha512-Z9rjt4BUVEbLFpw0qjCklVxxf421wrmcbP4w+LmBUxYCyJTYYSclgJD0YsCgGqQCtCIPiz7kjbYYJiAKhjJ3kA==}
 
@@ -1543,8 +1546,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@10.6.1':
-    resolution: {integrity: sha512-E6O45bInBcKFDtliPADlNpIMutPjzGepYVfV2GyXdxf+00k6wMAlTQ/HbgWhvErOvy7TkZxFxrkRghAWnGK+UA==}
+  '@vercel/build-utils@10.6.2':
+    resolution: {integrity: sha512-8IMnHqAJW0LARdhPoCWAUXwcQ3rBzDodK5ujLAQBe6cDfyDRun1320eaiSxKo7sBARoRYYfb7i+eURhXKHOucA==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1554,8 +1557,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vercel/node@5.3.0':
-    resolution: {integrity: sha512-NeE5c7dRt9PXUzq7zUA+rj94l7AoXBw2cE+xK0hIoYDcWbIJVYBhbkBtzNdZx8CGncUJ2wMq01gn8pCwoQ0xYA==}
+  '@vercel/node@5.3.1':
+    resolution: {integrity: sha512-QhnpEegE6CRs8HulXc3zqw6O6Be0gnDnzEeANxEtnUeGjVfmR+OVwePv/cPgFOWSbmIChZYPr0DCb1ZPPpUVnQ==}
 
   '@vercel/og@0.6.8':
     resolution: {integrity: sha512-e4kQK9mP8ntpo3dACWirGod/hHv4qO5JMj9a/0a2AZto7b4persj5YP7t1Er372gTtYFTYxNhMx34jRvHooglw==}
@@ -5870,6 +5873,8 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.1': {}
 
+  '@jridgewell/sourcemap-codec@1.5.4': {}
+
   '@jridgewell/trace-mapping@0.3.26':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
@@ -5878,7 +5883,7 @@ snapshots:
   '@jridgewell/trace-mapping@0.3.9':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.1
+      '@jridgewell/sourcemap-codec': 1.5.4
 
   '@jspm/core@2.1.0': {}
 
@@ -6170,10 +6175,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.3.0(rollup@4.44.1))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.3.1(rollup@4.44.1))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.3.0(rollup@4.44.1)
+      '@vercel/node': 5.3.1(rollup@4.44.1)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6586,7 +6591,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@10.6.1': {}
+  '@vercel/build-utils@10.6.2': {}
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -6609,13 +6614,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.3.0(rollup@4.44.1)':
+  '@vercel/node@5.3.1(rollup@4.44.1)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 10.6.1
+      '@vercel/build-utils': 10.6.2
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.29.2(rollup@4.44.1)
       '@vercel/static-config': 3.1.1
