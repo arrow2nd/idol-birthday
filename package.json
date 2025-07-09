@@ -19,7 +19,7 @@
     "@remix-run/react": "^2.15.2",
     "@remix-run/vercel": "^1.19.3",
     "@vercel/node": "^5.0.2",
-    "@vercel/og": "^0.6.5",
+    "@vercel/og": "^0.7.0",
     "axios": "^1.7.9",
     "daisyui": "^5.0.0",
     "dayjs": "^1.11.13",

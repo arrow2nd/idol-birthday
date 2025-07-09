@@ -31,8 +31,8 @@ importers:
         specifier: ^5.0.2
         version: 5.3.4(rollup@4.44.2)
       '@vercel/og':
-        specifier: ^0.6.5
-        version: 0.6.8
+        specifier: ^0.7.0
+        version: 0.7.2
       axios:
         specifier: ^1.7.9
         version: 1.10.0
@@ -1717,8 +1717,8 @@ packages:
   '@vercel/node@5.3.4':
     resolution: {integrity: sha512-U3VvStXs608RYjczrrZQtU8Q/hDF0FShJPYrTCJq64ppfvgjiRJra+33bd32Gqmn19QjuQNLE2qxGjKZGjsYDw==}
 
-  '@vercel/og@0.6.8':
-    resolution: {integrity: sha512-e4kQK9mP8ntpo3dACWirGod/hHv4qO5JMj9a/0a2AZto7b4persj5YP7t1Er372gTtYFTYxNhMx34jRvHooglw==}
+  '@vercel/og@0.7.2':
+    resolution: {integrity: sha512-yOlbztkWaDtPOrCBsV66SpIZvIwRidAe3DiAYxDOjVj2H7HaJm1PDultH9PQO8J+PeT+mFQaNNSxS9yUTo7i9A==}
     engines: {node: '>=16'}
 
   '@vercel/static-config@3.1.1':
@@ -2388,8 +2388,9 @@ packages:
   electron-to-chromium@1.5.179:
     resolution: {integrity: sha512-UWKi/EbBopgfFsc5k61wFpV7WrnnSlSzW/e2XcBmS6qKYTivZlLtoll5/rdqRTxGglGHkmkW0j0pFNJG10EUIQ==}
 
-  emoji-regex@10.4.0:
-    resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
+  emoji-regex-xs@2.0.1:
+    resolution: {integrity: sha512-1QFuh8l7LqUcKe24LsPUNzjrzJQ7pgRwp1QMcZ5MX6mFplk2zQ08NVCM84++1cveaUUYtcCYHmeFEuNg16sU4g==}
+    engines: {node: '>=10.0.0'}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4451,8 +4452,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  satori@0.12.2:
-    resolution: {integrity: sha512-3C/laIeE6UUe9A+iQ0A48ywPVCCMKCNSTU5Os101Vhgsjd3AAxGNjyq0uAA8kulMPK5n0csn8JlxPN9riXEjLA==}
+  satori@0.15.2:
+    resolution: {integrity: sha512-vu/49vdc8MzV5jUchs3TIRDCOkOvMc1iJ11MrZvhg9tE4ziKIEIBjBZvies6a9sfM2vQ2gc3dXeu6rCK7AztHA==}
     engines: {node: '>=16'}
 
   sax@1.4.1:
@@ -6880,10 +6881,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/og@0.6.8':
+  '@vercel/og@0.7.2':
     dependencies:
       '@resvg/resvg-wasm': 2.4.0
-      satori: 0.12.2
+      satori: 0.15.2
       yoga-wasm-web: 0.3.3
 
   '@vercel/static-config@3.1.1':
@@ -7567,7 +7568,7 @@ snapshots:
 
   electron-to-chromium@1.5.179: {}
 
-  emoji-regex@10.4.0: {}
+  emoji-regex-xs@2.0.1: {}
 
   emoji-regex@8.0.0: {}
 
@@ -10018,14 +10019,14 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  satori@0.12.2:
+  satori@0.15.2:
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
       css-background-parser: 0.1.0
       css-box-shadow: 1.0.0-3
       css-gradient-parser: 0.0.16
       css-to-react-native: 3.2.0
-      emoji-regex: 10.4.0
+      emoji-regex-xs: 2.0.1
       escape-html: 1.0.3
       linebreak: 1.1.0
       parse-css-color: 0.2.1
