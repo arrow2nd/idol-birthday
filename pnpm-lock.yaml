@@ -31,8 +31,8 @@ importers:
         specifier: ^5.0.2
         version: 5.3.6(rollup@4.45.1)
       '@vercel/og':
-        specifier: ^0.7.0
-        version: 0.7.2
+        specifier: ^0.8.0
+        version: 0.8.1
       axios:
         specifier: ^1.7.9
         version: 1.10.0
@@ -1563,8 +1563,8 @@ packages:
   '@vercel/node@5.3.6':
     resolution: {integrity: sha512-Q+46nIur6XztdXEv8rXK5n1fSH1gLoTaHq0tGGHX5OBCfi26HNlTeIMludPTzW7twf5lXmGHFsRD2Uoor5ku0w==}
 
-  '@vercel/og@0.7.2':
-    resolution: {integrity: sha512-yOlbztkWaDtPOrCBsV66SpIZvIwRidAe3DiAYxDOjVj2H7HaJm1PDultH9PQO8J+PeT+mFQaNNSxS9yUTo7i9A==}
+  '@vercel/og@0.8.1':
+    resolution: {integrity: sha512-LFQKojw9fYafGJTgl2nOLjxSq9/NrEFfTEgwZxSrcdjrwq8XeRBob+EPetexvErxUMeMTu7IAlx+W9hm6ntwjA==}
     engines: {node: '>=16'}
 
   '@vercel/static-config@3.1.1':
@@ -4299,8 +4299,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  satori@0.15.2:
-    resolution: {integrity: sha512-vu/49vdc8MzV5jUchs3TIRDCOkOvMc1iJ11MrZvhg9tE4ziKIEIBjBZvies6a9sfM2vQ2gc3dXeu6rCK7AztHA==}
+  satori@0.16.0:
+    resolution: {integrity: sha512-ZvHN3ygzZ8FuxjSNB+mKBiF/NIoqHzlBGbD0MJiT+MvSsFOvotnWOhdTjxKzhHRT2wPC1QbhLzx2q/Y83VhfYQ==}
     engines: {node: '>=16'}
 
   sax@1.4.1:
@@ -5094,8 +5094,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  yoga-wasm-web@0.3.3:
-    resolution: {integrity: sha512-N+d4UJSJbt/R3wqY7Coqs5pcV0aUj2j9IaQ3rNj9bVCLld8tTGKRa2USARjnvZJWVx1NDmQev8EknoczaOQDOA==}
+  yoga-layout@3.2.1:
+    resolution: {integrity: sha512-0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==}
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
@@ -6649,11 +6649,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/og@0.7.2':
+  '@vercel/og@0.8.1':
     dependencies:
       '@resvg/resvg-wasm': 2.4.0
-      satori: 0.15.2
-      yoga-wasm-web: 0.3.3
+      satori: 0.16.0
 
   '@vercel/static-config@3.1.1':
     dependencies:
@@ -9759,7 +9758,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  satori@0.15.2:
+  satori@0.16.0:
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
       css-background-parser: 0.1.0
@@ -9771,7 +9770,7 @@ snapshots:
       linebreak: 1.1.0
       parse-css-color: 0.2.1
       postcss-value-parser: 4.2.0
-      yoga-wasm-web: 0.3.3
+      yoga-layout: 3.2.1
 
   sax@1.4.1: {}
 
@@ -10709,7 +10708,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  yoga-wasm-web@0.3.3: {}
+  yoga-layout@3.2.1: {}
 
   zod@3.25.76: {}
 
