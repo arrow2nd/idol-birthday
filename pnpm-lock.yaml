@@ -32,7 +32,7 @@ importers:
         version: 5.3.6(rollup@4.45.1)
       '@vercel/og':
         specifier: ^0.8.0
-        version: 0.8.1
+        version: 0.8.3
       axios:
         specifier: ^1.7.9
         version: 1.11.0
@@ -1563,8 +1563,8 @@ packages:
   '@vercel/node@5.3.6':
     resolution: {integrity: sha512-Q+46nIur6XztdXEv8rXK5n1fSH1gLoTaHq0tGGHX5OBCfi26HNlTeIMludPTzW7twf5lXmGHFsRD2Uoor5ku0w==}
 
-  '@vercel/og@0.8.1':
-    resolution: {integrity: sha512-LFQKojw9fYafGJTgl2nOLjxSq9/NrEFfTEgwZxSrcdjrwq8XeRBob+EPetexvErxUMeMTu7IAlx+W9hm6ntwjA==}
+  '@vercel/og@0.8.3':
+    resolution: {integrity: sha512-ghazv+J1v8P1z+/mGxu7hb4Mb6vKHQzGGh4HV0YDZp6rjrri+X7BaBPVGCmywtGzARDnSCNRe+YSPuBDf1GKww==}
     engines: {node: '>=16'}
 
   '@vercel/static-config@3.1.1':
@@ -6649,7 +6649,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/og@0.8.1':
+  '@vercel/og@0.8.3':
     dependencies:
       '@resvg/resvg-wasm': 2.4.0
       satori: 0.16.0
