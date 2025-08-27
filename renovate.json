@@ -17,5 +17,5 @@
   ],
   "commitMessagePrefix": ":arrow_up: ",
   "unicodeEmoji": true,
-  "extends": ["config:base"]
+  "extends": ["config:recommended"]
 }
