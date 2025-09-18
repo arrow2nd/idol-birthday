@@ -20,10 +20,10 @@ importers:
         version: 0.34.3
       '@remix-run/node':
         specifier: ^2.15.2
-        version: 2.17.0(typescript@5.9.2)
+        version: 2.17.1(typescript@5.9.2)
       '@remix-run/react':
         specifier: ^2.15.2
-        version: 2.17.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
+        version: 2.17.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
       '@remix-run/vercel':
         specifier: ^1.19.3
         version: 1.19.3(@vercel/node@5.3.22(rollup@4.50.2))
@@ -63,13 +63,13 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.15.2
-        version: 2.17.0(@remix-run/react@2.17.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(@remix-run/serve@2.17.0(typescript@5.9.2))(@types/node@22.18.6)(jiti@1.21.7)(ts-node@10.9.1(@types/node@22.18.6)(typescript@5.9.2))(tsx@4.20.5)(typescript@5.9.2)(vite@7.1.6(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1))(yaml@2.8.1)
+        version: 2.17.1(@remix-run/react@2.17.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(@remix-run/serve@2.17.1(typescript@5.9.2))(@types/node@22.18.6)(jiti@1.21.7)(ts-node@10.9.1(@types/node@22.18.6)(typescript@5.9.2))(tsx@4.20.5)(typescript@5.9.2)(vite@7.1.6(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1))(yaml@2.8.1)
       '@remix-run/eslint-config':
         specifier: ^2.15.2
-        version: 2.17.0(eslint@9.35.0(jiti@1.21.7))(react@19.1.1)(typescript@5.9.2)
+        version: 2.17.1(eslint@9.35.0(jiti@1.21.7))(react@19.1.1)(typescript@5.9.2)
       '@remix-run/serve':
         specifier: ^2.15.2
-        version: 2.17.0(typescript@5.9.2)
+        version: 2.17.1(typescript@5.9.2)
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^5.2.1
         version: 5.2.2(prettier@3.6.2)
@@ -1186,8 +1186,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@remix-run/dev@2.17.0':
-    resolution: {integrity: sha512-L2W8PYH3jUvCKlJeUkFMGyOMzUsM0goZg4n0NU69O85TNlB1jgiqSbSMb69xhviphGpwzAoH+D/p3/cUnw4DbQ==}
+  '@remix-run/dev@2.17.1':
+    resolution: {integrity: sha512-Ou9iIewCs4IIoC5FjYBsfNzcCfdrc+3V8thRjULVMvTDfFxRoL+uNz/AlD3jC7Vm8Q08Iryy0joCOh8oghIhvQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1206,8 +1206,8 @@ packages:
       wrangler:
         optional: true
 
-  '@remix-run/eslint-config@2.17.0':
-    resolution: {integrity: sha512-32bOczqWqgvoMxCgCXPNV6acaRHeVskmAJf1LIY6+TWCwCHFbkMcT6zB16I3/3tQ98UvZIa5tumnFlypTgMGwg==}
+  '@remix-run/eslint-config@2.17.1':
+    resolution: {integrity: sha512-5JVVOImOx90nPe28GnBkIJRlgqPUX4lSd2MPUf5OxuYjGvd9XaIs/bPphU/iiO34e35BKPb2Ib5Cs6rdLrOm7Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: ^8.0.0
@@ -1217,8 +1217,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/express@2.17.0':
-    resolution: {integrity: sha512-VUNpdrX3WSLPOkRBbsTQao5Vu/xdKcB8AY+44pAyC7iW5iIKHDb6EYlDvpbMLcMNh9ErYGhpPtshaBiBTMvjiw==}
+  '@remix-run/express@2.17.1':
+    resolution: {integrity: sha512-qsjfpj2rUwF5jN0XmECpPSgPKWAXVzM4rV1mLgomIrjJISHfzxfNYd9m2/qhyueOZY07tcaUK0LXkjAEvrdMpA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       express: ^4.20.0
@@ -1231,8 +1231,8 @@ packages:
     resolution: {integrity: sha512-z5qrVL65xLXIUpU4mkR4MKlMeKARLepgHAk4W5YY3IBXOreRqOGUC70POViYmY7x38c2Ia1NwqL80H+0h7jbMw==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/node@2.17.0':
-    resolution: {integrity: sha512-ISy3N4peKB+Fo8ddh+mU6ki3HzQqLXwJxUrAtqxYxrBDM4Pwc7EvISrcQ4QasB6ORBknJeEZSBu69WDRhGzrjA==}
+  '@remix-run/node@2.17.1':
+    resolution: {integrity: sha512-pHmHTuLE1Lwazulx3gjrHobgBCsa+Xiq8WUO0ruLeDfEw2DU0c0SNSiyNkugu3rIZautroBwRaOoy7CWJL9xhQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1240,8 +1240,8 @@ packages:
       typescript:
         optional: true
 
-  '@remix-run/react@2.17.0':
-    resolution: {integrity: sha512-muOLHqcimMCrIk6VOuqIn51P3buYjKpdYc6qpNy6zE5HlKfyaKEY00a5pzdutRmevYTQy7FiEF/LK4M8sxk70Q==}
+  '@remix-run/react@2.17.1':
+    resolution: {integrity: sha512-5MqRK2Z5gkQMDqGfjXSACf/HzvOA+5ug9kiSqaPpK9NX0OF4NlS+cAPKXQWuzc2iLSp6r1RGu8FU1jpZbhsaug==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.0.0
@@ -1259,8 +1259,8 @@ packages:
     resolution: {integrity: sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A==}
     engines: {node: '>=14'}
 
-  '@remix-run/serve@2.17.0':
-    resolution: {integrity: sha512-eq0A7A89uqg+rQiGVHoUwb1NUawmPpjAY3RWn4KG4uCp4QwhqJausML63fIxnfdp7zu2OplXhfSXCNiTekQ0rw==}
+  '@remix-run/serve@2.17.1':
+    resolution: {integrity: sha512-7ep8k31c7z7sNoQRhPBRF4wsSxdbZ7FE11Hi8bQjcW6hK/rQnuHM+cGMv8w9qGjzsYilZeukaHHp0XNtxS4DEQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1268,8 +1268,8 @@ packages:
     resolution: {integrity: sha512-KzQ+htUsKqpBgKE2tWo7kIIGy3MyHP58Io/itUPvV+weDjApwr9tQr9PZDPA3yAY6rAzLax7BU0NMSYCXWFY5A==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/server-runtime@2.17.0':
-    resolution: {integrity: sha512-X0zfGLgvukhuTIL0tdWKnlvHy4xUe7Z17iQ0KMQoITK0SkTZPSud/6cJCsKhPqC8kfdYT1GNFLJKRhHz7Aapmw==}
+  '@remix-run/server-runtime@2.17.1':
+    resolution: {integrity: sha512-d1Vp9FxX4KafB111vP2E5C1fmWzPI+gHZ674L1drq+N8Bp9U6FBspi7GAZSU5K5Kxa4T6UF+aE1gK6pVi9R8sw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1963,6 +1963,10 @@ packages:
     resolution: {integrity: sha512-mcE+Wr2CAhHNWxXN/DdTI+n4gsPc5QpXpWnyCQWiQYIYZX+ZMJ8juXZgjRa/0/YPJo/NSsgW15/YgmI4nbysYw==}
     hasBin: true
 
+  baseline-browser-mapping@2.8.5:
+    resolution: {integrity: sha512-TiU4qUT9jdCuh4aVOG7H1QozyeI2sZRqoRPdqBIaslfNt4WUSanRBueAwl2x5jt4rXBMim3lIN2x6yT8PDi24Q==}
+    hasBin: true
+
   basic-auth@2.0.1:
     resolution: {integrity: sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==}
     engines: {node: '>= 0.8'}
@@ -1999,6 +2003,11 @@ packages:
 
   browserslist@4.26.0:
     resolution: {integrity: sha512-P9go2WrP9FiPwLv3zqRD/Uoxo0RSHjzFCiQz7d4vbmwNqQFo9T9WCeP/Qn5EbcKQY6DBbkxEXNcpJOmncNrb7A==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+
+  browserslist@4.26.2:
+    resolution: {integrity: sha512-ECFzp6uFOSB+dcZ5BK/IBaGWssbSYBHvuMeMt3MMFyhI0Z8SqGgEkBLARgpRH3hutIgPVsALcMwbDrJqPxQ65A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -2048,6 +2057,9 @@ packages:
 
   caniuse-lite@1.0.30001741:
     resolution: {integrity: sha512-QGUGitqsc8ARjLdgAfxETDhRbJ0REsP6O3I96TAth/mVjh2cYzN2u+3AzPP3aVSm2FehEItaJw1xd+IGBXWeSw==}
+
+  caniuse-lite@1.0.30001743:
+    resolution: {integrity: sha512-e6Ojr7RV14Un7dz6ASD0aZDmQPT/A+eZU+nuTNfjqmRrmkmQlnTNWH0SKmqagx9PeW87UVqapSurtAXifmtdmw==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -2393,6 +2405,9 @@ packages:
 
   electron-to-chromium@1.5.218:
     resolution: {integrity: sha512-uwwdN0TUHs8u6iRgN8vKeWZMRll4gBkz+QMqdS7DDe49uiK68/UX92lFb61oiFPrpYZNeZIqa4bA7O6Aiasnzg==}
+
+  electron-to-chromium@1.5.221:
+    resolution: {integrity: sha512-/1hFJ39wkW01ogqSyYoA4goOXOtMRy6B+yvA1u42nnsEGtHzIzmk93aPISumVQeblj47JUHLC9coCjUxb1EvtQ==}
 
   emoji-regex-xs@2.0.1:
     resolution: {integrity: sha512-1QFuh8l7LqUcKe24LsPUNzjrzJQ7pgRwp1QMcZ5MX6mFplk2zQ08NVCM84++1cveaUUYtcCYHmeFEuNg16sU4g==}
@@ -4714,8 +4729,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tar-fs@2.1.3:
-    resolution: {integrity: sha512-090nwYJDmlhwFwEW3QQl+vaNnxsO2yVsd45eTKRBzSzu+hlb1w2K9inVq5b0ngXuLVqQ4ApvsUHHnu/zQNkWAg==}
+  tar-fs@2.1.4:
+    resolution: {integrity: sha512-mDAjwmZdh7LTT6pNleZ05Yt65HC3E+NiQzl672vQG38jIrehtJk/J3mNwIg+vShQPcLF/LV7CMnDW6vjj6sfYQ==}
 
   tar-stream@2.2.0:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
@@ -5324,7 +5339,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.28.4
       '@babel/helper-validator-option': 7.27.1
-      browserslist: 4.26.0
+      browserslist: 4.26.2
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -6229,7 +6244,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@remix-run/dev@2.17.0(@remix-run/react@2.17.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(@remix-run/serve@2.17.0(typescript@5.9.2))(@types/node@22.18.6)(jiti@1.21.7)(ts-node@10.9.1(@types/node@22.18.6)(typescript@5.9.2))(tsx@4.20.5)(typescript@5.9.2)(vite@7.1.6(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1))(yaml@2.8.1)':
+  '@remix-run/dev@2.17.1(@remix-run/react@2.17.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2))(@remix-run/serve@2.17.1(typescript@5.9.2))(@types/node@22.18.6)(jiti@1.21.7)(ts-node@10.9.1(@types/node@22.18.6)(typescript@5.9.2))(tsx@4.20.5)(typescript@5.9.2)(vite@7.1.6(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1))(yaml@2.8.1)':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/generator': 7.28.3
@@ -6241,10 +6256,10 @@ snapshots:
       '@babel/types': 7.28.4
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
-      '@remix-run/node': 2.17.0(typescript@5.9.2)
-      '@remix-run/react': 2.17.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
+      '@remix-run/node': 2.17.1(typescript@5.9.2)
+      '@remix-run/react': 2.17.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)
       '@remix-run/router': 1.23.0
-      '@remix-run/server-runtime': 2.17.0(typescript@5.9.2)
+      '@remix-run/server-runtime': 2.17.1(typescript@5.9.2)
       '@types/mdx': 2.0.13
       '@vanilla-extract/integration': 6.5.0(@types/node@22.18.6)
       arg: 5.0.2
@@ -6283,13 +6298,13 @@ snapshots:
       remark-mdx-frontmatter: 1.1.1
       semver: 7.7.2
       set-cookie-parser: 2.7.1
-      tar-fs: 2.1.3
+      tar-fs: 2.1.4
       tsconfig-paths: 4.2.0
       valibot: 0.41.0(typescript@5.9.2)
       vite-node: 3.2.4(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1)
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.17.0(typescript@5.9.2)
+      '@remix-run/serve': 2.17.1(typescript@5.9.2)
       typescript: 5.9.2
       vite: 7.1.6(@types/node@22.18.6)(jiti@1.21.7)(tsx@4.20.5)(yaml@2.8.1)
     transitivePeerDependencies:
@@ -6311,7 +6326,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@remix-run/eslint-config@2.17.0(eslint@9.35.0(jiti@1.21.7))(react@19.1.1)(typescript@5.9.2)':
+  '@remix-run/eslint-config@2.17.1(eslint@9.35.0(jiti@1.21.7))(react@19.1.1)(typescript@5.9.2)':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/eslint-parser': 7.28.4(@babel/core@7.28.4)(eslint@9.35.0(jiti@1.21.7))
@@ -6339,9 +6354,9 @@ snapshots:
       - jest
       - supports-color
 
-  '@remix-run/express@2.17.0(express@4.21.2)(typescript@5.9.2)':
+  '@remix-run/express@2.17.1(express@4.21.2)(typescript@5.9.2)':
     dependencies:
-      '@remix-run/node': 2.17.0(typescript@5.9.2)
+      '@remix-run/node': 2.17.1(typescript@5.9.2)
       express: 4.21.2
     optionalDependencies:
       typescript: 5.9.2
@@ -6358,9 +6373,9 @@ snapshots:
       source-map-support: 0.5.21
       stream-slice: 0.1.2
 
-  '@remix-run/node@2.17.0(typescript@5.9.2)':
+  '@remix-run/node@2.17.1(typescript@5.9.2)':
     dependencies:
-      '@remix-run/server-runtime': 2.17.0(typescript@5.9.2)
+      '@remix-run/server-runtime': 2.17.1(typescript@5.9.2)
       '@remix-run/web-fetch': 4.4.2
       '@web3-storage/multipart-parser': 1.0.0
       cookie-signature: 1.2.2
@@ -6370,10 +6385,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.2
 
-  '@remix-run/react@2.17.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)':
+  '@remix-run/react@2.17.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.9.2)':
     dependencies:
       '@remix-run/router': 1.23.0
-      '@remix-run/server-runtime': 2.17.0(typescript@5.9.2)
+      '@remix-run/server-runtime': 2.17.1(typescript@5.9.2)
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       react-router: 6.30.0(react@19.1.1)
@@ -6386,10 +6401,10 @@ snapshots:
 
   '@remix-run/router@1.7.2': {}
 
-  '@remix-run/serve@2.17.0(typescript@5.9.2)':
+  '@remix-run/serve@2.17.1(typescript@5.9.2)':
     dependencies:
-      '@remix-run/express': 2.17.0(express@4.21.2)(typescript@5.9.2)
-      '@remix-run/node': 2.17.0(typescript@5.9.2)
+      '@remix-run/express': 2.17.1(express@4.21.2)(typescript@5.9.2)
+      '@remix-run/node': 2.17.1(typescript@5.9.2)
       chokidar: 3.6.0
       compression: 1.8.1
       express: 4.21.2
@@ -6409,7 +6424,7 @@ snapshots:
       set-cookie-parser: 2.7.1
       source-map: 0.7.6
 
-  '@remix-run/server-runtime@2.17.0(typescript@5.9.2)':
+  '@remix-run/server-runtime@2.17.1(typescript@5.9.2)':
     dependencies:
       '@remix-run/router': 1.23.0
       '@types/cookie': 0.6.0
@@ -7156,6 +7171,8 @@ snapshots:
 
   baseline-browser-mapping@2.8.3: {}
 
+  baseline-browser-mapping@2.8.5: {}
+
   basic-auth@2.0.1:
     dependencies:
       safe-buffer: 5.1.2
@@ -7216,6 +7233,14 @@ snapshots:
       node-releases: 2.0.21
       update-browserslist-db: 1.1.3(browserslist@4.26.0)
 
+  browserslist@4.26.2:
+    dependencies:
+      baseline-browser-mapping: 2.8.5
+      caniuse-lite: 1.0.30001743
+      electron-to-chromium: 1.5.221
+      node-releases: 2.0.21
+      update-browserslist-db: 1.1.3(browserslist@4.26.2)
+
   buffer-from@1.1.2: {}
 
   buffer@5.7.1:
@@ -7271,6 +7296,8 @@ snapshots:
   camelize@1.0.1: {}
 
   caniuse-lite@1.0.30001741: {}
+
+  caniuse-lite@1.0.30001743: {}
 
   ccount@2.0.1: {}
 
@@ -7581,6 +7608,8 @@ snapshots:
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.218: {}
+
+  electron-to-chromium@1.5.221: {}
 
   emoji-regex-xs@2.0.1: {}
 
@@ -10359,7 +10388,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  tar-fs@2.1.3:
+  tar-fs@2.1.4:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
@@ -10683,6 +10712,12 @@ snapshots:
   update-browserslist-db@1.1.3(browserslist@4.26.0):
     dependencies:
       browserslist: 4.26.0
+      escalade: 3.2.0
+      picocolors: 1.1.1
+
+  update-browserslist-db@1.1.3(browserslist@4.26.2):
+    dependencies:
+      browserslist: 4.26.2
       escalade: 3.2.0
       picocolors: 1.1.1
 
