@@ -676,6 +676,10 @@ export const idolImages = new Map([
     "https://idollist.idolmaster-official.jp/images/character_main/kamiya_nao_01.jpg"
   ],
   [
+    "秦谷美鈴",
+    "https://idollist.idolmaster-official.jp/images/character_main/misuzu_hataya_01.jpg"
+  ],
+  [
     "水瀬伊織",
     "https://idollist.idolmaster-official.jp/images/character_main/iori_minase_01.jpg"
   ],
