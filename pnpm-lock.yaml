@@ -26,10 +26,10 @@ importers:
         version: 2.17.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.3.24(rollup@4.52.4))
+        version: 1.19.3(@vercel/node@5.3.25(rollup@4.52.4))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.3.24(rollup@4.52.4)
+        version: 5.3.25(rollup@4.52.4)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.5
@@ -1554,8 +1554,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@12.1.0':
-    resolution: {integrity: sha512-yqpAh2KHm9iWUXo/aRWiLIxi8dMAwFtse2iZsg2QNEMs9W20va6L8PMFvdAa5MX9pgRwc38gbjD3V7drxSwq4g==}
+  '@vercel/build-utils@12.1.1':
+    resolution: {integrity: sha512-Du3JRbqCGlqe/EVMXwvLiuPgmGXmZEL4HRo8CiQrOjUoK/pNzizSeX9qMiV5jHc+V3kMVsvKfJExOJlsOoNcFQ==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1565,8 +1565,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vercel/node@5.3.24':
-    resolution: {integrity: sha512-yk8pdoNbAbUO5zcmqyMPQ6kNvN896c/gJbsiGS5RvO9Gyehib5IxUOap6SnLSExH4tWAl1XTbOptfuysqZpYog==}
+  '@vercel/node@5.3.25':
+    resolution: {integrity: sha512-Pi4TgJKRG/i752GfJ0657Dmj5i7cKtB5elrk1G9a9s86zgRxxl1u3MKZM6PEaA8TphFicl4PsbS25KwUXQ2yzg==}
 
   '@vercel/og@0.8.5':
     resolution: {integrity: sha512-fHqnxfBYcwkamlEgcIzaZqL8IHT09hR7FZL7UdMTdGJyoaBzM/dY6ulO5Swi4ig30FrBJI9I2C+GLV9sb9vexA==}
@@ -6206,10 +6206,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.3.24(rollup@4.52.4))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.3.25(rollup@4.52.4))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.3.24(rollup@4.52.4)
+      '@vercel/node': 5.3.25(rollup@4.52.4)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6628,7 +6628,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@12.1.0': {}
+  '@vercel/build-utils@12.1.1': {}
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -6651,13 +6651,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.3.24(rollup@4.52.4)':
+  '@vercel/node@5.3.25(rollup@4.52.4)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 12.1.0
+      '@vercel/build-utils': 12.1.1
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.30.1(rollup@4.52.4)
       '@vercel/static-config': 3.1.2
