@@ -26,10 +26,10 @@ importers:
         version: 2.17.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.3.25(rollup@4.52.4))
+        version: 1.19.3(@vercel/node@5.3.26(rollup@4.52.4))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.3.25(rollup@4.52.4)
+        version: 5.3.26(rollup@4.52.4)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.5
@@ -1554,8 +1554,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@12.1.1':
-    resolution: {integrity: sha512-Du3JRbqCGlqe/EVMXwvLiuPgmGXmZEL4HRo8CiQrOjUoK/pNzizSeX9qMiV5jHc+V3kMVsvKfJExOJlsOoNcFQ==}
+  '@vercel/build-utils@12.1.2':
+    resolution: {integrity: sha512-W0j2n9e65rr/fpzghTCgH4qFJgMX249hCQJmEdVzdKkXRlO6DfSqBljEHASCFaeBeumBdgS5jeSDixXyjKtdfw==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1565,8 +1565,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@vercel/node@5.3.25':
-    resolution: {integrity: sha512-Pi4TgJKRG/i752GfJ0657Dmj5i7cKtB5elrk1G9a9s86zgRxxl1u3MKZM6PEaA8TphFicl4PsbS25KwUXQ2yzg==}
+  '@vercel/node@5.3.26':
+    resolution: {integrity: sha512-9oJAmWviJsH82X748D2K0nutED9SpL2oJBLi6X4NmlSa5AXXoMf268iHp/VaDObB8b8OxVUA1Vr9EpjyaZ+ojA==}
 
   '@vercel/og@0.8.5':
     resolution: {integrity: sha512-fHqnxfBYcwkamlEgcIzaZqL8IHT09hR7FZL7UdMTdGJyoaBzM/dY6ulO5Swi4ig30FrBJI9I2C+GLV9sb9vexA==}
@@ -4344,6 +4344,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.19.0:
     resolution: {integrity: sha512-dW41u5VfLXu8SJh5bwRmyYUbAoSB3c9uQh6L8h/KtsFREPWpbX1lrljJo186Jc4nmci/sGUZ9a0a0J2zgfq2hw==}
     engines: {node: '>= 0.8.0'}
@@ -5925,7 +5930,7 @@ snapshots:
       https-proxy-agent: 7.0.6
       node-fetch: 2.6.9
       nopt: 8.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       tar: 7.5.1
     transitivePeerDependencies:
       - encoding
@@ -6206,10 +6211,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.3.25(rollup@4.52.4))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.3.26(rollup@4.52.4))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.3.25(rollup@4.52.4)
+      '@vercel/node': 5.3.26(rollup@4.52.4)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6490,7 +6495,7 @@ snapshots:
       debug: 4.4.3
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.7.2
+      semver: 7.7.3
       tsutils: 3.21.0(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
@@ -6507,7 +6512,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.9.3)
       eslint: 9.37.0(jiti@1.21.7)
       eslint-scope: 5.1.1
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6628,7 +6633,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@12.1.1': {}
+  '@vercel/build-utils@12.1.2': {}
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -6651,13 +6656,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.3.25(rollup@4.52.4)':
+  '@vercel/node@5.3.26(rollup@4.52.4)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 12.1.1
+      '@vercel/build-utils': 12.1.2
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.30.1(rollup@4.52.4)
       '@vercel/static-config': 3.1.2
@@ -9826,6 +9831,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.7.2: {}
+
+  semver@7.7.3: {}
 
   send@0.19.0:
     dependencies:
