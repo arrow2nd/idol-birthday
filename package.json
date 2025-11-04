@@ -34,7 +34,7 @@
     "@remix-run/dev": "^2.15.2",
     "@remix-run/eslint-config": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
     "@types/crypto-js": "^4.2.2",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.8",
