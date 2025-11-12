@@ -81,10 +81,10 @@ importers:
         version: 24.10.1
       '@types/react':
         specifier: ^19.0.8
-        version: 19.2.3
+        version: 19.2.4
       '@types/react-dom':
         specifier: ^19.0.3
-        version: 19.2.3(@types/react@19.2.3)
+        version: 19.2.3(@types/react@19.2.4)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.22(postcss@8.5.6)
@@ -1386,8 +1386,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.3':
-    resolution: {integrity: sha512-k5dJVszUiNr1DSe8Cs+knKR6IrqhqdhpUwzqhkS8ecQTSf3THNtbfIp/umqHMpX2bv+9dkx3fwDv/86LcSfvSg==}
+  '@types/react@19.2.4':
+    resolution: {integrity: sha512-tBFxBp9Nfyy5rsmefN+WXc1JeW/j2BpBHFdLZbEVfs9wn3E3NRFxwV0pJg8M1qQAexFpvz73hJXFofV0ZAu92A==}
 
   '@types/semver@7.7.1':
     resolution: {integrity: sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA==}
@@ -6412,11 +6412,11 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.3)':
+  '@types/react-dom@19.2.3(@types/react@19.2.4)':
     dependencies:
-      '@types/react': 19.2.3
+      '@types/react': 19.2.4
 
-  '@types/react@19.2.3':
+  '@types/react@19.2.4':
     dependencies:
       csstype: 3.1.3
 
