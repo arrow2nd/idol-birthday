@@ -23,7 +23,7 @@ importers:
         version: 2.17.2(typescript@5.9.3)
       '@remix-run/react':
         specifier: ^2.15.2
-        version: 2.17.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)
+        version: 2.17.2(react-dom@19.2.2(react@19.2.2))(react@19.2.2)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
         version: 1.19.3(@vercel/node@5.5.15(rollup@4.53.3))
@@ -47,26 +47,26 @@ importers:
         version: 1.6.0
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.2
       react-dom:
         specifier: ^19.0.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.2(react@19.2.2)
       react-icons:
         specifier: ^5.4.0
-        version: 5.5.0(react@19.2.1)
+        version: 5.5.0(react@19.2.2)
       react-rewards:
         specifier: ^2.1.0
-        version: 2.1.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 2.1.0(react-dom@19.2.2(react@19.2.2))(react@19.2.2)
       tiny-invariant:
         specifier: ^1.3.3
         version: 1.3.3
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.15.2
-        version: 2.17.2(@remix-run/react@2.17.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3))(@remix-run/serve@2.17.2(typescript@5.9.3))(@types/node@24.10.3)(jiti@1.21.7)(ts-node@10.9.1(@types/node@24.10.3)(typescript@5.9.3))(tsx@4.21.0)(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2))(yaml@2.8.2)
+        version: 2.17.2(@remix-run/react@2.17.2(react-dom@19.2.2(react@19.2.2))(react@19.2.2)(typescript@5.9.3))(@remix-run/serve@2.17.2(typescript@5.9.3))(@types/node@24.10.3)(jiti@1.21.7)(ts-node@10.9.1(@types/node@24.10.3)(typescript@5.9.3))(tsx@4.21.0)(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2))(yaml@2.8.2)
       '@remix-run/eslint-config':
         specifier: ^2.15.2
-        version: 2.17.2(eslint@9.39.1(jiti@1.21.7))(react@19.2.1)(typescript@5.9.3)
+        version: 2.17.2(eslint@9.39.1(jiti@1.21.7))(react@19.2.2)(typescript@5.9.3)
       '@remix-run/serve':
         specifier: ^2.15.2
         version: 2.17.2(typescript@5.9.3)
@@ -4324,10 +4324,10 @@ packages:
     resolution: {integrity: sha512-s4VSOf6yN0rvbRZGxs8Om5CWj6seneMwK3oDb4lWDH0UPhWcxwOWw5+qk24bxq87szX1ydrwylIOp2uG1ojUpA==}
     engines: {node: '>= 0.8'}
 
-  react-dom@19.2.1:
-    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
+  react-dom@19.2.2:
+    resolution: {integrity: sha512-fhyD2BLrew6qYf4NNtHff1rLXvzR25rq49p+FeqByOazc6TcSi2n8EYulo5C1PbH+1uBW++5S1SG7FcUU6mlDg==}
     peerDependencies:
-      react: ^19.2.1
+      react: ^19.2.2
 
   react-icons@5.5.0:
     resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
@@ -4363,8 +4363,8 @@ packages:
     peerDependencies:
       react: '>=16.8'
 
-  react@19.2.1:
-    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+  react@19.2.2:
+    resolution: {integrity: sha512-BdOGOY8OKRBcgoDkwqA8Q5XvOIhoNx/Sh6BnGJlet2Abt0X5BK0BDrqGyQgLhAVjD2nAg5f6o01u/OPUhG022Q==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -6281,7 +6281,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@remix-run/dev@2.17.2(@remix-run/react@2.17.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3))(@remix-run/serve@2.17.2(typescript@5.9.3))(@types/node@24.10.3)(jiti@1.21.7)(ts-node@10.9.1(@types/node@24.10.3)(typescript@5.9.3))(tsx@4.21.0)(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2))(yaml@2.8.2)':
+  '@remix-run/dev@2.17.2(@remix-run/react@2.17.2(react-dom@19.2.2(react@19.2.2))(react@19.2.2)(typescript@5.9.3))(@remix-run/serve@2.17.2(typescript@5.9.3))(@types/node@24.10.3)(jiti@1.21.7)(ts-node@10.9.1(@types/node@24.10.3)(typescript@5.9.3))(tsx@4.21.0)(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.3)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2))(yaml@2.8.2)':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/generator': 7.28.5
@@ -6294,7 +6294,7 @@ snapshots:
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
       '@remix-run/node': 2.17.2(typescript@5.9.3)
-      '@remix-run/react': 2.17.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)
+      '@remix-run/react': 2.17.2(react-dom@19.2.2(react@19.2.2))(react@19.2.2)(typescript@5.9.3)
       '@remix-run/router': 1.23.0
       '@remix-run/server-runtime': 2.17.2(typescript@5.9.3)
       '@types/mdx': 2.0.13
@@ -6363,7 +6363,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@remix-run/eslint-config@2.17.2(eslint@9.39.1(jiti@1.21.7))(react@19.2.1)(typescript@5.9.3)':
+  '@remix-run/eslint-config@2.17.2(eslint@9.39.1(jiti@1.21.7))(react@19.2.2)(typescript@5.9.3)':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/eslint-parser': 7.28.5(@babel/core@7.28.5)(eslint@9.39.1(jiti@1.21.7))
@@ -6382,7 +6382,7 @@ snapshots:
       eslint-plugin-react: 7.37.5(eslint@9.39.1(jiti@1.21.7))
       eslint-plugin-react-hooks: 4.6.2(eslint@9.39.1(jiti@1.21.7))
       eslint-plugin-testing-library: 5.11.1(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
-      react: 19.2.1
+      react: 19.2.2
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -6422,14 +6422,14 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/react@2.17.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)':
+  '@remix-run/react@2.17.2(react-dom@19.2.2(react@19.2.2))(react@19.2.2)(typescript@5.9.3)':
     dependencies:
       '@remix-run/router': 1.23.0
       '@remix-run/server-runtime': 2.17.2(typescript@5.9.3)
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      react-router: 6.30.0(react@19.2.1)
-      react-router-dom: 6.30.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react: 19.2.2
+      react-dom: 19.2.2(react@19.2.2)
+      react-router: 6.30.0(react@19.2.2)
+      react-router-dom: 6.30.0(react-dom@19.2.2(react@19.2.2))(react@19.2.2)
       turbo-stream: 2.4.1
     optionalDependencies:
       typescript: 5.9.3
@@ -9890,14 +9890,14 @@ snapshots:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  react-dom@19.2.1(react@19.2.1):
+  react-dom@19.2.2(react@19.2.2):
     dependencies:
-      react: 19.2.1
+      react: 19.2.2
       scheduler: 0.27.0
 
-  react-icons@5.5.0(react@19.2.1):
+  react-icons@5.5.0(react@19.2.2):
     dependencies:
-      react: 19.2.1
+      react: 19.2.2
 
   react-is@16.13.1: {}
 
@@ -9905,24 +9905,24 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-rewards@2.1.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-rewards@2.1.0(react-dom@19.2.2(react@19.2.2))(react@19.2.2):
     dependencies:
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.2
+      react-dom: 19.2.2(react@19.2.2)
 
-  react-router-dom@6.30.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
-    dependencies:
-      '@remix-run/router': 1.23.0
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      react-router: 6.30.0(react@19.2.1)
-
-  react-router@6.30.0(react@19.2.1):
+  react-router-dom@6.30.0(react-dom@19.2.2(react@19.2.2))(react@19.2.2):
     dependencies:
       '@remix-run/router': 1.23.0
-      react: 19.2.1
+      react: 19.2.2
+      react-dom: 19.2.2(react@19.2.2)
+      react-router: 6.30.0(react@19.2.2)
 
-  react@19.2.1: {}
+  react-router@6.30.0(react@19.2.2):
+    dependencies:
+      '@remix-run/router': 1.23.0
+      react: 19.2.2
+
+  react@19.2.2: {}
 
   read-cache@1.0.0:
     dependencies:
