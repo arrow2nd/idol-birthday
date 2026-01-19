@@ -26,10 +26,10 @@ importers:
         version: 2.17.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.5.23(rollup@4.55.1))
+        version: 1.19.3(@vercel/node@5.5.24(rollup@4.55.1))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.5.23(rollup@4.55.1)
+        version: 5.5.24(rollup@4.55.1)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.6
@@ -1909,8 +1909,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@13.2.11':
-    resolution: {integrity: sha512-jbsg78iS8SLpOkLw378bBLchmzeQ+YtPnztMMuEFBORjY1G4lDxiStMacD3xp5HImCAl1wz4dNV4I8jHKd/3Tg==}
+  '@vercel/build-utils@13.2.12':
+    resolution: {integrity: sha512-jUzCgg/E+k3OfEgVF3kPuTMIpKpofhUfPdmBXqbKBCjVGA+jofveOVxzu3mPvNwCXXjdzfVSSCbPFIc4SP5irA==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1920,8 +1920,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@vercel/node@5.5.23':
-    resolution: {integrity: sha512-dDJtroLF4D/H9vRMt/x/qI2bKujMOPbk6aIqRKI9WXddngjKziuHxsjcF3zEm5YXGUYDSC2lEVEFrXPbbP+hhw==}
+  '@vercel/node@5.5.24':
+    resolution: {integrity: sha512-VA7I1sW+CwN4HJw/FbCtKWgk9/Le8pHwtM777LRlgIT8XZVo55eW8XxKYibf89HfGMVA/KyN9A2fSF6Z58dBhA==}
 
   '@vercel/og@0.8.6':
     resolution: {integrity: sha512-hBcWIOppZV14bi+eAmCZj8Elj8hVSUZJTpf1lgGBhVD85pervzQ1poM/qYfFUlPraYSZYP+ASg6To5BwYmUSGQ==}
@@ -4808,8 +4808,8 @@ packages:
     engines: {node: '>=10'}
     deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
-  tar@7.5.3:
-    resolution: {integrity: sha512-ENg5JUHUm2rDD7IvKNFGzyElLXNjachNLp6RaGf4+JOgxXHkqA+gq81ZAMCUmtMtqBsoU62lcp6S27g1LCYGGQ==}
+  tar@7.5.4:
+    resolution: {integrity: sha512-AN04xbWGrSTDmVwlI4/GTlIIwMFk/XEv7uL8aa57zuvRy6s4hdBed+lVq2fAZ89XDa7Us3ANXcE3Tvqvja1kTA==}
     engines: {node: '>=18'}
 
   through2@2.0.5:
@@ -6219,7 +6219,7 @@ snapshots:
       node-fetch: 2.6.9
       nopt: 8.1.0
       semver: 7.7.3
-      tar: 7.5.3
+      tar: 7.5.4
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -6559,10 +6559,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.5.23(rollup@4.55.1))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.5.24(rollup@4.55.1))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.5.23(rollup@4.55.1)
+      '@vercel/node': 5.5.24(rollup@4.55.1)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -7066,7 +7066,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@13.2.11': {}
+  '@vercel/build-utils@13.2.12': {}
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -7089,13 +7089,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.5.23(rollup@4.55.1)':
+  '@vercel/node@5.5.24(rollup@4.55.1)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 13.2.11
+      '@vercel/build-utils': 13.2.12
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 1.1.1(rollup@4.55.1)
       '@vercel/static-config': 3.1.2
@@ -10501,7 +10501,7 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  tar@7.5.3:
+  tar@7.5.4:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
