@@ -26,10 +26,10 @@ importers:
         version: 2.17.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.5.30(rollup@4.57.1))
+        version: 1.19.3(@vercel/node@5.5.31(rollup@4.57.1))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.5.30(rollup@4.57.1)
+        version: 5.5.31(rollup@4.57.1)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.6
@@ -302,6 +302,9 @@ packages:
   '@babel/types@7.29.0':
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
+
+  '@bytecodealliance/preview2-shim@0.17.6':
+    resolution: {integrity: sha512-n3cM88gTen5980UOBAD6xDcNNL3ocTK8keab21bpx1ONdA+ARj7uD1qoFxOWCyKlkpSi195FH+GeAut7Oc6zZw==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -1395,6 +1398,10 @@ packages:
   '@remix-run/web-stream@1.1.0':
     resolution: {integrity: sha512-KRJtwrjRV5Bb+pM7zxcTJkhIqWWSy+MYsIxHK+0m5atcznsf15YwUBWHWulZerV2+vvHH1Lp1DD7pw6qKW8SgA==}
 
+  '@renovatebot/pep440@4.2.1':
+    resolution: {integrity: sha512-2FK1hF93Fuf1laSdfiEmJvSJPVIDHEUTz68D3Fi9s0IZrrpaEcj6pTFBTbYvsgC5du4ogrtf5re7yMMvrKNgkw==}
+    engines: {node: ^20.9.0 || ^22.11.0 || ^24, pnpm: ^10.0.0}
+
   '@resvg/resvg-wasm@2.4.0':
     resolution: {integrity: sha512-C7c51Nn4yTxXFKvgh2txJFNweaVcfUPQxwEUFw4aWsCmfiBDJsTSwviIF8EcwjQ6k8bPyMWCl1vw4BdxE569Cg==}
     engines: {node: '>= 10'}
@@ -1941,8 +1948,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@13.3.0':
-    resolution: {integrity: sha512-xU43eZIARY9lvGkg14UGnmHrqKo3gQKjTs9x5ADj7jAzllgBaPI8ty/qUh1e6my3xPoOgRJlEA4bml2MknKUXQ==}
+  '@vercel/build-utils@13.3.1':
+    resolution: {integrity: sha512-uTg2ERUCxP/gimsla70Y/2jiUK/LvqIppNvHKMaHDbzdXiPyd95E9RVE6QSCgnWIh++lopaH0REEPNYf9gZ3Sg==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1952,12 +1959,15 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@vercel/node@5.5.30':
-    resolution: {integrity: sha512-ofkVDx8CzWefwFH+wK36r7K2dPZqbW1k9eoVZhJkXgfLaPhb5BRd2QEHMNSlsDsTqDB9WK3CZ8J82Vp24VbPEw==}
+  '@vercel/node@5.5.31':
+    resolution: {integrity: sha512-4WM1287ZJYsl8HyaUHVV2ABmO0g0WDZD/Yi7G6o2D2dwZ5kka+MQKmGvYgmF7X7BEsGMjBmBQyIsLC/kFCqNmg==}
 
   '@vercel/og@0.8.6':
     resolution: {integrity: sha512-hBcWIOppZV14bi+eAmCZj8Elj8hVSUZJTpf1lgGBhVD85pervzQ1poM/qYfFUlPraYSZYP+ASg6To5BwYmUSGQ==}
     engines: {node: '>=16'}
+
+  '@vercel/python-analysis@0.3.0':
+    resolution: {integrity: sha512-xbKAhsObRO6+xMHxz6Ehf6GpXzVnlkx8PzKRl6g3ooLTP3JD2Lj85oF11Bk10X/jVVGPku9OfpPhrofHk6oU7w==}
 
   '@vercel/static-config@3.1.2':
     resolution: {integrity: sha512-2d+TXr6K30w86a+WbMbGm2W91O0UzO5VeemZYBBUJbCjk/5FLLGIi8aV6RS2+WmaRvtcqNTn2pUA7nCOK3bGcQ==}
@@ -3043,6 +3053,10 @@ packages:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
 
+  fs-extra@11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
+
   fs-minipass@2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
     engines: {node: '>= 8'}
@@ -3833,6 +3847,10 @@ packages:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
 
+  minimatch@10.1.1:
+    resolution: {integrity: sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==}
+    engines: {node: 20 || >=22}
+
   minimatch@10.1.2:
     resolution: {integrity: sha512-fu656aJ0n2kcXwsnwnv9g24tkU5uSmOlTjd6WyyaKm2Z+h1qmY6bAjrcaIxF/BslFqbZ8UBtbJi7KgQOZD2PTw==}
     engines: {node: 20 || >=22}
@@ -4026,6 +4044,10 @@ packages:
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
+  ohm-js@17.3.0:
+    resolution: {integrity: sha512-LySMdjweN1hKBMMV8lM44+1wiewkndDNNJxtgVAscs7y683MXCdQZLsIaw64/p8NuqYbKOWZoHIOA5DU/xchoA==}
+    engines: {node: '>=0.12.1'}
+
   omggif@1.0.10:
     resolution: {integrity: sha512-LMJTtvgc/nugXj0Vcrrs68Mn2D1r0zf630VNtqtpI1FEO7e+O9FP4gqs9AcnBaSEeoHIPm28u6qgPR0oyEpGSw==}
 
@@ -4186,6 +4208,9 @@ packages:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
     engines: {node: '>=0.10'}
     hasBin: true
+
+  pip-requirements-js@1.0.2:
+    resolution: {integrity: sha512-awqoNOSOl4Blu4E4Hzp7jL0g8WKEhCwO+s7C2ibtIW3CAJMwspgoTXd4vnHd21UmhdrsI44Pn8FFSuA8QKrzvg==}
 
   pixelmatch@5.3.0:
     resolution: {integrity: sha512-o8mkY4E/+LNUf6LzX96ht6k6CEDi65k9G2rjMtBe9Oo+VPKSvl+0GKHuH/AlG+GA5LPG/i5hrekkxUc3s2HU+Q==}
@@ -4608,6 +4633,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.19.2:
     resolution: {integrity: sha512-VMbMxbDeehAxpOtWJXlcUS5E8iXh6QmN+BkRX1GARS3wRaXEEgzCcB10gTQazO42tpNIya8xIyNx8fll1OFPrg==}
     engines: {node: '>= 0.8.0'}
@@ -4683,6 +4713,10 @@ packages:
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
+
+  smol-toml@1.5.2:
+    resolution: {integrity: sha512-QlaZEqcAH3/RtNyet1IPIYPsEWAaYyXXv1Krsi+1L/QHppjX4Ifm8MQsBISz9vE8cHicIq3clogsheili5vhaQ==}
+    engines: {node: '>= 18'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -5371,6 +5405,9 @@ packages:
   yoga-layout@3.2.1:
     resolution: {integrity: sha512-0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==}
 
+  zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
@@ -5620,6 +5657,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
+
+  '@bytecodealliance/preview2-shim@0.17.6': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -6255,7 +6294,7 @@ snapshots:
       https-proxy-agent: 7.0.6
       node-fetch: 2.6.9
       nopt: 8.1.0
-      semver: 7.7.3
+      semver: 7.7.4
       tar: 7.5.7
     transitivePeerDependencies:
       - encoding
@@ -6596,10 +6635,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.5.30(rollup@4.57.1))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.5.31(rollup@4.57.1))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.5.30(rollup@4.57.1)
+      '@vercel/node': 5.5.31(rollup@4.57.1)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -6628,6 +6667,8 @@ snapshots:
   '@remix-run/web-stream@1.1.0':
     dependencies:
       web-streams-polyfill: 3.3.3
+
+  '@renovatebot/pep440@4.2.1': {}
 
   '@resvg/resvg-wasm@2.4.0': {}
 
@@ -6967,7 +7008,7 @@ snapshots:
       debug: 4.4.3
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.7.3
+      semver: 7.7.4
       tsutils: 3.21.0(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
@@ -6984,7 +7025,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.9.3)
       eslint: 9.39.2(jiti@2.6.1)
       eslint-scope: 5.1.1
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -7105,7 +7146,9 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@13.3.0': {}
+  '@vercel/build-utils@13.3.1':
+    dependencies:
+      '@vercel/python-analysis': 0.3.0
 
   '@vercel/error-utils@2.0.3': {}
 
@@ -7128,13 +7171,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.5.30(rollup@4.57.1)':
+  '@vercel/node@5.5.31(rollup@4.57.1)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 20.11.0
-      '@vercel/build-utils': 13.3.0
+      '@vercel/build-utils': 13.3.1
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 1.1.1(rollup@4.57.1)
       '@vercel/static-config': 3.1.2
@@ -7164,6 +7207,17 @@ snapshots:
     dependencies:
       '@resvg/resvg-wasm': 2.4.0
       satori: 0.16.0
+
+  '@vercel/python-analysis@0.3.0':
+    dependencies:
+      '@bytecodealliance/preview2-shim': 0.17.6
+      '@renovatebot/pep440': 4.2.1
+      fs-extra: 11.1.1
+      js-yaml: 4.1.1
+      minimatch: 10.1.1
+      pip-requirements-js: 1.0.2
+      smol-toml: 1.5.2
+      zod: 3.22.4
 
   '@vercel/static-config@3.1.2':
     dependencies:
@@ -8527,6 +8581,12 @@ snapshots:
       jsonfile: 6.2.0
       universalify: 2.0.1
 
+  fs-extra@11.1.1:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.2.0
+      universalify: 2.0.1
+
   fs-minipass@2.1.0:
     dependencies:
       minipass: 3.3.6
@@ -9494,6 +9554,10 @@ snapshots:
 
   mimic-fn@2.1.0: {}
 
+  minimatch@10.1.1:
+    dependencies:
+      '@isaacs/brace-expansion': 5.0.1
+
   minimatch@10.1.2:
     dependencies:
       '@isaacs/brace-expansion': 5.0.1
@@ -9676,6 +9740,8 @@ snapshots:
 
   obug@2.1.1: {}
 
+  ohm-js@17.3.0: {}
+
   omggif@1.0.10: {}
 
   on-finished@2.3.0:
@@ -9834,6 +9900,10 @@ snapshots:
   picomatch@4.0.3: {}
 
   pidtree@0.6.0: {}
+
+  pip-requirements-js@1.0.2:
+    dependencies:
+      ohm-js: 17.3.0
 
   pixelmatch@5.3.0:
     dependencies:
@@ -10251,6 +10321,8 @@ snapshots:
 
   semver@7.7.3: {}
 
+  semver@7.7.4: {}
+
   send@0.19.2:
     dependencies:
       debug: 2.6.9
@@ -10351,6 +10423,8 @@ snapshots:
   simple-xml-to-json@1.2.3: {}
 
   slash@3.0.0: {}
+
+  smol-toml@1.5.2: {}
 
   source-map-js@1.2.1: {}
 
@@ -11126,6 +11200,8 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoga-layout@3.2.1: {}
+
+  zod@3.22.4: {}
 
   zod@3.25.76: {}
 
