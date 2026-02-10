@@ -26,10 +26,10 @@ importers:
         version: 2.17.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.5.33(rollup@4.57.1))
+        version: 1.19.3(@vercel/node@5.6.0(rollup@4.57.1))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.5.33(rollup@4.57.1)
+        version: 5.6.0(rollup@4.57.1)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.6
@@ -1935,8 +1935,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@vercel/node@5.5.33':
-    resolution: {integrity: sha512-kr2V7yJQj5WwFFlp1KnlJ3VMfmIKVv5paYT7ILjtqj6A3Y2DEs0GYmstI9pdC+xJyiy4jLRxGFWEwuguNHhiQg==}
+  '@vercel/node@5.6.0':
+    resolution: {integrity: sha512-PCBRGCttvk4WdvkFWVdFX//1eVOqCQbaSzNSGQBi3XITXsLHG8d8OFyQqkpUGV5I4GUZOFtjLd/ObKI5ZK7CIg==}
 
   '@vercel/og@0.8.6':
     resolution: {integrity: sha512-hBcWIOppZV14bi+eAmCZj8Elj8hVSUZJTpf1lgGBhVD85pervzQ1poM/qYfFUlPraYSZYP+ASg6To5BwYmUSGQ==}
@@ -6511,10 +6511,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.5.33(rollup@4.57.1))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.6.0(rollup@4.57.1))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.5.33(rollup@4.57.1)
+      '@vercel/node': 5.6.0(rollup@4.57.1)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -7041,7 +7041,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.5.33(rollup@4.57.1)':
+  '@vercel/node@5.6.0(rollup@4.57.1)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
