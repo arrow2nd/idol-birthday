@@ -26,10 +26,10 @@ importers:
         version: 2.17.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
       '@remix-run/vercel':
         specifier: ^1.19.3
-        version: 1.19.3(@vercel/node@5.6.0(rollup@4.57.1))
+        version: 1.19.3(@vercel/node@5.6.1(rollup@4.57.1))
       '@vercel/node':
         specifier: ^5.0.2
-        version: 5.6.0(rollup@4.57.1)
+        version: 5.6.1(rollup@4.57.1)
       '@vercel/og':
         specifier: ^0.8.0
         version: 0.8.6
@@ -1924,8 +1924,8 @@ packages:
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
 
-  '@vercel/build-utils@13.3.3':
-    resolution: {integrity: sha512-OwnEj1OOVXq2UMo1Mrr8/Klt5BuWTo1GCWDYkrTbcm1b8cgRx3Hp0CnHGqMx8p3WpY4Jw6NkkreQETPg9gTEHQ==}
+  '@vercel/build-utils@13.3.4':
+    resolution: {integrity: sha512-0eyzTQw2BFfsexDj+qE7Pjv//mMZ7g1qlQ8c12ZhPmZcOrOR9oW6Ubtd0pLb3sBDtaMvy/wIoadhaJKyH34ejA==}
 
   '@vercel/error-utils@2.0.3':
     resolution: {integrity: sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==}
@@ -1935,8 +1935,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@vercel/node@5.6.0':
-    resolution: {integrity: sha512-PCBRGCttvk4WdvkFWVdFX//1eVOqCQbaSzNSGQBi3XITXsLHG8d8OFyQqkpUGV5I4GUZOFtjLd/ObKI5ZK7CIg==}
+  '@vercel/node@5.6.1':
+    resolution: {integrity: sha512-8QF299xxNWv32cIFaSx6qQAcAwqPyacIackjYyMtSjWXepbI2AOcyusd3LgdQ2PSIk/iaVcPp1iCHrQMalD7ww==}
 
   '@vercel/og@0.8.6':
     resolution: {integrity: sha512-hBcWIOppZV14bi+eAmCZj8Elj8hVSUZJTpf1lgGBhVD85pervzQ1poM/qYfFUlPraYSZYP+ASg6To5BwYmUSGQ==}
@@ -3092,8 +3092,8 @@ packages:
     deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
-  glob@13.0.1:
-    resolution: {integrity: sha512-B7U/vJpE3DkJ5WXTgTpTRN63uV42DseiXXKMwG14LQBXmsdeIoHAPbU/MEo6II0k5ED74uc2ZGTC6MwHFQhF6w==}
+  glob@13.0.2:
+    resolution: {integrity: sha512-035InabNu/c1lW0tzPhAgapKctblppqsKKG9ZaNzbr+gXwWMjXoiyGSyB9sArzrjG7jY+zntRq5ZSUYemrnWVQ==}
     engines: {node: 20 || >=22}
 
   globalthis@1.0.4:
@@ -3594,8 +3594,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lru-cache@11.2.5:
-    resolution: {integrity: sha512-vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==}
+  lru-cache@11.2.6:
+    resolution: {integrity: sha512-ESL2CrkS/2wTPfuend7Zhkzo2u0daGJ/A2VucJOgQ/C48S/zB8MMeMHSGKYpXhIjbPxfuezITkaBH1wqv00DDQ==}
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -6511,10 +6511,10 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/vercel@1.19.3(@vercel/node@5.6.0(rollup@4.57.1))':
+  '@remix-run/vercel@1.19.3(@vercel/node@5.6.1(rollup@4.57.1))':
     dependencies:
       '@remix-run/node': 1.19.3
-      '@vercel/node': 5.6.0(rollup@4.57.1)
+      '@vercel/node': 5.6.1(rollup@4.57.1)
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -7016,7 +7016,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/build-utils@13.3.3':
+  '@vercel/build-utils@13.3.4':
     dependencies:
       '@vercel/python-analysis': 0.3.2
 
@@ -7031,7 +7031,7 @@ snapshots:
       async-sema: 3.1.1
       bindings: 1.5.0
       estree-walker: 2.0.2
-      glob: 13.0.1
+      glob: 13.0.2
       graceful-fs: 4.2.11
       node-gyp-build: 4.8.4
       picomatch: 4.0.3
@@ -7041,13 +7041,13 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/node@5.6.0(rollup@4.57.1)':
+  '@vercel/node@5.6.1(rollup@4.57.1)':
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 20.11.0
-      '@vercel/build-utils': 13.3.3
+      '@vercel/build-utils': 13.3.4
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 1.1.1(rollup@4.57.1)
       '@vercel/static-config': 3.1.2
@@ -8528,7 +8528,7 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
-  glob@13.0.1:
+  glob@13.0.2:
     dependencies:
       minimatch: 10.1.2
       minipass: 7.1.2
@@ -9025,7 +9025,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lru-cache@11.2.5: {}
+  lru-cache@11.2.6: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -9700,7 +9700,7 @@ snapshots:
 
   path-scurry@2.0.1:
     dependencies:
-      lru-cache: 11.2.5
+      lru-cache: 11.2.6
       minipass: 7.1.2
 
   path-to-regexp@0.1.12: {}
