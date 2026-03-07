@@ -32,7 +32,7 @@ importers:
         version: 5.6.11(rollup@4.59.0)
       '@vercel/og':
         specifier: ^0.11.0
-        version: 0.11.0
+        version: 0.11.1
       axios:
         specifier: ^1.7.9
         version: 1.13.6
@@ -2078,8 +2078,8 @@ packages:
   '@vercel/node@5.6.11':
     resolution: {integrity: sha512-nzoS+ufkxpT4JxEzrjSA9vCEr4XzjCsHvGzi37+O+wajMldxsfcrvk9xHHuz1ZRzclwuPhcvLOMrs+ViJu63oA==}
 
-  '@vercel/og@0.11.0':
-    resolution: {integrity: sha512-zrrMMhwOpZ6qsH3yoV+GcqigOkUi76BpYZVohb2qZYh5Hkvfp0irYxiNehJ9bt2HsTGZCimHC9Cv7EDOv8JbvA==}
+  '@vercel/og@0.11.1':
+    resolution: {integrity: sha512-02rXXRABFq1B03w3aNhcVfxkY+8Ba5QFi4ax0zS0oOiD/LL9WUd/LA7BjVPakrQmVhIBjuo2oBM5U25R9IuXMg==}
     engines: {node: '>=16'}
 
   '@vercel/python-analysis@0.8.2':
@@ -4703,8 +4703,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  satori@0.21.0:
-    resolution: {integrity: sha512-PV5II6Z+gsFFLq4jp6mslt0ObNRzcTi5Xq+8JtJ3ReqBS9k4nF4ajqITFXygPZgRA6l5+22NYIS1WRTqTfDp5g==}
+  satori@0.25.0:
+    resolution: {integrity: sha512-utINfLxrYrmSnLvxFT4ZwgwWa8KOjrz7ans32V5wItgHVmzESl/9i33nE38uG0miycab8hUqQtDlOpqrIpB/iw==}
     engines: {node: '>=16'}
 
   sax@1.5.0:
@@ -7317,10 +7317,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/og@0.11.0':
+  '@vercel/og@0.11.1':
     dependencies:
       '@resvg/resvg-wasm': 2.4.0
-      satori: 0.21.0
+      satori: 0.25.0
     optionalDependencies:
       sharp: 0.34.5
 
@@ -10399,7 +10399,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  satori@0.21.0:
+  satori@0.25.0:
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
       css-background-parser: 0.1.0
